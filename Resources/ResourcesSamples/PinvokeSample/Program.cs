@@ -1,14 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using PInvokeSampleLib;
+using System.IO;
+using static System.Console;
 
-namespace PinvokeSample
+namespace PInvokeSample
 {
     public class Program
     {
         public void Main(string[] args)
         {
+            if (args.Length != 2)
+            {
+                WriteLine("usage: PInvokeSample " +
+                  "existingfilename newfilename");
+                return;
+            }
+            try
+            {
+                FileUtility.CreateHardLink(args[0], args[1]);
+            }
+            catch (IOException ex)
+            {
+                WriteLine(ex.Message);
+            }
         }
+
+
     }
 }
