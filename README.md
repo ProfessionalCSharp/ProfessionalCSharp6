@@ -7,8 +7,13 @@ http://docs.asp.net/en/latest/getting-started/installing-on-windows.html
 Download ASP.NET 5 Preview (Beta 8) here: http://go.microsoft.com/fwlink/?LinkId=690242
 
 Run from a developer command prompt:
+
 >dnvm setup
+
 >dnvm upgrade
+
+>dnvm upgrade -r coreclr
+
 
 
 
