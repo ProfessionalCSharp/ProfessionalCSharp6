@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="PropertyCodeRefactoring.Vsix..3ff20a3e-2460-4d51-bafc-1b9528f87d1c" Version="1.0" Language="en-US" Publisher="Christian Nagel"/>
+    <DisplayName>PropertyCodeRefactoring.Vsix</DisplayName>
+    <Description xml:space="preserve">This is a sample code refactoring extension for the book Professional C# 6.</Description>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[14.0,]" />
+  </Installation>
+  <Dependencies>
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="PropertyCodeRefactoring" Path="|PropertyCodeRefactoring|" />
+  </Assets>
+</PackageManifest>
