@@ -1,0 +1,23 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "WeakEvents Console Application",
+  "authors": [ "chris" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+  },
+
+  "commands": {
+    "WeakEvents": "WeakEvents"
+  },
+
+  "frameworks": {
+    "dnx46": {
+      "frameworkAssemblies": {
+        "WindowsBase": "4.0.0.0"
+      }
+    }
+  }
+}
