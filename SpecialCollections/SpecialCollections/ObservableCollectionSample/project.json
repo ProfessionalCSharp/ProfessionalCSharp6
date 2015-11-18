@@ -1,0 +1,24 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "ObservableCollectionSample Console Application",
+  "authors": [ "chris" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+    "System.Console": "4.0.0-rc2-23517",
+    "System.ObjectModel": "4.0.11-rc2-23517"
+  },
+  "commands": {
+    "ObservableCollectionSample": "run"
+  },
+  "frameworks": {
+    "dnx46": {
+      "dependencies": { }
+    },
+    "dnxcore50": {
+      "dependencies": { }
+    }
+  }
+}

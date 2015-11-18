@@ -1,0 +1,27 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "BitVectorSample Console Application",
+  "authors": [ "chris" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+    "System.Collections.Specialized": "4.0.1-beta-23516",
+    "System.Console": "4.0.0-rc2-23517"
+
+  },
+  "commands": {
+    "BitVectorSample": "run"
+  },
+  "frameworks": {
+    "dnx46": {
+      "dependencies": {
+
+      }
+    },
+    "dnxcore50": {
+      "dependencies": { }
+    }
+  }
+}
