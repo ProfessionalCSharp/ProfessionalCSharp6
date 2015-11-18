@@ -4,7 +4,7 @@ namespace LinkedListSample
 {
   public class Program
   {
-    static void Main()
+    public static void Main()
     {
       PriorityDocumentManager pdm = new PriorityDocumentManager();
       pdm.AddDocument(new Document("one", "Sample", 8));

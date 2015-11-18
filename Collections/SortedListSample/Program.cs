@@ -3,9 +3,9 @@ using static System.Console;
 
 namespace Wrox.ProCSharp.Collections
 {
-    class Program
+    public class Program
     {
-        static void Main()
+        public static void Main()
         {
             var books = new SortedList<string, string>();
             books.Add("Professional WPF Programming", "978–0–470–04180–2");

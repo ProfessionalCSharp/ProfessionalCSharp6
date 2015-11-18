@@ -6,7 +6,7 @@ namespace QueueSample
 {
   public class Program
   {
-    static void Main()
+    public static void Main()
     {
       var dm = new DocumentManager();
 

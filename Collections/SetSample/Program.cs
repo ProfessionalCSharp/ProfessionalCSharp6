@@ -6,7 +6,7 @@ namespace SetSample
 {
     public class Program
     {
-        static void Main()
+        public static void Main()
         {
             var companyTeams = new HashSet<string>() { "Ferrari", "McLaren", "Mercedes" };
             var traditionalTeams = new HashSet<string>() { "Ferrari", "McLaren" };

@@ -4,9 +4,9 @@ using static System.Console;
 
 namespace Wrox.ProCSharp.Collections
 {
-    class Program
+    public class Program
     {
-        static void Main()
+        public static void Main()
         {
             var idTony = new EmployeeId("C3755");
             var tony = new Employee(idTony, "Tony Stewart", 379025.00m);
