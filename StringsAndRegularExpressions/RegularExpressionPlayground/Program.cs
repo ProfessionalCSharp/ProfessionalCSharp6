@@ -15,7 +15,7 @@ namespace RegularExpressionPlayground
             "ASP.NET web applications immediately.";
 
 
-        public void Main()
+        public static void Main()
         {
             Find1(text);
             Find2(text);
@@ -24,7 +24,7 @@ namespace RegularExpressionPlayground
             ReadLine();
         }
 
-        private void NamedGroups()
+        public static void NamedGroups()
         {
             WriteLine("NamedGroups\n");
             string line = "Hey, I've just found this amazing URI at http:// what was it --oh yes https://www.wrox.com or http://www.wrox.com:80";
@@ -47,7 +47,7 @@ namespace RegularExpressionPlayground
 
         }
 
-        private void Groups()
+        public static void Groups()
         {
             WriteLine("Groups\n");
             string line = "Hey, I've just found this amazing URI at http:// what was it --oh yes https://www.wrox.com or http://www.wrox.com:80";
@@ -72,7 +72,7 @@ namespace RegularExpressionPlayground
             WriteLine();
         }
 
-        public void Find1(string text)
+        public static void Find1(string text)
         {
             WriteLine("Find1\n");
             const string pattern = "ion";
@@ -84,7 +84,7 @@ namespace RegularExpressionPlayground
             WriteLine();
         }
 
-        void WriteMatches(string text, MatchCollection matches)
+        public static void WriteMatches(string text, MatchCollection matches)
         {
             WriteLine($"Original text was: \n\n{text}\n");
             WriteLine($"No. of matches: {matches.Count}");
@@ -103,7 +103,7 @@ namespace RegularExpressionPlayground
             }
         }
 
-        void Find2(string text)
+        public static void Find2(string text)
         {
             WriteLine("Find2\n");
             const string pattern = @"\ba\S*ions\b";

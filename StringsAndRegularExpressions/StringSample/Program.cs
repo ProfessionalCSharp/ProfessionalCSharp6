@@ -1,19 +1,18 @@
-﻿using System;
-using System.Text;
+﻿using System.Text;
 using static System.Console;
 
 namespace StringSample
 {
     public class Program
     {
-        public void Main()
+        public static void Main()
         {
             SimpleStrings();
             UsingStringBuilder();
             ReadLine();
         }
 
-        private void UsingStringBuilder()
+        public static void UsingStringBuilder()
         {
             var greetingBuilder =
                 new StringBuilder("Hello from all the guys at Wrox Press. ", 150);
@@ -40,7 +39,7 @@ namespace StringSample
 
         }
 
-        private void SimpleStrings()
+        public static void SimpleStrings()
         {
             string greetingText = "Hello from all the guys at Wrox Press. ";
             greetingText += "We do hope you enjoy this book as much as we enjoyed writing it.";

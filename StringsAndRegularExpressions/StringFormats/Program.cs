@@ -6,10 +6,9 @@ using static System.FormattableString;
 namespace StringFormats
 {
 
-
     public class Program
     {
-        public void Main()
+        public static void Main()
         {
             FormattedStringDemo();
             DateAndNumbers();
@@ -19,14 +18,14 @@ namespace StringFormats
             ReadLine();
         }
 
-        private void UseCustomIFormattable()
+        public static void UseCustomIFormattable()
         {
             var p1 = new Person { FirstName = "Stephanie", LastName = "Nagel" };
             WriteLine(p1.ToString("F"));
             WriteLine($"{p1:F}");
         }
 
-        private void FormattedStringDemo()
+        public static void FormattedStringDemo()
         {
             DateTime today = DateTime.Today;
 
@@ -53,7 +52,7 @@ namespace StringFormats
 
         }
 
-        private void MoreFormattableString()
+        public static void MoreFormattableString()
         {
             int x = 3, y = 4;
             FormattableString s = $"The result of {x} + {y} is {x + y}";
@@ -66,12 +65,12 @@ namespace StringFormats
         }
 
 
-        private string Invariant(FormattableString s) =>
-            s.ToString(CultureInfo.InvariantCulture);
+        //public static string Invariant(FormattableString s) =>
+        //    s.ToString(CultureInfo.InvariantCulture);
         
 
 
-        private void ShowDetails(FormattableString s)
+        public static void ShowDetails(FormattableString s)
         {
             WriteLine($"argument count: {s.ArgumentCount}");
             WriteLine($"format: {s.Format}");
@@ -82,7 +81,7 @@ namespace StringFormats
 
         }
 
-        private void DateAndNumbers()
+        public static void DateAndNumbers()
         {
             var now = new DateTime(2025, 2, 1);
             WriteLine($"{now:D}");
