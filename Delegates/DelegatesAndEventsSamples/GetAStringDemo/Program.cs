@@ -7,7 +7,7 @@ namespace GetAStringDemo
 
     private delegate string GetAString();
 
-    public void Main()
+    public static void Main()
     {
       int x = 40;
       GetAString firstStringMethod = new GetAString(x.ToString);
