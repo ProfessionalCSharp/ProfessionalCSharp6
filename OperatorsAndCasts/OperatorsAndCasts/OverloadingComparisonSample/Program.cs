@@ -5,7 +5,7 @@ namespace OverloadingComparisonSample
 {
     public class Program
     {
-        public void Main()
+        public static void Main()
         {
             var vect1 = new Vector(3.0, 3.0, -10.0);
             var vect2 = new Vector(3.0, 3.0, -10.0);

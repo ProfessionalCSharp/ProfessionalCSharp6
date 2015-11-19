@@ -5,7 +5,7 @@ namespace CustomIndexerSample
 {
     public class Program
     {
-        public void Main()
+        public static void Main()
         {
             var p1 = new Person("Ayrton", "Senna", new DateTime(1960, 3, 21));
             var p2 = new Person("Ronnie", "Peterson", new DateTime(1944, 2, 14));

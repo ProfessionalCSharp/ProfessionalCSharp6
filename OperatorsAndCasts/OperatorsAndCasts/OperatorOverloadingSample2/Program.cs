@@ -4,7 +4,7 @@ namespace OperatorOverloadingSample
 {
   public class Program
   {
-    public void Main()
+    public static void Main()
     {
       // stuff to demonstrate arithmetic operations
       Vector vect1, vect2, vect3;
@@ -20,8 +20,6 @@ namespace OperatorOverloadingSample
       WriteLine($"vect3 += vect2 gives {vect3 += vect2}");
       WriteLine($"vect3 = vect1 * 2 gives {vect3 = vect1 * 2}");
       WriteLine($"vect1 * vect3 = {vect1 * vect3}");
-
-
     }
   }
 }
