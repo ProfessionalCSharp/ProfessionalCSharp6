@@ -6,7 +6,7 @@ namespace SyntaxTreeSample
     public class Program
     {
         // Hello World! Sample Method
-        public void Hello()
+        public static void Hello()
         {
             WriteLine("Hello, World!");
         }
