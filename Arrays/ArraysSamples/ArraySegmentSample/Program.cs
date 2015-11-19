@@ -3,9 +3,9 @@ using static System.Console;
 
 namespace ArraySegmentSample
 {
-    class Program
+    public class Program
     {
-        static void Main()
+        public static void Main()
         {
             int[] ar1 = { 1, 4, 5, 11, 13, 18 };
             int[] ar2 = { 3, 4, 5, 18, 21, 27, 33 };

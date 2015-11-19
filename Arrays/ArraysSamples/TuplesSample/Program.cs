@@ -3,9 +3,9 @@ using static System.Console;
 
 namespace TuplesSample
 {
-    class Program
+    public class Program
     {
-        static void Main()
+        public static void Main()
         {
             Tuple<string, string> name = new Tuple<string, string>("Jochen", "Rindt");
             WriteLine(name.ToString());
