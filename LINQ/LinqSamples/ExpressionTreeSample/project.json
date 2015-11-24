@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0-*",
+  "description": "ExpressionTreeSample Console Application",
+  "authors": [ "chris" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
+  "dependencies": {
+    "DataLib": "1.0.0-*",
+    "Microsoft.CSharp": "4.0.1-rc2-23513",
+    "System.Collections": "4.0.11-rc2-23513",
+    "System.Linq": "4.0.1-rc2-23513",
+    "System.Linq.Expressions": "4.0.11-rc2-23519",
+    "System.Console": "4.0.0-rc2-23513",
+    "System.Threading": "4.0.11-rc2-23513"
+  },
+
+  "commands": {
+    "ExpressionTreeSample": "ExpressionTreeSample"
+  },
+
+  "frameworks": {
+    "dnx46": {
+      "dependencies": {
+
+      }
+    },
+    "dnxcore50": {
+      "dependencies": {
+      }
+    }
+  }
+}

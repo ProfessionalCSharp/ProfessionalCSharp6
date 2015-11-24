@@ -1,0 +1,25 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "DataLib Class Library",
+  "authors": [ "chris" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+  "frameworks": {
+    "net451": {
+      "dependencies": {
+        "System.Collections": "4.0.11-rc2-23513",
+        "System.Runtime": "4.0.21-rc2-23513",
+        "System.Threading": "4.0.11-rc2-23513"
+      }
+    },
+    "dotnet5.4": {
+      "dependencies": {
+      }
+    }
+  },
+  "dependencies": {
+    "Microsoft.CSharp": "4.0.1-rc2-23513",
+    "System.Linq": "4.0.1-rc2-23513"
+  }
+}
