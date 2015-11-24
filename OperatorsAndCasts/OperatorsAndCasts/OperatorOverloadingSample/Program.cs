@@ -4,7 +4,7 @@ namespace OperatorOverloadingSample
 {
   public class Program
   {
-    public void Main()
+    public static void Main()
     {
       Vector vect1, vect2, vect3;
 
