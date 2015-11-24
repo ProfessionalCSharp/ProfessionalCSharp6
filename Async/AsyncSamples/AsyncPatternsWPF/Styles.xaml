@@ -1,0 +1,30 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush Color="Black" x:Key="backgroundBrush" />
+    <LinearGradientBrush x:Key="foregroundBrush" StartPoint="0.5,0" EndPoint="0.5,1">
+        <LinearGradientBrush.GradientStops>
+            <GradientStop Offset="0" Color="LightGray" />
+            <GradientStop Offset="1" Color="Transparent" />
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="linearBackgroundBrush" StartPoint="0.5,0" EndPoint="0.5,1">
+        <GradientStop Offset="0" Color="DarkGray" />
+        <GradientStop Offset="0.6" Color="Black" />
+        <GradientStop Offset="1" Color="Black" />
+    </LinearGradientBrush>
+    <Style TargetType="Button">
+        <Setter Property="Margin" Value="4" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Rectangle RadiusX="7" RadiusY="7" Fill="{StaticResource backgroundBrush}">
+                        </Rectangle>
+                        <Rectangle RadiusX="5" RadiusY="5" Fill="{StaticResource foregroundBrush}"></Rectangle>
+                        <TextBlock FontFamily="Segoe UI" Margin="4" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{TemplateBinding Content}" Foreground="White" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

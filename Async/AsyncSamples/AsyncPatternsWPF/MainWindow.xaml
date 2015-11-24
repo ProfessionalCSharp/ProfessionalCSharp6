@@ -1,0 +1,52 @@
+﻿<Window x:Class="AsyncPatternsWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AsyncPatternsWPF"
+        mc:Ignorable="d"
+        Title="Async Demo" Height="450" Width="1170" Background="Black">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Row="0">
+            <StackPanel.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </StackPanel.LayoutTransform>
+            <TextBox Text="{Binding SearchTerm}" Width="200" Margin="4" />
+            <Button Click="OnClear">Clear</Button>
+            <Button Click="OnSearchSync">Sync</Button>
+            <Button Click="OnSearchAsyncPattern">Async</Button>
+            <Button Click="OnAsyncEventPattern">Async Event</Button>
+            <Button Click="OnTaskBasedAsyncPattern">Task-Based Async</Button>
+            <Button Click="OnCancel">Cancel</Button>
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="3*" />
+            </Grid.ColumnDefinitions>
+            <ListBox Grid.IsSharedSizeScope="True" VirtualizingPanel.IsVirtualizing="False" ItemsSource="{Binding List}" Grid.Column="0" IsSynchronizedWithCurrentItem="True" Background="Black">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition SharedSizeGroup="ItemTemplateGroup" />
+                            </Grid.ColumnDefinitions>
+                            <StackPanel HorizontalAlignment="Stretch" Orientation="Vertical" Background="{StaticResource linearBackgroundBrush}">
+                                <TextBlock Text="{Binding Source}" Foreground="White" />
+                                <TextBlock Text="{Binding Title}" Foreground="White" />
+                                <Image HorizontalAlignment="Center" Source="{Binding ThumbnailUrl}" Width="100" />
+                            </StackPanel>
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <GridSplitter Grid.Column="1" Width="3" HorizontalAlignment="Left" />
+            <Image Grid.Column="1" Source="{Binding List/Url}" />
+        </Grid>
+
+    </Grid>
+</Window>
