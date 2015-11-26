@@ -26,6 +26,8 @@ Chapter 12 - Special Collections
 
 Chapter 13 - Language Integrated Query (LINQ)
 
+Chapter 14 - Errors and Exceptions
+
 Chapter 15 - Asynchronous Programming
 
 Chapter 18 - Compiler Platform
