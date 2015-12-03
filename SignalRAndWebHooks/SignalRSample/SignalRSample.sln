@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24713.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatServer", "ChatServer\ChatServer.csproj", "{56C254CA-65F8-4F4C-B5A2-407B9B847305}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFChatClient", "WPFChatClient\WPFChatClient.csproj", "{1B8DD01B-69F5-4EDA-89E4-72F1FBA082BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMLib", "MVVMLib\MVVMLib.csproj", "{E51A70B2-15CC-4DBC-B473-2E486CD55C1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56C254CA-65F8-4F4C-B5A2-407B9B847305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56C254CA-65F8-4F4C-B5A2-407B9B847305}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56C254CA-65F8-4F4C-B5A2-407B9B847305}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56C254CA-65F8-4F4C-B5A2-407B9B847305}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B8DD01B-69F5-4EDA-89E4-72F1FBA082BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B8DD01B-69F5-4EDA-89E4-72F1FBA082BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B8DD01B-69F5-4EDA-89E4-72F1FBA082BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B8DD01B-69F5-4EDA-89E4-72F1FBA082BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E51A70B2-15CC-4DBC-B473-2E486CD55C1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E51A70B2-15CC-4DBC-B473-2E486CD55C1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E51A70B2-15CC-4DBC-B473-2E486CD55C1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E51A70B2-15CC-4DBC-B473-2E486CD55C1A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Client Sample</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+
+    <script src="Scripts/jquery-1.11.3.js"></script> 
+    <script src="Scripts/jquery.signalR-2.2.0.js"></script>
+    <script src="signalr/hubs"></script>
+    <script>
+        $(function () {
+            var chat = $.connection.chatHub;
+
+            chat.client.broadcastMessage = function (name, message) {
+                var encodedName = $('<div />').text(name).html();
+                var encodedMessage = $('<div />').text(message).html();
+                $('#messages').append('<li>' + encodedName + ':&nbsp;&nbsp;' + encodedMessage + '</li>');
+            };
+
+            $.connection.hub.start().done(function () {
+                $('#sendmessage').click(function () {
+                    chat.server.send($('#name').val(), $('#message').val());
+                    $('#message').val('');
+                    $('#message').focus();
+                });
+            });
+        });
+    </script>
+
+    Enter your name <input type="text" id="name" />
+    <br />
+    Message <input type="text" id="message" />
+    <button type="button" id="sendmessage">Send</button>
+    <br />
+    <ul id="messages">
+    </ul>
+</body>
+</html>
