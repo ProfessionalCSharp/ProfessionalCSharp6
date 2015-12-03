@@ -1,0 +1,37 @@
+{
+  "version": "1.0.0-*",
+  "description": "",
+  "authors": [ "" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+    "Microsoft.CSharp": "4.0.1-rc2-23602",
+    "System.Collections": "4.0.11-rc2-23602",
+    "System.Console": "4.0.0-rc2-23602",
+    "System.Linq": "4.0.1-rc2-23602",
+    "System.Reflection": "4.1.0-rc2-23602",
+    "System.Reflection.Extensions": "4.0.1-rc2-23602",
+    "System.Reflection.TypeExtensions": "4.1.0-rc2-23602",
+    "System.Runtime.Extensions": "4.0.11-rc2-23602",
+    "VectorClass": "1.0.0-*",
+    "WhatsNewAttributes": "1.0.0-*"
+  },
+
+  "commands": {
+    "LookupWhatsNew": "LookupWhatsNew"
+  },
+
+  "frameworks": {
+    "dnx46": {
+      "dependencies": {
+
+      }
+    },
+    "dnxcore50": {
+      "dependencies": {
+      }
+    }
+  }
+}
