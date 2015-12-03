@@ -36,6 +36,7 @@ Chapter 18 - Compiler Platform
 
 Chapter 38 - Entity Framework
 
+Chapter 43 - WebHooks and SignalR
 
 
 
