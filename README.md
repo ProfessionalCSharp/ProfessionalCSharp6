@@ -32,6 +32,8 @@ Chapter 14 - Errors and Exceptions
 
 Chapter 15 - Asynchronous Programming
 
+Chapter 16 - Reflection, Metadata, and Dynamic Programming
+
 Chapter 18 - Compiler Platform
 
 Chapter 38 - Entity Framework
