@@ -1,0 +1,60 @@
+﻿<Window x:Class="DLRHostSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DLRHostSample"
+        mc:Ignorable="d"
+        Title="DLR Host Sample" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Vertical" Grid.Row="0" >
+            <RadioButton Content="Discount Based on Cost"  HorizontalAlignment="Left" Margin="5" Name="CostRadioButton" VerticalAlignment="Top" IsChecked="True"  />
+            <RadioButton Content="Discount Based on No of Items" HorizontalAlignment="Left" Margin="5" Name="CountRadioButton" VerticalAlignment="Top"  />
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="Total No of Items:" Height="28" HorizontalAlignment="Left" Margin="5" Name="label1" VerticalAlignment="Top" Width="120"  />
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="Total Amount:" Height="28" HorizontalAlignment="Left" Margin="5" Name="label3" VerticalAlignment="Top" Width="120"  />
+            <TextBox  Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Margin="5" Name="totalItems" VerticalAlignment="Top" Width="47" />
+            <TextBox Grid.Row="1" Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="5" Name="totalAmt" VerticalAlignment="Top" Width="47" />
+
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="Discounted Amount:" Height="28" HorizontalAlignment="Left" Margin="5" Name="label4" VerticalAlignment="Top" Width="120" />
+            <TextBlock Grid.Row="0" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="5" Name="textDiscAmount" VerticalAlignment="Top" Width="47"  />
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="Amount With Tax:" Grid.ColumnSpan="2" Height="28" HorizontalAlignment="Left" Margin="5" Name="label2" VerticalAlignment="Top" Width="120" />
+            <TextBlock Grid.Row="1" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="5" Name="textTaxAmount" VerticalAlignment="Top" Width="47" />
+
+        </Grid>
+
+
+        <StackPanel Grid.Row="3" HorizontalAlignment="Center">
+            <Button Content="Calculate Discount" Padding="4" HorizontalAlignment="Left" Margin="5" Name="button1" Width="120" VerticalAlignment="Top" Click="OnCalculateDiscount" />
+            <Button Content="Calculate Tax" Padding="4" HorizontalAlignment="Left" Margin="5" Name="button2" Width="120" VerticalAlignment="Top" Click="OnCalculateTax" />
+        </StackPanel>
+
+
+    </Grid>
+</Window>
