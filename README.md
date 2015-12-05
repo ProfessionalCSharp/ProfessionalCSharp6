@@ -1,7 +1,7 @@
 # ProfessionalCSharp6
 Code samples for the Wrox book Professional C# 6
 
-Samples are updated to .NET 5 Core RC. To compile the samples zou need Visual Studio 2015 and ASP.NET 5 Tools:
+Samples are updated to .NET 5 Core RC. To compile the samples you need Visual Studio 2015 and ASP.NET 5 Tools:
 http://docs.asp.net/en/latest/getting-started/installing-on-windows.html
 
 With some samples, additional NuGet feeds might be needed.
@@ -31,6 +31,8 @@ Chapter 13 - Language Integrated Query (LINQ)
 Chapter 14 - Errors and Exceptions
 
 Chapter 15 - Asynchronous Programming
+
+Chapter 16 - Reflection, Metadata, and Dynamic Programming
 
 Chapter 18 - Compiler Platform
 
