@@ -1,4 +1,4 @@
-﻿{
+{
   "version": "1.0.0-*",
   "description": "PointerPlayground Console Application",
   "authors": [ "christian" ],
@@ -8,6 +8,11 @@
   "compilationOptions": {"allowUnsafe": true},
 
   "dependencies": {
+    "Microsoft.CSharp": "4.0.1-rc2-23604",
+    "System.Collections": "4.0.11-rc2-23604",
+    "System.Console": "4.0.0-rc2-23604",
+    "System.Linq": "4.0.1-rc2-23604",
+    "System.Threading": "4.0.11-rc2-23604"
   },
 
   "commands": {
@@ -15,14 +20,13 @@
   },
 
   "frameworks": {
-    "dnx46": { },
+    "dnx46": {
+      "dependencies": {
+
+      }
+    },
     "dnxcore50": {
       "dependencies": {
-        "Microsoft.CSharp": "4.0.1-beta-23409",
-        "System.Collections": "4.0.11-beta-23409",
-        "System.Console": "4.0.0-beta-23409",
-        "System.Linq": "4.0.1-beta-23409",
-        "System.Threading": "4.0.11-beta-23409"
       }
     }
   }

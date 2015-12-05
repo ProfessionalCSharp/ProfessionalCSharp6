@@ -5,17 +5,22 @@
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
-
   "frameworks": {
-    "dnx46": { },
+    "dnx46": {
+      "dependencies": {
+
+      }
+    },
     "dnxcore50": {
       "dependencies": {
-        "Microsoft.CSharp": "4.0.1-beta-23409",
-        "System.IO": "4.0.11-beta-23409",
-        "System.Runtime": "4.0.21-beta-23409",
-        "System.Runtime.InteropServices": "4.0.21-beta-23409",
-        "System.Threading": "4.0.11-beta-23409"
       }
     }
+  },
+  "dependencies": {
+    "Microsoft.CSharp": "4.0.1-rc2-23604",
+    "System.IO": "4.0.11-rc2-23604",
+    "System.Runtime": "4.0.21-rc2-23604",
+    "System.Runtime.InteropServices": "4.0.21-rc2-23604",
+    "System.Threading": "4.0.11-rc2-23604"
   }
 }
