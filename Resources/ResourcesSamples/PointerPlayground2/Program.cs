@@ -4,7 +4,7 @@ namespace PointerPlayground2
 {
     public class Program
     {
-        unsafe public void Main()
+        unsafe public static void Main()
         {
             WriteLine($"Size of CurrencyStruct struct is {sizeof(CurrencyStruct)}");
             CurrencyStruct amount1, amount2;

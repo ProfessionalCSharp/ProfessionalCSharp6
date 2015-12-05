@@ -4,7 +4,7 @@ namespace QuickArray
 {
     public class Program
     {
-        unsafe public void Main()
+        unsafe public static void Main()
         {
             Write("How big an array do you want? \n> ");
             string userInput = ReadLine();

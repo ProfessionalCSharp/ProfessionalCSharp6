@@ -4,7 +4,7 @@ namespace PointerPlayground
 {
     public class Program
     {
-        unsafe public void Main(string[] args)
+        unsafe public static void Main(string[] args)
         {
             int x = 10;
             short y = -1;
