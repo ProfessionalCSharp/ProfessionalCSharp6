@@ -10,7 +10,8 @@
     "Microsoft.CSharp": "4.0.1-rc2-23604",
     "System.Collections": "4.0.11-rc2-23604",
     "System.Console": "4.0.0-rc2-23604",
-    "System.Linq": "4.0.1-rc2-23604"
+    "System.Linq": "4.0.1-rc2-23604",
+    "System.Threading": "4.0.11-rc2-23604"
   },
 
   "commands": {
@@ -20,7 +21,6 @@
   "frameworks": {
     "dnx46": {
       "dependencies": {
-        "System.Threading": "4.0.11-rc2-23604"
       }
     },
     "dnxcore50": {

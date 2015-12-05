@@ -4,7 +4,7 @@ namespace VirtualMethods
 {
     public class Program
     {
-        public void Main()
+        public static void Main()
         {
             var r = new Rectangle();
             r.Position.X = 33;
@@ -22,7 +22,7 @@ namespace VirtualMethods
 
         }
 
-        public void DrawShape(Shape shape)
+        public static void DrawShape(Shape shape)
         {
             shape.Draw();
         }
