@@ -1,0 +1,59 @@
+﻿<Window x:Class="PrintingDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PrintingDemo"
+        mc:Ignorable="d"
+        Title="Printing Demo" Height="350" Width="525">
+    <Canvas x:Name="canvas1">
+        <Ellipse Canvas.Left="10" Canvas.Top="20" Width="180" Height="60" Stroke="Red" StrokeThickness="3" >
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Offset="0" Color="LightBlue" />
+                    <GradientStop Offset="1" Color="DarkBlue" />
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Rectangle Width="180" Height="90" Canvas.Left="50" Canvas.Top="50">
+            <Rectangle.LayoutTransform>
+                <RotateTransform Angle="30" />
+            </Rectangle.LayoutTransform>
+            <Rectangle.Fill>
+                <LinearGradientBrush>
+                    <GradientStop Offset="0" Color="Aquamarine" />
+                    <GradientStop Offset="1" Color="ForestGreen" />
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+            <Rectangle.Stroke>
+                <LinearGradientBrush>
+                    <GradientStop Offset="0" Color="LawnGreen" />
+                    <GradientStop Offset="1" Color="SeaGreen" />
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Button Canvas.Left="90" Canvas.Top="190" Content="Print" Click="OnPrint">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Ellipse Grid.Row="0" Grid.RowSpan="2" Width="60" Height="40" Fill="Yellow" />
+                        <Ellipse Grid.Row="0" Width="52" Height="20" HorizontalAlignment="Center">
+                            <Ellipse.Fill>
+                                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                    <GradientStop Color="White" Offset="0" />
+                                    <GradientStop Color="Transparent" Offset="0.9" />
+                                </LinearGradientBrush>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <ContentPresenter Grid.Row="0"  Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Grid>
+
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+    </Canvas>
+</Window>

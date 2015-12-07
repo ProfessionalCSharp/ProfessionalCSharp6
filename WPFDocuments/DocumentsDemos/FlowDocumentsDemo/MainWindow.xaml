@@ -1,0 +1,33 @@
+﻿<Window x:Class="FlowDocumentsDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlowDocumentsDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid x:Name="grid1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <ComboBox ItemsSource="{Binding Readers}" Grid.Row="0" Grid.Column="0" Margin="4" SelectionChanged="OnReaderSelectionChanged" SelectedIndex="0">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="{Binding Name}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <Button Grid.Column="1" Margin="4" Padding="3" Click="OnOpenDocument">Open Document</Button>
+        <FlowDocumentReader ViewingMode="TwoPage" Grid.Row="1" Visibility="Collapsed" Grid.ColumnSpan="2" />
+        <RichTextBox IsDocumentEnabled="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Visibility="Collapsed" Grid.Row="1" Grid.ColumnSpan="2" />
+        <FlowDocumentScrollViewer Visibility="Collapsed" Grid.Row="1" Grid.ColumnSpan="2" />
+        <FlowDocumentPageViewer Visibility="Collapsed" Grid.Row="1" Grid.ColumnSpan="2" />
+    </Grid>
+</Window>

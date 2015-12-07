@@ -1,0 +1,50 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              ColumnWidth="300" FontSize="16" FontFamily="Segoe UI" ColumnRuleWidth="3" ColumnRuleBrush="Violet">
+    <Paragraph TextIndent="10"  FontSize="24" KeepWithNext="True">
+        <Bold>
+            <Run>Mary had a little lamb</Run>
+        </Bold>
+    </Paragraph>
+    <Paragraph KeepWithNext="True">
+        <Floater HorizontalAlignment="Left" Width="120">
+            <Paragraph Background="LightGray">
+                <Run>Sarah Josepha Hale</Run>
+            </Paragraph>
+        </Floater>
+    </Paragraph>
+
+    <Paragraph KeepTogether="True">
+        <Run>
+            Mary had a little lamb,
+        </Run>
+        <LineBreak />
+        <Run>
+            little lamb, little lamb,
+        </Run>
+        <LineBreak />
+        <Run>
+            Mary had a little lamb,
+        </Run>
+        <LineBreak />
+        <Run>
+            whose fleece was white as snow.
+        </Run>
+        <LineBreak />
+        <Run>
+            And everywhere that Mary went,
+        </Run>
+        <LineBreak />
+        <Run>
+            Mary went, Mary went,
+        </Run>
+        <LineBreak />
+        <Run>
+            and everywhere that Mary went,
+        </Run>
+        <LineBreak />
+        <Run>
+            the lamb was sure to go.
+        </Run>
+
+    </Paragraph>
+</FlowDocument>

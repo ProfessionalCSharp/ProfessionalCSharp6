@@ -1,0 +1,74 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              ColumnWidth="300" FontSize="16" FontFamily="Segoe UI" ColumnRuleWidth="0" ColumnRuleBrush="Violet">
+    <Paragraph TextIndent="10"  FontSize="24" KeepWithNext="True">
+        <Bold>
+            <Run>Mary had a little lamb</Run>
+        </Bold>
+    </Paragraph>
+
+    <Paragraph KeepTogether="True">
+        <Run>
+            Mary had a little lamb,
+        </Run>
+        <LineBreak />
+        <Run>
+            little lamb, little lamb,
+        </Run>
+        <LineBreak />
+        <Run>
+            Mary had a little lamb,
+        </Run>
+        <LineBreak />
+        <Run>
+            whose fleece was white as snow.
+        </Run>
+        <LineBreak />
+        <Run>
+            And everywhere that Mary went,
+        </Run>
+        <LineBreak />
+        <Run>
+            Mary went, Mary went,
+        </Run>
+        <LineBreak />
+        <Run>
+            and everywhere that Mary went,
+        </Run>
+        <LineBreak />
+        <Run>
+            the lamb was sure to go.
+        </Run>
+    </Paragraph>
+
+    <Paragraph>
+        <Figure HorizontalAnchor="PageCenter" HorizontalOffset="20" VerticalAnchor="PageCenter"  VerticalOffset="20" WrapDirection="Both" >
+            <Paragraph Background="LightGray" FontSize="24">
+                <Run>Lyrics Samples</Run>
+            </Paragraph>
+        </Figure>
+    </Paragraph>
+
+
+    <Paragraph TextIndent="10" FontSize="24" KeepWithNext="True">
+        <Bold>
+            <Run>Humpty Dumpty</Run>
+        </Bold>
+    </Paragraph>
+    <Paragraph KeepTogether="True">
+        <Run>Humpty dumpty sat on a wall</Run>
+        <LineBreak />
+        <Run>
+            Humpty dumpty had a great fall</Run>
+        <LineBreak />
+        <Run>
+            All the King's horses</Run>
+        <LineBreak />
+        <Run>
+            And all the King's men</Run>
+        <LineBreak />
+        <Run>
+            Couldn't put Humpty together again
+        </Run>
+    </Paragraph>
+
+</FlowDocument>

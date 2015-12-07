@@ -1,0 +1,36 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:local="clr-namespace:FlowDocumentsDemo"
+              ColumnWidth="400" FontSize="14" FontFamily="Georgia">
+    <Paragraph TextAlignment="Center" >
+        <Span FontSize="36" FontFamily="Mangal">
+            <Bold>cn|elements</Bold>
+        </Span>
+        <LineBreak />
+        <LineBreak />
+        <InlineUIContainer>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <ComboBox Width="140"  Margin="3" Grid.Row="0">
+                    <ComboBoxItem Content="Filet Mignon" />
+                    <ComboBoxItem Content="Rib Eye" />
+                    <ComboBoxItem Content="Sirloin" />
+                </ComboBox>
+
+                <StackPanel Grid.Row="0" Grid.RowSpan="2" Grid.Column="1">
+                    <RadioButton Content="Raw" />
+                    <RadioButton Content="Medium" />
+                    <RadioButton Content="Well done" />
+                </StackPanel>
+                <TextBox Grid.Row="1" Grid.Column="0" Width="140" />
+            </Grid>
+        </InlineUIContainer>
+
+    </Paragraph>
+</FlowDocument>
