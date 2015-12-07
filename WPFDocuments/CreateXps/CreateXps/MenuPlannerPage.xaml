@@ -1,0 +1,42 @@
+﻿<Page x:Class="CreateXps.MenuPlannerPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CreateXps"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Document Page">
+    <Grid>
+        <Grid.Resources>
+            <DataTemplate x:Key="RemoveDay">
+                <Button Click="OnRemoveDay">-</Button>
+            </DataTemplate>
+
+            <DataTemplate x:Key="AddDay">
+                <Button Click="OnAddDay">+</Button>
+            </DataTemplate>
+        </Grid.Resources>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <DatePicker x:Name="daySelection" Grid.Row="0" FirstDayOfWeek="Monday" SelectedDateFormat="Long" Margin="4" SelectedDateChanged="OnDateSelection" />
+        <DataGrid x:Name="gridMenus" Grid.Row="1" ItemsSource="{Binding}" AutoGenerateColumns="False" GridLinesVisibility="None" CanUserDeleteRows="False" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn IsReadOnly="True" Header="Day" Binding="{Binding Day, StringFormat=ddd}" />
+                <DataGridTemplateColumn CellTemplate="{StaticResource RemoveDay}" />
+                <DataGridTemplateColumn CellTemplate="{StaticResource AddDay}" />
+                <DataGridTextColumn IsReadOnly="False" Header="Menu" MinWidth="150" Binding="{Binding Menu}" />
+                <DataGridTextColumn IsReadOnly="False" Header="Price" Binding="{Binding Price}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Click="OnSaveConfig" Content="Save Config" Margin="5" Padding="5" ToolTip="Change Week Configuration" />
+            <Button Click="OnCreateDoc" Content="Create Doc" Margin="5" Padding="5" IsDefault="True" ToolTip="Create XPS Document" />
+        </StackPanel>
+
+    </Grid>
+</Page>

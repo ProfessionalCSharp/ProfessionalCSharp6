@@ -1,0 +1,6 @@
+﻿<NavigationWindow x:Class="CreateXps.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="cn|elements Menu Planner" Height="300" Width="300" Source="MenuPlannerPage.xaml" ShowsNavigationUI="False">
+
+</NavigationWindow>
