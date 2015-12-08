@@ -36,6 +36,8 @@ Chapter 16 - Reflection, Metadata, and Dynamic Programming
 
 Chapter 18 - Compiler Platform
 
+Chapter 35 - Creating Documents with WPF
+
 Chapter 38 - Entity Framework
 
 Chapter 43 - WebHooks and SignalR
