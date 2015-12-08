@@ -64,8 +64,6 @@ namespace CreateXps
             if (date.DayOfWeek != DayOfWeek.Monday) // start the menu with Monday
             {
                 date = date + TimeSpan.FromDays(-((int)date.DayOfWeek - 1));
-                daySelection.SelectedDate = date; // fire event once more
-                return;
             }
 
             FillMenuList(date);
