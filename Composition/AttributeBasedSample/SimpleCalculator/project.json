@@ -1,0 +1,9 @@
+﻿{
+  "supports": {},
+  "dependencies": {
+    "Microsoft.Composition": "1.0.30"
+  },
+  "frameworks": {
+    ".NETPortable,Version=v4.6,Profile=Profile44": {}
+  }
+}
