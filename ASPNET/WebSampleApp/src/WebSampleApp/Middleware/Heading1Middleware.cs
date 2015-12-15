@@ -21,12 +21,11 @@ namespace WebSampleApp.Middleware
         }
     }
 
+
     // Extension method used to add the middleware to the HTTP request pipeline.
     public static class Heading1MiddlewareExtensions
     {
-        public static IApplicationBuilder UseHeading1Middleware(this IApplicationBuilder builder)
-        {
-            return builder.UseMiddleware<Heading1Middleware>();
-        }
+        public static IApplicationBuilder UseHeading1Middleware(this IApplicationBuilder builder) =>
+             builder.UseMiddleware<Heading1Middleware>(); 
     }
 }

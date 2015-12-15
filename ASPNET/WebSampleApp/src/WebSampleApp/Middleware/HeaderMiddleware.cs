@@ -1,12 +1,10 @@
 ﻿using Microsoft.AspNet.Builder;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNet.Http;
+using System.Threading.Tasks;
 
 namespace WebSampleApp.Middleware
 {
+    // You may need to install the Microsoft.AspNet.Http.Abstractions package into your project
     public class HeaderMiddleware
     {
         private readonly RequestDelegate _next;
@@ -18,7 +16,8 @@ namespace WebSampleApp.Middleware
 
         public Task Invoke(HttpContext httpContext)
         {
-            httpContext.Response.Headers.Add("sampleheader", new string[] { "from addheadermiddleware" });
+            httpContext.Response.Headers.Add("sampleheader",
+              new string[] { "addheadermiddleware" });
             return _next(httpContext);
         }
     }
@@ -26,9 +25,7 @@ namespace WebSampleApp.Middleware
     // Extension method used to add the middleware to the HTTP request pipeline.
     public static class HeaderMiddlewareExtensions
     {
-        public static IApplicationBuilder UseHeaderMiddleware(this IApplicationBuilder builder)
-        {
-            return builder.UseMiddleware<HeaderMiddleware>();
-        }
+        public static IApplicationBuilder UseHeaderMiddleware(this IApplicationBuilder builder) =>
+             builder.UseMiddleware<HeaderMiddleware>();
     }
 }

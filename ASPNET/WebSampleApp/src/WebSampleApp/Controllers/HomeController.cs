@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Microsoft.AspNet.Http;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using WebSampleApp.Services;
-using System.Text;
-using Microsoft.AspNet.Http;
-
-// For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace WebSampleApp.Controllers
 {
@@ -22,10 +18,12 @@ namespace WebSampleApp.Controllers
         {
             var sb = new StringBuilder();
             sb.Append("<ul>");
-            sb.Append(string.Join("", _service.GetSampleStrings().Select(s => $"<li>{s}</li>").ToArray()));
+            sb.Append(string.Join("", _service.GetSampleStrings().Select(
+                s => $"<li>{s}</li>").ToArray()));
             sb.Append("</ul>");
             await context.Response.WriteAsync(sb.ToString());
             return 200;
         }
     }
+
 }

@@ -1,41 +1,41 @@
-{
-  "webroot": "wwwroot",
-  "version": "1.0.0-*",
-
-  "dependencies": {
-    "Microsoft.AspNet.Http.Abstractions": "1.0.0-beta8",
-    "Microsoft.AspNet.IISPlatformHandler": "1.0.0-beta8",
-    "Microsoft.AspNet.Server.Kestrel": "1.0.0-beta8",
-    "Microsoft.AspNet.Session": "1.0.0-beta8",
-    "Microsoft.AspNet.StaticFiles": "1.0.0-beta8",
-    "Microsoft.Framework.Caching.Memory": "1.0.0-beta8-15627",
-    "Microsoft.Framework.Primitives": "1.0.0-beta8-15641",
-    "Microsoft.Framework.WebEncoders.Core": "1.0.0-beta8-15630",
-    "Microsoft.Framework.Configuration": "1.0.0-beta8",
-    "Microsoft.Framework.Configuration.Abstractions": "1.0.0-beta8",
-    "Newtonsoft.Json": "7.0.1"
-  },
-
+﻿{
   "commands": {
     "web": "Microsoft.AspNet.Server.Kestrel"
   },
-
-  "frameworks": {
-    "dnx451": { },
-    "dnxcore50": {
-      "dependencies": {
-        "System.Globalization": "4.0.11-beta-23409",
-        "System.Runtime": "4.0.21-beta-23409"
-      }
-    }
+  "compilationOptions": {
+    "emitEntryPoint": true
   },
-
+  "dependencies": {
+    "Microsoft.AspNet.Http.Abstractions": "1.0.0-*",
+    "Microsoft.AspNet.IISPlatformHandler": "1.0.0-*",
+    "Microsoft.AspNet.Server.Kestrel": "1.0.0-*",
+    "Microsoft.AspNet.StaticFiles": "1.0.0-*",
+    "Microsoft.AspNet.Session": "1.0.0-*",
+    "Microsoft.Extensions.Caching.Memory": "1.0.0-*",
+    "Newtonsoft.Json": "8.0.1-beta3",
+    "System.Runtime": "4.0.21-*",
+    "System.Text.Encodings.Web": "4.0.0-*",
+    "System.Globalization": "4.0.11-*",
+    "Microsoft.Extensions.PlatformAbstractions": "1.0.0-*",
+    "Microsoft.Extensions.Configuration": "1.0.0-*",
+    "Microsoft.Extensions.Configuration.Abstractions": "1.0.0-*",
+    "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0-*"
+  },
   "exclude": [
     "wwwroot",
     "node_modules"
   ],
+  "frameworks": {
+    "dnx451": {
+      "dependencies": {
+      }
+    },
+    "dnxcore50": { }
+  },
   "publishExclude": [
     "**.user",
     "**.vspscc"
-  ]
+  ],
+  "userSecretsId": "aspnet5-WebSampleApp-20151215011720",
+  "version": "1.0.0-*"
 }
