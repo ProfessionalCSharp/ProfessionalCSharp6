@@ -36,6 +36,8 @@ Chapter 16 - Reflection, Metadata, and Dynamic Programming
 
 Chapter 18 - Compiler Platform
 
+Chapter 26 - Composition
+
 Chapter 35 - Creating Documents with WPF
 
 Chapter 38 - Entity Framework
