@@ -38,6 +38,8 @@ Chapter 18 - Compiler Platform
 
 Chapter 23 - Files and Streams
 
+Chapter 24 - Security
+
 Chapter 26 - Composition
 
 Chapter 35 - Creating Documents with WPF
