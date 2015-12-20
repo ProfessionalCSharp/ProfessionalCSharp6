@@ -1,0 +1,27 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "",
+  "authors": [ "" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+    "Microsoft.CSharp": "4.0.1-rc2-23618",
+    "System.Console": "4.0.0-rc2-23618",
+    "System.Security.Cryptography.Cng": "4.0.0-rc2-23618",
+    "System.Security.Cryptography.Algorithms": "4.0.0-rc2-23618"
+  },
+
+  "commands": {
+    "SecureTransfer": "SecureTransfer"
+  },
+
+  "frameworks": {
+    "dnx46": {
+      "dependencies": {
+
+      }
+    }
+  }
+}
