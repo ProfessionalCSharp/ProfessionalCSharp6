@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0-*",
+  "description": "Utilities Console Application",
+  "authors": [ "Christian" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+    "Microsoft.CSharp": "4.0.1-rc2-23618",
+    "System.Console": "4.0.0-rc2-23618",
+    "System.Net.Primitives": "4.0.11-rc2-23618"
+  },
+
+  "commands": {
+    "Utilities": "Utilities"
+  },
+
+  "frameworks": {
+    "dnx46": {
+      "dependencies": {
+      },
+      "frameworkAssemblies": {
+      }
+    },
+    "dnxcore50": {
+      "dependencies": {
+
+      }
+    }
+  }
+}
