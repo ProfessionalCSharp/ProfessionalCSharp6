@@ -40,6 +40,8 @@ Chapter 23 - Files and Streams
 
 Chapter 24 - Security
 
+Chapter 25 - Networking
+
 Chapter 26 - Composition
 
 Chapter 35 - Creating Documents with WPF
