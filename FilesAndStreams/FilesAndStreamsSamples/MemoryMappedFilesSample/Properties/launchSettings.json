@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MemoryMappedFilesSample": {
+      "commandName": "MemoryMappedFilesSample",
+      "commandLineArgs": "-s"
+    }
+  }
+}

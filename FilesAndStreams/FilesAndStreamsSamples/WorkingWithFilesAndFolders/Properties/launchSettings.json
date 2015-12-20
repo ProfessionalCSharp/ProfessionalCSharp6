@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "WorkingWithFilesAndFolders": {
+      "commandName": "WorkingWithFilesAndFolders",
+      "commandLineArgs": "-p"
+    }
+  }
+}

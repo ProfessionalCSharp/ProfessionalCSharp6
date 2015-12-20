@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "StreamSamples": {
+      "commandName": "StreamSamples",
+      "commandLineArgs": "-r"
+    }
+  }
+}
