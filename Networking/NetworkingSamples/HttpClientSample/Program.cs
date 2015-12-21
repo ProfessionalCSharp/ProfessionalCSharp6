@@ -162,7 +162,7 @@ namespace HttpClientSample
             try
             {
                 using (var client = new HttpClient(new SampleMessageHandler("error")))
-                {
+                {    
                     client.DefaultRequestHeaders.Add("Accept", "application/json;odata=verbose");
                     ShowHeaders("Request Headers:", client.DefaultRequestHeaders);
 

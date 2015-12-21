@@ -2,7 +2,7 @@
   "profiles": {
     "HttpClientSample": {
       "commandName": "HttpClientSample",
-      "commandLineArgs": "-e"
+      "commandLineArgs": "-mh"
     }
   }
 }

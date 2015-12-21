@@ -14,8 +14,6 @@ namespace HttpClientSample
             _displayMessage = message;
         }
 
-#if DNX46
-        // method is internal with .NET Core
         protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
         {
             WriteLine($"In SampleMessageHandler {_displayMessage}");
@@ -27,6 +25,6 @@ namespace HttpClientSample
 
             return base.SendAsync(request, cancellationToken);
         }
-#endif
+
     }
 }
