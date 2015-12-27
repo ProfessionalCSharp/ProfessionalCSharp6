@@ -1,0 +1,35 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "JsonSample Console Application",
+  "authors": [ "chris" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
+  "commands": {
+    "JsonSample": "JsonSample"
+  },
+
+  "dependencies": {
+    "NETStandard.Library": "1.0.0-*",
+    "Newtonsoft.Json": "7.0.1",
+    "System.Xml.XDocument": "4.0.11-rc2-23623"
+  },
+
+
+  "frameworks": {
+    "net46": {
+      "frameworkAssemblies": {
+        "System.Xml": "4.0.0.0",
+        "System.Xml.Linq": "4.0.0.0"
+      }
+    },
+    "dnxcore50": {
+      "dependencies": {
+      }
+    }
+  }
+}

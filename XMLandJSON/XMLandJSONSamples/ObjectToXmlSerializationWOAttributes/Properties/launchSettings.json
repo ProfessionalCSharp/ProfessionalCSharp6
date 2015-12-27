@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ObjectToXmlSerializationWOAttributes": {
+      "commandName": "ObjectToXmlSerializationWOAttributes",
+      "commandLineArgs": "-d"
+    }
+  }
+}

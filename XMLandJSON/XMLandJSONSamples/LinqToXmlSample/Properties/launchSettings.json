@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "LinqToXmlSample": {
+      "commandName": "LinqToXmlSample",
+      "commandLineArgs": "-t"
+    }
+  }
+}

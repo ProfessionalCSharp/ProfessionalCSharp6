@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0-*",
+  "description": "LinqToXmlSample Console Application",
+  "authors": [ "chris" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
+
+  "commands": {
+    "LinqToXmlSample": "LinqToXmlSample"
+  },
+
+  "dependencies": {
+    "NETStandard.Library": "1.0.0-*",
+    "System.Xml.XDocument": "4.0.11-rc2-23621"
+  },
+
+
+
+  "frameworks": {
+    "net46": {
+      "frameworkAssemblies": {
+        "System.Xml": "4.0.0.0",
+        "System.Xml.Linq": "4.0.0.0"
+      }
+    },
+    "dnxcore50": {
+      "dependencies": {
+
+
+      }
+    }
+  }
+}

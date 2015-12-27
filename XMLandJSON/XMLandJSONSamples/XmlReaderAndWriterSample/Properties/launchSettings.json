@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "XmlReaderAndWriterSample": {
+      "commandName": "XmlReaderAndWriterSample",
+      "commandLineArgs": "-c"
+    }
+  }
+}

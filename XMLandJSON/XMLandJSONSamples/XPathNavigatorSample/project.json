@@ -1,0 +1,36 @@
+{
+  "version": "1.0.0-*",
+  "description": "XPathNavigatorSample Console Application",
+  "authors": [ "chris" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
+  "commands": {
+    "XPathNavigatorSample": "XPathNavigatorSample"
+  },
+
+  "dependencies": {
+    "NETStandard.Library": "1.0.0-*",
+    "System.Xml.XmlDocument": "4.0.1-rc2-23623",
+    "System.Xml.XPath": "4.0.1-rc2-23623"
+  },
+
+
+
+  "frameworks": {
+    "net46": {
+      "frameworkAssemblies": {
+        "System.Xml": "4.0.0.0"
+      }
+    },
+    "dnxcore50": {
+      "dependencies": {
+
+      }
+    }
+  }
+}
