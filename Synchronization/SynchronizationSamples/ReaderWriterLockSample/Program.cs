@@ -11,7 +11,7 @@ namespace ReaderWriterLockSample
         private static ReaderWriterLockSlim _rwl =
           new ReaderWriterLockSlim(LockRecursionPolicy.SupportsRecursion);
 
-        static void ReaderMethod(object reader)
+        public static void ReaderMethod(object reader)
         {
             try
             {
@@ -29,7 +29,7 @@ namespace ReaderWriterLockSample
             }
         }
 
-        static void WriterMethod(object writer)
+        public static void WriterMethod(object writer)
         {
             try
             {

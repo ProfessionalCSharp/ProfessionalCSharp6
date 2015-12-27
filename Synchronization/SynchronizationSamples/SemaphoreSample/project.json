@@ -10,7 +10,7 @@
   },
 
   "dependencies": {
-
+    "NETStandard.Library": "1.0.0-*"
   },
 
   "commands": {
@@ -18,14 +18,14 @@
   },
 
   "frameworks": {
-    "dnx46": {
+    "net46": {
       "dependencies": {
 
       }
     },
     "dnxcore50": {
       "dependencies": {
-        "NETStandard.Library": "1.0.0-*"
+
       }
     }
   }
