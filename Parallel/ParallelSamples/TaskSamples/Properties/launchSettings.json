@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TaskSamples": {
+      "commandName": "TaskSamples",
+      "commandLineArgs": "-pc"
+    }
+  }
+}

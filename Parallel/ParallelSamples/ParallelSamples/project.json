@@ -1,0 +1,21 @@
+﻿{
+  "version": "1.0.0-*",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
+  "dependencies": {
+    "NETStandard.Library": "1.0.0-*",
+    "System.Threading.Tasks.Parallel": "4.0.1-rc2-23623",
+    "System.Threading.Thread": "4.0.0-rc2-23623"
+  },
+  "commands": {
+    "ParallelSamples": "ParallelSamples"
+  },
+  "frameworks": {
+    "net46": { },
+    "dnxcore50": {
+      "dependencies": { }
+    }
+  }
+}

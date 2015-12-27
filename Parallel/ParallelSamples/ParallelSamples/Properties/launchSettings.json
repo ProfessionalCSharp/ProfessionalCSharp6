@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ParallelSamples": {
+      "commandName": "ParallelSamples",
+      "commandLineArgs": "-pf"
+    }
+  }
+}
