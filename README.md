@@ -36,6 +36,8 @@ Chapter 16 - Reflection, Metadata, and Dynamic Programming
 
 Chapter 18 - Compiler Platform
 
+Chapter 22 - Task Synchronization
+
 Chapter 23 - Files and Streams
 
 Chapter 24 - Security
