@@ -1,0 +1,29 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "ThreadingIssues Console Application",
+  "authors": [ "chris" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
+  "dependencies": {
+  },
+
+  "commands": {
+    "ThreadingIssues": "ThreadingIssues"
+  },
+
+  "frameworks": {
+    "dnx46": { },
+    "dnxcore50": {
+      "dependencies": {
+        "NETStandard.Library": "1.0.0-*",
+        "System.Diagnostics.TraceSource": "4.0.0-rc2-23623"
+      }
+    }
+  }
+}

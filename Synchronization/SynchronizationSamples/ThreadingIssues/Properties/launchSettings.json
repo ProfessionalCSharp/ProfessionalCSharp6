@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ThreadingIssues": {
+      "commandName": "ThreadingIssues",
+      "commandLineArgs": "-r"
+    }
+  }
+}
