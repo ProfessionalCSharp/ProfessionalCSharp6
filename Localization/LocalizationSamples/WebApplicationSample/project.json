@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0-*",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
+  "dependencies": {
+    "Microsoft.AspNet.Hosting": "1.0.0-rc2-16150",
+    "Microsoft.AspNet.Http.Features": "1.0.0-rc2-16099",
+    "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc2-16058",
+    "Microsoft.AspNet.Localization": "1.0.0-rc2-16142",
+    "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc2-16224",
+    "Microsoft.Extensions.Localization": "1.0.0-rc2-16142",
+    "System.Globalization": "4.0.11-rc2-23623"
+  },
+
+  "commands": {
+    "web": "WebApplicationSample"
+  },
+
+  "frameworks": {
+    "dnx451": {
+      "dependencies": {
+        "System.Runtime.Extensions": "4.0.11-rc2-23623"
+      }
+    },
+    "dnxcore50": { }
+  },
+
+  "exclude": [
+    "wwwroot",
+    "node_modules"
+  ],
+  "publishExclude": [
+    "**.user",
+    "**.vspscc"
+  ]
+}

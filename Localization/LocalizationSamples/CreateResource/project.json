@@ -1,0 +1,31 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "CreateResource Console Application",
+  "authors": [ "Christian" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
+  "commands": {
+    "CreateResource": "CreateResource"
+  },
+
+  "dependencies": {
+    "NETStandard.Library": "1.0.0-*",
+    "System.Resources.ReaderWriter": "4.0.0-rc2-23621"
+  },
+
+
+
+  "frameworks": {
+    "net46": { },
+    "dnxcore50": {
+      "dependencies": {
+
+      }
+    }
+  }
+}

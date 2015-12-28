@@ -1,0 +1,31 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "SortingDemo Console Application",
+  "authors": [ "Christian" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
+  "commands": {
+    "SortingDemo": "SortingDemo"
+  },
+
+  "dependencies": {
+    "NETStandard.Library": "1.0.0-*",
+    "System.Collections.NonGeneric": "4.0.1-rc2-23623"
+  },
+
+
+
+  "frameworks": {
+    "net46": { },
+    "dnxcore50": {
+      "dependencies": {
+
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0-*",
+  "description": "ResourcesDemo Console Application",
+  "authors": [ "Christian" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+  "language": "en-US",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
+  "commands": {
+    "ResourcesDemo": "ResourcesDemo"
+  },
+
+  "dependencies": {
+    "NETStandard.Library": "1.0.0-*"
+  },
+
+
+  "frameworks": {
+    "net46": { },
+    "dnxcore50": {
+      "dependencies": {
+      }
+    }
+  }
+}

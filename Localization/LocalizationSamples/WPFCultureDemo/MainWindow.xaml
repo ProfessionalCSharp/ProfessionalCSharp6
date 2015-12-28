@@ -1,0 +1,114 @@
+﻿<Window x:Class="WPFCultureDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFCultureDemo"
+        xmlns:converters="clr-namespace:WPFCultureDemo.Converters"
+        mc:Ignorable="d"
+        Title="Culture Demo" Height="350" Width="613.667">
+    <Window.Resources>
+        <converters:BooleanToVisibilityConverter x:Key="boolToVisiblity" />
+        <converters:NullToVisibilityConverter x:Key="nullToVisibility" />
+        <converters:CalendarTypeToCalendarInformationConverter x:Key="calendarConverter" />
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <GridSplitter HorizontalAlignment="Right" Name="gridSplitter1" Width="5" />
+        <TreeView SelectedItemChanged="treeCultures_SelectedItemChanged" Margin="5" ItemsSource="{Binding}" >
+            <TreeView.ItemTemplate>
+                <HierarchicalDataTemplate DataType="{x:Type local:CultureData}" ItemsSource="{Binding SubCultures}">
+                    <TextBlock  Text="{Binding Path=CultureInfo.EnglishName}" />
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>
+        </TreeView>
+        <Grid  x:Name="itemGrid" Grid.Column="1" Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="Culture Name:" />
+            <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding CultureInfo.Name}" Width="100" />
+            <TextBlock Grid.Row="0" Grid.Column="2" Text="Neutral Culture" Visibility="{Binding CultureInfo.IsNeutralCulture, Converter={StaticResource boolToVisiblity}}" />
+
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="English Name:" />
+            <TextBlock Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding CultureInfo.EnglishName}" />
+
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="Native Name:" />
+            <TextBlock Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding CultureInfo.NativeName}" />
+
+            <TextBlock Grid.Row="3" Grid.Column="0" Text="Default Calendar:" />
+            <TextBlock Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding CultureInfo.Calendar, Converter={StaticResource calendarConverter}}" />
+
+            <TextBlock Grid.Row="4" Grid.Column="0" Text="Optional Calendars:" />
+            <ListBox Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" ItemsSource="{Binding CultureInfo.OptionalCalendars}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Converter={StaticResource calendarConverter}}" />
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
+
+            <GroupBox x:Name="groupSamples" Header="Samples" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" >
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Row="0" Grid.Column="0" Text="Number" />
+                    <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding NumberSample}" />
+
+                    <TextBlock Grid.Row="1" Grid.Column="0" Text="Full Date" />
+                    <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding DateSample}" />
+
+                    <TextBlock Grid.Row="2" Grid.Column="0" Text="Time" />
+                    <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding TimeSample}" />
+                </Grid>
+
+            </GroupBox>
+            <GroupBox x:Name="groupRegion" Header="Region Information" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="3" Visibility="{Binding RegionInfo, Converter={StaticResource nullToVisibility}}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Row="0" Grid.Column="0" Text="Region" />
+                    <TextBlock Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding RegionInfo.DisplayName}" />
+
+                    <TextBlock Grid.Row="1" Grid.Column="0" Text="Currency" />
+                    <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding RegionInfo.CurrencySymbol}" />
+                    <TextBlock Grid.Row="1" Grid.Column="2" Text="{Binding RegionInfo.ISOCurrencySymbol}"/>
+
+                    <TextBlock Grid.Row="2" Grid.Column="1" Text="Is Metric" Visibility="{Binding RegionInfo.IsMetric, Converter={StaticResource boolToVisiblity}}" />
+                </Grid>
+
+            </GroupBox>
+        </Grid>
+
+    </Grid>
+</Window>

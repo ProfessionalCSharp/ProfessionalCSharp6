@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "NumberAndDateFormatting": {
+      "commandName": "NumberAndDateFormatting",
+      "commandLineArgs": "-d"
+    }
+  }
+}
