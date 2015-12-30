@@ -1,0 +1,33 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "SimpleEventSourceSample Console Application",
+  "authors": [ "chris" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
+  "dependencies": {
+    "NETStandard.Library": "1.0.0-*",
+    "System.Net.Http": "4.0.1-rc2-23623"
+  },
+
+  "commands": {
+    "SimpleEventSourceSample": "SimpleEventSourceSample"
+  },
+
+  "frameworks": {
+    "dnx46": {
+      "dependencies": {
+
+      }
+    },
+    "dnxcore50": {
+      "dependencies": {
+
+      }
+    }
+  }
+}

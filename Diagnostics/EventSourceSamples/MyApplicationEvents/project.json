@@ -1,0 +1,25 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "MyApplicationEvents Class Library",
+  "authors": [ "chris" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+    "NETStandard.Library": "1.0.0-*",
+    "System.Diagnostics.Tracing": "4.0.21-rc2-23629"
+  },
+
+  "frameworks": {
+    "net46": {
+      "dependencies": {
+
+      }
+    },
+    "dotnet5.4": {
+      "dependencies": {
+      }
+    }
+  }
+}
