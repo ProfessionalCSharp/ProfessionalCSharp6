@@ -1,0 +1,19 @@
+﻿{
+  "version": "1.0.0-*",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+  "dependencies": {
+    "NETStandard.Library": "1.0.0-*"
+  },
+  "commands": {
+    "ExtensionMethods": "ExtensionMethods"
+  },
+  "frameworks": {
+    "net46": { },
+    "dnxcore50": {
+      "dependencies": {
+      }
+    }
+  }
+}

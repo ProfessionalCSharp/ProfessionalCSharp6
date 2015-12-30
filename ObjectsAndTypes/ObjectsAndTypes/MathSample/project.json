@@ -1,0 +1,28 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "MathSample Console Application",
+  "authors": [ "chris" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
+  "commands": {
+    "MathSample": "MathSample"
+  },
+
+  "dependencies": {
+    "NETStandard.Library": "1.0.0-*"
+  },
+
+  "frameworks": {
+    "net46": { },
+    "dnxcore50": {
+      "dependencies": {
+      }
+    }
+  }
+}
