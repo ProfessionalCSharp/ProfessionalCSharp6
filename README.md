@@ -38,6 +38,8 @@ Chapter 16 - Reflection, Metadata, and Dynamic Programming
 
 Chapter 18 - Compiler Platform
 
+Chapter 20 - Diagnostics and Application Insights
+
 Chapter 21 - Tasks and Parallel Programming
 
 Chapter 22 - Task Synchronization
