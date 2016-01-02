@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RollingMarbleSample", "RollingMarbleSample\RollingMarbleSample.csproj", "{322B827A-EB30-4716-AA19-5C782D56789C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{322B827A-EB30-4716-AA19-5C782D56789C}.Debug|ARM.ActiveCfg = Debug|ARM
+		{322B827A-EB30-4716-AA19-5C782D56789C}.Debug|ARM.Build.0 = Debug|ARM
+		{322B827A-EB30-4716-AA19-5C782D56789C}.Debug|ARM.Deploy.0 = Debug|ARM
+		{322B827A-EB30-4716-AA19-5C782D56789C}.Debug|x64.ActiveCfg = Debug|x64
+		{322B827A-EB30-4716-AA19-5C782D56789C}.Debug|x64.Build.0 = Debug|x64
+		{322B827A-EB30-4716-AA19-5C782D56789C}.Debug|x64.Deploy.0 = Debug|x64
+		{322B827A-EB30-4716-AA19-5C782D56789C}.Debug|x86.ActiveCfg = Debug|x86
+		{322B827A-EB30-4716-AA19-5C782D56789C}.Debug|x86.Build.0 = Debug|x86
+		{322B827A-EB30-4716-AA19-5C782D56789C}.Debug|x86.Deploy.0 = Debug|x86
+		{322B827A-EB30-4716-AA19-5C782D56789C}.Release|ARM.ActiveCfg = Release|ARM
+		{322B827A-EB30-4716-AA19-5C782D56789C}.Release|ARM.Build.0 = Release|ARM
+		{322B827A-EB30-4716-AA19-5C782D56789C}.Release|ARM.Deploy.0 = Release|ARM
+		{322B827A-EB30-4716-AA19-5C782D56789C}.Release|x64.ActiveCfg = Release|x64
+		{322B827A-EB30-4716-AA19-5C782D56789C}.Release|x64.Build.0 = Release|x64
+		{322B827A-EB30-4716-AA19-5C782D56789C}.Release|x64.Deploy.0 = Release|x64
+		{322B827A-EB30-4716-AA19-5C782D56789C}.Release|x86.ActiveCfg = Release|x86
+		{322B827A-EB30-4716-AA19-5C782D56789C}.Release|x86.Build.0 = Release|x86
+		{322B827A-EB30-4716-AA19-5C782D56789C}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
