@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFChatClient"
         mc:Ignorable="d"
-        Title="Group Chat" Height="300" Width="300">
+        Title="Group Chat" Height="300" Width="450">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto" />
