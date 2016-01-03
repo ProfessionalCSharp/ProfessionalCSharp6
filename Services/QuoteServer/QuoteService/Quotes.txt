@@ -1,0 +1,14 @@
+﻿"This 'telephone' has too many shortcomings to be seriously considered as a means of communication. The device is inherently of no value to us.", Western Union internal memo, 1876
+"Computer in the future may weigh no more than 1.5 tones.", Popular Mechanics, forecasting the relentless march of science, 1949
+"There is no reason anyone would want a computer in their home.", Ken Olsen, Digital Equipment Corp., 1977
+"I think there is a world market for maybe five computers", T. Watson, Chairman of IBM, 1943
+"But what is it good for?", IBM commenting on the development of the Microchip. 
+"We will think about software more as a service than we have in the past.", Bill Gates, Microsoft Chief Software Architect, 2000
+"Landing and moving around on the moon offer so many serious problems for human beings that it may take science another 200 years to lick them" Lord Kelvin, (1824-1907)
+"X-rays are a hoax", Lord Kelvin (1824-1907)
+"Radio has no future", Lord Kelvin (1824-1907)
+"Heavier than air flying machines are impossible" Lord Kelvin (1824-1907)
+"In the decade ahead I can predict that we will provide over twice the productivity improvement that we provided in the '90s.", Bill Gates
+"I don't think there's anything unique about human intellience. All the nuerons in the brain that make up perceptions and emotions operate in a binary fashion.", Bill Gates
+"I'm sorry that we have to have a Washington presence. We thrived during our first 16 years without any of this. I never made a political visit to Washington and we had no people here. It wasn't on our radar screen. We were just making great software.", Bill Gates
+"The reason you see open source there at all is because we came in and said there should be a platform that's identical with millions and millions of machines.", Bill Gates
