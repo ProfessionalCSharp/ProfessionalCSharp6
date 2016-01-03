@@ -62,6 +62,8 @@ Chapter 35 - Creating Documents with WPF
 
 Chapter 38 - Entity Framework
 
+Chapter 39 - Windows Services
+
 Chapter 40 - ASP.NET 5
 
 Chapter 43 - WebHooks and SignalR
