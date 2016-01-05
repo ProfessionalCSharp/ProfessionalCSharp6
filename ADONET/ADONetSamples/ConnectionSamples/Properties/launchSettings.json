@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ConnectionSamples": {
+      "commandName": "ConnectionSamples",
+      "commandLineArgs": "-i"
+    }
+  }
+}

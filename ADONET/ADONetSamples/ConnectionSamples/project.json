@@ -1,0 +1,38 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "ConnectionSamples Console Application",
+  "authors": [ "Christian" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
+  "commands": {
+    "ConnectionSamples": "ConnectionSamples"
+  },
+
+  "dependencies": {
+    "NETStandard.Library": "1.0.0-*",
+    "Microsoft.Extensions.Configuration": "1.0.0-rc2-15952",
+    "Microsoft.Extensions.Configuration.Json": "1.0.0-rc2-15952",
+    "System.Data.SqlClient": "4.0.0-rc2-23618"
+  },
+
+
+
+  "frameworks": {
+    "dnx46": {
+      "frameworkAssemblies": {
+      },
+      "dependencies": {
+
+      }
+    },
+    "dnxcore50": {
+      "dependencies": {
+      }
+    }
+  }
+}
