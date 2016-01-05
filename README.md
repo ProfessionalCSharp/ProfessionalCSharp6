@@ -60,6 +60,8 @@ Chapter 33 - Advanced Windows Apps
 
 Chapter 35 - Creating Documents with WPF
 
+Chapter 37 - Core ADO.NET
+
 Chapter 38 - Entity Framework
 
 Chapter 39 - Windows Services
