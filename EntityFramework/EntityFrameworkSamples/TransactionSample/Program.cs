@@ -103,7 +103,7 @@ namespace TransactionSample
         private static async Task TwoSaveChangesWithOneTxAsync()
         {
             WriteLine(nameof(TwoSaveChangesWithOneTxAsync));
-            IRelationalTransaction tx = null;
+            IDbContextTransaction tx = null;
             try
             {
                 using (var context = new MenusContext())
