@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="85cd4aea-0de1-442e-8a5b-8c6e6a8216d0" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="ce06a8c6-6c8c-452d-b482-c0c813ef9792" name="UI Layer">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="9b6b3609-ee6d-4ef6-9673-a3ffa3f3e03e" direction="Forward">
+          <layerMoniker Id="ab21ebb5-53cf-408c-bc6f-7e93c5c5f3a1" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="5f71c670-d1b6-4942-b062-edcc108020e8" direction="Forward">
+          <layerMoniker Id="56a03c8f-d468-4305-b7db-cd94bfc4d70d" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="56c3ed3b-2ade-43e0-9193-50d94073afd7" direction="Forward">
+          <layerMoniker Id="08f0bbcd-954f-46e4-8118-6b1f2d8a2ec7" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="d048e57a-df19-4256-9169-acb853d893b3" name="BooksDesktopApp">
+          <references>
+            <reference Id="6720663e-abd6-439e-b512-a50d84d973ba" name="BooksDesktopApp">
+              <ArtifactNode Label="BooksDesktopApp" Category="CodeSchema_Project" Id="(Assembly=../BooksDesktopApp/BooksDesktopApp.csproj)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=BooksDesktopApp)" Label="BooksDesktopApp.exe" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.exe" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="2f45e26e-4e24-436b-9697-9c204d742d51" name="BooksUniversalApp">
+          <references>
+            <reference Id="ea54e3b3-3527-4987-9481-df894a472417" name="BooksUniversalApp">
+              <ArtifactNode Label="BooksUniversalApp" Category="CodeSchema_Project" Id="(Assembly=../BooksUniversalApp/BooksUniversalApp.csproj)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=BooksUniversalApp)" Label="BooksUniversalApp.exe" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.exe" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="56a03c8f-d468-4305-b7db-cd94bfc4d70d" name="Service Layer">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="7e3b674a-82d2-49eb-9a33-0cc7f7a83bd0" direction="Forward">
+          <layerMoniker Id="08f0bbcd-954f-46e4-8118-6b1f2d8a2ec7" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="f63546ac-cda4-4735-8c65-bb5d81651d51" name="Services">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="8bfda8ac-c7fc-42d2-98a5-0714e7535fcd" direction="Forward">
+              <layerMoniker Id="d0b282bc-ce3f-4e6e-bab9-1017111b90f7" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <references>
+            <reference Id="37b7c7b7-bb93-49cd-9e61-e03e310d1648" name="Services">
+              <ArtifactNode Label="Services" Category="CodeSchema_Project" Id="(Assembly=../Services/Services.csproj)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=Services)" Label="Services.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="d0b282bc-ce3f-4e6e-bab9-1017111b90f7" name="Repositories">
+          <references>
+            <reference Id="3b815d10-b327-4f15-9d7c-52c3fb4dee6e" name="Repositories">
+              <ArtifactNode Label="Repositories" Category="CodeSchema_Project" Id="(Assembly=../Repositories/Repositories.csproj)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=Repositories)" Label="Repositories.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="ab21ebb5-53cf-408c-bc6f-7e93c5c5f3a1" name="View Models Layer">
+      <childLayers>
+        <layer Id="4df973cc-219c-4261-bebe-62982a62832a" name="ViewModels">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="674c7771-1a7d-40a9-899a-a299646f9407" direction="Forward">
+              <layerMoniker Id="e6ba1dd8-6a28-43e1-91f3-47731752e602" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <references>
+            <reference Id="9c402db7-1de0-44d8-9d43-b0c48cf22b68" name="ViewModels">
+              <ArtifactNode Label="ViewModels" Category="CodeSchema_Project" Id="(Assembly=../ViewModels/ViewModels.csproj)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=ViewModels)" Label="ViewModels.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="08f0bbcd-954f-46e4-8118-6b1f2d8a2ec7" name="Models Layer">
+      <childLayers>
+        <layer Id="e6ba1dd8-6a28-43e1-91f3-47731752e602" name="Models">
+          <references>
+            <reference Id="0217ba9c-1e2b-4225-a126-0d18a288efb3" name="Models">
+              <ArtifactNode Label="Models" Category="CodeSchema_Project" Id="(Assembly=../Models/Models.csproj)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=Models)" Label="Models.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="8dffc26d-0b1a-486e-bff9-abd7c62b0822" name="Framework Layer">
+      <childLayers>
+        <layer Id="daecd0aa-f3e4-4f26-87c3-9178887d86f9" name="Framework">
+          <references>
+            <reference Id="089778e2-915d-4fb6-8f1f-d61207da545e" name="Framework">
+              <ArtifactNode Label="Framework" Category="CodeSchema_Project" Id="(Assembly=../Framework/Framework.csproj)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=Framework)" Label="Framework.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="f7570e47-ce36-4410-8fd6-cc92799c89ce" name="Contracts Layer">
+      <childLayers>
+        <layer Id="80150da8-7964-4516-a4b0-fdd7caa6db84" name="Contracts">
+          <references>
+            <reference Id="575379f5-12bb-4ea7-90f2-045f0a3c130b" name="Contracts">
+              <ArtifactNode Label="Contracts" Category="CodeSchema_Project" Id="(Assembly=../Contracts/Contracts.csproj)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=Contracts)" Label="Contracts.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+    </layer>
+  </layers>
+</layerModel>

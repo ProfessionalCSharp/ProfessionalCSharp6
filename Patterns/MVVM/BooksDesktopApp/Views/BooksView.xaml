@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="BooksDesktopApp.Views.BooksView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BooksDesktopApp.Views"
+             mc:Ignorable="d" 
+             x:Name="booksView"
+             DataContext="{Binding ElementName=booksView}"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Row="0">
+            <Button Content="Load" Command="{Binding ViewModel.GetBooksCommand, Mode=OneTime}" />
+            <Button Content="Add" Command="{Binding ViewModel.AddBookCommand, Mode=OneTime}" />
+        </StackPanel>
+
+        <ListBox Grid.Row="1" ItemsSource="{Binding ViewModel.Books, Mode=OneTime}" SelectedItem="{Binding ViewModel.SelectedBook, Mode=TwoWay}" >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="{Binding Title, Mode=OneWay}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</UserControl>
