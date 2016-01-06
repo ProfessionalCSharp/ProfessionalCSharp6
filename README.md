@@ -56,6 +56,8 @@ Chapter 27 - XML and JSON
 
 Chapter 28 - Localization
 
+Chapter 30 - Styling XAML Apps
+
 Chapter 33 - Advanced Windows Apps
 
 Chapter 35 - Creating Documents with WPF
