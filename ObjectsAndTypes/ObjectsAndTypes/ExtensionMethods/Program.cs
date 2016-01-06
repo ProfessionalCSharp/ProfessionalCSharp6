@@ -1,6 +1,5 @@
-﻿using System;
+﻿using ExtensionMethods.Foo;
 using static System.Console;
-using ExtensionMethods.Foo;
 // using ExtensionMethods.Bar; // importing both namespaces creates an ambiguous compiler error
 
 namespace ExtensionMethods
@@ -9,10 +8,9 @@ namespace ExtensionMethods
     {
         public static class StringExtensions
         {
-            public static int GetWordCount(this string s)
-            {
-                return s.Split().Length;
-            }
+            public static int GetWordCount(this string s) =>
+                s.Split().Length;
+            
         }
 
     }
@@ -21,10 +19,9 @@ namespace ExtensionMethods
     {
         public static class StringExtensions
         {
-            public static int GetWordCount(this string s)
-            {
-                return s.Split().Length;
-            }
+            public static int GetWordCount(this string s) =>
+                s.Split().Length;
+            
         }
 
     }
@@ -36,7 +33,7 @@ namespace ExtensionMethods
             string fox = "the quick brown fox jumped over the lazy dogs down 9876543210 times";
             int wordCount = fox.GetWordCount();
             WriteLine($"{wordCount} words");
-            Console.ReadLine();
+            ReadLine();
         }
     }
 }
