@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
-#if DNX46
+#if NET46
 using System.Windows.Threading;
 #endif
 using static System.Console;
@@ -10,9 +10,9 @@ namespace Foundations
 {
     public class Program
     {
-        public void Main(string[] args)
+        public static void Main(string[] args)
         {
-#if DNX46
+#if NET46
             var ctx = new DispatcherSynchronizationContext();
 
             SynchronizationContext.SetSynchronizationContext(ctx);
@@ -55,7 +55,7 @@ namespace Foundations
             ReadLine();
         }
 
-        private void Usage()
+        private static void Usage()
         {
             WriteLine("Usage: Foundations Command");
             WriteLine();
@@ -71,21 +71,21 @@ namespace Foundations
             return;
         }
 
-        private async void ConvertingAsyncPattern()
+        private static async void ConvertingAsyncPattern()
         {
             string r = await Task<string>.Factory.FromAsync<string>(BeginGreeting, EndGreeting, "Angela", null);
             WriteLine(r);
         }
 
 
-        private async void MultipleAsyncMethods()
+        private static async void MultipleAsyncMethods()
         {
             string s1 = await GreetingAsync("Stephanie");
             string s2 = await GreetingAsync("Matthias");
             WriteLine($"Finished both methods.\n Result 1: {s1}\n Result 2: {s2}");
         }
 
-        private async void MultipleAsyncMethodsWithCombinators1()
+        private static async void MultipleAsyncMethodsWithCombinators1()
         {
             Task<string> t1 = GreetingAsync("Stephanie");
             Task<string> t2 = GreetingAsync("Matthias");
@@ -93,7 +93,7 @@ namespace Foundations
             WriteLine($"Finished both methods.\n Result 1: {t1.Result}\n Result 2: {t2.Result}");
         }
 
-        private async void MultipleAsyncMethodsWithCombinators2()
+        private static async void MultipleAsyncMethodsWithCombinators2()
         {
             Task<string> t1 = GreetingAsync("Stephanie");
             Task<string> t2 = GreetingAsync("Matthias");
@@ -101,7 +101,7 @@ namespace Foundations
             WriteLine($"Finished both methods.\n Result 1: {result[0]}\n Result 2: {result[1]}");
         }
 
-        private void CallerWithContinuationTask()
+        private static void CallerWithContinuationTask()
         {
             TraceThreadAndTask("started CallerWithContinuationTask");
 
@@ -119,7 +119,7 @@ namespace Foundations
 
 
 
-        private void CallerWithAwaiter()
+        private static void CallerWithAwaiter()
         {
             TraceThreadAndTask("starting CallerWithAwaiter");
             string result = GreetingAsync("Matthias").GetAwaiter().GetResult();
@@ -127,7 +127,7 @@ namespace Foundations
             TraceThreadAndTask("ending CallerWithAwaiter");
         }
 
-        private async void CallerWithAsync()
+        private static async void CallerWithAsync()
         {
             TraceThreadAndTask("started CallerWithAsync");
             string result = await GreetingAsync("Stephanie");
@@ -135,7 +135,7 @@ namespace Foundations
             TraceThreadAndTask("finished CallerWithAsync");
         }
 
-        private async void CallerWithAsync2()
+        private static async void CallerWithAsync2()
         {
             TraceThreadAndTask("started {nameof(CallerWithAsync2)}");
             WriteLine(await GreetingAsync("Stephanie"));
@@ -158,14 +158,14 @@ namespace Foundations
             return $"Hello, {name}";
         }
 
-        private Func<string, string> greetingInvoker = Greeting;
+        private static Func<string, string> greetingInvoker = Greeting;
 
-        IAsyncResult BeginGreeting(string name, AsyncCallback callback, object state)
+        static IAsyncResult BeginGreeting(string name, AsyncCallback callback, object state)
         {
             return greetingInvoker.BeginInvoke(name, callback, state);
         }
 
-        string EndGreeting(IAsyncResult ar)
+        static string EndGreeting(IAsyncResult ar)
         {
             return greetingInvoker.EndInvoke(ar);
         }
@@ -173,7 +173,7 @@ namespace Foundations
         public static void TraceThreadAndTask(string info)
         {
             string taskInfo = Task.CurrentId == null ? "no task" : "task " + Task.CurrentId;
-#if DNX46
+#if NET46
             WriteLine($"{info} in thread {Thread.CurrentThread.ManagedThreadId} and {taskInfo}");
 #else
             WriteLine($"{info} in {taskInfo}");
