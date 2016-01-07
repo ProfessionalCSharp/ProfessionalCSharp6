@@ -7,9 +7,9 @@ using static System.Console;
 
 namespace SyntaxRewriter
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
             string code = File.ReadAllText("Sample.cs");
             ProcessAsync(code).Wait();

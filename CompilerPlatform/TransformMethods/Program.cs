@@ -8,9 +8,9 @@ using static System.Console;
 
 namespace TransformMethods
 {
-    class Program
+    public class Program
     {
-        static void Main()
+        public static void Main()
         {
             string code = File.ReadAllText("Sample.cs");
             TransformMethodToUppercaseAsync(code).Wait();
@@ -35,7 +35,5 @@ namespace TransformMethods
             WriteLine();
             WriteLine(root.ToString());
         }
-
-
     }
 }
