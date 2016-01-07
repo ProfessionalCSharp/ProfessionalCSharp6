@@ -1,22 +1,17 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
-using Microsoft.CodeAnalysis.CSharp.Symbols;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-using Microsoft.CodeAnalysis.Text;
-using System.Threading.Tasks;
-using System.IO;
-using static System.Console;
 using Microsoft.CodeAnalysis.Emit;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
+using static System.Console;
 
 namespace SemanticsCompilation
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             ProcessAsync().Wait();
         }
