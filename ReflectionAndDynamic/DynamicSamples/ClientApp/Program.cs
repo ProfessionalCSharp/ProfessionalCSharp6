@@ -49,7 +49,7 @@ namespace ClientApp
             WriteLine($"the result of {x} and {y} is {result}");
         }
 
-#if DNX46
+#if NET46
         private static object GetCalculator()
         {
 

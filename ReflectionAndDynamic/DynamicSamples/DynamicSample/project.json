@@ -5,27 +5,27 @@
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
 
   "dependencies": {
-    "Microsoft.CSharp": "4.0.1-rc2-23603",
-    "System.Collections": "4.0.11-rc2-23603",
-    "System.Console": "4.0.0-rc2-23603",
-    "System.Linq": "4.0.1-rc2-23603",
-    "System.Threading": "4.0.11-rc2-23603"
+    "NETStandard.Library": "1.0.0-*",
+    "System.Dynamic.Runtime": "4.0.11-rc2-23705"
   },
 
   "commands": {
-    "DynamicSample" : "DynamicSample"
+    "DynamicSample": "DynamicSample"
   },
 
-  "frameworks" : {
-    "dnx46": {
+  "frameworks": {
+    "net46": {
       "dependencies": {
 
       }
     },
-    "dnxcore50" : {
-      "dependencies": {     }
+    "dnxcore50": {
+      "dependencies": { }
     }
   }
 }

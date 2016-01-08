@@ -5,29 +5,29 @@
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
 
   "dependencies": {
-    "Microsoft.CodeAnalysis.CSharp": "1.1.0-rc1-20151109-01",
-    "Microsoft.CSharp": "4.0.1-rc2-23603",
-    "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc2-16237",
-    "System.Console": "4.0.0-rc2-23602",
-    "System.Reflection.Extensions": "4.0.1-rc2-23603",
-    "System.Reflection.TypeExtensions": "4.1.0-rc2-23603",
-    "System.Runtime.Extensions": "4.0.11-rc2-23603"
+    "Microsoft.CSharp": "4.0.1-rc2-23705",
+    "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc2-16530",
+    "NETStandard.Library": "1.0.0-*"
   },
 
   "commands": {
-    "ClientApp" : "ClientApp"
+    "ClientApp": "ClientApp"
   },
 
-  "frameworks" : {
-    "dnx46": {
+  "frameworks": {
+    "net46": {
       "dependencies": {
 
       }
     },
-    "dnxcore50" : {
-      "dependencies": {      }
+    "dnxcore50": {
+      "dependencies": { }
     }
   }
 }

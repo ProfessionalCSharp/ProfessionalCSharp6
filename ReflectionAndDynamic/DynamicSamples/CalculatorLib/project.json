@@ -7,14 +7,11 @@
   "licenseUrl": "",
 
   "dependencies": {
-    "Microsoft.CSharp": "4.0.1-rc2-23603",
-    "System.Collections": "4.0.11-rc2-23603",
-    "System.Linq": "4.0.1-rc2-23603",
-    "System.Threading": "4.0.11-rc2-23603"
+    "NETStandard.Library": "1.0.0-*"
   },
 
   "frameworks" : {
-    "dnx46": {
+    "net46": {
       "dependencies": {
 
       }
