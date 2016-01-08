@@ -71,13 +71,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AdvancedCalculator\AdvancedCalculator.csproj">
-      <Project>{c066821a-6347-4139-8582-7257098fa71c}</Project>
-      <Name>AdvancedCalculator</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CalculatorContract\CalculatorContract.csproj">
       <Project>{f2f2a4f6-fabc-4a3f-99e2-ff6e74faedcc}</Project>
       <Name>CalculatorContract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimpleCalculator\SimpleCalculator.csproj">
+      <Project>{9797f5eb-a954-432d-94cf-089f6e13a1bf}</Project>
+      <Name>SimpleCalculator</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
