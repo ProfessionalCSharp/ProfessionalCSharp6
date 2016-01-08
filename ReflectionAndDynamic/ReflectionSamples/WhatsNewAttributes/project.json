@@ -7,12 +7,12 @@
   "licenseUrl": "",
 
   "dependencies": {
-    "Microsoft.CSharp": "4.0.1-rc2-23602"
+    "NETStandard.Library": "1.0.0-*"
   },
 
-  "frameworks" : {
-    "dnx46": { },
-    "dnxcore50" : {
+  "frameworks": {
+    "net46": { },
+    "dnxcore50": {
       "dependencies": {
 
       }
