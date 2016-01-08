@@ -1,0 +1,26 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "UnitTestingSamplesCore Class Library",
+  "authors": [ "chris" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+    "NETStandard.Library": "1.0.0-*",
+    "System.Xml.XDocument": "4.0.11-*"
+  },
+
+  "frameworks": {
+    "net46": {
+      "dependencies": {
+      },
+      "frameworkAssemblies": {
+        "System.Xml": "4.0.0.0",
+        "System.Xml.Linq": "4.0.0.0"
+      }
+    },
+    "dotnet5.4": {
+    }
+  }
+}
