@@ -36,6 +36,8 @@ Chapter 15 - Asynchronous Programming
 
 Chapter 16 - Reflection, Metadata, and Dynamic Programming
 
+Chapter 17 - Visual Studio 2015
+
 Chapter 18 - Compiler Platform
 
 Chapter 20 - Diagnostics and Application Insights
