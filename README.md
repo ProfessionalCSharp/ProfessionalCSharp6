@@ -40,6 +40,8 @@ Chapter 17 - Visual Studio 2015
 
 Chapter 18 - Compiler Platform
 
+Chapter 19 - Testing
+
 Chapter 20 - Diagnostics and Application Insights
 
 Chapter 21 - Tasks and Parallel Programming
