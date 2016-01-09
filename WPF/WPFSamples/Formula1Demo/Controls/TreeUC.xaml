@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="Formula1Demo.Controls.TreeUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:ctrls="clr-namespace:Formula1Demo.Controls"
+             xmlns:local="clr-namespace:Formula1Demo"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <TreeView ItemsSource="{Binding}" >
+            <TreeView.Resources>
+                <HierarchicalDataTemplate DataType="{x:Type local:Championship}" ItemsSource="{Binding Races.Value}">
+                    <TextBlock Text="{Binding Year}" />
+                </HierarchicalDataTemplate>
+
+                <HierarchicalDataTemplate DataType="{x:Type local:F1Race}" ItemsSource="{Binding Results.Value}">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Country}" Margin="5,0,5,0" />
+                        <TextBlock Text="{Binding Path=Date, StringFormat=d }" Margin="5,0,5,0" />
+                    </StackPanel>
+                </HierarchicalDataTemplate>
+
+                <DataTemplate DataType="{x:Type local:F1RaceResult}">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Position}" Margin="5,0,5,0" />
+                        <TextBlock Text="{Binding Racer}" Margin="5,0,0,0" />
+                        <TextBlock Text=", " />
+                        <TextBlock Text="{Binding Car}" />
+                    </StackPanel>
+                </DataTemplate>
+            </TreeView.Resources>
+        </TreeView>
+
+    </Grid>
+</UserControl>

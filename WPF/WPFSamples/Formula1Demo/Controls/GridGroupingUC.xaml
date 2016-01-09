@@ -1,0 +1,87 @@
+﻿<UserControl x:Class="Formula1Demo.Controls.GridGroupingUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:local="clr-namespace:Formula1Demo"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid.Resources>
+            <!--<local:IntToString x:Key="intToStringConverter" />
+            <local:Int32ToDouble x:Key="intToDoubleConverter" />-->
+            <ObjectDataProvider x:Key="races" ObjectType="{x:Type local:F1Races}" MethodName="GetRaces">
+                <ObjectDataProvider.MethodParameters>
+                    <sys:Int32>0</sys:Int32>
+                    <sys:Int32>20</sys:Int32>
+                </ObjectDataProvider.MethodParameters>
+            </ObjectDataProvider>
+            <CollectionViewSource x:Key="viewSource" Source="{StaticResource races}">
+                <CollectionViewSource.GroupDescriptions>
+                    <PropertyGroupDescription PropertyName="Year" />
+                    <PropertyGroupDescription PropertyName="Country" />
+                </CollectionViewSource.GroupDescriptions>
+            </CollectionViewSource>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Row="0">
+            <TextBlock Margin="5" Padding="4" VerticalAlignment="Center">Page:</TextBlock>
+            <TextBox Margin="5" Padding="4" VerticalAlignment="Center" x:Name="textPageNumber" Text="0" />
+            <Button Click="OnGetPage">Get Page</Button>
+        </StackPanel>
+        <Viewbox Grid.Row="1" Stretch="Fill">
+            <DataGrid Grid.IsSharedSizeScope="True" DataContext="{StaticResource viewSource}" ItemsSource="{Binding}" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding Position, Mode=OneWay}" Header="Position" />
+                    <DataGridTextColumn Binding="{Binding Racer, Mode=OneWay}" Header="Racer" />
+                </DataGrid.Columns>
+                <DataGrid.RowDetailsTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Car:" Margin="5,0,0,0" />
+                            <TextBlock Text="{Binding Car}" Margin="5,0,0,0" />
+                            <TextBlock Text="Points:" Margin="5,0,0,0" />
+                            <TextBlock Text="{Binding Points}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </DataGrid.RowDetailsTemplate>
+                <DataGrid.GroupStyle>
+                    <GroupStyle>
+
+                        <GroupStyle.ContainerStyle>
+                            <Style TargetType="{x:Type GroupItem}">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate >
+                                            <StackPanel Orientation="Horizontal" >
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition SharedSizeGroup="LeftColumn" />
+                                                        <ColumnDefinition />
+                                                        <ColumnDefinition />
+                                                    </Grid.ColumnDefinitions>
+                                                    <Label Grid.Column="0" Background="Yellow" Content="{Binding Name}" />
+                                                    <Label Grid.Column="1" Content="{Binding ItemCount}" />
+                                                    <Grid Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                                        <ItemsPresenter/>
+                                                    </Grid>
+                                                </Grid>
+
+                                            </StackPanel>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </GroupStyle.ContainerStyle>
+                    </GroupStyle>
+
+                </DataGrid.GroupStyle>
+
+            </DataGrid>
+        </Viewbox>
+    </Grid>
+</UserControl>
