@@ -60,6 +60,8 @@ Chapter 27 - XML and JSON
 
 Chapter 28 - Localization
 
+Chapter 29 - Core XAML
+
 Chapter 30 - Styling XAML Apps
 
 Chapter 31 - Patterns with XAML 
