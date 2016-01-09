@@ -1,0 +1,15 @@
+﻿<ResourceDictionary
+    x:Class="CompiledBindingSample.Styles.DataTemplates"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:model="using:CompiledBindingSample.Models"
+    xmlns:local="using:CompiledBindingSample.Styles">
+
+    <DataTemplate x:DataType="model:Book" x:Name="BookTemplate">
+        <StackPanel>
+            <TextBlock Text="{x:Bind Title}" />
+            <TextBlock Text="{x:Bind Publisher}" />
+        </StackPanel>
+    </DataTemplate>
+</ResourceDictionary>
+
