@@ -62,7 +62,9 @@ Chapter 28 - Localization
 
 Chapter 30 - Styling XAML Apps
 
-Chapter 31 - Patterns with XAML Apps
+Chapter 31 - Patterns with XAML 
+
+Chapter 32 - Windows Apps: User Interface
 
 Chapter 33 - Advanced Windows Apps
 
