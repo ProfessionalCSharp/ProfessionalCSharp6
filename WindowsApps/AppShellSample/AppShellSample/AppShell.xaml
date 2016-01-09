@@ -1,0 +1,103 @@
+﻿<Page
+    x:Class="AppShellSample.AppShell"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppShellSample"
+    xmlns:conv="using:AppShellSample.Converters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <conv:BoolToNullableBoolConverter x:Key="boolConverter" />
+    </Page.Resources>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="720" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="RootSplitView.DisplayMode" Value="CompactInline"/>
+                        <Setter Target="RootSplitView.IsPaneOpen" Value="True"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="RootSplitView.DisplayMode" Value="Overlay"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <SplitView x:Name="RootSplitView"
+                   DisplayMode="Inline"
+                   OpenPaneLength="256"
+                   IsTabStop="False">
+            <SplitView.Pane>
+
+                <ListView TabIndex="3" x:Name="NavMenuList" Margin="0,48,0,0">
+                    <ListView.Header>
+                        <Button x:Name="BackButton"
+                                TabIndex="2"
+                                Style="{StaticResource NavigationBackButtonStyle}"
+                                IsEnabled="{x:Bind AppFrame.CanGoBack, Mode=OneWay}"
+                                Width="{x:Bind Path=NavMenuList.Width, Mode=OneWay}"
+                                HorizontalAlignment="{x:Bind Path=NavMenuList.HorizontalAlignment, Mode=OneWay}"
+                                Click="{x:Bind Path=BackButton_Click}"/>
+                    </ListView.Header>
+                    <ListView.Items>
+                        <Button x:Name="HomeButton" Margin="-12" Padding="0" 
+                                TabIndex="3"
+                                Style="{StaticResource HomeButtonStyle}"
+                                Width="{x:Bind Path=NavMenuList.Width}"
+                                HorizontalAlignment="{x:Bind Path=NavMenuList.HorizontalAlignment}"
+                                Click="{x:Bind Path=GoToHomePage}" />
+                        <Button x:Name="EditButton" Margin="-12" Padding="0" 
+                                TabIndex="4"
+                                Style="{StaticResource EditButtonStyle}"
+                                Width="{x:Bind Path=NavMenuList.Width}"
+                                HorizontalAlignment="{x:Bind Path=NavMenuList.HorizontalAlignment}"
+                                Click="{x:Bind Path=GoToEditPage}" />
+                    </ListView.Items>
+                    <ListView.Footer>
+                        <Button
+                            x:Name="SettingsButton"
+                            TabIndex="3"
+                            Style="{StaticResource SettingsButtonStyle}"
+                            Width="{x:Bind Path=NavMenuList.Width}"
+                            HorizontalAlignment="{x:Bind Path=NavMenuList.HorizontalAlignment}" />
+
+                    </ListView.Footer>
+                </ListView>
+            </SplitView.Pane>
+            <Frame x:Name="frame"
+                Navigating="OnNavigatingToPage"
+                Navigated="OnNavigatedToPage">
+                <Frame.ContentTransitions>
+                    <TransitionCollection>
+                        <NavigationThemeTransition>
+                            <NavigationThemeTransition.DefaultNavigationTransitionInfo>
+                                <EntranceNavigationTransitionInfo/>
+                            </NavigationThemeTransition.DefaultNavigationTransitionInfo>
+                        </NavigationThemeTransition>
+                    </TransitionCollection>
+                </Frame.ContentTransitions>
+            </Frame>
+        </SplitView>
+
+        <ToggleButton x:Name="TogglePaneButton"
+                      TabIndex="1"
+                      Style="{StaticResource SplitViewTogglePaneButtonStyle}"
+                      IsChecked="{x:Bind Path=RootSplitView.IsPaneOpen, Mode=TwoWay, Converter={StaticResource boolConverter}}"
+                      Unchecked="HamburgerMenu_UnChecked"
+                      AutomationProperties.Name="Menu"
+                      ToolTipService.ToolTip="Menu" />
+    </Grid>
+
+
+</Page>
+
