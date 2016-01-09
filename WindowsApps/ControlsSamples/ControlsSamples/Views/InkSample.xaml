@@ -1,0 +1,42 @@
+﻿<Page
+    x:Class="ControlsSamples.Views.InkSample"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ControlsSamples.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.TopAppBar>
+        <CommandBar>
+            <CommandBar.SecondaryCommands>
+                <AppBarButton Label="One" Icon="OneBar" />
+                <AppBarButton Label="Two" Icon="TwoBars" />
+                <AppBarButton Label="Three" Icon="ThreeBars" />
+                <AppBarButton Label="Four" Icon="FourBars" />
+            </CommandBar.SecondaryCommands>
+            <AppBarToggleButton IsChecked="{x:Bind Path=ColorSelection.Red, Mode=TwoWay}" Background="Red" Label="Red" >
+                <AppBarToggleButton.Icon>
+                    <FontIcon Glyph="&#xea3a;" />
+                </AppBarToggleButton.Icon>
+            </AppBarToggleButton>
+            <AppBarToggleButton IsChecked="{x:Bind ColorSelection.Green, Mode=TwoWay}" Background="Green" Label="Green" IsCompact="True" Tag="Green" >
+                <AppBarToggleButton.Icon>
+                    <FontIcon Glyph="&#xea3a;"/>
+                </AppBarToggleButton.Icon>
+            </AppBarToggleButton>
+            <AppBarToggleButton IsChecked="{x:Bind ColorSelection.Blue, Mode=TwoWay}" Background="Blue" Label="Blue" IsCompact="True" Tag="Blue" >
+                <AppBarToggleButton.Icon>
+                    <FontIcon Glyph="&#xea3a;"/>
+                </AppBarToggleButton.Icon>
+            </AppBarToggleButton>
+            <AppBarButton Icon="Save" Label="Save" Click="{x:Bind OnSave}" />
+            <AppBarButton Icon="OpenFile" Label="Open" Click="{x:Bind OnLoad}" />
+            <AppBarButton Icon="Clear" Label="Clear" Click="{x:Bind OnClear}" />
+        </CommandBar>
+    </Page.TopAppBar>
+    
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <InkCanvas x:Name="inkCanvas" />
+    </Grid>
+</Page>
