@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlsSamples", "Controls
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayoutSamples", "LayoutSamples\LayoutSamples.csproj", "{3C5FCE2E-AF28-415D-838C-19AE6E49E85B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksDemo", "BooksDemo\BooksDemo.csproj", "{FF782714-9CBD-4B85-8CC3-481EB7CB6FC2}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriggerSamples", "TriggerSAmples\TriggerSamples.csproj", "{BDBBA6E2-16B6-4435-B9D4-6C8438D28C26}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiBindingSample", "MultiBindingSample\MultiBindingSample.csproj", "{E1750F7B-8983-4275-B80E-C866043E2AD1}"
@@ -43,10 +41,6 @@ Global
 		{3C5FCE2E-AF28-415D-838C-19AE6E49E85B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C5FCE2E-AF28-415D-838C-19AE6E49E85B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C5FCE2E-AF28-415D-838C-19AE6E49E85B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FF782714-9CBD-4B85-8CC3-481EB7CB6FC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FF782714-9CBD-4B85-8CC3-481EB7CB6FC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FF782714-9CBD-4B85-8CC3-481EB7CB6FC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FF782714-9CBD-4B85-8CC3-481EB7CB6FC2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BDBBA6E2-16B6-4435-B9D4-6C8438D28C26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BDBBA6E2-16B6-4435-B9D4-6C8438D28C26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDBBA6E2-16B6-4435-B9D4-6C8438D28C26}.Release|Any CPU.ActiveCfg = Release|Any CPU
