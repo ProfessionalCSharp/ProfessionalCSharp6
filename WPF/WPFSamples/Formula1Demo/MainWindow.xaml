@@ -16,6 +16,7 @@
                 <Label>Select the view</Label>
                 <Label>Tree</Label>
                 <Label>DataGrid</Label>
+                <Label>DataGrid with custom columns</Label>
                 <Label>DataGrid with Grouping</Label>
             </ComboBox>
         </StackPanel>

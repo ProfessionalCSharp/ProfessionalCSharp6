@@ -84,6 +84,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Controls\GridCustomUC.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Controls\GridUC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -103,6 +107,9 @@
     <Compile Include="Championship.cs" />
     <Compile Include="Controls\GridGroupingUC.xaml.cs">
       <DependentUpon>GridGroupingUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GridCustomUC.xaml.cs">
+      <DependentUpon>GridCustomUC.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\GridUC.xaml.cs">
       <DependentUpon>GridUC.xaml</DependentUpon>

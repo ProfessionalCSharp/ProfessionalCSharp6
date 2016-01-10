@@ -40,6 +40,9 @@ namespace Formula1Demo
                         container.Child = new GridUC();
                         break;
                     case 3:
+                        container.Child = new GridCustomUC();
+                        break;
+                    case 4:
                         container.Child = new GridGroupingUC();
                         break;
                     default:
