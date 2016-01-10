@@ -70,6 +70,8 @@ Chapter 32 - Windows Apps: User Interface
 
 Chapter 33 - Advanced Windows Apps
 
+Chapter 34 - Windows Presentation Foundation (WPF)
+
 Chapter 35 - Creating Documents with WPF
 
 Chapter 36 - Deploying Windows Apps
