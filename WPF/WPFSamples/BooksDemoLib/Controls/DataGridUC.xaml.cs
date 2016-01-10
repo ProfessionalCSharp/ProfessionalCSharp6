@@ -1,4 +1,5 @@
 ﻿using BooksDemo.Models;
+using System.Collections;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -10,33 +11,28 @@ namespace BooksDemo.Controls
     /// </summary>
     public partial class DataGridUC : UserControl
     {
-        private ListCollectionView view;
+        private ListCollectionView _view;
         public DataGridUC()
         {
-            view = new ListCollectionView(new BooksRepository().GetBooks() as System.Collections.IList);
+            _view = new ListCollectionView(new BooksRepository().GetBooks() as System.Collections.IList);
             InitializeComponent();
             // this.grid1.DataContext = view;            
         }
-        public System.Collections.IEnumerable BooksView
-        {
-            get
-            {
-                return view;
-            }
-        }
+        public IEnumerable BooksView => _view;
+
 
         private void OnGroupChecked(object sender, RoutedEventArgs e)
         {
-            if (view.CanGroup)
+            if (_view.CanGroup)
             {
-                if (view.GroupDescriptions == null || view.GroupDescriptions.Count == 0)
+                if (_view.GroupDescriptions == null || _view.GroupDescriptions.Count == 0)
                 {
                     // view.GroupDescriptions = new System.Collections.ObjectModel.ObservableCollection<System.ComponentModel.GroupDescription>();
-                    view.GroupDescriptions.Add(new PropertyGroupDescription("Publisher"));
+                    _view.GroupDescriptions.Add(new PropertyGroupDescription("Publisher"));
                 }
                 else
                 {
-                    view.GroupDescriptions.Clear();
+                    _view.GroupDescriptions.Clear();
                 }
             }
 
