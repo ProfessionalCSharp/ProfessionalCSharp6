@@ -11,6 +11,7 @@
         <StackPanel>
             <Button Content="Use DataTemplate From Resources" Click="{x:Bind OnUseResources}"></Button>
             <Button Content="Binding Lifetime" Click="{x:Bind OnLifetime}"></Button>
+            <Button Content="Phased Rendering" Click="{x:Bind OnPhasedRendering}"></Button>
         </StackPanel>
 
     </Grid>

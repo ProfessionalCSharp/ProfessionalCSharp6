@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Threading;
-using System.Threading.Tasks;
 #if NET46
+using System.Threading;
 using System.Windows.Threading;
 #endif
+using System.Threading.Tasks;
 using static System.Console;
 
 namespace Foundations

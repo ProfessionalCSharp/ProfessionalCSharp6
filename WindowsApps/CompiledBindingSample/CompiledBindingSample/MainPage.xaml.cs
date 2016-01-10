@@ -37,5 +37,10 @@ namespace CompiledBindingSample
         {
             Frame.Navigate(typeof(LifetimeSample));
         }
+
+        public void OnPhasedRendering()
+        {
+            Frame.Navigate(typeof(PhasedRenderingPage));
+       }
     }
 }
