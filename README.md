@@ -8,6 +8,8 @@ With some samples, additional NuGet feeds might be needed.
 
 Samples available for these chapters:
 
+Chapter 2 - Core C#
+
 Chapter 3 - Objects and Types
 
 Chapter 4 - Inheritance
