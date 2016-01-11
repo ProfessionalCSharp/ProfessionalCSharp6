@@ -25,6 +25,15 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "VariableScopeSample", "Vari
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "VariablesSample", "VariablesSample\VariablesSample.xproj", "{CB78BCCC-31EC-4B67-AA6E-FA65AC136A90}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{612A1832-912A-40D9-8CB1-73C1C758C481}"
+	ProjectSection(SolutionItems) = preProject
+		HelloWorldApp\global.json = HelloWorldApp\global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "VariableScopeSample2", "VariableScopeSample2\VariableScopeSample2.xproj", "{1DA18881-24AB-4B55-A76C-7A2FCD9C40D6}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "VariableScopeSample3", "VariableScopeSample3\VariableScopeSample3.xproj", "{7DDACFFA-57E4-4994-B3F4-AA2AB8BFB4D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +84,14 @@ Global
 		{CB78BCCC-31EC-4B67-AA6E-FA65AC136A90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB78BCCC-31EC-4B67-AA6E-FA65AC136A90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB78BCCC-31EC-4B67-AA6E-FA65AC136A90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DA18881-24AB-4B55-A76C-7A2FCD9C40D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DA18881-24AB-4B55-A76C-7A2FCD9C40D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DA18881-24AB-4B55-A76C-7A2FCD9C40D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DA18881-24AB-4B55-A76C-7A2FCD9C40D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DDACFFA-57E4-4994-B3F4-AA2AB8BFB4D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DDACFFA-57E4-4994-B3F4-AA2AB8BFB4D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DDACFFA-57E4-4994-B3F4-AA2AB8BFB4D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DDACFFA-57E4-4994-B3F4-AA2AB8BFB4D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
