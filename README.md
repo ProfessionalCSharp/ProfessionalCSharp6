@@ -88,6 +88,8 @@ Chapter 39 - Windows Services
 
 Chapter 40 - ASP.NET 5
 
+Chapter 42 - ASP.NET Web API
+
 Chapter 43 - WebHooks and SignalR
 
 Chapter 44 - Windows Communication Foundation (WCF)
