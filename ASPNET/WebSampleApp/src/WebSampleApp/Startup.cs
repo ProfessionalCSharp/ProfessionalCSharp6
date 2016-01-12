@@ -8,6 +8,7 @@ using System;
 using WebSampleApp.Controllers;
 using WebSampleApp.Middleware;
 using WebSampleApp.Services;
+using Microsoft.Extensions.Logging;
 
 namespace WebSampleApp
 {
@@ -44,10 +45,19 @@ namespace WebSampleApp
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app)
+        public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory)
         {
             app.UseIISPlatformHandler();
             app.UseStaticFiles();
+            loggerFactory.AddConsole();
+            loggerFactory.AddDebug();
+
+            // loggerFactory.AddConsole(Configuration.GetSection("Logging"));
+            //loggerFactory.AddConsole();
+            // loggerFactory.AddDebug();
+
+
+
 
             app.UseSession();
             //// uncomment these lines to use the Middleware sample
