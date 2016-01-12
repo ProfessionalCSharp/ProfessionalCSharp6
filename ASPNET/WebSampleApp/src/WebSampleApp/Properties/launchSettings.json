@@ -17,13 +17,13 @@
     },
     "web": {
       "commandName": "web",
+      "commandLineArgs": "Environment=Development",
       "launchBrowser": true,
       "launchUrl": "http://localhost:5000/",
-      "commandLineArgs": "Environment=Development",
       "environmentVariables": {
         "Hosting:Environment": "Development"
       },
-      "sdkVersion": "dnx-clr-win-x64.1.0.0-rc1-update1"
+      "sdkVersion": "dnx-coreclr-win-x64.1.0.0-rc2-16357"
     }
   }
 }

@@ -1,6 +1,6 @@
 ﻿{
   "commands": {
-    "web": "Microsoft.AspNet.Server.Kestrel"
+    "web": "WebSampleApp"
   },
   "compilationOptions": {
     "emitEntryPoint": true
@@ -26,7 +26,7 @@
     "node_modules"
   ],
   "frameworks": {
-    "dnx451": {
+    "net451": {
       "dependencies": {
       }
     },
