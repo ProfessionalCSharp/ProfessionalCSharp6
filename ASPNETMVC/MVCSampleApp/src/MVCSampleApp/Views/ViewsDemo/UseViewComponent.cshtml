@@ -1,0 +1,17 @@
+﻿@inject ISampleService sampleService
+@{
+    ViewBag.Title = "View Components Sample";
+}
+<h2>@ViewBag.Title</h2>
+<p>
+    @await Component.InvokeAsync("EventList", new Dictionary<string, object>()
+    {
+        ["from"] = new DateTime(2016, 4, 10),
+        ["to"] = new DateTime(2016, 4, 24)
+    })
+</p>
+<p>
+    @string.Join("*", sampleService.GetSampleStrings())
+</p>
+
+

@@ -1,0 +1,48 @@
+{
+  "version": "1.0.0-*",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
+  "commands": {
+    "web": "MVCSampleApp"
+  },
+
+  "dependencies": {
+    "Microsoft.AspNet.Diagnostics": "1.0.0-*",
+    "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc2-16069",
+    "Microsoft.AspNet.Mvc": "6.0.0-rc2-16770",
+    "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-rc2-16770",
+    "Microsoft.AspNet.Razor.Runtime": "4.0.0-rc2-16098",
+    "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc2-16236",
+    "Microsoft.AspNet.StaticFiles": "1.0.0-rc2-16107",
+    "Microsoft.AspNet.Tooling.Razor": "1.0.0-rc2-16051",
+    "Microsoft.Extensions.Configuration": "1.0.0-rc2-15952",
+    "Microsoft.Extensions.Logging": "1.0.0-rc2-15958",
+    "Microsoft.Extensions.Logging.Console": "1.0.0-rc2-15958",
+    "Microsoft.Extensions.Logging.Debug": "1.0.0-rc2-15958",
+    "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-rc2-16226",
+    "System.ComponentModel.Annotations": "4.1.0-rc2-23623",
+    "System.Linq": "4.0.1-rc2-23623",
+    "System.Text.Encodings.Web": "4.0.0-rc2-23623"
+  },
+
+
+  "frameworks": {
+    "dnx451": {
+      "dependencies": {
+        "System.Runtime.Extensions": "4.0.11-rc2-23623"
+      }
+    },
+    "dnxcore50": { }
+  },
+
+  "exclude": [
+    "wwwroot",
+    "node_modules"
+  ],
+  "publishExclude": [
+    "**.user",
+    "**.vspscc"
+  ]
+}

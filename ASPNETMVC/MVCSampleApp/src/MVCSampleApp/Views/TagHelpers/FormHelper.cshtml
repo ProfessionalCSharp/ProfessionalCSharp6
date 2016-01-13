@@ -1,0 +1,34 @@
+﻿@model MVCSampleApp.Models.Menu
+@{
+    ViewBag.Title = "Form Helper";
+}
+<h2> @ViewBag.Title</h2>
+
+<form method="post" asp-method="FormHelper">
+    <input asp-for="Id" hidden="hidden" />
+    <hr />
+    
+    <label asp-for="Text"></label>
+    <div>
+        <input asp-for="Text" />
+        <span asp-validation-for="Text"></span>
+    </div>
+    <br />
+    <label asp-for="Price"></label>
+    <div>
+        <input asp-for="Price" />
+        <span asp-validation-for="Price"></span>
+    </div>
+    <br />
+    <label asp-for="Date"></label>
+    <div>
+        <input asp-for="Date" />
+        <span asp-validation-for="Date"></span>
+    </div>
+    <label asp-for="Category"></label>
+    <div>
+        <input asp-for="Category" />
+        <span asp-validation-for="Category"></span>
+    </div>
+    <input type="submit" value="Submit" />
+</form>

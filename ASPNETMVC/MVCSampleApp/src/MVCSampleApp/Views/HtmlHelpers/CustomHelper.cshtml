@@ -1,0 +1,12 @@
+﻿@helper DisplayDay(DateTime day)
+{
+  if (day < DateTime.Today)
+  {
+<span>History day</span>
+  }
+@$"{day:d}";
+}
+@Html.DisplayFor(m => m.Text)
+@Html.DisplayTextFor(m => m.Price)
+@Html.TextBoxFor(m => m.Text)
+@DisplayDay(Model.Date)

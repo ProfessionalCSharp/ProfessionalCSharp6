@@ -1,0 +1,19 @@
+﻿@model MVCSampleApp.Models.EventsAndMenusContext
+@{
+    ViewBag.Title = "Use a Partial View";
+}
+<script src="~/lib/jquery/dist/jquery.js">
+
+</script>
+<script>
+    $(function () {
+        $("#getEvents").click(function () {
+            $("#events").load("/ViewsDemo/ShowEvents");
+        });
+    });
+</script>
+<h2>Use a Partial View</h2>
+<div>this is the main view</div>
+<button id="getEvents">Get Events</button>
+<div id="events">
+</div>

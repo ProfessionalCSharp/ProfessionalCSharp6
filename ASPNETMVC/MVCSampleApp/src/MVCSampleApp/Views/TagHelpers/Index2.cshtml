@@ -1,0 +1,19 @@
+﻿@model MVCSampleApp.Models.Menu
+
+@{
+    ViewBag.Title = "Tag Helpers";
+}
+<h2> @ViewBag.Title</h2>
+
+<div class="form-group">
+    <label asp-for="Text" class="col-md-2 control-label"></label>
+    <div class="col-md-10">
+        <input asp-for="Text" class="form-control" />
+        <span asp-validation-for="Text" class="text-danger" />
+    </div>
+    <div class="col-md-10">
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger" />
+    </div>
+    <a asp-controller="Home" asp-action="Index">click this</a>
+</div>

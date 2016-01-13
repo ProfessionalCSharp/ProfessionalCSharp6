@@ -1,0 +1,6 @@
+﻿@{
+    ViewBag.Title = "Helper List";
+}
+@model IEnumerable<SelectListItem>
+<h2>@ViewBag.Title</h2>
+@Html.DropDownList("carslist", Model)
