@@ -33,30 +33,24 @@ namespace BooksServiceSample
             IBookChaptersRepository repos = new SampleBookChaptersRepository();
             repos.Init();
             services.AddSingleton<IBookChaptersRepository>(repos);
-            //    services.AddInstance<IBookChaptersRepository>(repos);
 
+            //services.AddSwaggerGen();
+            //services.ConfigureSwaggerDocument(options =>
+            //{
+            //    options.SingleApiVersion(new Info
+            //    {
+            //        Version = "v1",
+            //        Title = "Book Chapters",
+            //        Description = "A sample for Professional C# 6"
+            //    });
+            //    options.IgnoreObsoleteActions = true;
+            //});
 
-//            services.AddSwaggerGen();
-//            services.ConfigureSwaggerDocument(options =>
-//            {
-//                options.SingleApiVersion(new Info
-//                {
-//                    Version = "v1",
-//                    Title = "Book Chapters",
-//                    Description = "A sample for Professional C#"
-                 
-//                });
-////                options.OperationFilter(new ApplyXmlActionComments("path"));
-//            });
-
-//            services.ConfigureSwaggerSchema(options =>
-//            {
-//                options.DescribeAllEnumsAsStrings = true;
-//                options.IgnoreObsoleteProperties = true;
-              
-//            });
-
-            // Microsoft.Framework.DependencyInjection.SwaggerServiceCollectionExtensions.AddSwagger()
+            //services.ConfigureSwaggerSchema(options =>
+            //{
+            //    options.DescribeAllEnumsAsStrings = true;
+            //    options.IgnoreObsoleteProperties = true;
+            //});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -73,7 +67,6 @@ namespace BooksServiceSample
 
             //app.UseSwaggerGen();
             //app.UseSwaggerUi();
-
         }
 
         // Entry point for the application.
