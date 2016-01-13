@@ -2,9 +2,9 @@
 
 namespace Wrox.ProCSharp.Delegates
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             Employee[] employees =
             {

@@ -4,15 +4,15 @@ namespace Wrox.ProCSharp.Delegates
 {
     delegate double DoubleOp(double x);
 
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             DoubleOp[] operations =
             {
-        MathOperations.MultiplyByTwo,
-        MathOperations.Square
-      };
+                MathOperations.MultiplyByTwo,
+                MathOperations.Square
+            };
 
             for (int i = 0; i < operations.Length; i++)
             {
@@ -28,7 +28,6 @@ namespace Wrox.ProCSharp.Delegates
         {
             double result = action(value);
             WriteLine($"Value is {value}, result of operation is {result}");
-
         }
     }
 }

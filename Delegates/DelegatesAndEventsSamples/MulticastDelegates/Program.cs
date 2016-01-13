@@ -3,7 +3,7 @@ using static System.Console;
 
 namespace MulticastDelegates
 {
-  public class Program
+  class Program
   {
     static void Main()
     {

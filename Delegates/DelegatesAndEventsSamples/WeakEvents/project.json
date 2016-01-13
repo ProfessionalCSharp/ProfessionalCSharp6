@@ -1,12 +1,16 @@
 ﻿{
   "version": "1.0.0-*",
   "description": "WeakEvents Console Application",
-  "authors": [ "chris" ],
+  "authors": [ "Christian" ],
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
 
   "dependencies": {
+    "NETStandard.Library": "1.0.0-*"
   },
 
   "commands": {
@@ -14,7 +18,7 @@
   },
 
   "frameworks": {
-    "dnx46": {
+    "net46": {
       "frameworkAssemblies": {
         "WindowsBase": "4.0.0.0"
       }

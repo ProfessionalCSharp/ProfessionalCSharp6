@@ -2,12 +2,12 @@
 
 namespace GetAStringDemo
 {
-  public class Program
+  class Program
   {
 
     private delegate string GetAString();
 
-    public static void Main()
+    static void Main()
     {
       int x = 40;
       GetAString firstStringMethod = new GetAString(x.ToString);
