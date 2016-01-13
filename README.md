@@ -86,13 +86,17 @@ Chapter 38 - Entity Framework
 
 Chapter 39 - Windows Services
 
-Chapter 40 - ASP.NET 5
+Chapter 40 - ASP.NET
+
+Chapter 41 - ASP.NET MVC
 
 Chapter 42 - ASP.NET Web API
 
 Chapter 43 - WebHooks and SignalR
 
 Chapter 44 - Windows Communication Foundation (WCF)
+
+Chapter 45 - Deploying Websites and Services
 
 
 
