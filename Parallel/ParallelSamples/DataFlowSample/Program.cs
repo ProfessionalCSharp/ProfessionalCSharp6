@@ -5,9 +5,9 @@ using static System.Console;
 
 namespace DataFlowSample
 {
-    public class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main()
         {
             var target = SetupPipeline();
             target.Post(".");

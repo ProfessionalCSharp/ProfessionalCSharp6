@@ -5,7 +5,7 @@ using static System.Console;
 
 namespace SimpleDataFlowSample
 {
-    public class Program
+    class Program
     {
         // Simple Action block
         //public static void Main(string[] args)
@@ -31,7 +31,7 @@ namespace SimpleDataFlowSample
         //}
 
         // source and target blocks
-        public static void Main()
+        static void Main()
         {
             Task t1 = Task.Run(() => Producer());
             Task t2 = Task.Run(async () => await ConsumerAsync());

@@ -5,13 +5,13 @@ using static System.Console;
 
 namespace CancellationSamples
 {
-    public class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main()
         {
             // CancelParallelFor();
             CancelTask();
-            Console.ReadLine();
+            ReadLine();
         }
 
         public static void CancelTask()
