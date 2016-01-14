@@ -17,6 +17,18 @@
     "ImmutableCollectionSample": "ImmutableCollectionSample"
   },
   "frameworks": {
+    "net46": {
+      "frameworkAssemblies": {
+          "System.Runtime": "",
+          "System.Resources.ResourceManager": "",
+          "System.Diagnostics.Debug": "",
+          "System.Collections": "",
+          "System.Linq": "",
+          "System.Runtime.Extensions": "",
+          "System.Globalization": "",
+          "System.Threading": ""
+      }
+    },
     "dnxcore50": {
       "dependencies": {
       }
