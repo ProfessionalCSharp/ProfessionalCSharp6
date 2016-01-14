@@ -11,6 +11,5 @@ namespace ImmutableCollectionSample
         }
         public string Name { get; }
         public decimal Amount { get; }
-
     }
 }

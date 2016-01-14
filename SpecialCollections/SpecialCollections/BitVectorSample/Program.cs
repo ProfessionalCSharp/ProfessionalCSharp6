@@ -4,9 +4,9 @@ using static System.Console;
 
 namespace BitVectorSample
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             // create a mask using the CreateMask method
             var bits1 = new BitVector32();

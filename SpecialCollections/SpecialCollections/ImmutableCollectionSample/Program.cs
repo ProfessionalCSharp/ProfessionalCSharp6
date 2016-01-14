@@ -6,9 +6,9 @@ using System.Linq;
 
 namespace ImmutableCollectionSample
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             SimpleArrayDemo();
             ImmutableList<Account> accounts = CreateImmutableList();
@@ -59,10 +59,6 @@ namespace ImmutableCollectionSample
             immutableAccounts.ForEach(a => WriteLine($"{a.Name} {a.Amount}"));
 
             return immutableAccounts;
-
-
-
-
         }
 
         public static void SimpleArrayDemo()
@@ -71,10 +67,6 @@ namespace ImmutableCollectionSample
             ImmutableArray<string> a2 = a1.Add("Williams");
             ImmutableArray<string> a3 =
                 a2.Add("Ferrari").Add("Mercedes").Add("Red Bull Racing");
-
-           
-            
-
         }
     }
 }

@@ -1,23 +1,24 @@
 {
   "version": "1.0.0-*",
   "description": "ImmutableCollectionSample Console Application",
-  "authors": [ "chris" ],
+  "authors": [ "Christian" ],
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
 
   "dependencies": {
-    "System.Collections": "4.0.11-rc2-23517",
-    "System.Collections.Immutable": "1.1.38-rc2-23517",
-    "System.Console": "4.0.0-rc2-23517"
+    "NETStandard.Library": "1.0.0-*",
+    "System.Collections.Immutable": "1.2.0-*"
   },
   "commands": {
-    "ImmutableCollectionSample": "run"
+    "ImmutableCollectionSample": "ImmutableCollectionSample"
   },
   "frameworks": {
     "dnxcore50": {
       "dependencies": {
-        "System.Runtime": "4.0.21-rc2-23517"
       }
     }
   }

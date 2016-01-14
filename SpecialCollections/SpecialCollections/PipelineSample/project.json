@@ -1,22 +1,22 @@
 ﻿{
   "version": "1.0.0-*",
   "description": "PipelineSample Console Application",
-  "authors": [ "chris" ],
+  "authors": [ "Christian" ],
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
 
   "dependencies": {
-    "System.Collections.Concurrent": "4.0.11-rc2-23517",
-    "System.Linq": "4.0.1-rc2-23517",
-    "System.Console": "4.0.0-rc2-23517",
-    "System.IO.FileSystem": "4.0.1-rc2-23517"
+    "NETStandard.Library": "1.0.0-*"
   },
   "commands": {
-    "PipelineSample": "run"
+    "PipelineSample": "PipelineSample"
   },
   "frameworks": {
-    "dnx46": {
+    "net46": {
       "dependencies": {
 
       }

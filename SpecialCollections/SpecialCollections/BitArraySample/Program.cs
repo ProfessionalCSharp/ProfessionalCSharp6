@@ -4,9 +4,9 @@ using static System.Console;
 
 namespace BitArraySample
 {
-    public class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             var bits1 = new BitArray(8);
             bits1.SetAll(true);

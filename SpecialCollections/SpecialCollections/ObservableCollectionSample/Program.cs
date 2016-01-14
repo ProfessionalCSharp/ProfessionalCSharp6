@@ -5,9 +5,9 @@ using static System.Console;
 
 namespace ObservableCollectionSample
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             var data = new ObservableCollection<string>();
             

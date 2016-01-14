@@ -1,21 +1,24 @@
 ﻿{
   "version": "1.0.0-*",
   "description": "BitVectorSample Console Application",
-  "authors": [ "chris" ],
+  "authors": [ "Christian" ],
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
 
   "dependencies": {
-    "System.Collections.Specialized": "4.0.1-beta-23516",
-    "System.Console": "4.0.0-rc2-23517"
+    "NETStandard.Library": "1.0.0-*",
+    "System.Collections.Specialized": "4.0.1-*"
 
   },
   "commands": {
-    "BitVectorSample": "run"
+    "BitVectorSample": "BitVectorSample"
   },
   "frameworks": {
-    "dnx46": {
+    "net46": {
       "dependencies": {
 
       }
