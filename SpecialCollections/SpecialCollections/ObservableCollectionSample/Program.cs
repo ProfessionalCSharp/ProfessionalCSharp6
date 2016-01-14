@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using static System.Console;
 
@@ -16,6 +15,8 @@ namespace ObservableCollectionSample
             data.Add("Two");
             data.Insert(1, "Three");
             data.Remove("One");
+
+            data.CollectionChanged -= Data_CollectionChanged;
 
             ReadLine();
         }
