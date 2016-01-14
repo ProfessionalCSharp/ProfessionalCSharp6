@@ -4,9 +4,9 @@ using static System.Console;
 
 namespace LookupSample
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             var racers = new List<Racer>();
             racers.Add(new Racer(26, "Jacques", "Villeneuve", "Canada", 11));

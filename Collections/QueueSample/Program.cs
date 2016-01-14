@@ -4,9 +4,9 @@ using static System.Console;
 
 namespace QueueSample
 {
-  public class Program
+  class Program
   {
-    public static void Main()
+    static void Main()
     {
       var dm = new DocumentManager();
 

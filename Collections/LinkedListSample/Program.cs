@@ -2,9 +2,9 @@
 
 namespace LinkedListSample
 {
-  public class Program
+  class Program
   {
-    public static void Main()
+    static void Main()
     {
       PriorityDocumentManager pdm = new PriorityDocumentManager();
       pdm.AddDocument(new Document("one", "Sample", 8));

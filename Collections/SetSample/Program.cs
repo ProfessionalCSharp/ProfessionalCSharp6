@@ -4,9 +4,9 @@ using static System.Console;
 
 namespace SetSample
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             var companyTeams = new HashSet<string>() { "Ferrari", "McLaren", "Mercedes" };
             var traditionalTeams = new HashSet<string>() { "Ferrari", "McLaren" };

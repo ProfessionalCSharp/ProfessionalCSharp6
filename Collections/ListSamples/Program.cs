@@ -3,9 +3,9 @@ using static System.Console;
 
 namespace ListSamples
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             var graham = new Racer(7, "Graham", "Hill", "UK", 14);
             var emerson = new Racer(13, "Emerson", "Fittipaldi", "Brazil", 14);

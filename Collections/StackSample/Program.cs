@@ -3,9 +3,9 @@ using static System.Console;
 
 namespace StackSample
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             var alphabet = new Stack<char>();
             alphabet.Push('A');
