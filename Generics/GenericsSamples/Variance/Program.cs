@@ -4,7 +4,7 @@ namespace Wrox.ProCSharp.Generics
 {
   class Program
   {
-    public void Main()
+    static void Main()
     {
       IIndex<Rectangle> rectangles = RectangleCollection.GetRectangles();
       IIndex<Shape> shapes = rectangles;

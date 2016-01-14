@@ -4,7 +4,7 @@ namespace Wrox.ProCSharp.Generics
 {
   class Program
   {
-    public void Main()
+    static void Main()
     {
       var list2 = new LinkedList<int>();
       list2.AddLast(1);

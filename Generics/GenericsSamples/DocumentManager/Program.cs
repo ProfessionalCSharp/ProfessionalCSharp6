@@ -2,9 +2,9 @@
 
 namespace Wrox.ProCSharp.Generics
 {
-  public class Program
+  class Program
   {
-    public void Main()
+    static void Main()
     {
       var dm = new DocumentManager<Document>();
       dm.AddDocument(new Document("Title A", "Sample A"));

@@ -34,7 +34,7 @@ namespace Wrox.ProCSharp.Generics
 
     class Program
     {
-        public void Main()
+        static void Main()
         {
             var test = new MethodOverloads();
             test.Foo(33);
@@ -42,7 +42,6 @@ namespace Wrox.ProCSharp.Generics
             test.Foo("abc", 42);
             test.Foo(33, "abc");
             test.Bar(44);
-
         }
     }
 }
