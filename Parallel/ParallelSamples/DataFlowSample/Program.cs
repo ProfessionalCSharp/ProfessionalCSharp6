@@ -82,6 +82,7 @@ namespace DataFlowSample
                   }
               });
 
+       
             fileNamesForPath.LinkTo(lines);
             lines.LinkTo(words);
             words.LinkTo(display);

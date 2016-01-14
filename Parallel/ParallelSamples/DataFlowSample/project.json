@@ -14,6 +14,12 @@
   },
 
   "frameworks": {
+    "net46": {
+      "frameworkAssemblies": {
+        "System.Runtime": "",
+        "System.Threading.Tasks": ""
+      }
+    },
     "dnxcore50": {
       "dependencies": {
 
