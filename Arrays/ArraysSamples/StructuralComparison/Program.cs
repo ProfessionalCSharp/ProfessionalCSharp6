@@ -17,9 +17,9 @@ namespace Wrox.ProCSharp.Arrays
     }
 
 
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             var janet = new Person { FirstName = "Janet", LastName = "Jackson" };
             Person[] persons1 = { new Person { FirstName = "Michael", LastName = "Jackson" }, janet };

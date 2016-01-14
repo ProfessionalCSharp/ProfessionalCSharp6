@@ -1,17 +1,17 @@
 {
   "version": "1.0.0-*",
   "description": "SimpleArrays Console Application",
-  "authors": [ "chris" ],
+  "authors": [ "Christian" ],
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
 
   "dependencies": {
-    "Microsoft.CSharp": "4.0.1-rc2-23519",
-    "System.Collections": "4.0.11-rc2-23519",
-    "System.Console": "4.0.0-rc2-23519",
-    "System.Linq": "4.0.1-rc2-23519",
-    "System.Threading": "4.0.11-rc2-23519"
+    "NETStandard.Library": "1.0.0-*"
   },
 
   "commands": {
@@ -19,7 +19,7 @@
   },
 
   "frameworks": {
-    "dnx46": {
+    "net46": {
       "dependencies": {
 
       }

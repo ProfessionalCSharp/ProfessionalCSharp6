@@ -5,7 +5,7 @@ using static System.Console;
 
 namespace Wrox.ProCSharp.Arrays
 {
-    public class HelloCollection
+    class HelloCollection
     {
         public IEnumerator<string> GetEnumerator()
         {
@@ -14,9 +14,9 @@ namespace Wrox.ProCSharp.Arrays
         }
     }
 
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             HelloWorld();
             MusicTitles();
