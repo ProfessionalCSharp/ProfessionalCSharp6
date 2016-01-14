@@ -21,8 +21,7 @@ namespace ObservableCollectionSample
             ReadLine();
         }
 
-        public static void Data_CollectionChanged(object sender,
-                                       NotifyCollectionChangedEventArgs e)
+        public static void Data_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
             WriteLine($"action: {e.Action.ToString()}");
 
@@ -46,6 +45,5 @@ namespace ObservableCollectionSample
             }
             WriteLine();
         }
-
     }
 }
