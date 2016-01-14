@@ -39,7 +39,6 @@ TestResult.xml
 dlldata.c
 
 # DNX
-project.lock.json
 artifacts/
 
 *_i.c
