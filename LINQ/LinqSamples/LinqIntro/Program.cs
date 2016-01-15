@@ -5,9 +5,9 @@ using static System.Console;
 
 namespace LinqIntro
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             LINQQuery();
             ExtensionMethods();

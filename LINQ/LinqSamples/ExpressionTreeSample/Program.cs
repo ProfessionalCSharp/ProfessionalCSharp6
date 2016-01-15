@@ -5,9 +5,9 @@ using static System.Console;
 
 namespace ExpressionTreeSample
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             Expression<Func<Racer, bool>> expression = r => r.Country == "Brazil" && r.Wins > 6;
 

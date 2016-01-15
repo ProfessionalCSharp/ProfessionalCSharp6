@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using static System.Console;
+using System.Collections;
 
 namespace EnumerableSample
 {
@@ -19,9 +20,9 @@ namespace EnumerableSample
             return name.Substring(ix + 1);
         }
     }
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             // uncomment the corresponding method call as reading through the LINQ chapter
             Filtering();
