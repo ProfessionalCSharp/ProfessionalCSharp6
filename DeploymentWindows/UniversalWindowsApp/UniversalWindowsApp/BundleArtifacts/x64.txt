@@ -1,0 +1,2 @@
+MainPackage=C:\Users\chris\Source\Repos\ProfessionalCSharp6\DeploymentWindows\UniversalWindowsApp\UniversalWindowsApp\bin\x64\Debug\UniversalWindowsApp_1.0.1.0_x64_Debug.appx
+SymbolPackage=C:\Users\chris\Source\Repos\ProfessionalCSharp6\DeploymentWindows\UniversalWindowsApp\UniversalWindowsApp\AppPackages\UniversalWindowsApp_1.0.1.0_Debug_Test\UniversalWindowsApp_1.0.1.0_x64_Debug.appxsym

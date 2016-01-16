@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PointerPlayground": {
+      "commandName": "PointerPlayground",
+      "sdkVersion": "dnx-coreclr-win-x86.1.0.0-rc1-update1"
+    }
+  }
+}

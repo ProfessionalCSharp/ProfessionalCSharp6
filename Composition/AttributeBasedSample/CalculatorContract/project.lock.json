@@ -1,0 +1,12 @@
+{
+  "locked": false,
+  "version": 1,
+  "targets": {
+    ".NETPortable,Version=v4.6,Profile=Profile44": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "": [],
+    ".NETPortable,Version=v4.6,Profile=Profile44": []
+  }
+}
