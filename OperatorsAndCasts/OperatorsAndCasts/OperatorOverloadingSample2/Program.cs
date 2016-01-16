@@ -2,9 +2,9 @@
 
 namespace OperatorOverloadingSample
 {
-  public class Program
+  class Program
   {
-    public static void Main()
+    static void Main()
     {
       // stuff to demonstrate arithmetic operations
       Vector vect1, vect2, vect3;

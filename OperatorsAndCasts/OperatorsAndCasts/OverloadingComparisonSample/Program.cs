@@ -3,9 +3,9 @@ using static System.Console;
 
 namespace OverloadingComparisonSample
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             var vect1 = new Vector(3.0, 3.0, -10.0);
             var vect2 = new Vector(3.0, 3.0, -10.0);

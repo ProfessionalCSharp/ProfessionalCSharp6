@@ -3,9 +3,9 @@ using static System.Console;
 
 namespace CastingSample
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             try
             {

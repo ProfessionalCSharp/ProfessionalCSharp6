@@ -3,9 +3,9 @@ using static System.Console;
 
 namespace CustomIndexerSample
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             var p1 = new Person("Ayrton", "Senna", new DateTime(1960, 3, 21));
             var p2 = new Person("Ronnie", "Peterson", new DateTime(1944, 2, 14));
