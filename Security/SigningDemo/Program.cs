@@ -5,10 +5,10 @@ using static System.Console;
 
 namespace SigningDemo
 {
-    public class Program
+    class Program
     {
 
-        private CngKey _aliceKeySignature;
+        CngKey _aliceKeySignature;
         private byte[] _alicePubKeyBlob;
 
         public static void Main()

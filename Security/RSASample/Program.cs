@@ -5,12 +5,12 @@ using static System.Console;
 
 namespace RSASample
 {
-    public class Program
+    class Program
     {
         private CngKey _aliceKey;
         private byte[] _alicePubKeyBlob;
 
-        public static void Main()
+        static void Main()
         {
             var p = new Program();
             p.Run();

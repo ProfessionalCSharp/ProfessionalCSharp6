@@ -7,14 +7,14 @@ using static System.Console;
 
 namespace SecureTransfer
 {
-    public class Program
+    class Program
     {
         private CngKey _aliceKey;
         private CngKey _bobKey;
         private byte[] _alicePubKeyBlob;
         private byte[] _bobPubKeyBlob;
 
-        public static void Main()
+        static void Main()
         {
             var p = new Program();
             p.RunAsync().Wait();

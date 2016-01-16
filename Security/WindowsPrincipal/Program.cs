@@ -5,9 +5,9 @@ using static System.Console;
 
 namespace WindowsPrincipalSample
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             WindowsIdentity identity = ShowIdentityInformation();
 

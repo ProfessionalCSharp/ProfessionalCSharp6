@@ -1,19 +1,19 @@
 {
   "version": "1.0.0-*",
   "description": "",
-  "authors": [ "" ],
+  "authors": [ "Christian" ],
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
 
   "dependencies": {
-    "Microsoft.AspNet.DataProtection": "1.0.0-rc1-final",
-    "Microsoft.AspNet.DataProtection.Abstractions": "1.0.0-rc1-final",
-    "Microsoft.CSharp": "4.0.1-rc2-23618",
-    "Microsoft.Extensions.DependencyInjection": "1.0.0-rc2-15886",
-    "System.Console": "4.0.0-rc2-23618",
-    "System.IO.FileSystem": "4.0.1-rc2-23618",
-    "System.Linq": "4.0.1-rc2-23618"
+    "NETStandard.Library": "1.0.0-*",
+    "Microsoft.AspNet.DataProtection": "1.0.0-*",
+    "Microsoft.AspNet.DataProtection.Abstractions": "1.0.0-*",
+    "Microsoft.Extensions.DependencyInjection": "1.0.0-*"
   },
 
   "commands": {
@@ -21,14 +21,14 @@
   },
 
   "frameworks": {
-    "dnx46": {
+    "net46": {
       "dependencies": {
 
 
       }
     },
     "dnxcore50": {
-      "dependencies": {      }
+      "dependencies": { }
     }
   }
 }

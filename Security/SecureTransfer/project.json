@@ -1,16 +1,18 @@
 ﻿{
   "version": "1.0.0-*",
   "description": "",
-  "authors": [ "" ],
+  "authors": [ "Christian" ],
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
 
   "dependencies": {
-    "Microsoft.CSharp": "4.0.1-rc2-23618",
-    "System.Console": "4.0.0-rc2-23618",
-    "System.Security.Cryptography.Cng": "4.0.0-rc2-23618",
-    "System.Security.Cryptography.Algorithms": "4.0.0-rc2-23618"
+    "NETStandard.Library": "1.0.0-*",
+    "System.Security.Cryptography.Cng": "4.0.0-rc2-23715",
+    "System.Security.Cryptography.Primitives": "4.0.0-rc2-23715"
   },
 
   "commands": {
@@ -18,9 +20,8 @@
   },
 
   "frameworks": {
-    "dnx46": {
+    "net46": {
       "dependencies": {
-
       }
     }
   }

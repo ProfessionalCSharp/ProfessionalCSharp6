@@ -5,9 +5,9 @@ using static System.Console;
 
 namespace FileAccessControl
 {
-    public class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             string filename = null;
             if (args.Length == 0) return;
