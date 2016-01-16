@@ -6,13 +6,13 @@ using static System.Console;
 
 namespace DataProtectionSample
 {
-    public class Program
+    class Program
     {
         private const string readOption = "-r";
         private const string writeOption = "-w";
         private static readonly string[] options = { readOption, writeOption };
 
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             if (args.Length != 2 || args.Intersect(options).Count() != 1)
             {
@@ -43,13 +43,14 @@ namespace DataProtectionSample
             var serviceCollection = new ServiceCollection();
             serviceCollection.AddOptions();
             DataProtectionServices.GetDefaultServices();
-            serviceCollection.AddDataProtection();
-
-            serviceCollection.ConfigureDataProtection(c =>
-                c.PersistKeysToFileSystem(new DirectoryInfo("."))
+            serviceCollection.AddDataProtection(config =>
+            {
+                config.PersistKeysToFileSystem(new DirectoryInfo("."))
                 .SetDefaultKeyLifetime(TimeSpan.FromDays(20))
-                .ProtectKeysWithDpapi()
-            );
+                .ProtectKeysWithDpapi();
+
+            });
+          
             IServiceProvider services = serviceCollection.BuildServiceProvider();
 
             return ActivatorUtilities.CreateInstance<MySafe>(services);
