@@ -6,9 +6,9 @@ using static System.Console;
 
 namespace RethrowExceptions
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             HandleAll();
             ReadLine();

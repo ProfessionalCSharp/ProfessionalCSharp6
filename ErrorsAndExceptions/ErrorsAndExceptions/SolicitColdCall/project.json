@@ -1,7 +1,7 @@
 ﻿{
   "version": "1.0.0-*",
   "description": "SolicitColdCall Console Application",
-  "authors": [ "chris" ],
+  "authors": [ "Christian" ],
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
@@ -11,13 +11,7 @@
   },
 
   "dependencies": {
-    "Microsoft.CSharp": "4.0.1-rc2-23525",
-    "System.Collections": "4.0.11-rc2-23525",
-    "System.Console": "4.0.0-rc2-23525",
-    "System.IO": "4.0.11-rc2-23525",
-    "System.IO.FileSystem": "4.0.1-rc2-23525",
-    "System.Linq": "4.0.1-rc2-23525",
-    "System.Threading": "4.0.11-rc2-23525"
+    "NETStandard.Library": "1.0.0-*"
   },
 
   "commands": {
@@ -25,7 +19,7 @@
   },
 
   "frameworks": {
-    "dnx46": {
+    "net46": {
       "dependencies": {
 
       }

@@ -4,9 +4,9 @@ using static System.Console;
 
 namespace CallerInformation
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             var p = new Program();
             p.Log();

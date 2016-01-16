@@ -4,9 +4,9 @@ using static System.Console;
 
 namespace SolicitColdCall
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             Write("Please type in the name of the file " +
                 "containing the names of the people to be cold called > ");
