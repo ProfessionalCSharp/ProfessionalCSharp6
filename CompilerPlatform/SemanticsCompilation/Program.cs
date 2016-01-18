@@ -9,9 +9,9 @@ using static System.Console;
 
 namespace SemanticsCompilation
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             ProcessAsync().Wait();
         }

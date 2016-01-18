@@ -8,9 +8,9 @@ using static System.Console;
 
 namespace SyntaxQuery
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
 
             CheckLowercaseMembers().Wait();

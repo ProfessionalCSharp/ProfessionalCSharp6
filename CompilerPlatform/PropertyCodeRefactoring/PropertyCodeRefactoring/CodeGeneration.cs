@@ -85,9 +85,5 @@ namespace PropertyCodeRefactoring
                 .WithAdditionalAnnotations(UpdatedPropertyAnnotation);
             return updated;
         }
-
-
-
-
     }
 }
