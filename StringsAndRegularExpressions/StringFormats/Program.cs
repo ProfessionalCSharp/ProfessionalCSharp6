@@ -8,7 +8,7 @@ namespace StringFormats
 
     public class Program
     {
-        public static void Main()
+        static void Main()
         {
             FormattedStringDemo();
             DateAndNumbers();
@@ -18,7 +18,7 @@ namespace StringFormats
             ReadLine();
         }
 
-        public static void UseCustomIFormattable()
+        static void UseCustomIFormattable()
         {
             var p1 = new Person { FirstName = "Stephanie", LastName = "Nagel" };
             WriteLine(p1.ToString("F"));

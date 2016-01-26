@@ -3,7 +3,7 @@ using static System.Console;
 
 namespace RegularExpressionPlayground
 {
-    public class Program
+    class Program
     {
         const string text =
             @"This book is perfect for both experienced C# programmers " +
@@ -15,7 +15,7 @@ namespace RegularExpressionPlayground
             "ASP.NET web applications immediately.";
 
 
-        public static void Main()
+        static void Main()
         {
             Find1(text);
             Find2(text);
