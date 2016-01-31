@@ -8,7 +8,7 @@ using WhatsNewAttributes;
 
 namespace VectorClass
 {
-    [LastModified("6 Jun 2015", "updated for C# 6 and DNX Core")]
+    [LastModified("6 Jun 2015", "updated for C# 6 and .NET Core")]
     [LastModified("14 Dec 2010", "IEnumerable interface implemented: " +
         "Vector can be treated as a collection")]
     [LastModified("10 Feb 2010", "IFormattable interface implemented " +
