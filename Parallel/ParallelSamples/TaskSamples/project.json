@@ -9,7 +9,7 @@
 
   "dependencies": {
     "NETStandard.Library": "1.0.0-*",
-    "System.Threading.Thread": "4.0.0-rc2-23623"
+    "System.Threading.Thread": "4.0.0-*"
   },
 
   "frameworks": {
