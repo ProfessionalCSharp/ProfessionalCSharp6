@@ -63,7 +63,7 @@ namespace ErrorHandling
             catch (Exception ex)
             {
                 // just display the exception information of the first task that is awaited within WhenAll
-                WriteLine("handled {0}", ex.Message);
+                WriteLine($"handled {ex.Message}");
                 foreach (var ex1 in taskResult.Exception.InnerExceptions)
                 {
                     WriteLine($"inner exception {ex1.Message} from task {ex1.Source}");
