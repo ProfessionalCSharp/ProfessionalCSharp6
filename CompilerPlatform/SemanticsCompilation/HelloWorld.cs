@@ -3,7 +3,7 @@
 namespace SemanticsCompilation
 {
     // Hello World! Sample Program
-    public class Program
+    class Program
     {
         // Hello World! Sample Method with a variable
         public void Hello()
@@ -12,7 +12,7 @@ namespace SemanticsCompilation
             WriteLine(hello);
         }
 
-        public static void Main()
+        static void Main()
         {
             var p = new Program();
             p.Hello();
