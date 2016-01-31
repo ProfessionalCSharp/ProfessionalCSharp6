@@ -5,14 +5,15 @@
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
 
   "dependencies": {
     "NETStandard.Library": "1.0.0-*",
     "WhatsNewAttributes": "1.0.0-*"
   },
-  "compilationOptions": {
-    "emitEntryPoint": true
-  },
+
 
   "commands": {
     "LookupWhatsNew": "LookupWhatsNew"

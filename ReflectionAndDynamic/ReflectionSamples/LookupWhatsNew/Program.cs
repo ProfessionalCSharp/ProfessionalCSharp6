@@ -8,12 +8,12 @@ using static System.Console;
 
 namespace LookupWhatsNew
 {
-    public class Program
+    class Program
     {
         private static readonly StringBuilder outputText = new StringBuilder(1000);
         private static DateTime backDateTo = new DateTime(2015, 2, 1);
 
-        public static void Main()
+        static void Main()
         {
             Assembly theAssembly = Assembly.Load(new AssemblyName("VectorClass"));
             Attribute supportsAttribute = theAssembly.GetCustomAttribute(typeof(SupportsWhatsNewAttribute));

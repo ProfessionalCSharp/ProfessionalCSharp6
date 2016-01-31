@@ -9,11 +9,11 @@ using static System.Console;
 
 namespace TypeView
 {
-    public class Program
+    class Program
     {
         static StringBuilder OutputText = new StringBuilder();
 
-        public static void Main()
+        static void Main()
         {
             // modify this line to retrieve details of any other data type
             Type t = typeof(double);
