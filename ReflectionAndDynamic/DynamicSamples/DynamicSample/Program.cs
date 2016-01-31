@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Dynamic;
-using System.Linq;
-using System.Threading.Tasks;
 using static System.Console;
 
 namespace DynamicSample
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             dynamic dyn;
             dyn = 100;

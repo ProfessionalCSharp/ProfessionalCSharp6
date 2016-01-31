@@ -11,7 +11,7 @@
 
   "dependencies": {
     "NETStandard.Library": "1.0.0-*",
-    "System.Dynamic.Runtime": "4.0.11-rc2-23705"
+    "System.Dynamic.Runtime": "4.0.11-*"
   },
 
   "commands": {
@@ -19,7 +19,7 @@
   },
 
   "frameworks": {
-    "net46": {
+    "dnx46": {
       "dependencies": {
 
       }

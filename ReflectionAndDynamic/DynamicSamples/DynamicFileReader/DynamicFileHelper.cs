@@ -8,7 +8,7 @@ namespace DynamicFileReader
     public class DynamicFileHelper
     {
 
-        public IList<dynamic> ParseFile(string fileName)
+        public IEnumerable<dynamic> ParseFile(string fileName)
         {
             var retList = new List<dynamic>();
             var fileStream = OpenFile(fileName);

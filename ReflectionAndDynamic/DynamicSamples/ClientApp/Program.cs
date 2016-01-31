@@ -6,13 +6,13 @@ using static System.Console;
 
 namespace ClientApp
 {
-    public class Program
+    class Program
     {
         private const string CalculatorLibPath = @"c:\AddIns\CalculatorLib.dll";
         private const string CalculatorLibName = "CalculatorLib";
         private const string CalculatorTypeName = "CalculatorLib.Calculator";
 
-        public static void Main()
+        static void Main()
         {
             ReflectionOld();
             ReflectionNew();

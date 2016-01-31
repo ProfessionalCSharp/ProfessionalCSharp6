@@ -2,9 +2,9 @@
 
 namespace DynamicFileReader
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             var helper = new DynamicFileHelper();
             var employeeList = helper.ParseFile("EmployeeList.txt");
