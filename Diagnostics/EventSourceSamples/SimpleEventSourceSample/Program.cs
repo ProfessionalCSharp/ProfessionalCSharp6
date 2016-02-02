@@ -6,10 +6,10 @@ using static System.Console;
 
 namespace SimpleEventSourceSample
 {
-    public class Program
+    class Program
     {
         private static EventSource sampleEventSource = new EventSource("Wrox-SimpleEventSourceSample");
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             WriteLine($"Log Guid: {sampleEventSource.Guid}");
             WriteLine($"Name: {sampleEventSource.Name}");
@@ -17,7 +17,7 @@ namespace SimpleEventSourceSample
             sampleEventSource.Write("Startup", new { Info = "started app" });
             NetworkRequestSample().Wait();
             ReadLine();
-            sampleEventSource?.Dispose();
+            sampleEventSource.Dispose();
         }
 
         private static async Task NetworkRequestSample()

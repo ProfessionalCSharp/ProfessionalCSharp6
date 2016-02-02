@@ -1,7 +1,7 @@
 ﻿{
   "version": "1.0.0-*",
   "description": "SimpleEventSourceSample Console Application",
-  "authors": [ "chris" ],
+  "authors": [ "Christian" ],
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
@@ -11,7 +11,7 @@
 
   "dependencies": {
     "NETStandard.Library": "1.0.0-*",
-    "System.Net.Http": "4.0.1-rc2-23623"
+    "System.Net.Http": "4.0.1-*"
   },
 
   "commands": {
@@ -19,7 +19,7 @@
   },
 
   "frameworks": {
-    "dnx46": {
+    "net46": {
       "dependencies": {
 
       }

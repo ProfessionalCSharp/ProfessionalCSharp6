@@ -6,7 +6,7 @@ using static System.Console;
 
 namespace EventSourceSampleAnnotations
 {
-    public class Program
+    class Program
     {
         public static void GenerateManifest()
         {
@@ -16,7 +16,7 @@ namespace EventSourceSampleAnnotations
         }
 
 
-        public static void Main()
+        static void Main()
         {
             SampleEventSource.Log.Startup();
             GenerateManifest();

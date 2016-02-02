@@ -8,7 +8,7 @@
 
   "dependencies": {
     "NETStandard.Library": "1.0.0-*",
-    "System.Diagnostics.Tracing": "4.0.21-rc2-23629"
+    "System.Diagnostics.Tracing": "4.0.21-*"
   },
 
   "frameworks": {

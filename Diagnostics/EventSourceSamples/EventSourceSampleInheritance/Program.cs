@@ -5,9 +5,9 @@ using static System.Console;
 
 namespace EventSourceSampleInheritance
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             SampleEventSource.Log.Startup();
             WriteLine($"Log Guid: {SampleEventSource.Log.Guid}");

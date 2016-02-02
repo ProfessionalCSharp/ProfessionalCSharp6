@@ -8,10 +8,10 @@ using static System.Console;
 
 namespace ClientApp
 {
-    public class Program
+    class Program
     {
 
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             IEnumerable<EventSource> eventSources = EventSource.GetSources();
             InitListener(eventSources);

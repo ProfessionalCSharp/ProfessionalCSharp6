@@ -14,12 +14,13 @@
   },
 
   "dependencies": {
+    "MyApplicationEvents": "1.0.0-*",
     "NETStandard.Library": "1.0.0-*",
-    "System.Net.Http": "4.0.1-rc2-23623"
+    "System.Net.Http": "4.0.1-*"
   },
 
   "frameworks": {
-    "dnx46": {
+    "net46": {
       "dependencies": {
       }
     },
