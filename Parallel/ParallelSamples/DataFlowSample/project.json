@@ -10,7 +10,7 @@
 
   "dependencies": {
     "NETStandard.Library": "1.0.0-*",
-    "System.Threading.Tasks.Dataflow": "4.5.26-*"
+    "System.Threading.Tasks.Dataflow": "4.6.0-*"
   },
 
   "frameworks": {
