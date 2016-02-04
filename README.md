@@ -1,10 +1,15 @@
 # ProfessionalCSharp6
 Code samples for the Wrox book Professional C# 6
 
-Samples are updated to .NET 5 Core RC. To compile the samples you need Visual Studio 2015 and ASP.NET 5 Tools:
-http://docs.asp.net/en/latest/getting-started/installing-on-windows.html
+Samples are updated to .NET 5 Core RC. To compile and run the samples you need:
+* Visual Studio 2015
+* ASP.NET 5 RC1 Tools (https://get.asp.net/ - click the ASP.NET 5 RC, install for Windows)
+* Upgrade to the runtime using >dnvm upgrade from the command line 
+* dotnet Tools (https://github.com/dotnet/cli, download and installe the latest MSI package)
 
-With some samples, additional NuGet feeds might be needed.
+With some samples, additional NuGet feeds might be needed. Configure these with Visual Studio 2015:
+* .NET Core: https://www.myget.org/F/dotnet-core/api/v3/index.json
+* ASP.NET Core: https://www.myget.org/F/aspnetmaster/api/v2
 
 Samples available for these chapters (sample folders):
 
