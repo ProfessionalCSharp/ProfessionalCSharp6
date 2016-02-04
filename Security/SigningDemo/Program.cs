@@ -11,7 +11,7 @@ namespace SigningDemo
         CngKey _aliceKeySignature;
         private byte[] _alicePubKeyBlob;
 
-        public static void Main()
+        static void Main()
         {
             var p = new Program();
             p.Run();

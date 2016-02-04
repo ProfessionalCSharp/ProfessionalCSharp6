@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "RSASample": {
+      "commandName": "RSASample",
+      "sdkVersion": "dnx-coreclr-win-x64.1.0.0-rc2-16357"
+    }
+  }
+}

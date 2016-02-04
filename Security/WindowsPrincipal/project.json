@@ -21,8 +21,6 @@
   "frameworks": {
     "net46": {
       "dependencies": {
-
-
       }
     },
     "dnxcore50": {

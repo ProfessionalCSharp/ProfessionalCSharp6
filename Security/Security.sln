@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Encryption", "Encryption", "{1F85F7EC-C1D3-4CBA-ABB6-7B2E6DF4C7C8}"
 EndProject
@@ -22,9 +22,6 @@ EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SigningDemo", "SigningDemo\SigningDemo.xproj", "{63B72EA7-8985-4E0D-A96D-4E89DF5FCF70}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A35FE1F4-8975-4135-BE02-F9F837630E1F}"
-	ProjectSection(SolutionItems) = preProject
-		SigningDemo\global.json = SigningDemo\global.json
-	EndProjectSection
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "RSASample", "RSASample\RSASample.xproj", "{80E843F8-0583-4F55-B1C4-E528FE165E06}"
 EndProject

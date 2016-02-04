@@ -11,8 +11,9 @@
 
   "dependencies": {
     "NETStandard.Library": "1.0.0-*",
-    "System.Security.Cryptography.Cng": "4.0.0-rc2-23715",
-    "System.Security.Cryptography.Primitives": "4.0.0-rc2-23715"
+    "System.Security.Cryptography.Algorithms": "4.0.0-*",
+    "System.Security.Cryptography.Cng": "4.0.0-*",
+    "System.Security.Cryptography.Primitives": "4.0.0-*"
   },
 
   "commands": {
