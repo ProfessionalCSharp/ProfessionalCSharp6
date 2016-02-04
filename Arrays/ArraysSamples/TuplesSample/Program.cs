@@ -11,7 +11,7 @@ namespace TuplesSample
             WriteLine(name.ToString());
 
             var result = Divide(5, 2);
-            WriteLine($"result of division: {result.Item1}, reminder: {result.Item2}");
+            WriteLine($"result of division: {result.Item1}, remainder: {result.Item2}");
 
             AnyElementNumber();
         }
@@ -26,9 +26,9 @@ namespace TuplesSample
         public static Tuple<int, int> Divide(int dividend, int divisor)
         {
             int result = dividend / divisor;
-            int reminder = dividend % divisor;
+            int remainder = dividend % divisor;
 
-            return Tuple.Create(result, reminder);
+            return Tuple.Create(result, remainder);
         }
     }
 }
