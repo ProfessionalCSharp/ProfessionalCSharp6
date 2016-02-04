@@ -5,7 +5,7 @@ using static System.Console;
 
 namespace XPathNavigatorSample
 {
-    public class Program
+    class Program
     {
         private const string BooksFileName = "books.xml";
         private const string NewBooksFileName = "newbooks.xml";
@@ -13,7 +13,7 @@ namespace XPathNavigatorSample
         private const string EvaluateOption = "-e";
         private const string ChangeOption = "-c";
 
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             if (args.Length != 1)
             {

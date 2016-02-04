@@ -6,7 +6,7 @@ using static System.Console;
 
 namespace JsonSample
 {
-    public class Program
+    class Program
     {
         private const string InventoryFileName = "inventory.json";
         private const string InventoryXmlFileName = "inventory.xml";
@@ -17,7 +17,7 @@ namespace JsonSample
         private const string DeserializeOption = "-d";
         private const string ReadOption = "-r";
 
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             if (args.Length != 1)
             {

@@ -5,7 +5,7 @@ using static System.Console;
 
 namespace XmlDocumentSample
 {
-    public class Program
+    class Program
     {
         private const string BooksFileName = "books.xml";
         private const string NewBooksFileName = "newbooks.xml";
@@ -13,7 +13,7 @@ namespace XmlDocumentSample
         private const string NavigateOption = "-n";
         private const string WriteOption = "-w";
 
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             if (args.Length != 1)
             {

@@ -6,7 +6,7 @@ using static System.Console;
 
 namespace LinqToXmlSample
 {
-    public class Program
+    class Program
     {
         private const string HamletFileName = "hamlet.xml";
         private const string SaveFileName = "savehamlet.xml";
@@ -22,7 +22,7 @@ namespace LinqToXmlSample
         private const string TransformingOption = "-t";
         private const string TransformingXmlOption = "-tx";
 
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             if (args.Length != 1)
             {

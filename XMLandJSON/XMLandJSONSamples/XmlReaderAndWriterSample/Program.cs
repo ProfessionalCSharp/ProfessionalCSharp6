@@ -5,7 +5,7 @@ using static System.Console;
 
 namespace XmlReaderAndWriterSample
 {
-    public class Program
+    class Program
     {
         private const string BooksFileName = "books.xml";
         private const string NewBooksFileName = "newbooks.xml";
@@ -16,7 +16,7 @@ namespace XmlReaderAndWriterSample
         private const string ReadAttributesOption = "-a";
         private const string WriteOption = "-w";
 
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             if (args.Length != 1)
             {

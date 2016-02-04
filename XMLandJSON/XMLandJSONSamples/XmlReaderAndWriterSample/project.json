@@ -1,7 +1,7 @@
 {
   "version": "1.0.0-*",
   "description": "XmlReaderAndWriterSample Console Application",
-  "authors": [ "chris" ],
+  "authors": [ "Christian" ],
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
@@ -11,7 +11,7 @@
 
   "dependencies": {
     "NETStandard.Library": "1.0.0-*",
-    "System.Xml.ReaderWriter": "4.0.11-rc2-23623"
+    "System.Xml.ReaderWriter": "4.0.11-*"
   },
 
   "commands": {

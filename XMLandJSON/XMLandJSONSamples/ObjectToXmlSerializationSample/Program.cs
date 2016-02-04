@@ -4,7 +4,7 @@ using static System.Console;
 
 namespace ObjectToXmlSerializationSample
 {
-    public class Program
+    class Program
     {
         private const string ProductFileName = "product.xml";
         private const string InventoryFileName = "inventory.xml";
@@ -13,7 +13,7 @@ namespace ObjectToXmlSerializationSample
         private const string SerializeTreeOption = "-st";
         private const string DeserializeTreeOption = "-dt";
 
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             if (args.Length != 1)
             {

@@ -1,7 +1,7 @@
 ﻿{
   "version": "1.0.0-*",
   "description": "JsonSample Console Application",
-  "authors": [ "chris" ],
+  "authors": [ "Christian" ],
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
@@ -16,7 +16,7 @@
   "dependencies": {
     "NETStandard.Library": "1.0.0-*",
     "Newtonsoft.Json": "7.0.1",
-    "System.Xml.XDocument": "4.0.11-rc2-23623"
+    "System.Xml.XDocument": "4.0.11-*"
   },
 
 
