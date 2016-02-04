@@ -9,11 +9,11 @@ using static System.Console;
 
 namespace Wrox.ProCSharp.Composition
 {
-    public class Program
+    class Program
     {
         public ICalculator Calculator { get; set; }
 
-        public static void Main()
+        static void Main()
         {
             var p = new Program();
             p.Bootstrap();
