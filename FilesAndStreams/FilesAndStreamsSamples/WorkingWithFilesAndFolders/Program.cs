@@ -166,14 +166,12 @@ namespace WorkingWithFilesAndFolders
 
         private static string GetDocumentsFolder()
         {
-#if DNXCORE50
+#if NET46
+            return Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+#else
             string drive = Environment.GetEnvironmentVariable("HOMEDRIVE");
             string path = Environment.GetEnvironmentVariable("HOMEPATH");
             return Path.Combine(drive, path, "documents");
-#elif DNX46
-            return Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-#else
-            return string.Empty;
 #endif
         }
 
