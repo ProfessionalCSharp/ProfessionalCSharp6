@@ -11,7 +11,7 @@
 
   "dependencies": {
     "NETStandard.Library": "1.0.0-*",
-    "System.IO.MemoryMappedFiles": "4.0.0-rc2-23618"
+    "System.IO.MemoryMappedFiles": "4.0.0-*"
   },
 
   "commands": {

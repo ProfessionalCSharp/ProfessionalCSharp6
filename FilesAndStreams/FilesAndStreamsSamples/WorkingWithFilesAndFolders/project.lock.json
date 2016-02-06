@@ -213,19 +213,6 @@
           "lib/net46/System.IO.FileSystem.Primitives.dll": {}
         }
       },
-      "System.IO.FileSystem.Watcher/4.0.0-rc3-23805": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System"
-        ],
-        "compile": {
-          "ref/net46/System.IO.FileSystem.Watcher.dll": {}
-        },
-        "runtime": {
-          "lib/net46/System.IO.FileSystem.Watcher.dll": {}
-        }
-      },
       "System.Linq/4.0.2-rc3-23805": {
         "type": "package",
         "compile": {
@@ -663,15 +650,6 @@
         },
         "runtime": {
           "lib/dotnet5.4/System.IO.FileSystem.Primitives.dll": {}
-        }
-      },
-      "System.IO.FileSystem.Watcher/4.0.0-rc3-23805": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime": "4.0.0"
-        },
-        "compile": {
-          "ref/dotnet5.4/System.IO.FileSystem.Watcher.dll": {}
         }
       },
       "System.Linq/4.0.2-rc3-23805": {
@@ -1197,15 +1175,6 @@
           "runtimes/win7/lib/net/_._": {}
         }
       },
-      "runtime.win7.System.IO.FileSystem.Watcher/4.0.0-rc3-23805": {
-        "type": "package",
-        "compile": {
-          "ref/dotnet/_._": {}
-        },
-        "runtime": {
-          "runtimes/win7/lib/net/_._": {}
-        }
-      },
       "runtime.win7.System.Net.Primitives/4.0.11-rc3-23805": {
         "type": "package",
         "compile": {
@@ -1367,19 +1336,6 @@
         },
         "runtime": {
           "lib/net46/System.IO.FileSystem.Primitives.dll": {}
-        }
-      },
-      "System.IO.FileSystem.Watcher/4.0.0-rc3-23805": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System"
-        ],
-        "compile": {
-          "ref/net46/System.IO.FileSystem.Watcher.dll": {}
-        },
-        "runtime": {
-          "lib/net46/System.IO.FileSystem.Watcher.dll": {}
         }
       },
       "System.Linq/4.0.2-rc3-23805": {
@@ -1897,15 +1853,6 @@
           "runtimes/win7/lib/net/_._": {}
         }
       },
-      "runtime.win7.System.IO.FileSystem.Watcher/4.0.0-rc3-23805": {
-        "type": "package",
-        "compile": {
-          "ref/dotnet/_._": {}
-        },
-        "runtime": {
-          "runtimes/win7/lib/net/_._": {}
-        }
-      },
       "runtime.win7.System.Net.Primitives/4.0.11-rc3-23805": {
         "type": "package",
         "compile": {
@@ -2074,19 +2021,6 @@
         },
         "runtime": {
           "lib/net46/System.IO.FileSystem.Primitives.dll": {}
-        }
-      },
-      "System.IO.FileSystem.Watcher/4.0.0-rc3-23805": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System"
-        ],
-        "compile": {
-          "ref/net46/System.IO.FileSystem.Watcher.dll": {}
-        },
-        "runtime": {
-          "lib/net46/System.IO.FileSystem.Watcher.dll": {}
         }
       },
       "System.Linq/4.0.2-rc3-23805": {
@@ -2658,26 +2592,6 @@
           "runtimes/win7/lib/dotnet5.4/System.IO.FileSystem.dll": {}
         }
       },
-      "runtime.win7.System.IO.FileSystem.Watcher/4.0.0-rc3-23805": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Win32.Primitives": "4.0.0",
-          "System.IO.FileSystem": "4.0.0",
-          "System.IO.FileSystem.Primitives": "4.0.0",
-          "System.Resources.ResourceManager": "4.0.0",
-          "System.Runtime": "4.0.20",
-          "System.Runtime.Extensions": "4.0.10",
-          "System.Runtime.Handles": "4.0.0",
-          "System.Threading": "4.0.10",
-          "System.Threading.Overlapped": "4.0.0"
-        },
-        "compile": {
-          "ref/dotnet/_._": {}
-        },
-        "runtime": {
-          "runtimes/win7/lib/dotnet5.4/System.IO.FileSystem.Watcher.dll": {}
-        }
-      },
       "runtime.win7.System.Net.NameResolution/4.0.0-rc3-23805": {
         "type": "package",
         "dependencies": {
@@ -2801,8 +2715,8 @@
         "native": {
           "runtimes/win7-x86/native/API-MS-Win-Base-Util-L1-1-0.dll": {},
           "runtimes/win7-x86/native/api-ms-win-core-com-l1-1-0.dll": {},
-          "runtimes/win7-x86/native/api-ms-win-core-com-private-l1-1-0.dll": {},
           "runtimes/win7-x86/native/api-ms-win-core-comm-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-com-private-l1-1-0.dll": {},
           "runtimes/win7-x86/native/api-ms-win-core-console-l1-1-0.dll": {},
           "runtimes/win7-x86/native/api-ms-win-core-console-l2-1-0.dll": {},
           "runtimes/win7-x86/native/api-ms-win-core-datetime-l1-1-0.dll": {},
@@ -2865,13 +2779,13 @@
           "runtimes/win7-x86/native/api-ms-win-core-shlwapi-obsolete-l1-1-0.dll": {},
           "runtimes/win7-x86/native/api-ms-win-core-shutdown-l1-1-0.dll": {},
           "runtimes/win7-x86/native/api-ms-win-core-shutdown-l1-1-1.dll": {},
+          "runtimes/win7-x86/native/API-MS-Win-Core-StringAnsi-L1-1-0.dll": {},
           "runtimes/win7-x86/native/api-ms-win-core-string-l1-1-0.dll": {},
           "runtimes/win7-x86/native/API-MS-Win-Core-String-L2-1-0.dll": {},
-          "runtimes/win7-x86/native/api-ms-win-core-string-obsolete-l1-1-0.dll": {},
-          "runtimes/win7-x86/native/api-ms-win-core-string-obsolete-l1-1-1.dll": {},
-          "runtimes/win7-x86/native/API-MS-Win-Core-StringAnsi-L1-1-0.dll": {},
           "runtimes/win7-x86/native/api-ms-win-core-stringloader-l1-1-0.dll": {},
           "runtimes/win7-x86/native/api-ms-win-core-stringloader-l1-1-1.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-string-obsolete-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-string-obsolete-l1-1-1.dll": {},
           "runtimes/win7-x86/native/api-ms-win-core-synch-l1-1-0.dll": {},
           "runtimes/win7-x86/native/api-ms-win-core-synch-l1-2-0.dll": {},
           "runtimes/win7-x86/native/api-ms-win-core-sysinfo-l1-1-0.dll": {},
@@ -3070,15 +2984,6 @@
         },
         "runtime": {
           "lib/dotnet5.4/System.IO.FileSystem.Primitives.dll": {}
-        }
-      },
-      "System.IO.FileSystem.Watcher/4.0.0-rc3-23805": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime": "4.0.0"
-        },
-        "compile": {
-          "ref/dotnet5.4/System.IO.FileSystem.Watcher.dll": {}
         }
       },
       "System.Linq/4.0.2-rc3-23805": {
@@ -3742,26 +3647,6 @@
           "runtimes/win7/lib/dotnet5.4/System.IO.FileSystem.dll": {}
         }
       },
-      "runtime.win7.System.IO.FileSystem.Watcher/4.0.0-rc3-23805": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Win32.Primitives": "4.0.0",
-          "System.IO.FileSystem": "4.0.0",
-          "System.IO.FileSystem.Primitives": "4.0.0",
-          "System.Resources.ResourceManager": "4.0.0",
-          "System.Runtime": "4.0.20",
-          "System.Runtime.Extensions": "4.0.10",
-          "System.Runtime.Handles": "4.0.0",
-          "System.Threading": "4.0.10",
-          "System.Threading.Overlapped": "4.0.0"
-        },
-        "compile": {
-          "ref/dotnet/_._": {}
-        },
-        "runtime": {
-          "runtimes/win7/lib/dotnet5.4/System.IO.FileSystem.Watcher.dll": {}
-        }
-      },
       "runtime.win7.System.Net.NameResolution/4.0.0-rc3-23805": {
         "type": "package",
         "dependencies": {
@@ -3892,8 +3777,8 @@
         "native": {
           "runtimes/win7-x64/native/API-MS-Win-Base-Util-L1-1-0.dll": {},
           "runtimes/win7-x64/native/api-ms-win-core-com-l1-1-0.dll": {},
-          "runtimes/win7-x64/native/api-ms-win-core-com-private-l1-1-0.dll": {},
           "runtimes/win7-x64/native/api-ms-win-core-comm-l1-1-0.dll": {},
+          "runtimes/win7-x64/native/api-ms-win-core-com-private-l1-1-0.dll": {},
           "runtimes/win7-x64/native/api-ms-win-core-console-l1-1-0.dll": {},
           "runtimes/win7-x64/native/api-ms-win-core-console-l2-1-0.dll": {},
           "runtimes/win7-x64/native/api-ms-win-core-datetime-l1-1-0.dll": {},
@@ -3956,13 +3841,13 @@
           "runtimes/win7-x64/native/api-ms-win-core-shlwapi-obsolete-l1-1-0.dll": {},
           "runtimes/win7-x64/native/api-ms-win-core-shutdown-l1-1-0.dll": {},
           "runtimes/win7-x64/native/api-ms-win-core-shutdown-l1-1-1.dll": {},
+          "runtimes/win7-x64/native/API-MS-Win-Core-StringAnsi-L1-1-0.dll": {},
           "runtimes/win7-x64/native/api-ms-win-core-string-l1-1-0.dll": {},
           "runtimes/win7-x64/native/API-MS-Win-Core-String-L2-1-0.dll": {},
-          "runtimes/win7-x64/native/api-ms-win-core-string-obsolete-l1-1-0.dll": {},
-          "runtimes/win7-x64/native/api-ms-win-core-string-obsolete-l1-1-1.dll": {},
-          "runtimes/win7-x64/native/API-MS-Win-Core-StringAnsi-L1-1-0.dll": {},
           "runtimes/win7-x64/native/api-ms-win-core-stringloader-l1-1-0.dll": {},
           "runtimes/win7-x64/native/api-ms-win-core-stringloader-l1-1-1.dll": {},
+          "runtimes/win7-x64/native/api-ms-win-core-string-obsolete-l1-1-0.dll": {},
+          "runtimes/win7-x64/native/api-ms-win-core-string-obsolete-l1-1-1.dll": {},
           "runtimes/win7-x64/native/api-ms-win-core-synch-l1-1-0.dll": {},
           "runtimes/win7-x64/native/api-ms-win-core-synch-l1-2-0.dll": {},
           "runtimes/win7-x64/native/api-ms-win-core-sysinfo-l1-1-0.dll": {},
@@ -4161,15 +4046,6 @@
         },
         "runtime": {
           "lib/dotnet5.4/System.IO.FileSystem.Primitives.dll": {}
-        }
-      },
-      "System.IO.FileSystem.Watcher/4.0.0-rc3-23805": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime": "4.0.0"
-        },
-        "compile": {
-          "ref/dotnet5.4/System.IO.FileSystem.Watcher.dll": {}
         }
       },
       "System.Linq/4.0.2-rc3-23805": {
@@ -5138,25 +5014,6 @@
         "runtimes/win7/lib/dotnet5.4/System.IO.FileSystem.dll",
         "runtimes/win7/lib/net/_._",
         "runtimes/win7/lib/netcore50/System.IO.FileSystem.dll",
-        "runtimes/win7/lib/win8/_._",
-        "runtimes/win7/lib/wp8/_._",
-        "runtimes/win7/lib/wpa81/_._",
-        "ThirdPartyNotices.txt"
-      ]
-    },
-    "runtime.win7.System.IO.FileSystem.Watcher/4.0.0-rc3-23805": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "n1/nCU1HrQuh5sQOiYVQz33/bPDO7Xc/DICHJfAGA1dy0JV34WmDFiNu0VvaZB/ybyEWvfH7cQly1ArW8NPOcQ==",
-      "files": [
-        "dotnet_library_license.txt",
-        "ref/dotnet/_._",
-        "runtime.win7.System.IO.FileSystem.Watcher.4.0.0-rc3-23805.nupkg",
-        "runtime.win7.System.IO.FileSystem.Watcher.4.0.0-rc3-23805.nupkg.sha512",
-        "runtime.win7.System.IO.FileSystem.Watcher.nuspec",
-        "runtimes/win7/lib/dotnet5.4/System.IO.FileSystem.Watcher.dll",
-        "runtimes/win7/lib/net/_._",
-        "runtimes/win7/lib/netcore50/_._",
         "runtimes/win7/lib/win8/_._",
         "runtimes/win7/lib/wp8/_._",
         "runtimes/win7/lib/wpa81/_._",
@@ -6238,40 +6095,6 @@
         "System.IO.FileSystem.Primitives.4.0.1-rc3-23805.nupkg",
         "System.IO.FileSystem.Primitives.4.0.1-rc3-23805.nupkg.sha512",
         "System.IO.FileSystem.Primitives.nuspec",
-        "ThirdPartyNotices.txt"
-      ]
-    },
-    "System.IO.FileSystem.Watcher/4.0.0-rc3-23805": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "ppC2v4vREdYxQNhyxgwesIXwkyNyavn9GJqbE/zg89B4SZwvTEmVYFq6VuGgB02IXKWtmXtu1Hl8agT1dKW6iw==",
-      "files": [
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.IO.FileSystem.Watcher.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "ref/dotnet5.4/de/System.IO.FileSystem.Watcher.xml",
-        "ref/dotnet5.4/es/System.IO.FileSystem.Watcher.xml",
-        "ref/dotnet5.4/fr/System.IO.FileSystem.Watcher.xml",
-        "ref/dotnet5.4/it/System.IO.FileSystem.Watcher.xml",
-        "ref/dotnet5.4/ja/System.IO.FileSystem.Watcher.xml",
-        "ref/dotnet5.4/ko/System.IO.FileSystem.Watcher.xml",
-        "ref/dotnet5.4/ru/System.IO.FileSystem.Watcher.xml",
-        "ref/dotnet5.4/System.IO.FileSystem.Watcher.dll",
-        "ref/dotnet5.4/System.IO.FileSystem.Watcher.xml",
-        "ref/dotnet5.4/zh-hans/System.IO.FileSystem.Watcher.xml",
-        "ref/dotnet5.4/zh-hant/System.IO.FileSystem.Watcher.xml",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net46/System.IO.FileSystem.Watcher.dll",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "runtime.json",
-        "System.IO.FileSystem.Watcher.4.0.0-rc3-23805.nupkg",
-        "System.IO.FileSystem.Watcher.4.0.0-rc3-23805.nupkg.sha512",
-        "System.IO.FileSystem.Watcher.nuspec",
         "ThirdPartyNotices.txt"
       ]
     },
@@ -7615,8 +7438,7 @@
   "projectFileDependencyGroups": {
     "": [
       "NETStandard.Library >= 1.0.0-*",
-      "System.IO.FileSystem >= 4.0.1-*",
-      "System.IO.FileSystem.Watcher >= 4.0.0-*"
+      "System.IO.FileSystem >= 4.0.1-*"
     ],
     ".NETFramework,Version=v4.6": [],
     "DNXCore,Version=v5.0": []

@@ -213,7 +213,7 @@
           "lib/net46/System.IO.FileSystem.Primitives.dll": {}
         }
       },
-      "System.IO.MemoryMappedFiles/4.0.0-rc2-23618": {
+      "System.IO.MemoryMappedFiles/4.0.0-rc3-23805": {
         "type": "package",
         "dependencies": {
           "System.IO.FileSystem": "4.0.0",
@@ -700,7 +700,7 @@
           "lib/dotnet5.4/System.IO.FileSystem.Primitives.dll": {}
         }
       },
-      "System.IO.MemoryMappedFiles/4.0.0-rc2-23618": {
+      "System.IO.MemoryMappedFiles/4.0.0-rc3-23805": {
         "type": "package",
         "dependencies": {
           "System.IO.FileSystem": "4.0.0",
@@ -2900,8 +2900,8 @@
         "native": {
           "runtimes/win7-x86/native/API-MS-Win-Base-Util-L1-1-0.dll": {},
           "runtimes/win7-x86/native/api-ms-win-core-com-l1-1-0.dll": {},
-          "runtimes/win7-x86/native/api-ms-win-core-com-private-l1-1-0.dll": {},
           "runtimes/win7-x86/native/api-ms-win-core-comm-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-com-private-l1-1-0.dll": {},
           "runtimes/win7-x86/native/api-ms-win-core-console-l1-1-0.dll": {},
           "runtimes/win7-x86/native/api-ms-win-core-console-l2-1-0.dll": {},
           "runtimes/win7-x86/native/api-ms-win-core-datetime-l1-1-0.dll": {},
@@ -2964,13 +2964,13 @@
           "runtimes/win7-x86/native/api-ms-win-core-shlwapi-obsolete-l1-1-0.dll": {},
           "runtimes/win7-x86/native/api-ms-win-core-shutdown-l1-1-0.dll": {},
           "runtimes/win7-x86/native/api-ms-win-core-shutdown-l1-1-1.dll": {},
+          "runtimes/win7-x86/native/API-MS-Win-Core-StringAnsi-L1-1-0.dll": {},
           "runtimes/win7-x86/native/api-ms-win-core-string-l1-1-0.dll": {},
           "runtimes/win7-x86/native/API-MS-Win-Core-String-L2-1-0.dll": {},
-          "runtimes/win7-x86/native/api-ms-win-core-string-obsolete-l1-1-0.dll": {},
-          "runtimes/win7-x86/native/api-ms-win-core-string-obsolete-l1-1-1.dll": {},
-          "runtimes/win7-x86/native/API-MS-Win-Core-StringAnsi-L1-1-0.dll": {},
           "runtimes/win7-x86/native/api-ms-win-core-stringloader-l1-1-0.dll": {},
           "runtimes/win7-x86/native/api-ms-win-core-stringloader-l1-1-1.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-string-obsolete-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-string-obsolete-l1-1-1.dll": {},
           "runtimes/win7-x86/native/api-ms-win-core-synch-l1-1-0.dll": {},
           "runtimes/win7-x86/native/api-ms-win-core-synch-l1-2-0.dll": {},
           "runtimes/win7-x86/native/api-ms-win-core-sysinfo-l1-1-0.dll": {},
@@ -4015,8 +4015,8 @@
         "native": {
           "runtimes/win7-x64/native/API-MS-Win-Base-Util-L1-1-0.dll": {},
           "runtimes/win7-x64/native/api-ms-win-core-com-l1-1-0.dll": {},
-          "runtimes/win7-x64/native/api-ms-win-core-com-private-l1-1-0.dll": {},
           "runtimes/win7-x64/native/api-ms-win-core-comm-l1-1-0.dll": {},
+          "runtimes/win7-x64/native/api-ms-win-core-com-private-l1-1-0.dll": {},
           "runtimes/win7-x64/native/api-ms-win-core-console-l1-1-0.dll": {},
           "runtimes/win7-x64/native/api-ms-win-core-console-l2-1-0.dll": {},
           "runtimes/win7-x64/native/api-ms-win-core-datetime-l1-1-0.dll": {},
@@ -4079,13 +4079,13 @@
           "runtimes/win7-x64/native/api-ms-win-core-shlwapi-obsolete-l1-1-0.dll": {},
           "runtimes/win7-x64/native/api-ms-win-core-shutdown-l1-1-0.dll": {},
           "runtimes/win7-x64/native/api-ms-win-core-shutdown-l1-1-1.dll": {},
+          "runtimes/win7-x64/native/API-MS-Win-Core-StringAnsi-L1-1-0.dll": {},
           "runtimes/win7-x64/native/api-ms-win-core-string-l1-1-0.dll": {},
           "runtimes/win7-x64/native/API-MS-Win-Core-String-L2-1-0.dll": {},
-          "runtimes/win7-x64/native/api-ms-win-core-string-obsolete-l1-1-0.dll": {},
-          "runtimes/win7-x64/native/api-ms-win-core-string-obsolete-l1-1-1.dll": {},
-          "runtimes/win7-x64/native/API-MS-Win-Core-StringAnsi-L1-1-0.dll": {},
           "runtimes/win7-x64/native/api-ms-win-core-stringloader-l1-1-0.dll": {},
           "runtimes/win7-x64/native/api-ms-win-core-stringloader-l1-1-1.dll": {},
+          "runtimes/win7-x64/native/api-ms-win-core-string-obsolete-l1-1-0.dll": {},
+          "runtimes/win7-x64/native/api-ms-win-core-string-obsolete-l1-1-1.dll": {},
           "runtimes/win7-x64/native/api-ms-win-core-synch-l1-1-0.dll": {},
           "runtimes/win7-x64/native/api-ms-win-core-synch-l1-2-0.dll": {},
           "runtimes/win7-x64/native/api-ms-win-core-sysinfo-l1-1-0.dll": {},
@@ -6387,38 +6387,6 @@
         "ThirdPartyNotices.txt"
       ]
     },
-    "System.IO.MemoryMappedFiles/4.0.0-rc2-23618": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "UoGi0hH3Hw6c0s6DkwVs1ff857JGiD6mV0X9CXIZgpOHu/xgHrc9eaN9J4eF8QUdG9D6vy8rXjRjBXqbUYLfJA==",
-      "files": [
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.IO.MemoryMappedFiles.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "ref/dotnet5.4/de/System.IO.MemoryMappedFiles.xml",
-        "ref/dotnet5.4/es/System.IO.MemoryMappedFiles.xml",
-        "ref/dotnet5.4/fr/System.IO.MemoryMappedFiles.xml",
-        "ref/dotnet5.4/it/System.IO.MemoryMappedFiles.xml",
-        "ref/dotnet5.4/ja/System.IO.MemoryMappedFiles.xml",
-        "ref/dotnet5.4/ko/System.IO.MemoryMappedFiles.xml",
-        "ref/dotnet5.4/ru/System.IO.MemoryMappedFiles.xml",
-        "ref/dotnet5.4/System.IO.MemoryMappedFiles.dll",
-        "ref/dotnet5.4/System.IO.MemoryMappedFiles.xml",
-        "ref/dotnet5.4/zh-hans/System.IO.MemoryMappedFiles.xml",
-        "ref/dotnet5.4/zh-hant/System.IO.MemoryMappedFiles.xml",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net46/System.IO.MemoryMappedFiles.dll",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "runtime.json",
-        "System.IO.MemoryMappedFiles.4.0.0-rc2-23618.nupkg",
-        "System.IO.MemoryMappedFiles.4.0.0-rc2-23618.nupkg.sha512",
-        "System.IO.MemoryMappedFiles.nuspec"
-      ]
-    },
     "System.IO.MemoryMappedFiles/4.0.0-rc3-23805": {
       "type": "package",
       "serviceable": true,
@@ -7859,7 +7827,7 @@
   "projectFileDependencyGroups": {
     "": [
       "NETStandard.Library >= 1.0.0-*",
-      "System.IO.MemoryMappedFiles >= 4.0.0-rc2-23618"
+      "System.IO.MemoryMappedFiles >= 4.0.0-*"
     ],
     ".NETFramework,Version=v4.6": [],
     "DNXCore,Version=v5.0": []
