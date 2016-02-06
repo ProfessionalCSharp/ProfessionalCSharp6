@@ -5,9 +5,9 @@ using static System.Console;
 
 namespace ResourcesDemo
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             var resources = new ResourceManager("ResourcesDemo.Resources.Messages", typeof(Program).GetTypeInfo().Assembly);
             string goodMorning = resources.GetString("GoodMorning", new CultureInfo("de-AT"));

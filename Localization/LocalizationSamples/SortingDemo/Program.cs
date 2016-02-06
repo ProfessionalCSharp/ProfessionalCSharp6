@@ -6,9 +6,9 @@ using static System.Console;
 
 namespace SortingDemo
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             string[] names = {"Alabama", "Texas", "Washington",
                               "Virginia", "Wisconsin", "Wyoming",
