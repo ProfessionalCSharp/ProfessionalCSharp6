@@ -4,9 +4,9 @@ using static System.Console;
 
 namespace SemaphoreSample
 {
-    public class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             int taskCount = 6;
             int semaphoreCount = 3;

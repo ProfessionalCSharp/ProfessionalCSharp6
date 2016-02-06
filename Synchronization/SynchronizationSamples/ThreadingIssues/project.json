@@ -12,7 +12,7 @@
 
   "dependencies": {
     "NETStandard.Library": "1.0.0-*",
-    "System.Diagnostics.TraceSource": "4.0.0-rc2-23623"
+    "System.Diagnostics.TraceSource": "4.0.0-*"
   },
 
   "commands": {

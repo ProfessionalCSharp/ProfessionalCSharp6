@@ -4,9 +4,9 @@ using static System.Console;
 
 namespace EventSample
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             const int taskCount = 4;
 

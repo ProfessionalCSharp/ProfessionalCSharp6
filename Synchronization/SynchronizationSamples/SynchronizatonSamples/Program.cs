@@ -3,9 +3,9 @@ using static System.Console;
 
 namespace SynchronizatonSamples
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             int numTasks = 20;
             var state = new SharedState();

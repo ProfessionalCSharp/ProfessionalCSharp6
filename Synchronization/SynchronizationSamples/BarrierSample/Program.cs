@@ -8,9 +8,9 @@ using static System.Console;
 
 namespace BarrierSample
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             const int numberTasks = 2;
             const int partitionSize = 1000000;

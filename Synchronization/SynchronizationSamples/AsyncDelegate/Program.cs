@@ -6,11 +6,12 @@ namespace AsyncDelegate
 {
     public delegate int TakesAWhileDelegate(int x, int ms);
 
-    public class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main()
         {
             TakesAWhileDelegate d1 = TakesAWhile;
+
 
             IAsyncResult ar = d1.BeginInvoke(1, 3000, null, null);
             while (true)

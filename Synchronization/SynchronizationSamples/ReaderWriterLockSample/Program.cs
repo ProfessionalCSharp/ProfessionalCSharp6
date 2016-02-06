@@ -5,7 +5,7 @@ using static System.Console;
 
 namespace ReaderWriterLockSample
 {
-    public class Program
+    class Program
     {
         private static List<int> _items = new List<int>() { 0, 1, 2, 3, 4, 5 };
         private static ReaderWriterLockSlim _rwl =
@@ -52,7 +52,7 @@ namespace ReaderWriterLockSample
             }
         }
 
-        public static void Main()
+        static void Main()
         {
             var taskFactory = new TaskFactory(TaskCreationOptions.LongRunning,
               TaskContinuationOptions.None);
