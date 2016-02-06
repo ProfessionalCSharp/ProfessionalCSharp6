@@ -1,28 +1,30 @@
 {
   "version": "1.0.0-*",
   "description": "",
-  "authors": [ "" ],
+  "authors": [ "Christian" ],
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
 
   "dependencies": {
-    "Microsoft.CSharp": "4.0.1-rc2-23618",
-    "System.Console": "4.0.0-rc2-23618",
-    "System.IO.FileSystem.Watcher": "4.0.0-rc2-23618"
+    "NETStandard.Library": "1.0.0-*",
+    "System.IO.FileSystem.Watcher": "4.0.0-*"
   },
 
   "commands": {
-    "FileMonitor" : "FileMonitor"
+    "FileMonitor": "FileMonitor"
   },
 
-  "frameworks" : {
-    "dnx46": {
+  "frameworks": {
+    "net46": {
       "dependencies": {
 
       }
     },
-    "dnxcore50" : {
+    "dnxcore50": {
       "dependencies": {
 
       }

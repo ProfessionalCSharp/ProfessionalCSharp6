@@ -6,9 +6,9 @@ using static System.Console;
 
 namespace CompressFileSample
 {
-    public class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main()
         {
             CompressFile("./test.txt", "./test.compressed");
             DecompressFile("./test.txt.gzip");
