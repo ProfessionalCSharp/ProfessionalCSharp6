@@ -3,9 +3,9 @@ using static System.Console;
 
 namespace InheritanceWithConstructors
 {
-    public class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             var r = new Rectangle();
             r.Position.X = 33;

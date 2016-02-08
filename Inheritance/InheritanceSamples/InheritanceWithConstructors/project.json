@@ -1,7 +1,7 @@
 {
   "version": "1.0.0-*",
   "description": "InheritanceWithConstructors Console Application",
-  "authors": [ "christian" ],
+  "authors": [ "Christian" ],
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
@@ -18,7 +18,7 @@
   },
 
   "frameworks": {
-    "dnx46": {
+    "net46": {
     },
     "dnxcore50": {
       "dependencies": {

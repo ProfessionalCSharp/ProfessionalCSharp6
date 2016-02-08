@@ -2,9 +2,9 @@
 
 namespace VirtualMethods
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             var r = new Rectangle();
             r.Position.X = 33;

@@ -5,9 +5,9 @@ using static System.Console;
 
 namespace UsingInterfaces
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             IBankAccount venusAccount = new SaverAccount();
             IBankAccount jupiterAccount = new GoldAccount();
