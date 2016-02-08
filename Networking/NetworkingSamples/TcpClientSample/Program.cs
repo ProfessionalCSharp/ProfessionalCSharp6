@@ -9,12 +9,12 @@ using static System.Console;
 
 namespace TcpClientSample
 {
-    public class Program
+    class Program
     {
         private const string host = "localhost";
         private const int port = 8000;
 
-        public static void Main(string[] args)
+        static void Main()
         {
             SendAndReceive().Wait();
             ReadLine();

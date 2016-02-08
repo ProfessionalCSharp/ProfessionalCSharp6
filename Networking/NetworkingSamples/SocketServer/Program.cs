@@ -9,9 +9,9 @@ using static System.Console;
 
 namespace SocketServer
 {
-    public class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             if (args.Length != 1)
             {

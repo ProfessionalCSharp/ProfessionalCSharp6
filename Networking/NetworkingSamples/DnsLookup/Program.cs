@@ -5,9 +5,9 @@ using static System.Console;
 
 namespace DnsLookup
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             do
             {

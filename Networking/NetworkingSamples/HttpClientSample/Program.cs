@@ -8,12 +8,12 @@ using static System.Console;
 
 namespace HttpClientSample
 {
-    public class Program
+    class Program
     {
         private const string NorthwindUrl = "http://services.odata.org/Northwind/Northwind.svc/Regions";
         private const string IncorrectUrl = "http://services.odata.org/Northwind1/Northwind.svc/Regions";
 
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             if (args.Length != 1)
             {

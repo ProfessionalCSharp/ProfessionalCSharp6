@@ -7,9 +7,9 @@ using static System.Console;
 
 namespace UdpReceiver
 {
-    public class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             int port;
             string groupAddress;

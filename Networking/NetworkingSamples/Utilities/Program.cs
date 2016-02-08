@@ -4,9 +4,9 @@ using static System.Console;
 
 namespace Utilities
 {
-    public class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             if (args == null || args.Length != 2)
             {
@@ -64,10 +64,11 @@ namespace Utilities
         {
             var page = new Uri(url);
             WriteLine($"scheme: {page.Scheme}");
-#if DNXCORE50
-            WriteLine($"host: {page.Host}, type:  {page.HostNameType}, idn host: {page.IdnHost}");
-#else
+#if NET46
             WriteLine($"host: {page.Host}, type:  {page.HostNameType} ");
+
+#else
+            WriteLine($"host: {page.Host}, type:  {page.HostNameType}, idn host: {page.IdnHost}");
 #endif
             WriteLine($"port: {page.Port}");
             WriteLine($"path: {page.AbsolutePath}");

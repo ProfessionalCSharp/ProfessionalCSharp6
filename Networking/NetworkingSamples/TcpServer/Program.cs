@@ -9,7 +9,7 @@ using static TcpServer.CustomProtocol;
 
 namespace TcpServer
 {
-    public class Program
+    class Program
     {
         private const int portNumber = 8800;
         private SessionManager _sessionManager = new SessionManager();
@@ -26,7 +26,7 @@ namespace TcpServer
 
 
 
-        public static void Main()
+        static void Main()
         {
             var p = new Program();
             p.Run();
