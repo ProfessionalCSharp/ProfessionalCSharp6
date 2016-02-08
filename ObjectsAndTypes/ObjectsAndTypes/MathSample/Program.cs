@@ -6,9 +6,9 @@ using static System.Console;
 
 namespace MathSample
 {
-    public class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main()
         {
             // Try calling some static functions.
             WriteLine($"Pi is {Math.GetPi()}");

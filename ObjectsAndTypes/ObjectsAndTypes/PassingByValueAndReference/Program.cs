@@ -1,4 +1,5 @@
-﻿using static System.Console;
+﻿using System.Runtime.CompilerServices;
+using static System.Console;
 
 namespace PassingByValueAndReference
 {
@@ -7,14 +8,14 @@ namespace PassingByValueAndReference
         public int X { get; set; }
     }
 
-    public class Program
+    class Program
     {
         public static void ChangeA(A a)
         {
             a.X = 2;
         }
 
-        public static void Main()
+        static void Main()
         {
 
             A a1 = new A { X = 1 };

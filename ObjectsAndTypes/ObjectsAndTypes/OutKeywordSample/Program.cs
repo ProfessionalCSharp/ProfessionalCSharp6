@@ -2,9 +2,9 @@
 
 namespace OutKeywordSample
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             int? x = 3;
             int x1 = x.HasValue ? x.Value : -1;

@@ -2,9 +2,9 @@
 
 namespace StaticConstructorSample
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             WriteLine($"User-preferences: BackColor is: {UserPreferences.BackColor}");
 

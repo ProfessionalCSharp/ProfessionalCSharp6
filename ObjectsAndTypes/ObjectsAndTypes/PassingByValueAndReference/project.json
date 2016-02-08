@@ -12,7 +12,10 @@
   },
 
   "frameworks": {
-    "net46": { },
+    "net46": {
+      "dependencies": {
+      }
+    },
     "dnxcore50": {
       "dependencies": {
       }

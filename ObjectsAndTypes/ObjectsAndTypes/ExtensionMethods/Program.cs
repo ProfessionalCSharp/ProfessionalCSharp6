@@ -26,9 +26,9 @@ namespace ExtensionMethods
 
     }
 
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             string fox = "the quick brown fox jumped over the lazy dogs down 9876543210 times";
             int wordCount = fox.GetWordCount();

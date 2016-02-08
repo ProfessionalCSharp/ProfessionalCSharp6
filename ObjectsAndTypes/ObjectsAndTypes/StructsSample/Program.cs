@@ -2,9 +2,9 @@
 
 namespace StructsSample
 {
-    public class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main()
         {
             var point = new Dimensions();
             point.Length = 3;

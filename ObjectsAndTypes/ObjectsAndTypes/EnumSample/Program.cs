@@ -3,9 +3,9 @@ using static System.Console;
 
 namespace EnumSample
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
 
             DaysOfWeekSamples();

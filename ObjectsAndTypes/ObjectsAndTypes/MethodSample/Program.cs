@@ -3,9 +3,9 @@ using static System.Console;
 
 namespace Wrox
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             // Try calling some static functions.
             WriteLine($"Pi is {Math.GetPi()}");
