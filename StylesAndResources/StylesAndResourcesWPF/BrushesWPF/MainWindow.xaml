@@ -111,7 +111,7 @@
                 <Button.Background>
                     <VisualBrush>
                         <VisualBrush.Visual>
-                            <MediaElement Source="./IceScating.mp4" LoadedBehavior="Play" />
+                            <MediaElement Source="./IceSkating.mp4" LoadedBehavior="Play" />
                         </VisualBrush.Visual>
                     </VisualBrush>
                 </Button.Background>
@@ -119,7 +119,7 @@
 
             <Button Width="200" Height="200" Foreground="White" Click="OnMediaButtonClick">
                 <StackPanel>
-                    <MediaElement x:Name="media1" Source="./IceScating.mp4" 
+                    <MediaElement x:Name="media1" Source="./IceSkating.mp4" 
         LoadedBehavior="Manual" />
                     <Border Height="100">
                         <Rectangle>

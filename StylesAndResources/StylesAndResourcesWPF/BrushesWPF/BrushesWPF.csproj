@@ -99,7 +99,7 @@
     <Resource Include="build2015.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="IceScating.mp4">
+    <Content Include="IceSkating.mp4">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
