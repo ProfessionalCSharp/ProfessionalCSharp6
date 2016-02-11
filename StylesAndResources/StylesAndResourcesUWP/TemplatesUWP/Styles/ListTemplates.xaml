@@ -1,35 +1,10 @@
 ﻿<ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:model="using:ModelsUWA"
+    xmlns:model="using:ModelsUWP"
     xmlns:local="using:TemplatesUWP">
 
 
-
-    <!--<Style x:Key="ListBoxStyle1" TargetType="ListBox">
-        <Setter Property="ItemTemplate" Value="{StaticResource CountryDataTemplate}" />
-    </Style>
-
-    <Style x:Key="ListBoxStyle2" TargetType="ListBox" BasedOn="{StaticResource ListBoxStyle1}">
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="ListBox">
-                    <ScrollViewer HorizontalScrollBarVisibility="Auto">
-                        <ItemsPresenter   />
-                    </ScrollViewer>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>
-
-    <Style x:Key="ListBoxStyle3" TargetType="ListBox" BasedOn="{StaticResource ListBoxStyle1}">
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="ListBox">
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>-->
 
     <Style x:Key="ListViewStyle1" TargetType="ListView">
         <Setter Property="ItemTemplate" Value="{StaticResource CountryDataTemplate}" />
@@ -70,16 +45,6 @@
         <Setter Property="ScrollViewer.BringIntoViewOnFocusChange" Value="True"/>
         <Setter Property="ItemTemplate" Value="{StaticResource CountryDataTemplate}" />
         <Setter Property="ItemContainerStyle" Value="{StaticResource ListViewItemStyle1}" />
-        <!--<Setter Property="ItemContainerTransitions">
-            <Setter.Value>
-                <TransitionCollection>
-                    <AddDeleteThemeTransition/>
-                    <ContentThemeTransition/>
-                    <ReorderThemeTransition/>
-                    <EntranceThemeTransition IsStaggeringEnabled="False"/>
-                </TransitionCollection>
-            </Setter.Value>
-        </Setter>-->
         <Setter Property="ItemsPanel">
             <Setter.Value>
                 <ItemsPanelTemplate>
@@ -99,6 +64,4 @@
             </Setter.Value>
         </Setter>
     </Style>
-
-
 </ResourceDictionary>
