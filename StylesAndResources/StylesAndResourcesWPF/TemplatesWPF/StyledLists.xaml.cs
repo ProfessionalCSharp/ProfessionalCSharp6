@@ -1,5 +1,7 @@
-﻿using System;
+﻿using ModelsWPF;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,9 +21,16 @@ namespace TemplatesWPF
     /// </summary>
     public partial class StyledLists : Window
     {
+        public ObservableCollection<Country> Countries { get; } = new ObservableCollection<Country>();
         public StyledLists()
         {
             InitializeComponent();
+            this.DataContext = this;
+            var countries = new CountryRepository().GetCountries();
+            foreach (var country in countries)
+            {
+                Countries.Add(country);
+            }
         }
     }
 }

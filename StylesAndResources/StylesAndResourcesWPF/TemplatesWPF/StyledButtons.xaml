@@ -14,6 +14,7 @@
         </Grid.RowDefinitions>
         <Button Style="{StaticResource RoundedGelButton}" Content="Click Me!" Margin="20" />
         <Button Grid.Row="1" Margin="20" Style="{DynamicResource ButtonStyle1}">Designer Generated</Button>
+        <Button x:Name="countryButton" Grid.Row="2" Margin="20" ContentTemplate="{StaticResource CountryDataTemplate}" />
         <!--<Button x:Name="countryButton" Grid.Row="2" Margin="20" />-->
     </Grid>
 </Window>

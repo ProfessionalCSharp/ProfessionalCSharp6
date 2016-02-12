@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ModelsWPF;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,12 @@ namespace TemplatesWPF
         public StyledButtons()
         {
             InitializeComponent();
+
+            this.countryButton.Content = new Country
+            {
+                Name = "Austria",
+                ImagePath = "/Images/Austria.bmp"
+            };
         }
     }
 }

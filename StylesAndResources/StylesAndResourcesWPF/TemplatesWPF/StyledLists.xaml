@@ -7,6 +7,24 @@
         mc:Ignorable="d"
         Title="StyledLists" Height="300" Width="300">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <ListView ItemsSource="{Binding Countries}" Margin="10" Grid.Row="0" Grid.Column="0" />
+        <ListView ItemsSource="{Binding Countries}" Margin="10" Grid.Row="0" Grid.Column="1" ItemTemplate="{StaticResource CountryDataTemplate}" />
+        <ListView ItemsSource="{Binding Countries}" Margin="10" Grid.Row="0" Grid.Column="2" Style="{StaticResource ListViewStyle1}" />
+        <ListView ItemsSource="{Binding Countries}" Margin="10" Grid.Row="0" Grid.Column="3" Style="{StaticResource ListViewStyle1}" MaxWidth="180"  />
+        <!--<ListView ItemsSource="{Binding Countries}" Margin="10" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" ItemContainerStyle="{StaticResource ListViewItemStyle1}" Style="{StaticResource ListViewStyle1}"  ItemsPanel="{StaticResource ItemsPanelTemplate1}"  />
         
+        <ListView ItemsSource="{Binding Countries}" Margin="10" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Style="{StaticResource ListViewStyle2}"  />-->
+        <ListView ItemsSource="{Binding Countries}" Margin="10" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Style="{StaticResource ListViewStyle1}" ItemsPanel="{DynamicResource ItemsPanelTemplate1}" ItemContainerStyle="{DynamicResource ListViewItemStyle1}" />
     </Grid>
 </Window>
