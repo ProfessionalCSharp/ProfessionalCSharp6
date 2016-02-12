@@ -39,6 +39,8 @@ namespace AnimationWPF
 
         private void OnKeyframeAnimation(object sender, RoutedEventArgs e)
         {
+            var keyframeWindow = new KeyFrameAnimation();
+            keyframeWindow.Show();
 
         }
     }

@@ -63,6 +63,9 @@
       <DependentUpon>EasingFunctions.xaml</DependentUpon>
     </Compile>
     <Compile Include="EasingFunctionsManager.cs" />
+    <Compile Include="KeyFrameAnimation.xaml.cs">
+      <DependentUpon>KeyFrameAnimation.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SimpleAnimation.xaml.cs">
       <DependentUpon>SimpleAnimation.xaml</DependentUpon>
     </Compile>
@@ -71,6 +74,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="EasingFunctions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="KeyFrameAnimation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
