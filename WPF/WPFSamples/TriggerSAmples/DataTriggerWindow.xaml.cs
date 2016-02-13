@@ -25,7 +25,7 @@ namespace TriggerSamples
 
             list1.Items.Add(new Book
             {
-                Title = "Professional C# 5.0 and .NET 4.5.1",
+                Title = "Professional C# 6.0 and .NET Core 1.0",
                 Publisher = "Wrox Press"
             });
             list1.Items.Add(new Book
