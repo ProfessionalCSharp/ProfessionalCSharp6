@@ -101,8 +101,6 @@
     </Compile>
     <Compile Include="Models\BindableBase.cs" />
     <Compile Include="Models\Book.cs" />
-    <Compile Include="Models\FileItem.cs" />
-    <Compile Include="Models\FileItemDataSource.cs" />
     <Compile Include="Models\SomeData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Styles\DataTemplates.xaml.cs">
@@ -114,15 +112,11 @@
     <Compile Include="Views\LifetimeSample.xaml.cs">
       <DependentUpon>LifetimeSample.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\PhasedRenderingPage.xaml.cs">
-      <DependentUpon>PhasedRenderingPage.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <None Include="CompiledBindingSample_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\Default.rd.xml" />
@@ -152,10 +146,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\LifetimeSample.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\PhasedRenderingPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
