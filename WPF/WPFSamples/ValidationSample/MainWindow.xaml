@@ -45,8 +45,8 @@
         </Grid.Resources>
         <Label Grid.Row="0" Grid.Column="0" >Value1:</Label>
         <TextBox Grid.Row="0" Grid.Column="1"
-						Text="{Binding Path=Value1, ValidatesOnExceptions=True}" />
-						<!--Validation.ErrorTemplate="{StaticResource validationTemplate}" />-->
+						Text="{Binding Path=Value1, ValidatesOnExceptions=True}"
+						Validation.ErrorTemplate="{StaticResource validationTemplate}" />
 
         <Label Grid.Row="1" Grid.Column="0">Value2:</Label>
         <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Value2, ValidatesOnDataErrors=True}" />

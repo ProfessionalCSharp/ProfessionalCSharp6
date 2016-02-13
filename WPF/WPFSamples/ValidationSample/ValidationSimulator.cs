@@ -8,7 +8,7 @@ namespace ValidationSample
         public static Task<string> Validate(int val,
             [CallerMemberName] string propertyName = null)
         {
-            return Task<string>.Run(async () =>
+            return Task.Run(async () =>
             {
                 await Task.Delay(3000);
                 if (val > 50) return "bad value";
