@@ -10,6 +10,7 @@ Samples are updated to .NET 5 Core RC. To compile and run the samples you need:
 With some samples, additional NuGet feeds might be needed. Configure these with Visual Studio 2015:
 * .NET Core: https://dotnet.myget.org/F/dotnet-core/api/v3/index.json
 * ASP.NET Core: https://www.myget.org/F/aspnetmaster/api/v2
+* ASP.NET Core 1.0: https://www.myget.org/F/aspnetcidev/api/v3/index.json
 
 Samples available for these chapters (sample folders):
 
