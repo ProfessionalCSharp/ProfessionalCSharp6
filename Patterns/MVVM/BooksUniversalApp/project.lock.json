@@ -29,9 +29,9 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection/1.0.0-rc1-final": {
+      "Microsoft.Extensions.DependencyInjection/1.0.0-rc2-15921": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "[1.0.0-rc1-final, )",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "[1.0.0-rc2-15921, )",
           "System.Collections": "[4.0.10, )",
           "System.Collections.Concurrent": "[4.0.10, )",
           "System.ComponentModel": "[4.0.0, )",
@@ -53,7 +53,7 @@
           "lib/netcore50/Microsoft.Extensions.DependencyInjection.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/1.0.0-rc1-final": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/1.0.0-rc2-15921": {
         "dependencies": {
           "System.ComponentModel": "[4.0.0, )",
           "System.Diagnostics.Debug": "[4.0.10, )",
@@ -1592,9 +1592,9 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection/1.0.0-rc1-final": {
+      "Microsoft.Extensions.DependencyInjection/1.0.0-rc2-15921": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "[1.0.0-rc1-final, )",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "[1.0.0-rc2-15921, )",
           "System.Collections": "[4.0.10, )",
           "System.Collections.Concurrent": "[4.0.10, )",
           "System.ComponentModel": "[4.0.0, )",
@@ -1616,7 +1616,7 @@
           "lib/netcore50/Microsoft.Extensions.DependencyInjection.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/1.0.0-rc1-final": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/1.0.0-rc2-15921": {
         "dependencies": {
           "System.ComponentModel": "[4.0.0, )",
           "System.Diagnostics.Debug": "[4.0.10, )",
@@ -3736,9 +3736,9 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection/1.0.0-rc1-final": {
+      "Microsoft.Extensions.DependencyInjection/1.0.0-rc2-15921": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "[1.0.0-rc1-final, )",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "[1.0.0-rc2-15921, )",
           "System.Collections": "[4.0.10, )",
           "System.Collections.Concurrent": "[4.0.10, )",
           "System.ComponentModel": "[4.0.0, )",
@@ -3760,7 +3760,7 @@
           "lib/netcore50/Microsoft.Extensions.DependencyInjection.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/1.0.0-rc1-final": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/1.0.0-rc2-15921": {
         "dependencies": {
           "System.ComponentModel": "[4.0.0, )",
           "System.Diagnostics.Debug": "[4.0.10, )",
@@ -5776,9 +5776,9 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection/1.0.0-rc1-final": {
+      "Microsoft.Extensions.DependencyInjection/1.0.0-rc2-15921": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "[1.0.0-rc1-final, )",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "[1.0.0-rc2-15921, )",
           "System.Collections": "[4.0.10, )",
           "System.Collections.Concurrent": "[4.0.10, )",
           "System.ComponentModel": "[4.0.0, )",
@@ -5800,7 +5800,7 @@
           "lib/netcore50/Microsoft.Extensions.DependencyInjection.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/1.0.0-rc1-final": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/1.0.0-rc2-15921": {
         "dependencies": {
           "System.ComponentModel": "[4.0.0, )",
           "System.Diagnostics.Debug": "[4.0.10, )",
@@ -7925,9 +7925,9 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection/1.0.0-rc1-final": {
+      "Microsoft.Extensions.DependencyInjection/1.0.0-rc2-15921": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "[1.0.0-rc1-final, )",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "[1.0.0-rc2-15921, )",
           "System.Collections": "[4.0.10, )",
           "System.Collections.Concurrent": "[4.0.10, )",
           "System.ComponentModel": "[4.0.0, )",
@@ -7949,7 +7949,7 @@
           "lib/netcore50/Microsoft.Extensions.DependencyInjection.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/1.0.0-rc1-final": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/1.0.0-rc2-15921": {
         "dependencies": {
           "System.ComponentModel": "[4.0.0, )",
           "System.Diagnostics.Debug": "[4.0.10, )",
@@ -9965,9 +9965,9 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection/1.0.0-rc1-final": {
+      "Microsoft.Extensions.DependencyInjection/1.0.0-rc2-15921": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "[1.0.0-rc1-final, )",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "[1.0.0-rc2-15921, )",
           "System.Collections": "[4.0.10, )",
           "System.Collections.Concurrent": "[4.0.10, )",
           "System.ComponentModel": "[4.0.0, )",
@@ -9989,7 +9989,7 @@
           "lib/netcore50/Microsoft.Extensions.DependencyInjection.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/1.0.0-rc1-final": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/1.0.0-rc2-15921": {
         "dependencies": {
           "System.ComponentModel": "[4.0.0, )",
           "System.Diagnostics.Debug": "[4.0.10, )",
@@ -12114,9 +12114,9 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection/1.0.0-rc1-final": {
+      "Microsoft.Extensions.DependencyInjection/1.0.0-rc2-15921": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "[1.0.0-rc1-final, )",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "[1.0.0-rc2-15921, )",
           "System.Collections": "[4.0.10, )",
           "System.Collections.Concurrent": "[4.0.10, )",
           "System.ComponentModel": "[4.0.0, )",
@@ -12138,7 +12138,7 @@
           "lib/netcore50/Microsoft.Extensions.DependencyInjection.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/1.0.0-rc1-final": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/1.0.0-rc2-15921": {
         "dependencies": {
           "System.ComponentModel": "[4.0.0, )",
           "System.Diagnostics.Debug": "[4.0.10, )",
@@ -14181,8 +14181,8 @@
         "ThirdPartyNotices.txt"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection/1.0.0-rc1-final": {
-      "sha512": "S/+s3fq85j21H5nYOvh1fIt1arl8F5lZ7Ryiw/qend83yHQwIQbBs+dip9FhqiPmAn6Dz3UhW0likQQurfEsLQ==",
+    "Microsoft.Extensions.DependencyInjection/1.0.0-rc2-15921": {
+      "sha512": "pwQ8Zjqre9OsV/wXrrb/ZblbiTlZ5I+WmQe5OewuG1l3VN/3WYhH24y6GoK0QmUmX70dIxkLDXOa70vAbUIUQQ==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
@@ -14196,8 +14196,8 @@
         "Microsoft.Extensions.DependencyInjection.nuspec"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/1.0.0-rc1-final": {
-      "sha512": "MUKexXAsRZ55C7YZ26ShePZgBeW+6FbasxeIVmZ/BZIgiG4uw6yPOdfl9WvTaUL9SFK2sEPcYLatWmLfTpsOAA==",
+    "Microsoft.Extensions.DependencyInjection.Abstractions/1.0.0-rc2-15921": {
+      "sha512": "qd4GyUFprf7+Wgs31GQ6jqPrzqJpVq+w1s41FiS54utEilIIZavNacojyJw1j6wHhIVjFT61MMKDm/UCZsySrw==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
