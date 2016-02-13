@@ -1,8 +1,4 @@
-﻿#if DNXCORE50
-#define DNXCORE
-#endif
-
-using System;
+﻿using System;
 using System.Reflection;
 using System.Text;
 using static System.Console;
@@ -44,12 +40,11 @@ namespace TypeView
             AddToOutput("\npublic members:");
             foreach (MemberInfo member in t.GetMembers())
             {
-#if DNXCORE
-                AddToOutput($"{member.DeclaringType} {member.Name}");
-#else
+#if NET46
                 AddToOutput($"{member.DeclaringType} {member.MemberType} {member.Name}");
+#else
+                AddToOutput($"{member.DeclaringType} {member.Name}");
 #endif
-
             }
         }
 
@@ -57,7 +52,5 @@ namespace TypeView
         {
             OutputText.Append($"\n {Text}");
         }
-
-
     }
 }
