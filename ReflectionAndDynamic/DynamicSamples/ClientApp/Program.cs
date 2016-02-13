@@ -56,9 +56,7 @@ namespace ClientApp
             Assembly assembly = Assembly.LoadFile(CalculatorLibPath);
             return assembly.CreateInstance(CalculatorTypeName);
         }
-#endif
-
-#if DNXCORE50
+#else
         private static object GetCalculator()
         {
             IAssemblyLoadContext loadContext = PlatformServices.Default.AssemblyLoadContextAccessor.Default;
@@ -71,6 +69,7 @@ namespace ClientApp
             }
         }
 #endif
+
     }
 
     public class DirectoryLoader : IAssemblyLoader
@@ -86,7 +85,7 @@ namespace ClientApp
 
         public Assembly Load(AssemblyName assemblyName) =>
              _context.LoadFile(_path);
-        
+
 
         public IntPtr LoadUnmanagedLibrary(string name)
         {
