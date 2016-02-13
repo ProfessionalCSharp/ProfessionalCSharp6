@@ -18,6 +18,7 @@ namespace DependencyObjectUWP
             int oldValue = (int)e.OldValue;
             int newValue = (int)e.NewValue;
 
+
         }
 
         public int Minimum
@@ -37,6 +38,8 @@ namespace DependencyObjectUWP
         public static readonly DependencyProperty MaximumProperty =
             DependencyProperty.Register(nameof(Maximum), typeof(int),
               typeof(MyDependencyObject), new PropertyMetadata(100));
+
+        
 
 
     }

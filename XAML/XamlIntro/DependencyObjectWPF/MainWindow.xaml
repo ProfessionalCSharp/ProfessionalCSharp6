@@ -6,7 +6,14 @@
         xmlns:local="clr-namespace:DependencyObjectWPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <local:MyDependencyObject x:Key="dep1" Value="10" Minimum="0" Maximum="50" ValueChanged="OnValueChanged" />
+    </Window.Resources>
     <Grid>
-        
+        <StackPanel>
+            <Slider x:Name="slider1" Minimum="0" Maximum="70" Value="{Binding Source={StaticResource dep1}, Path=Value, Mode=TwoWay}" />
+            <TextBlock Text="{Binding Source={StaticResource dep1}, Path=Value, Mode=OneWay}" />
+        </StackPanel>
+
     </Grid>
 </Window>

@@ -24,5 +24,10 @@ namespace DependencyObjectWPF
         {
             InitializeComponent();
         }
+
+        private void OnValueChanged(object sender, RoutedPropertyChangedEventArgs<int> e)
+        {
+
+        }
     }
 }
