@@ -4,9 +4,9 @@ using static System.Console;
 
 namespace ConnectionSamples
 {
-    public class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             if (args.Length != 1)
             {

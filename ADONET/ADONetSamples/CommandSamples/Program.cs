@@ -6,9 +6,9 @@ using static System.Console;
 
 namespace CommandSamples
 {
-    public class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             if (args.Length != 1)
             {
@@ -76,7 +76,6 @@ namespace CommandSamples
                 object count = command.ExecuteScalar();
                 WriteLine($"counted {count} product records");
             }
-
         }
 
         public static void ShowUsage()
@@ -188,7 +187,6 @@ namespace CommandSamples
                     connection.Open();
                     int records = command.ExecuteNonQuery();
                     WriteLine($"{records} inserted");
-
                 }
             }
             catch (SqlException ex)
@@ -220,8 +218,6 @@ namespace CommandSamples
                     WriteLine($"{id} {firstName:-20} {middleName} {lastName:-20}");
                 }
             }
-
-
         }
 
         private static string GetProductInformationSQL() =>

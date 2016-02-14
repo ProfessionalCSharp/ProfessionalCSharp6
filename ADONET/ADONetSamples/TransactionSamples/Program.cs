@@ -7,9 +7,9 @@ using static System.Console;
 
 namespace TransactionSamples
 {
-    public class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             TransactionSample().Wait();
         }

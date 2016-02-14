@@ -7,12 +7,11 @@ using static System.Console;
 
 namespace AsyncSamples
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             ReadAsync(714).Wait();
-
         }
 
         public static async Task ReadAsync(int productId)
