@@ -1,15 +1,15 @@
 ﻿using MenusSample;
-using Microsoft.Data.Entity;
-using Microsoft.Data.Entity.Storage;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
 using System.Linq;
 using System.Threading.Tasks;
 using static System.Console;
 
 namespace TransactionSample
 {
-    public class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main()
         {
             PreparationAsync().Wait();
             AddTwoRecordsWithOneTxAsync().Wait();

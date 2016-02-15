@@ -1,7 +1,7 @@
 ﻿{
   "version": "1.0.0-*",
   "description": "BooksSampleWithDI Console Application",
-  "authors": [ "chris" ],
+  "authors": [ "Christian" ],
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
@@ -11,10 +11,10 @@
   },
 
   "dependencies": {
-    "NETStandard.Library": "1.0.0-rc2-23616",
-    "EntityFramework.Core": "7.0.0-rc2-16649",
-    "EntityFramework.MicrosoftSqlServer": "7.0.0-rc2-16649",
-    "Microsoft.Extensions.DependencyInjection": "1.0.0-rc2-15921",
+    "NETStandard.Library": "1.0.0-*",
+    "Microsoft.EntityFrameworkCore": "1.0.0-*",
+    "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0-*",
+    "Microsoft.Extensions.DependencyInjection": "1.0.0-*"
   },
 
   "commands": {
@@ -22,7 +22,7 @@
   },
 
   "frameworks": {
-    "dnx46": {
+    "net46": {
       "dependencies": {
       }
     },

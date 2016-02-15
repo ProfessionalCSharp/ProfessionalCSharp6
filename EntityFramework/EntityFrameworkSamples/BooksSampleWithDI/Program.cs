@@ -1,12 +1,12 @@
-﻿using Microsoft.Data.Entity;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 
 namespace BooksSample
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             var p = new Program();
             p.InitializeServices();

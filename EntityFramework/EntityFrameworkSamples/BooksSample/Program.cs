@@ -6,9 +6,9 @@ using static System.Console;
 
 namespace BooksSample
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             var p = new Program();
             p.AddBookAsync("Professional C# 6", "Wrox Press").Wait();

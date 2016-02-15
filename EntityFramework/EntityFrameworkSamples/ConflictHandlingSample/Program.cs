@@ -1,5 +1,5 @@
-﻿using Microsoft.Data.Entity;
-using Microsoft.Data.Entity.ChangeTracking;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System;
 using System.Linq;
 using System.Text;
@@ -22,16 +22,14 @@ namespace BooksSample
         }
     }
 
-    public class Program
+    class Program
     {
         private const string BookTitle = "sample book";
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             CreateDatabaseAsync().Wait();
             AddBookAsync().Wait();
             ConflictHandlingAsync().Wait();
-            
-
         }
 
         private static async Task CreateDatabaseAsync()

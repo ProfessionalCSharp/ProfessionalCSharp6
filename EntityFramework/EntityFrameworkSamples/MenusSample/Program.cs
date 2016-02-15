@@ -1,5 +1,5 @@
-﻿using Microsoft.Data.Entity;
-using Microsoft.Data.Entity.ChangeTracking;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
@@ -7,9 +7,9 @@ using static System.Console;
 
 namespace MenusSample
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             CreateDatabaseAsync().Wait();
             AddRecordsAsync().Wait();
@@ -125,13 +125,16 @@ namespace MenusSample
                     Menu[] soups =
                     {
                         new Menu { Text = "Consommé Célestine (with shredded pancake)", Price = 4.8m, MenuCard =soupCard},
-                        new Menu { Text = "Baked Potatoe Soup", Price = 4.8m, MenuCard = soupCard },
+                        new Menu { Text = "Baked Potato Soup", Price = 4.8m, MenuCard = soupCard },
                         new Menu { Text = "Cheddar Broccoli Soup", Price = 4.8m, MenuCard = soupCard },
                     };
 
                     soupCard.Title = "Soups";
                     soupCard.Menus.AddRange(soups);
-                    context.MenuCards.Add(soupCard, GraphBehavior.IncludeDependents);
+                    // TODO: GraphBehavior was removed
+                    //                    context.MenuCards.Add(soupCard, GraphBehavior.IncludeDependents);
+
+                    context.MenuCards.Add(soupCard);
 
                     ShowState(context);
 

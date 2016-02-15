@@ -1,7 +1,7 @@
 {
   "version": "1.0.0-*",
   "description": "TransactionSample Console Application",
-  "authors": [ "chris" ],
+  "authors": [ "Christian" ],
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
@@ -11,10 +11,10 @@
   },
 
   "dependencies": {
-    "NETStandard.Library": "1.0.0-rc2-23616",
-    "EntityFramework.Commands": "7.0.0-rc2-16649",
-    "EntityFramework.Core": "7.0.0-rc2-16649",
-    "EntityFramework.MicrosoftSqlServer": "7.0.0-rc2-16649"
+    "NETStandard.Library": "1.0.0-*",
+    "Microsoft.EntityFrameworkCore.Commands": "1.0.0-*",
+    "Microsoft.EntityFrameworkCore": "1.0.0-*",
+    "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0-*"
   },
 
   "commands": {
@@ -22,11 +22,7 @@
   },
 
   "frameworks": {
-    "dnx46": {
-      "dependencies": {
-      }
-    },
-    "dnxcore50": {
+    "net46": {
       "dependencies": {
       }
     }
