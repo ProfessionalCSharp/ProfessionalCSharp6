@@ -17,7 +17,7 @@ namespace ChatServer
 
         public override Task OnConnected()
         {
-            //TODO: access info using base.Context
+            // you can access info using base.Context
             return base.OnConnected();
         }
 
