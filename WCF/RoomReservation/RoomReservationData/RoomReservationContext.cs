@@ -1,22 +1,20 @@
-﻿using System.Data.Entity;
+﻿using Microsoft.Data.Entity;
 using Wrox.ProCSharp.WCF.Contracts;
 
 namespace Wrox.ProCSharp.WCF.Data
 {
     public class RoomReservationContext : DbContext
     {
+        private const string ConnectionString = @"server=(localdb)\mssqllocaldb;Database=RoomReservations;trusted_connection=true";
         public RoomReservationContext()
-            : base(@"server=(localdb)\mssqllocaldb;Database=RoomReservations;trusted_connection=true")
         {
 
         }
-
-        // use with EF 7
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    base.OnConfiguring(optionsBuilder);
-        //    optionsBuilder.UseSqlServer(@"server=(localdb)\mssqllocaldb;Database=RoomReservations;trusted_connection=true");
-        //}
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            base.OnConfiguring(optionsBuilder);
+            optionsBuilder.UseSqlServer(ConnectionString);
+        }
         public DbSet<RoomReservation> RoomReservations { get; set; }
     }
 }
