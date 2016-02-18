@@ -27,7 +27,12 @@
       }
     },
     "dnxcore50": {
-      "dependencies": { }
+      "dependencies": {
+
+      },
+      "compilationOptions": {
+        "define": [ "DOTNETCORE"]
+      }      
     }
   }
 }

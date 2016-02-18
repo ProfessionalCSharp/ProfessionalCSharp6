@@ -56,7 +56,9 @@ namespace ClientApp
             Assembly assembly = Assembly.LoadFile(CalculatorLibPath);
             return assembly.CreateInstance(CalculatorTypeName);
         }
-#else
+#endif
+
+#if DOTNETCORE
         private static object GetCalculator()
         {
             IAssemblyLoadContext loadContext = PlatformServices.Default.AssemblyLoadContextAccessor.Default;
