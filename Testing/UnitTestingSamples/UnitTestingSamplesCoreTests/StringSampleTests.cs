@@ -11,6 +11,7 @@ namespace UnitTestingSamplesCoreTests
         [Fact]
         public void TestStringSampleNull()
         {
+     
             Assert.Throws<ArgumentNullException>(() => new StringSample(null));
         }
 

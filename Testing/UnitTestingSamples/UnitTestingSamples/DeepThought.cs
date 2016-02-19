@@ -2,10 +2,7 @@
 {
     public class DeepThought
     {
-        public int TheAnswerToTheUltimateQuestionOfLifeTheUniverseAndEverything()
-        {
-            return 42;
-        }
+        public int TheAnswerToTheUltimateQuestionOfLifeTheUniverseAndEverything() => 42;
     }
 
 }
