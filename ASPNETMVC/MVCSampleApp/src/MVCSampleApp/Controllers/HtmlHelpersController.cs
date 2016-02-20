@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNet.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using MVCSampleApp.Extensions;
 using MVCSampleApp.Models;
 using System;

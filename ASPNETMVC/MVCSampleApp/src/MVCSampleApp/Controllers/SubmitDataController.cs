@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNet.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using MVCSampleApp.Models;
 using System.Threading.Tasks;
 
@@ -34,23 +34,7 @@ namespace MVCSampleApp.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateMenu4(Menu m)
-        {
-            if (ModelState.IsValid)
-            {
-                ViewBag.Info =
-                  $"menu created: {m.Text}, Price: {m.Price}, category: {m.Category}";
-            }
-            else
-            {
-                ViewBag.Info = "not valid";
-            }
-            return View("Index");
-        }
-
-
-        [HttpPost]
-        public async Task<IActionResult> CreateMenuResult()
+        public async Task<IActionResult> CreateMenu3Result()
         {
             var m = new Menu();
             bool updated = await TryUpdateModelAsync<Menu>(m);
@@ -63,6 +47,21 @@ namespace MVCSampleApp.Controllers
             {
                 return View("Error");
             }
+        }
+
+        [HttpPost]
+        public IActionResult CreateMenu4(Menu m)
+        {
+            if (ModelState.IsValid)
+            {
+                ViewBag.Info =
+                  $"menu created: {m.Text}, Price: {m.Price}, category: {m.Category}";
+            }
+            else
+            {
+                ViewBag.Info = "not valid";
+            }
+            return View("Index");
         }
     }
 }

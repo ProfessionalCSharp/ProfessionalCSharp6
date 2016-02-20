@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNet.Mvc.Rendering;
-using Microsoft.AspNet.Mvc.ViewFeatures;
-using Microsoft.AspNet.Razor.TagHelpers;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.TagHelpers;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -38,9 +38,9 @@ namespace MVCSampleApp.Extensions
                 var th = new TagBuilder("th");
                 th.InnerHtml.Append(prop.Name);
               
-                tr.InnerHtml.Append(th);
+                tr.InnerHtml.AppendHtml(th);
             }
-            table.InnerHtml.Append(tr);
+            table.InnerHtml.AppendHtml(tr);
           
             foreach (var item in Items)
             {
@@ -50,12 +50,12 @@ namespace MVCSampleApp.Extensions
                 {
                     var td = new TagBuilder("td");
                     td.InnerHtml.Append(prop.GetValue(item).ToString());
-                    tr.InnerHtml.Append(td);
+                    tr.InnerHtml.AppendHtml(td);
                 }
-                table.InnerHtml.Append(tr);
+                table.InnerHtml.AppendHtml(tr);
             }
             
-            output.Content.Append(table.InnerHtml);
+            output.Content.AppendHtml(table.InnerHtml);
         }
     }
 }

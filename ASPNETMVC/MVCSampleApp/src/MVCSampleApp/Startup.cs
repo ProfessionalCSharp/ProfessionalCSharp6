@@ -1,5 +1,5 @@
-﻿using Microsoft.AspNet.Builder;
-using Microsoft.AspNet.Hosting;
+﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -38,7 +38,7 @@ namespace MVCSampleApp
 
             if (env.IsDevelopment())
             {
-                app.UseBrowserLink();
+               // app.UseBrowserLink();
                 app.UseDeveloperExceptionPage();
                 //app.UseDatabaseErrorPage();
             }
@@ -87,12 +87,12 @@ namespace MVCSampleApp
         // Entry point for the application.
         public static void Main(string[] args)
         {
-            var application = new WebApplicationBuilder()
-                .UseConfiguration(WebApplicationConfiguration.GetDefault(args))
+            var host = new WebHostBuilder()
+                .UseDefaultConfiguration(args)
                 .UseStartup<Startup>()
                 .Build();
 
-            application.Run();
+            host.Run();
         }
     }
 }

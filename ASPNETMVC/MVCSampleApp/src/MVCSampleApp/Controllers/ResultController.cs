@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNet.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using MVCSampleApp.Models;
 using System;
 
@@ -22,7 +22,7 @@ namespace MVCSampleApp.Controllers
             var m = new Menu
             {
                 Id = 3,
-                Text = "Grilled sausage with sauerkraut and potatoes",
+                Text = "Grilled sausage with sauerkraut and potatos",
                 Price = 12.90,
                 Date = new DateTime(2016, 3, 31),
                 Category = "Main"
