@@ -2,9 +2,9 @@
 
 namespace VariableScopeSample2
 {
-    public class Program
+    class Program
     {
-        public static int Main(string[] args)
+        static int Main(string[] args)
         {
 
             int j = 20;
