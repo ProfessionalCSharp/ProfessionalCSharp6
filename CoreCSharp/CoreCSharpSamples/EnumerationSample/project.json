@@ -1,7 +1,7 @@
 ﻿{
   "version": "1.0.0-*",
   "description": "",
-  "authors": [ "" ],
+  "authors": [ "Christian" ],
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
@@ -13,15 +13,16 @@
     "NETStandard.Library": "1.0.0-*"
   },
 
-  "commands": {
-    "EnumerationSample": "EnumerationSample"
-  },
-
   "frameworks": {
     "net46": { },
-    "dnxcore50": {
-      "dependencies": {
-      }
+    "netstandardapp1.5": {
+      "dependencies": { },
+      "imports": "dnxcore50"
     }
+  },
+  "runtimes": {
+    "win7-x64": { },
+    "win10-x64": { }
   }
+
 }

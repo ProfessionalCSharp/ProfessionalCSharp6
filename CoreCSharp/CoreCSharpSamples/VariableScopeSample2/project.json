@@ -1,7 +1,7 @@
 ﻿{
   "version": "1.0.0-*",
   "description": "VariableScopeSample2 Console Application",
-  "authors": [ "chris" ],
+  "authors": [ "Christian" ],
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
@@ -14,15 +14,14 @@
     "NETStandard.Library": "1.0.0-*"
   },
 
-  "commands": {
-    "VariableScopeSample2": "VariableScopeSample2"
-  },
-
   "frameworks": {
     "net46": { },
-    "dnxcore50": {
-      "dependencies": {
-      }
+    "netstandardapp1.5": {
+      "dependencies": { },
+      "imports": "dnxcore50"
     }
+  },
+  "runtimes": {
+    "win10-x64" : { }
   }
 }
