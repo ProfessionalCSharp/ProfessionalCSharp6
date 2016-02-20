@@ -12,6 +12,8 @@ With some samples, additional NuGet feeds might be needed. Configure these with 
 * ASP.NET Core: https://www.myget.org/F/aspnetmaster/api/v2
 * ASP.NET Core 1.0: https://www.myget.org/F/aspnetcidev/api/v3/index.json
 
+Samples that have been updated to netstandardapp1.5, currently you can't use Visual Studio for compilation. Use the dotnet tools (CLI) instead.
+
 Samples available for these chapters (sample folders):
 
 * Chapter 1 - .NET Application Architectures (HelloWorld)
