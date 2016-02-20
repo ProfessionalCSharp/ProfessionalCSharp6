@@ -9,7 +9,8 @@
     },
 
     "frameworks": {
-        "netstandardapp1.5": { 
+        "netstandardapp1.5": {
+          "dependencies": { },
           "imports": "dnxcore50"
         },
         "net46": { }

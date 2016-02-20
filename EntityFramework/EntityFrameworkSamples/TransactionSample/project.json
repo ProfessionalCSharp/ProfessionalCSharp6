@@ -17,14 +17,14 @@
     "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0-*"
   },
 
-  "commands": {
-    "TransactionSample": "TransactionSample"
-  },
 
   "frameworks": {
-    "net46": {
-      "dependencies": {
-      }
+    "netstandardapp1.5": {
+      "imports": [ "dotnet5.6", "dnxcore50", "portable-net45+win8" ]
     }
+  },
+  "runtimes": {
+    "win7-x64": { },
+    "win10-x64": { }
   }
 }

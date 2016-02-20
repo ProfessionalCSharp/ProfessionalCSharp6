@@ -17,18 +17,13 @@
     "Microsoft.Extensions.DependencyInjection": "1.0.0-*"
   },
 
-  "commands": {
-    "BooksSampleWithDI": "BooksSampleWithDI"
-  },
-
   "frameworks": {
-    "net46": {
-      "dependencies": {
-      }
-    },
-    "dnxcore50": {
-      "dependencies": {
-      }
+    "netstandardapp1.5": {
+      "imports": [ "dotnet5.6", "dnxcore50", "portable-net45+win8" ]
     }
+  },
+  "runtimes": {
+    "win7-x64": { },
+    "win10-x64": { }
   }
 }
