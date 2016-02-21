@@ -60,4 +60,4 @@ Samples available for these chapters (sample folders):
 * Chapter 42 - ASP.NET Web API (WebAPI)
 * Chapter 43 - WebHooks and SignalR (SignalRAndWebHooks)
 * Chapter 44 - Windows Communication Foundation (WCF)
-* Chapter 45 - Deploying Websites and Services
+* Chapter 45 - Deploying Websites and Services (DeploymentWeb)
