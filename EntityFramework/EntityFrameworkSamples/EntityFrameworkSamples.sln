@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24713.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "BooksSample", "BooksSample\BooksSample.xproj", "{806E132B-5655-4957-9D85-B957C0F91233}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ConflictHandlingSample", "ConflictHandlingSample\ConflictHandlingSample.xproj", "{83453ECB-BC74-456A-99CB-4E217DBF8D40}"
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TransactionsSample", "TransactionSample\TransactionsSample.xproj", "{7A8433CE-447D-457A-9BF7-3659033426A8}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CreateBooksDatabase", "CreateBooksDatabase\CreateBooksDatabase.xproj", "{B7CD853B-A325-4293-9464-8CE6F50DF60A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{7A8433CE-447D-457A-9BF7-3659033426A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A8433CE-447D-457A-9BF7-3659033426A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A8433CE-447D-457A-9BF7-3659033426A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7CD853B-A325-4293-9464-8CE6F50DF60A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7CD853B-A325-4293-9464-8CE6F50DF60A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7CD853B-A325-4293-9464-8CE6F50DF60A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7CD853B-A325-4293-9464-8CE6F50DF60A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

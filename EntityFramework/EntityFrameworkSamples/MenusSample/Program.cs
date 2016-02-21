@@ -20,9 +20,11 @@ namespace MenusSample
 
         private static async Task ChangeUntrackedAsync()
         {
+            WriteLine(nameof(ChangeUntrackedAsync));
             Menu m = await GetMenuAsync();
             m.Price += 0.7m;
             await UpdateUntrackedAsync(m);
+            WriteLine();
         }
 
         private static async Task UpdateUntrackedAsync(Menu m)
@@ -55,6 +57,7 @@ namespace MenusSample
 
         private static async Task UpdateRecordsAsync()
         {
+            WriteLine(nameof(UpdateRecordsAsync));
             using (var context = new MenusContext())
             {
                 Menu menu = await context.Menus
@@ -70,9 +73,11 @@ namespace MenusSample
                 WriteLine($"{records} updated");
                 ShowState(context);                    
             }
+            WriteLine();
         }
         private static void ObjectTracking()
         {
+            WriteLine(nameof(ObjectTracking));
             using (var context = new MenusContext())
             {
                 context.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
@@ -95,6 +100,7 @@ namespace MenusSample
 
                 ShowState(context);
             }
+            WriteLine();
         }
 
         private static async Task CreateDatabaseAsync()
@@ -110,17 +116,15 @@ namespace MenusSample
             }
         }
 
-        private static void ReadRecords()
-        {
-
-        }
 
         private static async Task AddRecordsAsync()
         {
+            WriteLine(nameof(AddRecordsAsync));
             try
             {
                 using (var context = new MenusContext())
                 {
+                    
                     var soupCard = new MenuCard();
                     Menu[] soups =
                     {
@@ -131,8 +135,6 @@ namespace MenusSample
 
                     soupCard.Title = "Soups";
                     soupCard.Menus.AddRange(soups);
-                    // TODO: GraphBehavior was removed
-                    //                    context.MenuCards.Add(soupCard, GraphBehavior.IncludeDependents);
 
                     context.MenuCards.Add(soupCard);
 
@@ -147,7 +149,7 @@ namespace MenusSample
             {
                 WriteLine(ex.Message);
             }
-
+            WriteLine();
         }
 
         public static void ShowState(MenusContext context)

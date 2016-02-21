@@ -1,6 +1,6 @@
-{
+﻿{
   "version": "1.0.0-*",
-  "description": "MenusWithDataAnnotations Console Application",
+  "description": "CreateBooksDatabase Console Application",
   "authors": [ "Christian" ],
   "tags": [ "" ],
   "projectUrl": "",
@@ -10,17 +10,16 @@
     "emitEntryPoint": true
   },
 
+  "tools": {
+    "dotnet-ef": "1.0.0-*"
+  },
+
+
   "dependencies": {
     "NETStandard.Library": "1.0.0-*",
     "Microsoft.EntityFrameworkCore": "1.0.0-*",
     "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0-*"
   },
-
-  "commands": {
-    "MenusWithDataAnnotations": "MenusWithDataAnnotations",
-    "ef": "EntityFramework.Commands"
-  },
-
 
   "frameworks": {
     "netstandardapp1.5": {

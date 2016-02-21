@@ -63,21 +63,6 @@
           "lib/dotnet5.4/Microsoft.EntityFrameworkCore.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Commands/1.0.0-rc2-16898": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational.Design": "1.0.0-rc2-16898",
-          "System.IO": "4.1.0-rc2-23818",
-          "System.IO.FileSystem": "4.0.1-rc2-23818",
-          "System.Xml.XDocument": "4.0.11-rc2-23818"
-        },
-        "compile": {
-          "lib/dotnet5.4/Microsoft.EntityFrameworkCore.Commands.dll": {}
-        },
-        "runtime": {
-          "lib/dotnet5.4/Microsoft.EntityFrameworkCore.Commands.dll": {}
-        }
-      },
       "Microsoft.EntityFrameworkCore.Relational/1.0.0-rc2-16898": {
         "type": "package",
         "dependencies": {
@@ -91,18 +76,6 @@
         },
         "runtime": {
           "lib/dotnet5.4/Microsoft.EntityFrameworkCore.Relational.dll": {}
-        }
-      },
-      "Microsoft.EntityFrameworkCore.Relational.Design/1.0.0-rc2-16898": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "1.0.0-rc2-16898"
-        },
-        "compile": {
-          "lib/dotnet5.4/Microsoft.EntityFrameworkCore.Relational.Design.dll": {}
-        },
-        "runtime": {
-          "lib/dotnet5.4/Microsoft.EntityFrameworkCore.Relational.Design.dll": {}
         }
       },
       "Microsoft.EntityFrameworkCore.SqlServer/1.0.0-rc2-16898": {
@@ -861,52 +834,16 @@
           "ref/dotnet5.3/System.Threading.Timer.dll": {}
         }
       },
-      "System.Xml.ReaderWriter/4.0.10": {
+      "System.Xml.ReaderWriter/4.0.0": {
         "type": "package",
         "dependencies": {
-          "System.Collections": "4.0.10",
-          "System.Diagnostics.Debug": "4.0.10",
-          "System.Globalization": "4.0.10",
-          "System.IO": "4.0.10",
-          "System.IO.FileSystem": "4.0.0",
-          "System.IO.FileSystem.Primitives": "4.0.0",
-          "System.Resources.ResourceManager": "4.0.0",
-          "System.Runtime": "4.0.20",
-          "System.Runtime.Extensions": "4.0.10",
-          "System.Runtime.InteropServices": "4.0.20",
-          "System.Text.Encoding": "4.0.10",
-          "System.Text.Encoding.Extensions": "4.0.10",
-          "System.Text.RegularExpressions": "4.0.10",
-          "System.Threading.Tasks": "4.0.10"
+          "System.IO": "4.0.0",
+          "System.Runtime": "4.0.0",
+          "System.Text.Encoding": "4.0.0",
+          "System.Threading.Tasks": "4.0.0"
         },
         "compile": {
           "ref/dotnet/System.Xml.ReaderWriter.dll": {}
-        },
-        "runtime": {
-          "lib/dotnet/System.Xml.ReaderWriter.dll": {}
-        }
-      },
-      "System.Xml.XDocument/4.0.11-rc2-23818": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections": "4.0.10",
-          "System.Diagnostics.Debug": "4.0.10",
-          "System.Diagnostics.Tools": "4.0.0",
-          "System.Globalization": "4.0.10",
-          "System.IO": "4.0.10",
-          "System.Reflection": "4.0.10",
-          "System.Resources.ResourceManager": "4.0.0",
-          "System.Runtime": "4.0.20",
-          "System.Runtime.Extensions": "4.0.10",
-          "System.Text.Encoding": "4.0.10",
-          "System.Threading": "4.0.10",
-          "System.Xml.ReaderWriter": "4.0.10"
-        },
-        "compile": {
-          "ref/dotnet5.4/System.Xml.XDocument.dll": {}
-        },
-        "runtime": {
-          "lib/dotnet5.4/System.Xml.XDocument.dll": {}
         }
       }
     },
@@ -974,21 +911,6 @@
           "lib/dotnet5.4/Microsoft.EntityFrameworkCore.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Commands/1.0.0-rc2-16898": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational.Design": "1.0.0-rc2-16898",
-          "System.IO": "4.1.0-rc2-23818",
-          "System.IO.FileSystem": "4.0.1-rc2-23818",
-          "System.Xml.XDocument": "4.0.11-rc2-23818"
-        },
-        "compile": {
-          "lib/dotnet5.4/Microsoft.EntityFrameworkCore.Commands.dll": {}
-        },
-        "runtime": {
-          "lib/dotnet5.4/Microsoft.EntityFrameworkCore.Commands.dll": {}
-        }
-      },
       "Microsoft.EntityFrameworkCore.Relational/1.0.0-rc2-16898": {
         "type": "package",
         "dependencies": {
@@ -1002,18 +924,6 @@
         },
         "runtime": {
           "lib/dotnet5.4/Microsoft.EntityFrameworkCore.Relational.dll": {}
-        }
-      },
-      "Microsoft.EntityFrameworkCore.Relational.Design/1.0.0-rc2-16898": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "1.0.0-rc2-16898"
-        },
-        "compile": {
-          "lib/dotnet5.4/Microsoft.EntityFrameworkCore.Relational.Design.dll": {}
-        },
-        "runtime": {
-          "lib/dotnet5.4/Microsoft.EntityFrameworkCore.Relational.Design.dll": {}
         }
       },
       "Microsoft.EntityFrameworkCore.SqlServer/1.0.0-rc2-16898": {
@@ -2504,29 +2414,6 @@
         "runtime": {
           "lib/dotnet5.4/System.Xml.ReaderWriter.dll": {}
         }
-      },
-      "System.Xml.XDocument/4.0.11-rc3-23819": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections": "4.0.10",
-          "System.Diagnostics.Debug": "4.0.10",
-          "System.Diagnostics.Tools": "4.0.0",
-          "System.Globalization": "4.0.10",
-          "System.IO": "4.0.10",
-          "System.Reflection": "4.0.10",
-          "System.Resources.ResourceManager": "4.0.0",
-          "System.Runtime": "4.0.20",
-          "System.Runtime.Extensions": "4.0.10",
-          "System.Text.Encoding": "4.0.10",
-          "System.Threading": "4.0.10",
-          "System.Xml.ReaderWriter": "4.0.10"
-        },
-        "compile": {
-          "ref/dotnet5.4/System.Xml.XDocument.dll": {}
-        },
-        "runtime": {
-          "lib/dotnet5.4/System.Xml.XDocument.dll": {}
-        }
       }
     },
     ".NETStandardApp,Version=v1.5/win7-x64": {
@@ -2593,21 +2480,6 @@
           "lib/dotnet5.4/Microsoft.EntityFrameworkCore.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Commands/1.0.0-rc2-16898": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational.Design": "1.0.0-rc2-16898",
-          "System.IO": "4.1.0-rc2-23818",
-          "System.IO.FileSystem": "4.0.1-rc2-23818",
-          "System.Xml.XDocument": "4.0.11-rc2-23818"
-        },
-        "compile": {
-          "lib/dotnet5.4/Microsoft.EntityFrameworkCore.Commands.dll": {}
-        },
-        "runtime": {
-          "lib/dotnet5.4/Microsoft.EntityFrameworkCore.Commands.dll": {}
-        }
-      },
       "Microsoft.EntityFrameworkCore.Relational/1.0.0-rc2-16898": {
         "type": "package",
         "dependencies": {
@@ -2621,18 +2493,6 @@
         },
         "runtime": {
           "lib/dotnet5.4/Microsoft.EntityFrameworkCore.Relational.dll": {}
-        }
-      },
-      "Microsoft.EntityFrameworkCore.Relational.Design/1.0.0-rc2-16898": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "1.0.0-rc2-16898"
-        },
-        "compile": {
-          "lib/dotnet5.4/Microsoft.EntityFrameworkCore.Relational.Design.dll": {}
-        },
-        "runtime": {
-          "lib/dotnet5.4/Microsoft.EntityFrameworkCore.Relational.Design.dll": {}
         }
       },
       "Microsoft.EntityFrameworkCore.SqlServer/1.0.0-rc2-16898": {
@@ -4253,29 +4113,6 @@
         "runtime": {
           "lib/dotnet5.4/System.Xml.ReaderWriter.dll": {}
         }
-      },
-      "System.Xml.XDocument/4.0.11-rc3-23819": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections": "4.0.10",
-          "System.Diagnostics.Debug": "4.0.10",
-          "System.Diagnostics.Tools": "4.0.0",
-          "System.Globalization": "4.0.10",
-          "System.IO": "4.0.10",
-          "System.Reflection": "4.0.10",
-          "System.Resources.ResourceManager": "4.0.0",
-          "System.Runtime": "4.0.20",
-          "System.Runtime.Extensions": "4.0.10",
-          "System.Text.Encoding": "4.0.10",
-          "System.Threading": "4.0.10",
-          "System.Xml.ReaderWriter": "4.0.10"
-        },
-        "compile": {
-          "ref/dotnet5.4/System.Xml.XDocument.dll": {}
-        },
-        "runtime": {
-          "lib/dotnet5.4/System.Xml.XDocument.dll": {}
-        }
       }
     }
   },
@@ -4416,26 +4253,6 @@
         "lib/net451/Microsoft.EntityFrameworkCore.xml"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Commands/1.0.0-rc2-16898": {
-      "sha512": "FmXxv1n/V34BvFWMbjImcRg8AnkPp8wN+rkaTPQWxpXWmUhi2btlTbAq6B8RjISyBegeKWvNWTKc77Zj26Jcyw==",
-      "type": "package",
-      "files": [
-        "Microsoft.EntityFrameworkCore.Commands.1.0.0-rc2-16898.nupkg.sha512",
-        "Microsoft.EntityFrameworkCore.Commands.nuspec",
-        "build/netcore50/Microsoft.EntityFrameworkCore.Commands.props",
-        "build/netcore50/Microsoft.EntityFrameworkCore.Commands.targets",
-        "lib/dotnet5.4/Microsoft.EntityFrameworkCore.Commands.dll",
-        "lib/dotnet5.4/Microsoft.EntityFrameworkCore.Commands.xml",
-        "lib/net451/Microsoft.EntityFrameworkCore.Commands.dll",
-        "lib/net451/Microsoft.EntityFrameworkCore.Commands.xml",
-        "tools/EntityFramework.psd1",
-        "tools/EntityFramework.psm1",
-        "tools/OperationHandlers.cs",
-        "tools/about_EntityFramework.help.txt",
-        "tools/init.ps1",
-        "tools/install.ps1"
-      ]
-    },
     "Microsoft.EntityFrameworkCore.Relational/1.0.0-rc2-16898": {
       "sha512": "cLTaqImfeB6oD3O0w5TDsO1OzAIEA3k51PXPhH1dXTWHvHrS3vbtqTa1cyTvfG7VjT+bwmfNFI9X08RZ44g/+g==",
       "type": "package",
@@ -4446,18 +4263,6 @@
         "lib/dotnet5.4/Microsoft.EntityFrameworkCore.Relational.xml",
         "lib/net451/Microsoft.EntityFrameworkCore.Relational.dll",
         "lib/net451/Microsoft.EntityFrameworkCore.Relational.xml"
-      ]
-    },
-    "Microsoft.EntityFrameworkCore.Relational.Design/1.0.0-rc2-16898": {
-      "sha512": "ohZ4jfpmKcGsCKilV1IOSe/4O1yiL09URL2j88zF7K65s9AK/DIOJozgy1bpkC1hqYxwXnWwBnjZXMZtkfCKFQ==",
-      "type": "package",
-      "files": [
-        "Microsoft.EntityFrameworkCore.Relational.Design.1.0.0-rc2-16898.nupkg.sha512",
-        "Microsoft.EntityFrameworkCore.Relational.Design.nuspec",
-        "lib/dotnet5.4/Microsoft.EntityFrameworkCore.Relational.Design.dll",
-        "lib/dotnet5.4/Microsoft.EntityFrameworkCore.Relational.Design.xml",
-        "lib/net451/Microsoft.EntityFrameworkCore.Relational.Design.dll",
-        "lib/net451/Microsoft.EntityFrameworkCore.Relational.Design.xml"
       ]
     },
     "Microsoft.EntityFrameworkCore.SqlServer/1.0.0-rc2-16898": {
@@ -8490,16 +8295,19 @@
         "runtime.json"
       ]
     },
-    "System.Xml.ReaderWriter/4.0.10": {
-      "sha512": "VdmWWMH7otrYV7D+cviUo7XjX0jzDnD/lTGSZTlZqfIQ5PhXk85j+6P0TK9od3PnOd5ZIM+pOk01G/J+3nh9/w==",
+    "System.Xml.ReaderWriter/4.0.0": {
+      "sha512": "9KB7w15EyBUXSXiRVegaO8tivjK405gjDB1tGXkPNvj6fN7qi/sfQCQ4QbUmRbGTrOwJdrISAtGL8bXoa1x0ow==",
       "type": "package",
       "files": [
-        "System.Xml.ReaderWriter.4.0.10.nupkg.sha512",
+        "License.rtf",
+        "System.Xml.ReaderWriter.4.0.0.nupkg.sha512",
         "System.Xml.ReaderWriter.nuspec",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
-        "lib/dotnet/System.Xml.ReaderWriter.dll",
-        "lib/net46/_._",
+        "lib/net45/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "ref/MonoAndroid10/_._",
@@ -8515,7 +8323,21 @@
         "ref/dotnet/ru/System.Xml.ReaderWriter.xml",
         "ref/dotnet/zh-hans/System.Xml.ReaderWriter.xml",
         "ref/dotnet/zh-hant/System.Xml.ReaderWriter.xml",
-        "ref/net46/_._",
+        "ref/net45/_._",
+        "ref/netcore50/System.Xml.ReaderWriter.dll",
+        "ref/netcore50/System.Xml.ReaderWriter.xml",
+        "ref/netcore50/de/System.Xml.ReaderWriter.xml",
+        "ref/netcore50/es/System.Xml.ReaderWriter.xml",
+        "ref/netcore50/fr/System.Xml.ReaderWriter.xml",
+        "ref/netcore50/it/System.Xml.ReaderWriter.xml",
+        "ref/netcore50/ja/System.Xml.ReaderWriter.xml",
+        "ref/netcore50/ko/System.Xml.ReaderWriter.xml",
+        "ref/netcore50/ru/System.Xml.ReaderWriter.xml",
+        "ref/netcore50/zh-hans/System.Xml.ReaderWriter.xml",
+        "ref/netcore50/zh-hant/System.Xml.ReaderWriter.xml",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._"
       ]
@@ -8580,134 +8402,11 @@
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._"
       ]
-    },
-    "System.Xml.XDocument/4.0.11-rc2-23818": {
-      "sha512": "gSkb41QKUUZ6TZUIJPheHrNBXQrrvfl1KqpatD/TuPz5/FhHF5/vwFmNPjihVI65NFlDIW7MsT53p6oiatAL2g==",
-      "type": "package",
-      "files": [
-        "System.Xml.XDocument.4.0.11-rc2-23818.nupkg.sha512",
-        "System.Xml.XDocument.nuspec",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/dotnet5.4/System.Xml.XDocument.dll",
-        "lib/net45/_._",
-        "lib/netcore50/System.Xml.XDocument.dll",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/dotnet5.1/System.Xml.XDocument.dll",
-        "ref/dotnet5.1/System.Xml.XDocument.xml",
-        "ref/dotnet5.1/de/System.Xml.XDocument.xml",
-        "ref/dotnet5.1/es/System.Xml.XDocument.xml",
-        "ref/dotnet5.1/fr/System.Xml.XDocument.xml",
-        "ref/dotnet5.1/it/System.Xml.XDocument.xml",
-        "ref/dotnet5.1/ja/System.Xml.XDocument.xml",
-        "ref/dotnet5.1/ko/System.Xml.XDocument.xml",
-        "ref/dotnet5.1/ru/System.Xml.XDocument.xml",
-        "ref/dotnet5.1/zh-hans/System.Xml.XDocument.xml",
-        "ref/dotnet5.1/zh-hant/System.Xml.XDocument.xml",
-        "ref/dotnet5.4/System.Xml.XDocument.dll",
-        "ref/dotnet5.4/System.Xml.XDocument.xml",
-        "ref/dotnet5.4/de/System.Xml.XDocument.xml",
-        "ref/dotnet5.4/es/System.Xml.XDocument.xml",
-        "ref/dotnet5.4/fr/System.Xml.XDocument.xml",
-        "ref/dotnet5.4/it/System.Xml.XDocument.xml",
-        "ref/dotnet5.4/ja/System.Xml.XDocument.xml",
-        "ref/dotnet5.4/ko/System.Xml.XDocument.xml",
-        "ref/dotnet5.4/ru/System.Xml.XDocument.xml",
-        "ref/dotnet5.4/zh-hans/System.Xml.XDocument.xml",
-        "ref/dotnet5.4/zh-hant/System.Xml.XDocument.xml",
-        "ref/net45/_._",
-        "ref/netcore50/System.Xml.XDocument.dll",
-        "ref/netcore50/System.Xml.XDocument.xml",
-        "ref/netcore50/de/System.Xml.XDocument.xml",
-        "ref/netcore50/es/System.Xml.XDocument.xml",
-        "ref/netcore50/fr/System.Xml.XDocument.xml",
-        "ref/netcore50/it/System.Xml.XDocument.xml",
-        "ref/netcore50/ja/System.Xml.XDocument.xml",
-        "ref/netcore50/ko/System.Xml.XDocument.xml",
-        "ref/netcore50/ru/System.Xml.XDocument.xml",
-        "ref/netcore50/zh-hans/System.Xml.XDocument.xml",
-        "ref/netcore50/zh-hant/System.Xml.XDocument.xml",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._"
-      ]
-    },
-    "System.Xml.XDocument/4.0.11-rc3-23819": {
-      "sha512": "oARYiMTUl2tgxMMQnFEB34Wirz9VfuWAQVgNudDgblAF6hkAVG2E/DcUxQR/0VfrQHP5K4yWfPZDkuLUHYbxBQ==",
-      "type": "package",
-      "files": [
-        "System.Xml.XDocument.4.0.11-rc3-23819.nupkg.sha512",
-        "System.Xml.XDocument.nuspec",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/dotnet5.4/System.Xml.XDocument.dll",
-        "lib/net45/_._",
-        "lib/netcore50/System.Xml.XDocument.dll",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/dotnet5.1/System.Xml.XDocument.dll",
-        "ref/dotnet5.1/System.Xml.XDocument.xml",
-        "ref/dotnet5.1/de/System.Xml.XDocument.xml",
-        "ref/dotnet5.1/es/System.Xml.XDocument.xml",
-        "ref/dotnet5.1/fr/System.Xml.XDocument.xml",
-        "ref/dotnet5.1/it/System.Xml.XDocument.xml",
-        "ref/dotnet5.1/ja/System.Xml.XDocument.xml",
-        "ref/dotnet5.1/ko/System.Xml.XDocument.xml",
-        "ref/dotnet5.1/ru/System.Xml.XDocument.xml",
-        "ref/dotnet5.1/zh-hans/System.Xml.XDocument.xml",
-        "ref/dotnet5.1/zh-hant/System.Xml.XDocument.xml",
-        "ref/dotnet5.4/System.Xml.XDocument.dll",
-        "ref/dotnet5.4/System.Xml.XDocument.xml",
-        "ref/dotnet5.4/de/System.Xml.XDocument.xml",
-        "ref/dotnet5.4/es/System.Xml.XDocument.xml",
-        "ref/dotnet5.4/fr/System.Xml.XDocument.xml",
-        "ref/dotnet5.4/it/System.Xml.XDocument.xml",
-        "ref/dotnet5.4/ja/System.Xml.XDocument.xml",
-        "ref/dotnet5.4/ko/System.Xml.XDocument.xml",
-        "ref/dotnet5.4/ru/System.Xml.XDocument.xml",
-        "ref/dotnet5.4/zh-hans/System.Xml.XDocument.xml",
-        "ref/dotnet5.4/zh-hant/System.Xml.XDocument.xml",
-        "ref/net45/_._",
-        "ref/netcore50/System.Xml.XDocument.dll",
-        "ref/netcore50/System.Xml.XDocument.xml",
-        "ref/netcore50/de/System.Xml.XDocument.xml",
-        "ref/netcore50/es/System.Xml.XDocument.xml",
-        "ref/netcore50/fr/System.Xml.XDocument.xml",
-        "ref/netcore50/it/System.Xml.XDocument.xml",
-        "ref/netcore50/ja/System.Xml.XDocument.xml",
-        "ref/netcore50/ko/System.Xml.XDocument.xml",
-        "ref/netcore50/ru/System.Xml.XDocument.xml",
-        "ref/netcore50/zh-hans/System.Xml.XDocument.xml",
-        "ref/netcore50/zh-hant/System.Xml.XDocument.xml",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._"
-      ]
     }
   },
   "projectFileDependencyGroups": {
     "": [
       "Microsoft.EntityFrameworkCore >= 1.0.0-*",
-      "Microsoft.EntityFrameworkCore.Commands >= 1.0.0-*",
       "Microsoft.EntityFrameworkCore.SqlServer >= 1.0.0-*",
       "NETStandard.Library >= 1.0.0-*"
     ],
