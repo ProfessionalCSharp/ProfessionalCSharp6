@@ -19,10 +19,6 @@
     "Swashbuckle.SwaggerUi": "6.0.0-*"
   },
 
-  "commands": {
-    "web": "BooksServiceSample"
-  },
-
   "frameworks": {
     "dnxcore50": {
       "imports": [ "dotnet5.6", "portable-net45+win8" ]
