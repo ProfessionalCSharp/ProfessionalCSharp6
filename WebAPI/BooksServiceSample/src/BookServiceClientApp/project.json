@@ -12,9 +12,7 @@
 
   "dependencies": {
     "NETStandard.Library": "1.0.0-*",
-    "System.Xml.XDocument": "4.0.11-*",
-    "System.Net.Http": "4.0.1-*",
-    "Newtonsoft.Json": "8.0.2"
+    "Newtonsoft.Json": "8.0.2-*"
   },
 
   "commands": {
@@ -24,15 +22,21 @@
   "frameworks": {
     "net46": {
       "dependencies": {
-
       },
       "frameworkAssemblies": {
-        "System.Xml.Linq": "4.0.0.0"
+        "System.Xml.Linq": "4.0.0.0",
+        "System.Net.Http": "4.0.0.0"
       }
     },
-    "dnxcore50": {
+    "netstandardapp1.5": {
       "dependencies": {
-      }
+        "System.Xml.XDocument": "4.0.11-*",
+        "System.Net.Http": "4.0.1-*"
+      },
+      "imports": [ "dnxcore50" ]
     }
+  },
+  "runtimes": {
+    "win7-x64": { }
   }
 }

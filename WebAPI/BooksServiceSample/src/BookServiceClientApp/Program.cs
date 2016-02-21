@@ -13,14 +13,21 @@ namespace BookServiceClientApp
         public static void Main()
         {
             WriteLine("Client app, wait for service");
-            ReadLine();
-            ReadChaptersAsync().Wait();
-            ReadChapterAsync().Wait();
-            ReadNotExistingChapterAsync().Wait();
-            ReadXmlAsync().Wait();
-            AddChapterAsync().Wait();
-            UpdateChapterAsync().Wait();
-            RemoveChapterAsync().Wait();
+            try
+            {
+                ReadLine();
+                ReadChaptersAsync().Wait();
+                ReadChapterAsync().Wait();
+                ReadNotExistingChapterAsync().Wait();
+                ReadXmlAsync().Wait();
+                AddChapterAsync().Wait();
+                UpdateChapterAsync().Wait();
+                RemoveChapterAsync().Wait();
+            }
+            catch (Exception ex)
+            {
+                WriteLine(ex.Message);
+            }
             ReadLine();
         }
 

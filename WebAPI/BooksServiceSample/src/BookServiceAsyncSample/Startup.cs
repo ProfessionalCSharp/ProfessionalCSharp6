@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNet.Builder;
-using Microsoft.AspNet.Hosting;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using BooksServiceSample.Models;
-using Microsoft.Data.Entity;
+using Microsoft.EntityFrameworkCore;
 
 namespace BookServiceAsyncSample
 {
@@ -30,9 +30,9 @@ namespace BookServiceAsyncSample
         {
             services.AddMvc().AddXmlSerializerFormatters();
             // uncomment the following three lines to use the SampleBookChaptersRepository
-            //IBookChaptersRepository repos = new SampleBookChaptersRepository();
-            //services.AddInstance<IBookChaptersRepository>(repos);
-            //await repos.InitAsync();
+            IBookChaptersRepository repos = new SampleBookChaptersRepository();
+            services.AddSingleton<IBookChaptersRepository>(repos);
+            await repos.InitAsync();
 
             services.AddEntityFramework()
                 .AddSqlServer()
@@ -61,12 +61,12 @@ namespace BookServiceAsyncSample
         // Entry point for the application.
         public static void Main(string[] args)
         {
-            var application = new WebApplicationBuilder()
-                .UseConfiguration(WebApplicationConfiguration.GetDefault(args))
+            var host = new WebHostBuilder()
+                .UseDefaultConfiguration(args)
                 .UseStartup<Startup>()
                 .Build();
 
-            application.Run();
+            host.Run();
         }
     }
 }
