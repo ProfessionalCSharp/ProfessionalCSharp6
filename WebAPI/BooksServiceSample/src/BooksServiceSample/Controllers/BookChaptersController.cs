@@ -27,7 +27,7 @@ namespace BooksServiceSample.Controllers
             BookChapter chapter = _repository.Find(id);
             if (chapter == null)
             {
-                return HttpNotFound();
+                return NotFound();
             }
             else
             {
@@ -41,7 +41,7 @@ namespace BooksServiceSample.Controllers
         {
             if (chapter == null)
             {
-                return HttpBadRequest();
+                return BadRequest();
             }
             _repository.Add(chapter);
             // return a 201 response, Created
@@ -54,11 +54,11 @@ namespace BooksServiceSample.Controllers
         {
             if (chapter == null || id != chapter.Id)
             {
-                return HttpBadRequest();
+                return BadRequest();
             }
             if (_repository.Find(id) == null)
             {
-                return HttpNotFound();
+                return NotFound();
             }
 
             _repository.Update(chapter);
