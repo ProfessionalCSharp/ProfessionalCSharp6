@@ -58,6 +58,7 @@ namespace TransactionSample
                     var mInvalid = new Menu { MenuCardId = ++hightestCardId, Text = "invalid", Price = 999.99m };
                     context.Menus.AddRange(m1, mInvalid);
 
+                    WriteLine("trying to add one invalid record to the database, this should fail...");
                     int records = await context.SaveChangesAsync();
                     WriteLine($"{records} records added");
                 }
@@ -77,6 +78,7 @@ namespace TransactionSample
             {
                 using (var context = new MenusContext())
                 {
+                    WriteLine("adding two records with two transactions to the database. One record should be written, the other not....");
                     var card = context.MenuCards.First();
                     var m1 = new Menu { MenuCardId = card.MenuCardId, Text = "added", Price = 99.99m };
 
@@ -110,13 +112,13 @@ namespace TransactionSample
                 using (tx = await context.Database.BeginTransactionAsync())
                 {
 
+                    WriteLine("using one explicit transaction, writing should roll back...");
                     var card = context.MenuCards.First();
                     var m1 = new Menu { MenuCardId = card.MenuCardId, Text = "added with explicit tx", Price = 99.99m };
 
                     context.Menus.Add(m1);
                     int records = await context.SaveChangesAsync();
                     WriteLine($"{records} records added");
-
 
 
                     int hightestCardId = await context.MenuCards.MaxAsync(c => c.MenuCardId);
