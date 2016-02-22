@@ -22,7 +22,7 @@ namespace MVCSampleApp.Controllers
             var m = new Menu
             {
                 Id = 3,
-                Text = "Grilled sausage with sauerkraut and potatos",
+                Text = "Grilled sausage with sauerkraut and potatoes",
                 Price = 12.90,
                 Date = new DateTime(2016, 3, 31),
                 Category = "Main"
