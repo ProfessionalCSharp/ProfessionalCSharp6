@@ -19,10 +19,6 @@
       "dependencies": { },
       "imports": "dnxcore50"
     }
-  },
-  "runtimes": {
-    "win7-x64": { },
-    "win10-x64": { }
   }
 
 }

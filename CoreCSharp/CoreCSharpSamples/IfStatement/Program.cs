@@ -4,7 +4,7 @@ namespace IfStatement
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             WriteLine("Type in a string");
             string input;

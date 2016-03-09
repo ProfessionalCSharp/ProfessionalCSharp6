@@ -9,18 +9,9 @@ namespace EnumerationSample
         Evening = 2
     }
 
-    //public class Test
-    //{
-    //    public void Main()
-    //    {
-    //        System.Console.WriteLine("Test.Main");
-    //    }
-    //}
-
-
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             WriteGreeting(TimeOfDay.Morning);
         }
