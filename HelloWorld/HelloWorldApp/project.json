@@ -1,22 +1,17 @@
 {
-  "version": "1.0.0-*",
+    "version": "1.0.0-*",
     "compilationOptions": {
         "emitEntryPoint": true
     },
 
     "dependencies": {
-      "NETStandard.Library": "1.0.0-*"
+        "NETStandard.Library": "1.0.0-*"
     },
 
     "frameworks": {
+        "net46": { },
         "netstandardapp1.5": {
-          "dependencies": { },
-          "imports": "dnxcore50"
-        },
-        "net46": { }
-    },
-
-    "runtimes": {
-      "win10-x64": { }
+            "imports": "dnxcore50"
+        }
     }
 }
