@@ -31,8 +31,6 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "VariableScopeSample2", "Var
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "VariableScopeSample3", "VariableScopeSample3\VariableScopeSample3.xproj", "{7DDACFFA-57E4-4994-B3F4-AA2AB8BFB4D8}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.xproj", "{984887F0-C196-46E3-A544-A9806DFC229D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,10 +89,6 @@ Global
 		{7DDACFFA-57E4-4994-B3F4-AA2AB8BFB4D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DDACFFA-57E4-4994-B3F4-AA2AB8BFB4D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DDACFFA-57E4-4994-B3F4-AA2AB8BFB4D8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{984887F0-C196-46E3-A544-A9806DFC229D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{984887F0-C196-46E3-A544-A9806DFC229D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{984887F0-C196-46E3-A544-A9806DFC229D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{984887F0-C196-46E3-A544-A9806DFC229D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
