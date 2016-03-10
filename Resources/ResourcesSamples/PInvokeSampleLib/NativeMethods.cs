@@ -23,7 +23,9 @@ namespace PInvokeSampleLib
             if (!CreateHardLink(newFileName, oldFileName, IntPtr.Zero))
             {
                 int errorCode = Marshal.GetLastWin32Error();
-                throw new IOException($"Error {errorCode}");
+                // throw new IOException($"Error {errorCode}");
+                // TODO: change to IOException with RC2
+                throw new Exception($"Error {errorCode}");
             }
         }
     }

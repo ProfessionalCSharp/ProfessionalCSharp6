@@ -1,4 +1,5 @@
 ﻿using PInvokeSampleLib;
+using System;
 using System.IO;
 using static System.Console;
 
@@ -18,12 +19,11 @@ namespace PInvokeSample
             {
                 FileUtility.CreateHardLink(args[0], args[1]);
             }
-            catch (IOException ex)
+            catch (Exception ex)
             {
+                // TODO: change back to IOException with RC2
                 WriteLine(ex.Message);
             }
         }
-
-
     }
 }
