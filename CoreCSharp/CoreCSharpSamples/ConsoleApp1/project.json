@@ -1,0 +1,28 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "ConsoleApp1 Console Application",
+  "authors": [ "chris" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
+  "dependencies": {
+    "NETStandard.Library": "1.0.0-*"
+  },
+
+  "commands": {
+    "ConsoleApp1": "ConsoleApp1"
+  },
+
+  "frameworks": {
+    "dnxcore50": {
+      "dependencies": {
+
+      }
+    }
+  }
+}

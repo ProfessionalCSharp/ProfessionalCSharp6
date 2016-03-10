@@ -1,19 +1,20 @@
 ﻿{
   "version": "1.0.0-*",
-  "description": "",
-  "authors": [ "Christian" ],
+  "description": "ConsoleApp2 Console Application",
+  "authors": [ "chris" ],
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
+
   "compilationOptions": {
     "emitEntryPoint": true
   },
 
- "commands": {
-    "HelloWorldApp": "HelloWorldApp"
+  "dependencies": {
   },
 
-  "dependencies": {
+  "commands": {
+    "ConsoleApp2": "ConsoleApp2"
   },
 
   "frameworks": {

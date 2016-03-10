@@ -4,7 +4,7 @@ namespace VariableScopeSample
 {
     class Program
     {
-        private int j;
+        // private int j;
 
         static int Main()
         {
