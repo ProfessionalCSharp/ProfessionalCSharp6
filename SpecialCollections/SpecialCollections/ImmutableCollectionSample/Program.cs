@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.Immutable;
-using static System.Console;
 using System.Linq;
+using static System.Console;
 
 namespace ImmutableCollectionSample
 {

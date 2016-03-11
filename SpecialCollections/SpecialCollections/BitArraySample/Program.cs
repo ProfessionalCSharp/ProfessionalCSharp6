@@ -52,7 +52,7 @@ namespace BitArraySample
             DisplayBits(bits1);
             WriteLine();
 
-            Console.ReadLine();
+            ReadLine();
         }
 
         static void DisplayBits(BitArray bits)
