@@ -1,4 +1,4 @@
-ReadMe - Code Samples for Chapter 5, Generics
+ReadMe - Code Samples for Chapter 6, Generics
 
 The samples are available in two variants:
 a) using the full .NET Framework

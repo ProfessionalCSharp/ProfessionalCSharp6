@@ -1,4 +1,4 @@
-ReadMe - Code Samples for Chapter 4, Managed and Unmanaged Resources
+ReadMe - Code Samples for Chapter 5, Managed and Unmanaged Resources
 
 The samples are available in two variants:
 a) using the full .NET Framework

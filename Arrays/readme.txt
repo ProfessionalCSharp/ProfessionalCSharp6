@@ -1,4 +1,4 @@
-ReadMe - Code Samples for Chapter 6, Arrays and Tuples
+ReadMe - Code Samples for Chapter 7, Arrays and Tuples
 
 The samples are available in two variants:
 a) using the full .NET Framework
