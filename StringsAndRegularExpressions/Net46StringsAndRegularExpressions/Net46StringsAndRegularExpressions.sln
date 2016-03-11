@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25029.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegularExpressionPlayground", "RegularExpressionPlayground\RegularExpressionPlayground.csproj", "{7F35CF49-0598-499A-9898-5DE399FD819F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringFormats", "StringFormats\StringFormats.csproj", "{04022858-170A-4475-B329-C0D02FCB4907}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringSample", "StringSample\StringSample.csproj", "{D2D76D35-95C4-422C-8A9C-2B063BBFEBEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F35CF49-0598-499A-9898-5DE399FD819F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F35CF49-0598-499A-9898-5DE399FD819F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F35CF49-0598-499A-9898-5DE399FD819F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F35CF49-0598-499A-9898-5DE399FD819F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04022858-170A-4475-B329-C0D02FCB4907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04022858-170A-4475-B329-C0D02FCB4907}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04022858-170A-4475-B329-C0D02FCB4907}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04022858-170A-4475-B329-C0D02FCB4907}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2D76D35-95C4-422C-8A9C-2B063BBFEBEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2D76D35-95C4-422C-8A9C-2B063BBFEBEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2D76D35-95C4-422C-8A9C-2B063BBFEBEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2D76D35-95C4-422C-8A9C-2B063BBFEBEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
