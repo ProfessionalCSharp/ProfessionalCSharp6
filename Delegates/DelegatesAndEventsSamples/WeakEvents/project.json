@@ -10,15 +10,16 @@
   },
 
   "dependencies": {
-    "NETStandard.Library": "1.0.0-*"
+
   },
 
   "commands": {
     "WeakEvents": "WeakEvents"
   },
 
+
   "frameworks": {
-    "net46": {
+    "dnx451": {
       "frameworkAssemblies": {
         "WindowsBase": "4.0.0.0"
       }
