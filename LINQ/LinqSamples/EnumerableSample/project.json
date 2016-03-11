@@ -11,9 +11,7 @@
   },
 
   "dependencies": {
-    "DataLib": "1.0.0-*",
-    "NETStandard.Library": "1.0.0-*",
-
+    "DataLib": "1.0.0-*"
   },
 
   "commands": {
@@ -21,14 +19,15 @@
   },
 
   "frameworks": {
-    "net46": {
-      "dependencies": {
-
-      }
-    },
+    "dnx451": { },
     "dnxcore50": {
       "dependencies": {
-        "System.Collections.NonGeneric": "4.0.1-*"
+        "Microsoft.CSharp": "4.0.1-beta-23516",
+        "System.Collections": "4.0.11-beta-23516",
+        "System.Collections.NonGeneric": "4.0.1-beta-23511",
+        "System.Console": "4.0.0-beta-23516",
+        "System.Linq": "4.0.1-beta-23516",
+        "System.Threading": "4.0.11-beta-23516"
       }
     }
   }
