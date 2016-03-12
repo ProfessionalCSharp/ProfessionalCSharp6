@@ -9,19 +9,23 @@
   },
 
   "dependencies": {
-    "NETStandard.Library": "1.0.0-*",
-    "System.Threading.Tasks.Dataflow": "4.6.0-*"
+    "System.Threading.Tasks.Dataflow": "4.5.26-beta-23511"
   },
 
   "frameworks": {
     "net46": {
       "frameworkAssemblies": {
-        "System.Runtime": "",
-        "System.Threading.Tasks": ""
+        "System.Runtime": "4.0.20.0",
+        "System.Threading.Tasks": "4.0.10.0"
       }
     },
     "dnxcore50": {
       "dependencies": {
+        "Microsoft.CSharp": "4.0.1-beta-23516",
+        "System.Collections": "4.0.11-beta-23516",
+        "System.Console": "4.0.0-beta-23516",
+        "System.Linq": "4.0.1-beta-23516",
+        "System.Threading": "4.0.11-beta-23516"
       }
     }
   }
