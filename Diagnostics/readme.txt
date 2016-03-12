@@ -1,14 +1,14 @@
-ReadMe - Code Samples for Chapter 16, Reflection, Metadata, and Dynamic Programming
+ReadMe - Code Samples for Chapter 20, Diagnostics and Application Insights
 
 The sample code for this chapter contains several solutions:
-- ReflectionSamles
+- EventSourceSamples
+- Net46EventSourceSamples
 - Net46ReflectionSamples
-- DynamicSamples
 
-The Net46ReflectionSamples directory contains the same source code (using linked files) as the ReflectionSamples directory. Use ReflectionSamples with .NET Core, Net46ReflectionSamples with the full .NET Framework.
-You can open and build the Net46ReflectionSamples with a default installation of Visual Studio.
+The Net46EventSourceSamples directory contains the same source code (using linked files) as the EventSourceSamples directory. Use EventSourceSamples with .NET Core, Net46EventSourceSamples with the full .NET Framework.
+You can open and build the Net46EventSourceSamples with a default installation of Visual Studio.
 
-To open and build the ReflectionSamples solution, you need to install ASP.NET 5 tools in addition to Visual Studio 2015. 
+To open and build the EventSourceSamples solution, you need to install ASP.NET 5 tools in addition to Visual Studio 2015. 
 Install the tools from here:
 https://go.microsoft.com/fwlink/?LinkId=627627
 
