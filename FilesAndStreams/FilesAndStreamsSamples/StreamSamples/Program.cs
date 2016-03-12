@@ -18,7 +18,10 @@ namespace StreamSamples
         {
             if (args.Length == 2 && args[0] == "-rs")
             {
-                ReadFileUsingFileStream(args[1]);
+                // TODO: uncomment with RC2
+                // ReadFileUsingFileStream(args[1]);
+                WriteLine("feature will be available with RC2 update");
+                return;
             }
             else if (args.Length == 1 && args[0] == "-w")
             {
@@ -99,7 +102,10 @@ namespace StreamSamples
                             {
                                 stream.Seek((record - 1) * RECORDSIZE, SeekOrigin.Begin);
                                 stream.Read(buffer, 0, RECORDSIZE);
-                                string s = Encoding.UTF8.GetString(buffer);
+                                // TODO: uncomment the following line with RC2
+                                // string s = Encoding.UTF8.GetString(buffer);
+                                // TODO: remove the following line with RC2
+                                string s = Encoding.UTF8.GetString(buffer, 0, buffer.Length);
                                 WriteLine($"record: {s}");
                             }
                         }
@@ -174,33 +180,34 @@ namespace StreamSamples
             }
         }
 
-        public static void ReadFileUsingFileStream(string fileName)
-        {
-            const int BUFFERSIZE = 4096;
-            using (var stream = new FileStream(fileName, FileMode.Open, FileAccess.Read, FileShare.Read))
-            {
-                ShowStreamInformation(stream);
-                Encoding encoding = GetEncoding(stream);
+        // TODO: uncomment with RC2
+        //public static void ReadFileUsingFileStream(string fileName)
+        //{
+        //    const int BUFFERSIZE = 4096;
+        //    using (var stream = new FileStream(fileName, FileMode.Open, FileAccess.Read, FileShare.Read))
+        //    {
+        //        ShowStreamInformation(stream);
+        //        Encoding encoding = GetEncoding(stream);
 
 
-                byte[] buffer = new byte[BUFFERSIZE];
+        //        byte[] buffer = new byte[BUFFERSIZE];
 
-                bool completed = false;
-                do
-                {
-                    int nread = stream.Read(buffer, 0, BUFFERSIZE);
-                    if (nread == 0) completed = true;
-                    if (nread < BUFFERSIZE)
-                    {
-                        Array.Clear(buffer, nread, BUFFERSIZE - nread);
-                    }
+        //        bool completed = false;
+        //        do
+        //        {
+        //            int nread = stream.Read(buffer, 0, BUFFERSIZE);
+        //            if (nread == 0) completed = true;
+        //            if (nread < BUFFERSIZE)
+        //            {
+        //                Array.Clear(buffer, nread, BUFFERSIZE - nread);
+        //            }
 
-                    string s = encoding.GetString(buffer, 0, nread);
-                    WriteLine($"read {nread} bytes");
-                    WriteLine(s);
-                } while (!completed);
-            }
-        }
+        //            string s = encoding.GetString(buffer, 0, nread);
+        //            WriteLine($"read {nread} bytes");
+        //            WriteLine(s);
+        //        } while (!completed);
+        //    }
+        //}
 
         public static void ShowStreamInformation(Stream stream)
         {
@@ -212,41 +219,42 @@ namespace StreamSamples
             }
         }
 
+        // TODO: uncomment with RC2
         // read BOM
-        public static Encoding GetEncoding(Stream stream)
-        {
-            if (!stream.CanSeek) throw new ArgumentException("require a stream that can seek");
+        //public static Encoding GetEncoding(Stream stream)
+        //{
+        //    if (!stream.CanSeek) throw new ArgumentException("require a stream that can seek");
 
-            Encoding encoding = Encoding.ASCII;
+        //    Encoding encoding = Encoding.ASCII;
 
-            byte[] bom = new byte[5];
-            int nRead = stream.Read(bom, offset: 0, count: 5);
-            if (bom[0] == 0xff && bom[1] == 0xfe && bom[2] == 0 && bom[3] == 0)
-            {
-                WriteLine("UTF-32");
-                stream.Seek(4, SeekOrigin.Begin);
-                return Encoding.UTF32;
-            }
-            else if (bom[0] == 0xff && bom[1] == 0xfe)
-            {
-                WriteLine("UTF-16, little endian");
-                stream.Seek(2, SeekOrigin.Begin);
-                return Encoding.Unicode;
-            }
-            else if (bom[0] == 0xfe && bom[1] == 0xff)
-            {
-                WriteLine("UTF-16, big endian");
-                stream.Seek(2, SeekOrigin.Begin);
-                return Encoding.BigEndianUnicode;
-            }
-            else if (bom[0] == 0xef && bom[1] == 0xbb && bom[2] == 0xbf)
-            {
-                WriteLine("UTF-8");
-                stream.Seek(3, SeekOrigin.Begin);
-                return Encoding.UTF8;
-            }
-            stream.Seek(0, SeekOrigin.Begin);
-            return encoding;
-        }
+        //    byte[] bom = new byte[5];
+        //    int nRead = stream.Read(bom, offset: 0, count: 5);
+        //    if (bom[0] == 0xff && bom[1] == 0xfe && bom[2] == 0 && bom[3] == 0)
+        //    {
+        //        WriteLine("UTF-32");
+        //        stream.Seek(4, SeekOrigin.Begin);
+        //        return Encoding.UTF32;
+        //    }
+        //    else if (bom[0] == 0xff && bom[1] == 0xfe)
+        //    {
+        //        WriteLine("UTF-16, little endian");
+        //        stream.Seek(2, SeekOrigin.Begin);
+        //        return Encoding.Unicode;
+        //    }
+        //    else if (bom[0] == 0xfe && bom[1] == 0xff)
+        //    {
+        //        WriteLine("UTF-16, big endian");
+        //        stream.Seek(2, SeekOrigin.Begin);
+        //        return Encoding.BigEndianUnicode;
+        //    }
+        //    else if (bom[0] == 0xef && bom[1] == 0xbb && bom[2] == 0xbf)
+        //    {
+        //        WriteLine("UTF-8");
+        //        stream.Seek(3, SeekOrigin.Begin);
+        //        return Encoding.UTF8;
+        //    }
+        //    stream.Seek(0, SeekOrigin.Begin);
+        //    return encoding;
+        //}
     }
 }
