@@ -12,7 +12,7 @@ Install the tools from here:
 https://go.microsoft.com/fwlink/?LinkId=627627
 
 After opening the files from Visual Studio, you might need to start the command prompt and download the necessary NuGet packages using
->dnx restore
+>dnu restore
 
 If you have the .NET Core Command Line (CLI) Tools installed, you can use
 >dotnet restore
