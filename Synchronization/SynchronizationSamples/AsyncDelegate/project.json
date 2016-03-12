@@ -1,7 +1,7 @@
 {
   "version": "1.0.0-*",
   "description": "",
-  "authors": [ "" ],
+  "authors": [ "Christian" ],
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
@@ -14,14 +14,10 @@
   },
 
   "dependencies": {
-    "NETStandard.Library": "1.0.0-*"
+
   },
 
   "frameworks": {
-    "net46": {
-      "dependencies": {
-
-      }
-    }
+    "net46": { }
   }
-}
+} 
