@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25029.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AccessControl", "AccessControl", "{E28B6FCB-DCA2-40FD-8F4F-6E8EB491DD3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileAccessControl", "FileAccessControl\FileAccessControl.csproj", "{33583AEE-9913-4F9C-BB2D-0E1C7C192443}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authentication", "Authentication", "{A4FFA99F-AEDE-4221-8161-0148038F024D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataProtection", "DataProtection", "{09D451D1-5677-43F2-B430-5F7BC1DFDF12}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Encryption", "Encryption", "{C5E33357-7821-4B98-A936-320E0F668E72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsPrincipal", "WindowsPrincipal\WindowsPrincipal.csproj", "{1DC672DB-9C32-4428-8289-2CAC0DB87D29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataProtectionSample", "DataProtectionSample\DataProtectionSample.csproj", "{194ED0D1-D14A-4B5B-A335-906C66783B2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSASample", "RSASample\RSASample.csproj", "{A59F6CDC-4FCA-472D-9F6D-81DB2457BA04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureTransfer", "SecureTransfer\SecureTransfer.csproj", "{557D8E6C-D2FC-40FD-9A05-27E24E72028E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SigningDemo", "SigningDemo\SigningDemo.csproj", "{D29D93A2-B2ED-46A4-9A85-B7930187D843}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33583AEE-9913-4F9C-BB2D-0E1C7C192443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33583AEE-9913-4F9C-BB2D-0E1C7C192443}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33583AEE-9913-4F9C-BB2D-0E1C7C192443}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33583AEE-9913-4F9C-BB2D-0E1C7C192443}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DC672DB-9C32-4428-8289-2CAC0DB87D29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DC672DB-9C32-4428-8289-2CAC0DB87D29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DC672DB-9C32-4428-8289-2CAC0DB87D29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DC672DB-9C32-4428-8289-2CAC0DB87D29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{194ED0D1-D14A-4B5B-A335-906C66783B2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{194ED0D1-D14A-4B5B-A335-906C66783B2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{194ED0D1-D14A-4B5B-A335-906C66783B2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{194ED0D1-D14A-4B5B-A335-906C66783B2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A59F6CDC-4FCA-472D-9F6D-81DB2457BA04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A59F6CDC-4FCA-472D-9F6D-81DB2457BA04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A59F6CDC-4FCA-472D-9F6D-81DB2457BA04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A59F6CDC-4FCA-472D-9F6D-81DB2457BA04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{557D8E6C-D2FC-40FD-9A05-27E24E72028E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{557D8E6C-D2FC-40FD-9A05-27E24E72028E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{557D8E6C-D2FC-40FD-9A05-27E24E72028E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{557D8E6C-D2FC-40FD-9A05-27E24E72028E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D29D93A2-B2ED-46A4-9A85-B7930187D843}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D29D93A2-B2ED-46A4-9A85-B7930187D843}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D29D93A2-B2ED-46A4-9A85-B7930187D843}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D29D93A2-B2ED-46A4-9A85-B7930187D843}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{33583AEE-9913-4F9C-BB2D-0E1C7C192443} = {E28B6FCB-DCA2-40FD-8F4F-6E8EB491DD3D}
+		{1DC672DB-9C32-4428-8289-2CAC0DB87D29} = {A4FFA99F-AEDE-4221-8161-0148038F024D}
+		{194ED0D1-D14A-4B5B-A335-906C66783B2F} = {09D451D1-5677-43F2-B430-5F7BC1DFDF12}
+		{A59F6CDC-4FCA-472D-9F6D-81DB2457BA04} = {C5E33357-7821-4B98-A936-320E0F668E72}
+		{557D8E6C-D2FC-40FD-9A05-27E24E72028E} = {C5E33357-7821-4B98-A936-320E0F668E72}
+		{D29D93A2-B2ED-46A4-9A85-B7930187D843} = {C5E33357-7821-4B98-A936-320E0F668E72}
+	EndGlobalSection
+EndGlobal
