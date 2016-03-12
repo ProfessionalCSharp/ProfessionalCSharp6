@@ -1,6 +1,8 @@
 # ProfessionalCSharp6
 Code samples for the Wrox book Professional C# 6
 
+Use the RC1 branch to open the samples with Visual Studio 2015 and ASP.NET 5 RC 1 tools. The master branch contains newer RC2 samples that has some issues using it from Visual Studio 2015 with the RC 1 tools.
+
 Samples are updated to .NET 5 Core RC. To compile and run the samples you need:
 * Visual Studio 2015
 * ASP.NET 5 RC1 Tools (https://get.asp.net/ - click the ASP.NET 5 RC, install for Windows)
@@ -32,7 +34,7 @@ Samples available for these chapters (sample folders):
 * Chapter 14 - Errors and Exceptions (ErrorsAndExceptions)
 * Chapter 15 - Asynchronous Programming (Async)
 * Chapter 16 - Reflection, Metadata, and Dynamic Programming (ReflectionAndDynamic)
-* Chapter 17 - Visual Studio 2015
+* Chapter 17 - Visual Studio 2015 (no code)
 * Chapter 18 - .NET Compiler Platform (CompilerPlatform)
 * Chapter 19 - Testing (Testing)
 * Chapter 20 - Diagnostics and Application Insights (Diagnostics)
@@ -42,7 +44,7 @@ Samples available for these chapters (sample folders):
 * Chapter 24 - Security (Security)
 * Chapter 25 - Networking (Networking)
 * Chapter 26 - Composition (Composition)
-* Chapter 27 - XML and JSON (XMLAndJSON
+* Chapter 27 - XML and JSON (XMLAndJSON)
 * Chapter 28 - Localization (Localization)
 * Chapter 29 - Core XAML (XAML)
 * Chapter 30 - Styling XAML Apps (StylesAndResources)
