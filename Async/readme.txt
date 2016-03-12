@@ -5,7 +5,7 @@ A library and a WPF application.
 Two console applications that are available both as a .NET Framework console application as well as a .NET Core console application.
 
 WPF Application
-To run the WPF application successfully, you need to register with BING
+To run the WPF application successfully, you need to register with the Bing Search API (http://datamarket.azure.com/dataset/bing/search) and copy your application id to the file BingRequest.cs in the AsyncLib library. Using the Bing Search API is free for up to 5000 searches per month. To use Flickr with the application, you need to register with Flickr (http://flickr.com) and copy the Flickr application id to the file FlickrRequest.cs in the AsyncLib library. You can also decide to just use one of the search services by removing the other one from the method GetSearchRequests in the file MainWindow.xaml.cs (project AsyncPatternsWPF).
 
 Console Applications
 The C# source code of the .NET Framework and the .NET Core console application makes use of the same source files that are available within the .NET Core console application. The .NET Framework console application uses links for the source files.
