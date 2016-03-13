@@ -52,7 +52,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>656A4CEE01D1BE50369EC38AFFE2BEEC87A78B4D</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>D1D4AE9075939874E2B4E13B7AEE35171DD70D6A</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>ClientWPF_TemporaryKey.pfx</ManifestKeyFile>
