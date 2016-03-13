@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25029.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonSample", "JsonSample\JsonSample.csproj", "{7C014E82-D805-4FCD-9DFD-B6CC4F808310}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToXmlSample", "LinqToXmlSample\LinqToXmlSample.csproj", "{593A05DA-611C-402F-9904-4D5C3765951B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectToXmlSerializationSample", "ObjectToXmlSerializationSample\ObjectToXmlSerializationSample.csproj", "{0482E5D0-C233-4E15-883D-40675CD1AC05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectToXmlSerializationWOAttributes", "ObjectToXmlSerializationWOAttributes\ObjectToXmlSerializationWOAttributes.csproj", "{70F3E45F-572F-4E0F-AA66-34C1D84CA963}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlDocumentSample", "XmlDocumentSample\XmlDocumentSample.csproj", "{B784352D-11DD-4AF8-86E0-1F0B84F7F798}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlReaderAndWriterSample", "XmlReaderAndWriterSample\XmlReaderAndWriterSample.csproj", "{ED60103A-5894-4722-B20F-912E736FB51F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPathNavigatorSample", "XPathNavigatorSample\XPathNavigatorSample.csproj", "{F9E51527-0E04-48FE-AF95-5172F863757C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C014E82-D805-4FCD-9DFD-B6CC4F808310}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C014E82-D805-4FCD-9DFD-B6CC4F808310}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C014E82-D805-4FCD-9DFD-B6CC4F808310}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C014E82-D805-4FCD-9DFD-B6CC4F808310}.Release|Any CPU.Build.0 = Release|Any CPU
+		{593A05DA-611C-402F-9904-4D5C3765951B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{593A05DA-611C-402F-9904-4D5C3765951B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{593A05DA-611C-402F-9904-4D5C3765951B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{593A05DA-611C-402F-9904-4D5C3765951B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0482E5D0-C233-4E15-883D-40675CD1AC05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0482E5D0-C233-4E15-883D-40675CD1AC05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0482E5D0-C233-4E15-883D-40675CD1AC05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0482E5D0-C233-4E15-883D-40675CD1AC05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70F3E45F-572F-4E0F-AA66-34C1D84CA963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70F3E45F-572F-4E0F-AA66-34C1D84CA963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70F3E45F-572F-4E0F-AA66-34C1D84CA963}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70F3E45F-572F-4E0F-AA66-34C1D84CA963}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B784352D-11DD-4AF8-86E0-1F0B84F7F798}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B784352D-11DD-4AF8-86E0-1F0B84F7F798}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B784352D-11DD-4AF8-86E0-1F0B84F7F798}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B784352D-11DD-4AF8-86E0-1F0B84F7F798}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED60103A-5894-4722-B20F-912E736FB51F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED60103A-5894-4722-B20F-912E736FB51F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED60103A-5894-4722-B20F-912E736FB51F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED60103A-5894-4722-B20F-912E736FB51F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9E51527-0E04-48FE-AF95-5172F863757C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9E51527-0E04-48FE-AF95-5172F863757C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9E51527-0E04-48FE-AF95-5172F863757C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9E51527-0E04-48FE-AF95-5172F863757C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

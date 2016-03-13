@@ -14,17 +14,20 @@
   },
 
   "dependencies": {
-    "NETStandard.Library": "1.0.0-*",
-    "System.Collections.NonGeneric": "4.0.1-*"
+    "System.Collections.NonGeneric": "4.0.1-beta-23516"
   },
 
 
-
   "frameworks": {
-    "net46": { },
+    "net46": {
+    },
     "dnxcore50": {
       "dependencies": {
-
+        "Microsoft.CSharp": "4.0.1-beta-23516",
+        "System.Collections": "4.0.11-beta-23516",
+        "System.Console": "4.0.0-beta-23516",
+        "System.Linq": "4.0.1-beta-23516",
+        "System.Threading": "4.0.11-beta-23516"
       }
     }
   }

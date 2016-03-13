@@ -27,7 +27,8 @@ namespace WebApplicationSample
             app.UseIISPlatformHandler();
             var options = new RequestLocalizationOptions
             {
-                    DefaultRequestCulture = new RequestCulture(new CultureInfo("en-US")),
+                // TODO: uncomment this line with RC2
+                  //  DefaultRequestCulture = new RequestCulture(new CultureInfo("en-US")),
                     SupportedCultures = new CultureInfo[]
                     {
                         new CultureInfo("en-US"),
@@ -42,7 +43,9 @@ namespace WebApplicationSample
                     }
             };
 
-            app.UseRequestLocalization(options);
+            // TODO: remove the following line with RC2, uncomment the next
+            app.UseRequestLocalization(new RequestCulture(new CultureInfo("en-US")));
+//            app.UseRequestLocalization(options);
 
             app.Run(async context =>
             {
@@ -66,16 +69,19 @@ namespace WebApplicationSample
 
         }
 
-        public static void Main(string[] args)
-        {
-            var application = new WebApplicationBuilder()
-                .UseConfiguration(WebApplicationConfiguration.GetDefault(args))
-                .UseStartup<Startup>()
-                .Build();
+        public static void Main(string[] args) => WebApplication.Run<Startup>(args);
+
+        // TODO: uncomment with RC2, remove the previous code line
+        //public static void Main(string[] args)
+        //{
+        //    var application = new WebApplicationBuilder()
+        //        .UseConfiguration(WebApplicationConfiguration.GetDefault(args))
+        //        .UseStartup<Startup>()
+        //        .Build();
 
 
-            application.Run();
-        }
+        //    application.Run();
+        //}
 
     }
 }

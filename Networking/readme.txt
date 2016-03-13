@@ -4,7 +4,7 @@ The sample code for this chapter contains these solutions:
 - Networking
 - Net46Networking
 
-The .NET Core projects from Security is duplicated in Net46Networking with full .NET Framework projects. The source code files are linked from the Networking project.
+The .NET Core projects from Networing is duplicated in Net46Networking with full .NET Framework projects. The source code files are linked from the Networking project.
 The project WinAppHttpClient (a Universal Windows App project) is not duplicated. You find this project only in the Networking solution. To run this application, Windows 10 is needed.
 
 To open and build the .NET Core projects of Networking, you need to install ASP.NET 5 tools in addition to Visual Studio 2015. 

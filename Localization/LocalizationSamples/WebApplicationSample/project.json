@@ -4,14 +4,15 @@
     "emitEntryPoint": true
   },
 
+
   "dependencies": {
-    "Microsoft.AspNet.Hosting": "1.0.0-*",
-    "Microsoft.AspNet.Http.Features": "1.0.0-*",
-    "Microsoft.AspNet.IISPlatformHandler": "1.0.0-*",
-    "Microsoft.AspNet.Localization": "1.0.0-*",
-    "Microsoft.AspNet.Server.Kestrel": "1.0.0-*",
-    "Microsoft.Extensions.Localization": "1.0.0-*",
-    "System.Globalization": "4.0.11-*"
+    "Microsoft.AspNet.Hosting": "1.0.0-rc1-final",
+    "Microsoft.AspNet.Http.Features": "1.0.0-rc1-final",
+    "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
+    "Microsoft.AspNet.Localization": "1.0.0-rc1-final",
+    "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
+    "Microsoft.Extensions.Localization": "1.0.0-rc1-final",
+    "System.Globalization": "4.0.11-beta-23516"
   },
 
   "commands": {
@@ -21,7 +22,7 @@
   "frameworks": {
     "dnx451": {
       "dependencies": {
-        "System.Runtime.Extensions": "4.0.11-*"
+        "System.Runtime.Extensions": "4.0.11-beta-23516"
       }
     },
     "dnxcore50": { }
