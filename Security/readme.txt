@@ -1,12 +1,12 @@
-ReadMe - Code Samples for Chapter 23, Files and Streams
+ReadMe - Code Samples for Chapter 24, Security
 
 The sample code for this chapter contains these solutions:
-- FilesAndStreams
-- Net46FilesAndStreams
+- Security
+- Net46Security
 
-The .NET Core projects from FilesAndStreams is duplicated in Net46FilesAndStreams with full .NET Framework projects. The WindowsAppEditor (Universal Windows Platform) and WPFEditor (WPF) projects are not duplicated, you can find these projects only in FilesAndStreams.
+The .NET Core projects from Security is duplicated in Net46Security with full .NET Framework projects.
 
-To open and build the .NET Core projects of FilesAndStreams, you need to install ASP.NET 5 tools in addition to Visual Studio 2015. 
+To open and build the .NET Core projects of Security, you need to install ASP.NET 5 tools in addition to Visual Studio 2015. 
 Install the tools from here:
 https://go.microsoft.com/fwlink/?LinkId=627627
 
@@ -19,7 +19,7 @@ instead.
 
 Please download and install the .NET Core Command Line (CLI) Tools from https://github.com/dotnet/cli. For Windows, you will find an MSI package that you can install on your Windows system: https://dotnetcli.blob.core.windows.net/dotnet/beta/Installers/Latest/dotnet-win-x64.latest.exe
 
-When .NET Core RC2 is available, the files from this Chapter will be changed. With all projects, the project.json files will be changed. A few C# source files will change as well, e.g. the Program.cs file from StreamSamples. See the code comments for upcoming changes.
+When .NET Core RC2 is available, the files from this Chapter will be changed. With all projects, the project.json files will be changed. A few C# source files will change as well, e.g. the Program.cs file from DataProtectionSample. See the code comments for upcoming changes.
 
 Please re-check the Wrox code downloads for updates.
 
