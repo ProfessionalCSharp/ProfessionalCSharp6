@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25029.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomReservationData", "RoomReservationData\RoomReservationData.csproj", "{3651E547-8736-40B0-B716-E44A6CD4CB62}"
 EndProject
@@ -16,9 +16,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomReservationWebHost", "RoomReservationWebHost\RoomReservationWebHost.csproj", "{5448089F-5921-44F7-AEFD-FBF7947ABBFF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B959A6C0-84BF-457B-96F9-71C979771976}"
-	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomReservationClientSharedAssembly", "RoomReservationClientSharedAssembly\RoomReservationClientSharedAssembly.csproj", "{9C9EAF96-8181-4EED-BBD0-93C2388145D8}"
 EndProject

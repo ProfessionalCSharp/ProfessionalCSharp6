@@ -4,7 +4,7 @@ The sample code for this chapter contains these solutions:
 - SignalRSample
 - WebHooksSample
 
-The sameple code of this chapter is using the .NET Framework because SignalR and WebHooks was not available for .NET Core at the time writing this book. However, the WPF application makes use of a .NET Core library for dependency injection. This is currently based on .NET Core RC1. 
+The sample code of this chapter is using the .NET Framework because SignalR and WebHooks was not available for .NET Core at the time writing this book. However, the WPF application makes use of a .NET Core library for dependency injection. This is currently based on .NET Core RC1. 
 
 When .NET Core RC2 is available, samples from this Chapter will be changed.
 Please re-check the Wrox code downloads for updates.
