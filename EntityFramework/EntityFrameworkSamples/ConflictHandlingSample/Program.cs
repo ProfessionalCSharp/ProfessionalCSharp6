@@ -1,5 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
+﻿//RC2 using Microsoft.EntityFrameworkCore;
+//RC2 using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.Data.Entity;
+using Microsoft.Data.Entity.ChangeTracking;
 using System;
 using System.Linq;
 using System.Text;

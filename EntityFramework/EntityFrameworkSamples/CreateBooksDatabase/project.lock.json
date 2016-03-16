@@ -989,7 +989,7 @@
           "ref/dnxcore50/_._": {}
         }
       },
-      "System.Reflection/4.1.0-beta-23225": {
+      "System.Reflection/4.0.10": {
         "type": "package",
         "dependencies": {
           "System.IO": "4.0.0",
@@ -2812,7 +2812,7 @@
           "ref/dnxcore50/_._": {}
         }
       },
-      "System.Reflection/4.1.0-beta-23225": {
+      "System.Reflection/4.0.10": {
         "type": "package",
         "dependencies": {
           "System.IO": "4.0.0",
@@ -4150,7 +4150,7 @@
           "ref/dnxcore50/_._": {}
         }
       },
-      "System.Reflection/4.1.0-beta-23225": {
+      "System.Reflection/4.0.10": {
         "type": "package",
         "dependencies": {
           "System.IO": "4.0.0",
@@ -4606,6 +4606,7 @@
       "type": "package",
       "sha512": "8EXO8q7cpDUH9G2q+UOPOO/6uZ9aN7mx/4xjFIfkp+qLWVJiYuglkRhjY8Ggs2CucXzHR8GHnovJKB5yQoYaJg==",
       "files": [
+        "Ix-Async.1.2.5.nupkg",
         "Ix-Async.1.2.5.nupkg.sha512",
         "Ix-Async.nuspec",
         "lib/net40/System.Interactive.Async.dll",
@@ -6290,10 +6291,9 @@
         "System.Private.Uri.nuspec"
       ]
     },
-    "System.Reflection/4.1.0-beta-23225": {
+    "System.Reflection/4.0.10": {
       "type": "package",
-      "serviceable": true,
-      "sha512": "WbLtaCxoe5XdqEyZuGpemSQ8YBJ8cj11zx+yxOxJfHbNrmu7oMQ29+J50swaqg3soUc3BVBMqfIhb/7gocDHQA==",
+      "sha512": "WZ+4lEE4gqGx6mrqLhSiW4oi6QLPWwdNjzhhTONmhELOrW8Cw9phlO9tltgvRUuQUqYtBiliFwhO5S5fCJElVw==",
       "files": [
         "lib/DNXCore50/System.Reflection.dll",
         "lib/MonoAndroid10/_._",
@@ -6302,15 +6302,25 @@
         "lib/netcore50/System.Reflection.dll",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
+        "ref/dotnet/de/System.Reflection.xml",
+        "ref/dotnet/es/System.Reflection.xml",
+        "ref/dotnet/fr/System.Reflection.xml",
+        "ref/dotnet/it/System.Reflection.xml",
+        "ref/dotnet/ja/System.Reflection.xml",
+        "ref/dotnet/ko/System.Reflection.xml",
+        "ref/dotnet/ru/System.Reflection.xml",
         "ref/dotnet/System.Reflection.dll",
+        "ref/dotnet/System.Reflection.xml",
+        "ref/dotnet/zh-hans/System.Reflection.xml",
+        "ref/dotnet/zh-hant/System.Reflection.xml",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
         "ref/net46/_._",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._",
         "runtimes/win8-aot/lib/netcore50/System.Reflection.dll",
-        "System.Reflection.4.1.0-beta-23225.nupkg",
-        "System.Reflection.4.1.0-beta-23225.nupkg.sha512",
+        "System.Reflection.4.0.10.nupkg",
+        "System.Reflection.4.0.10.nupkg.sha512",
         "System.Reflection.nuspec"
       ]
     },
@@ -7570,8 +7580,7 @@
   "projectFileDependencyGroups": {
     "": [
       "EntityFramework.Core >= 7.0.0-rc1-final",
-      "EntityFramework.MicrosoftSqlServer >= 7.0.0-rc1-final",
-      "Microsoft.Extensions.DependencyInjection >= 1.0.0-rc1-final"
+      "EntityFramework.MicrosoftSqlServer >= 7.0.0-rc1-final"
     ],
     ".NETFramework,Version=v4.6": [
       "fx/System.Runtime >= 4.0.20"

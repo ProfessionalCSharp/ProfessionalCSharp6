@@ -1,13 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25029.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "BooksSample", "BooksSample\BooksSample.xproj", "{806E132B-5655-4957-9D85-B957C0F91233}"
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MenusSample", "MenusSample\MenusSample.xproj", "{8DD48ACB-66A4-4F13-9A60-AC2ACF430C91}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenusSampleMSBuild", "MenusSampleMSBuild\MenusSampleMSBuild.csproj", "{FF10B88D-9914-43F0-915D-5E16B2B8B70E}"
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MenusWithDataAnnotations", "MenusWithDataAnnotations\MenusWithDataAnnotations.xproj", "{4B69ABD7-D532-4ECE-BE20-3225CCEFE1D6}"
 EndProject
@@ -18,6 +16,8 @@ EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TransactionsSample", "TransactionSample\TransactionsSample.xproj", "{7A8433CE-447D-457A-9BF7-3659033426A8}"
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CreateBooksDatabase", "CreateBooksDatabase\CreateBooksDatabase.xproj", "{B7CD853B-A325-4293-9464-8CE6F50DF60A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenusSampleMSBuild", "MenusSampleMSBuild\MenusSampleMSBuild.csproj", "{C65B856D-6B1E-4555-B917-30698AFAE030}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +33,6 @@ Global
 		{8DD48ACB-66A4-4F13-9A60-AC2ACF430C91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DD48ACB-66A4-4F13-9A60-AC2ACF430C91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DD48ACB-66A4-4F13-9A60-AC2ACF430C91}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FF10B88D-9914-43F0-915D-5E16B2B8B70E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FF10B88D-9914-43F0-915D-5E16B2B8B70E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FF10B88D-9914-43F0-915D-5E16B2B8B70E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FF10B88D-9914-43F0-915D-5E16B2B8B70E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4B69ABD7-D532-4ECE-BE20-3225CCEFE1D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4B69ABD7-D532-4ECE-BE20-3225CCEFE1D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B69ABD7-D532-4ECE-BE20-3225CCEFE1D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -57,6 +53,10 @@ Global
 		{B7CD853B-A325-4293-9464-8CE6F50DF60A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7CD853B-A325-4293-9464-8CE6F50DF60A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7CD853B-A325-4293-9464-8CE6F50DF60A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C65B856D-6B1E-4555-B917-30698AFAE030}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C65B856D-6B1E-4555-B917-30698AFAE030}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C65B856D-6B1E-4555-B917-30698AFAE030}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C65B856D-6B1E-4555-B917-30698AFAE030}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

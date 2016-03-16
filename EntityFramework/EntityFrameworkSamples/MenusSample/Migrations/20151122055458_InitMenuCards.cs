@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore.Migrations;
-using Microsoft.EntityFrameworkCore.Metadata;
+//using Microsoft.EntityFrameworkCore.Migrations;
+//using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.Data.Entity.Migrations;
+using Microsoft.Data.Entity.Metadata;
 
 namespace MenusSample.Migrations
 {

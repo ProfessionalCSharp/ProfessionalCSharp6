@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.Data.Entity;
+// RC2 using Microsoft.EntityFrameworkCore;
 
 namespace BooksSample
 {

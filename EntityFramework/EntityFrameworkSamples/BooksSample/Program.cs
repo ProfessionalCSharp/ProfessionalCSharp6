@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿// RC2 using Microsoft.EntityFrameworkCore;
+using Microsoft.Data.Entity;
 using System;
 using System.Linq;
 using System.Threading.Tasks;

@@ -1,6 +1,8 @@
 ﻿using MenusSample;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Storage;
+//using Microsoft.EntityFrameworkCore;
+//using Microsoft.EntityFrameworkCore.Storage;
+using Microsoft.Data.Entity;
+using Microsoft.Data.Entity.Storage;
 using System.Linq;
 using System.Threading.Tasks;
 using static System.Console;
@@ -105,7 +107,8 @@ namespace TransactionSample
         private static async Task TwoSaveChangesWithOneTxAsync()
         {
             WriteLine(nameof(TwoSaveChangesWithOneTxAsync));
-            IDbContextTransaction tx = null;
+            // TODO: change with RC2 IDbContextTransaction tx = null;
+            IRelationalTransaction tx = null;
             try
             {
                 using (var context = new MenusContext())

@@ -11,19 +11,25 @@
   },
 
   "dependencies": {
-    "NETStandard.Library": "1.0.0-*",
-    "Microsoft.EntityFrameworkCore": "1.0.0-*",
-    "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0-*",
-    "Microsoft.Extensions.DependencyInjection": "1.0.0-*"
+    "EntityFramework.Core": "7.0.0-rc1-final",
+    "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final",
+    "Microsoft.Extensions.DependencyInjection": "1.0.0-rc1-final"
   },
 
   "frameworks": {
-    "netstandardapp1.5": {
-      "imports": [ "dotnet5.6", "dnxcore50", "portable-net45+win8" ]
+    "net46": {
+      "frameworkAssemblies": {
+        "System.Runtime": "4.0.20.0"
+      }
+    },
+    "dnxcore50": {
+      "dependencies": {
+        "Microsoft.CSharp": "4.0.1-beta-23516",
+        "System.Collections": "4.0.11-beta-23516",
+        "System.Console": "4.0.0-beta-23516",
+        "System.Linq": "4.0.1-beta-23516",
+        "System.Threading": "4.0.11-beta-23516"
+      }
     }
-  },
-  "runtimes": {
-    "win7-x64": { },
-    "win10-x64": { }
   }
 }
