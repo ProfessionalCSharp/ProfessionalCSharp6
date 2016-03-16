@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNet.Http;
 using Microsoft.Extensions.Configuration;
 using System.Threading.Tasks;
 

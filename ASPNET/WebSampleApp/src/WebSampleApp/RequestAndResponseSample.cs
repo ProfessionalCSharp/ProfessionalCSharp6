@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNet.Http;
 using Newtonsoft.Json;
 using System;
 using System.Text;
-using System.Text.Encodings.Web;
+using Microsoft.Extensions.WebEncoders;
 
 namespace WebSampleApp
 {
@@ -64,7 +64,7 @@ namespace WebSampleApp
         public static string Content(HttpRequest request) => request.Query["data"];
 
         public static string ContentEncoded(HttpRequest request) =>
-            HtmlEncoder.Default.Encode(request.Query["data"]);
+            HtmlEncoder.Default.HtmlEncode(request.Query["data"]);
 
         public static string GetForm(HttpRequest request)
         {
@@ -98,7 +98,7 @@ namespace WebSampleApp
                 IFormCollection coll = request.Form;
                 foreach (var key in coll.Keys)
                 {
-                    sb.Append(GetDiv(key, HtmlEncoder.Default.Encode(coll[key])));
+                    sb.Append(GetDiv(key, HtmlEncoder.Default.HtmlEncode(coll[key])));
                 }
                 return sb.ToString();
             }
@@ -119,7 +119,7 @@ namespace WebSampleApp
         public static string ReadCookie(HttpRequest request)
         {
             var sb = new StringBuilder();
-            IRequestCookieCollection cookies = request.Cookies;
+            IReadableStringCollection cookies = request.Cookies;
             foreach (var key in cookies.Keys)
             {
                 sb.Append(GetDiv(key, cookies[key]));

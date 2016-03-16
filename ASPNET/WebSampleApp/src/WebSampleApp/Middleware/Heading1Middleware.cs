@@ -1,5 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNet.Builder;
+using Microsoft.AspNet.Http;
 using System.Threading.Tasks;
 
 namespace WebSampleApp.Middleware

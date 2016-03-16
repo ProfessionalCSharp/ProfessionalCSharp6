@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNet.Builder;
+using Microsoft.AspNet.Hosting;
+using Microsoft.AspNet.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.PlatformAbstractions;
@@ -9,7 +9,7 @@ using WebSampleApp.Controllers;
 using WebSampleApp.Middleware;
 using WebSampleApp.Services;
 using Microsoft.Extensions.Logging;
-using Microsoft.AspNetCore.Hosting.Internal;
+using Microsoft.AspNet.Hosting.Internal;
 
 namespace WebSampleApp
 {
@@ -190,14 +190,6 @@ namespace WebSampleApp
         }
 
         // Entry point for the application.
-        public static void Main(string[] args)
-        {
-            var host = new WebHostBuilder()
-                .UseDefaultConfiguration(args)
-                .UseStartup<Startup>()
-                .Build();
-
-            host.Run();
-        }
+        public static void Main(string[] args) => WebApplication.Run<Startup>(args);
     }
 }
