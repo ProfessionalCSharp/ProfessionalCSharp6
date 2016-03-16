@@ -11830,10 +11830,10 @@
           "ref/dotnet5.4/System.Net.Security.dll": {}
         }
       },
-      "System.Net.Sockets/4.1.0-beta-23220": {
+      "System.Net.Sockets/4.1.0-beta-23225": {
         "type": "package",
         "dependencies": {
-          "System.Private.Networking": "4.0.1-beta-23220",
+          "System.Private.Networking": "4.0.1-beta-23225",
           "System.Runtime": "4.0.20"
         },
         "compile": {
@@ -15135,10 +15135,10 @@
           "ref/dotnet5.4/System.Net.Security.dll": {}
         }
       },
-      "System.Net.Sockets/4.1.0-beta-23220": {
+      "System.Net.Sockets/4.1.0-beta-23225": {
         "type": "package",
         "dependencies": {
-          "System.Private.Networking": "4.0.1-beta-23220",
+          "System.Private.Networking": "4.0.1-beta-23225",
           "System.Runtime": "4.0.20"
         },
         "compile": {
@@ -17520,7 +17520,7 @@
     "runtime.win7.System.Diagnostics.Process/4.1.0-beta-23409": {
       "type": "package",
       "serviceable": true,
-      "sha512": "LLOkdgtbcMZc6RacvBgBhWnHKPbUE52vm8ZGdWOtJrJxY68gO0cb1REVfue9CVwXsFcRec9q9ChxJQAxjWY4Vw==",
+      "sha512": "hXKdXyMDMGkSwaOQOgNlQsJuROb0rs+B/nGdvEDQZLZj0J9mH2jZ1/sXOB6nfgm/quboh0/EhV8oqC/1pzmBog==",
       "files": [
         "lib/win8/_._",
         "lib/wp8/_._",
@@ -17529,7 +17529,17 @@
         "runtime.win7.System.Diagnostics.Process.4.1.0-beta-23409.nupkg",
         "runtime.win7.System.Diagnostics.Process.4.1.0-beta-23409.nupkg.sha512",
         "runtime.win7.System.Diagnostics.Process.nuspec",
-        "runtimes/win7/lib/dotnet/System.Diagnostics.Process.dll"
+        "runtimes/win7/lib/dotnet/de/System.Diagnostics.Process.xml",
+        "runtimes/win7/lib/dotnet/es/System.Diagnostics.Process.xml",
+        "runtimes/win7/lib/dotnet/fr/System.Diagnostics.Process.xml",
+        "runtimes/win7/lib/dotnet/it/System.Diagnostics.Process.xml",
+        "runtimes/win7/lib/dotnet/ja/System.Diagnostics.Process.xml",
+        "runtimes/win7/lib/dotnet/ko/System.Diagnostics.Process.xml",
+        "runtimes/win7/lib/dotnet/ru/System.Diagnostics.Process.xml",
+        "runtimes/win7/lib/dotnet/System.Diagnostics.Process.dll",
+        "runtimes/win7/lib/dotnet/System.Diagnostics.Process.xml",
+        "runtimes/win7/lib/dotnet/zh-hans/System.Diagnostics.Process.xml",
+        "runtimes/win7/lib/dotnet/zh-hant/System.Diagnostics.Process.xml"
       ]
     },
     "runtime.win7.System.Diagnostics.TraceSource/4.0.0-beta-23516": {
@@ -19594,10 +19604,10 @@
         "System.Net.Sockets.nuspec"
       ]
     },
-    "System.Net.Sockets/4.1.0-beta-23220": {
+    "System.Net.Sockets/4.1.0-beta-23225": {
       "type": "package",
       "serviceable": true,
-      "sha512": "AYZ53H/5TRq4DCP8Df3cRL+xHftyzWEg2o1UwS6oRbstz0MDTwo7GZeRTyav4DnamY6Ua46EvDOTF48dSx89Aw==",
+      "sha512": "9wupz6i8AONzdzaLglcYImU25ivdcKmBXnf9GxE0eS1QqRGWQcWkKyv4dyxMc9E0gt4UuTIktn2FLjrz8ir6sw==",
       "files": [
         "lib/DNXCore50/System.Net.Sockets.dll",
         "lib/MonoAndroid10/_._",
@@ -19611,8 +19621,8 @@
         "ref/net46/System.Net.Sockets.dll",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._",
-        "System.Net.Sockets.4.1.0-beta-23220.nupkg",
-        "System.Net.Sockets.4.1.0-beta-23220.nupkg.sha512",
+        "System.Net.Sockets.4.1.0-beta-23225.nupkg",
+        "System.Net.Sockets.4.1.0-beta-23225.nupkg.sha512",
         "System.Net.Sockets.nuspec"
       ]
     },
@@ -19825,7 +19835,7 @@
     "System.Reflection/4.1.0-beta-23225": {
       "type": "package",
       "serviceable": true,
-      "sha512": "nlguo6AocBKGccv4CFSMCOR2/vU+93u/yvzFKO6ViNJ/SBz2VEZ1nOeW93vqKKpOMJkt3YtTvMWmS+kUGz/1bA==",
+      "sha512": "WbLtaCxoe5XdqEyZuGpemSQ8YBJ8cj11zx+yxOxJfHbNrmu7oMQ29+J50swaqg3soUc3BVBMqfIhb/7gocDHQA==",
       "files": [
         "lib/DNXCore50/System.Reflection.dll",
         "lib/MonoAndroid10/_._",
@@ -20674,7 +20684,7 @@
     "System.Runtime.Serialization.Primitives/4.0.11-beta-23409": {
       "type": "package",
       "serviceable": true,
-      "sha512": "0JLo0iSVWtuVwNo51/ArH+WtTTriWs80roj32aBMDiFBtSMoNbBDQ5BxzqbbDjLw17mtLFHMBqIjeUVsGeRMlQ==",
+      "sha512": "AQywM01eG8EgYde/RRrJDVdHmOOI3KkgK9GEjLQqvTLsrWsamNHN/j7Pxwa3XX7klSSrfDpvTNfUl40855idVg==",
       "files": [
         "lib/dotnet/de/System.Runtime.Serialization.Primitives.xml",
         "lib/dotnet/es/System.Runtime.Serialization.Primitives.xml",
