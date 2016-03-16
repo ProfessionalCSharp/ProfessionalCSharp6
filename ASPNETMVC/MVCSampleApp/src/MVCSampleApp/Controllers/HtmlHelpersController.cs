@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿// RC2 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNet.Mvc;
 using MVCSampleApp.Extensions;
 using MVCSampleApp.Models;
 using System;

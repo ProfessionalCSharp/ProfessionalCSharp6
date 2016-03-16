@@ -1,0 +1,56 @@
+﻿@model MenuPlanner.Models.Menu
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>@ViewBag.Title</h2>
+
+
+<form asp-action="Create" method="post">
+    <div class="form-horizontal">
+        <h4>Menu</h4>
+        <hr />
+        <div asp-validation-summary="ValidationSummary.All" style="color:blue" id="validation_day" class="form-group">
+            <span style="color:red">Some error occurred</span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="@Model.MenuCardId" class="control-label col-md2"></label>
+            <div class="col-md-10">
+                <select asp-for="@(Model.MenuCardId)" asp-items="@((IEnumerable<SelectListItem>)ViewBag.MenuCards)" size="2" class="form-control">
+                    <option value="" selected="selected">Select a menu card</option>
+                </select>
+               
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Text" class="control-label col-md-2"></label>
+             <div class="col-md-10">
+                 <input asp-for="Text" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Price" class="control-label col-md-2"></label>
+            <div class="col-md-10">
+                <input asp-for="Price" />
+                <span asp-validation-for="Price">Price of the menu</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Day" class="control-label col-md-2"></label>
+            <div class="col-md-10">
+                <input asp-for="Day" />
+                <span asp-validation-for="Day">Date of the menu</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+
+    </div>
+
+</form>
+<a asp-action="Index">Back</a>
