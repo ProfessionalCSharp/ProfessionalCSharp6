@@ -1,26 +1,30 @@
 ﻿{
   "version": "1.0.0-*",
   "description": "UnitTestingSamplesCore Class Library",
-  "authors": [ "chris" ],
+  "authors": [ "Christian" ],
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
 
   "dependencies": {
-    "NETStandard.Library": "1.0.0-*",
-    "System.Xml.XDocument": "4.0.11-*"
   },
 
   "frameworks": {
-    "net46": {
-      "dependencies": {
-      },
+    "dnx46": {
       "frameworkAssemblies": {
         "System.Xml": "4.0.0.0",
         "System.Xml.Linq": "4.0.0.0"
       }
     },
-    "dotnet5.4": {
+    "dnxcore50": {
+      "dependencies": {
+        "Microsoft.CSharp": "4.0.1-beta-23516",
+        "System.Collections": "4.0.11-beta-23516",
+        "System.Linq": "4.0.1-beta-23516",
+        "System.Runtime": "4.0.21-beta-23516",
+        "System.Threading": "4.0.11-beta-23516",
+        "System.Xml.XDocument": "4.0.11-beta-23516"
+      }
     }
   }
 }
