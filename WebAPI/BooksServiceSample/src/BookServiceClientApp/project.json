@@ -11,7 +11,6 @@
   },
 
   "dependencies": {
-    "NETStandard.Library": "1.0.0-*",
     "Newtonsoft.Json": "8.0.2-*"
   },
 
@@ -28,15 +27,16 @@
         "System.Net.Http": "4.0.0.0"
       }
     },
-    "netstandardapp1.5": {
+    "dnxcore50": {
       "dependencies": {
-        "System.Xml.XDocument": "4.0.11-*",
-        "System.Net.Http": "4.0.1-*"
-      },
-      "imports": [ "dnxcore50" ]
+        "Microsoft.CSharp": "4.0.1-beta-23516",
+        "System.Collections": "4.0.11-beta-23516",
+        "System.Console": "4.0.0-beta-23516",
+        "System.Linq": "4.0.1-beta-23516",
+        "System.Net.Http": "4.0.1-beta-23516",
+        "System.Threading": "4.0.11-beta-23516",
+        "System.Xml.XDocument": "4.0.11-beta-23516"
+      }
     }
-  },
-  "runtimes": {
-    "win7-x64": { }
   }
 }

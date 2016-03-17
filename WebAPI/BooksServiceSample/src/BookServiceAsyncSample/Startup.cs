@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNet.Builder;
+using Microsoft.AspNet.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.Data.Entity;
 using BooksServiceSample.Models;
-using Microsoft.EntityFrameworkCore;
 
 namespace BookServiceAsyncSample
 {
@@ -31,7 +31,8 @@ namespace BookServiceAsyncSample
             services.AddMvc().AddXmlSerializerFormatters();
             // uncomment the following three lines to use the SampleBookChaptersRepository
             IBookChaptersRepository repos = new SampleBookChaptersRepository();
-            services.AddSingleton<IBookChaptersRepository>(repos);
+            // RC2 services.AddSingleton<IBookChaptersRepository>(repos);
+            services.AddInstance<IBookChaptersRepository>(repos);
             await repos.InitAsync();
 
             services.AddEntityFramework()
@@ -41,8 +42,6 @@ namespace BookServiceAsyncSample
             );
 
             services.AddSingleton<IBookChaptersRepository, BookChaptersRepository>();
-
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -59,14 +58,6 @@ namespace BookServiceAsyncSample
         }
 
         // Entry point for the application.
-        public static void Main(string[] args)
-        {
-            var host = new WebHostBuilder()
-                .UseDefaultConfiguration(args)
-                .UseStartup<Startup>()
-                .Build();
-
-            host.Run();
-        }
+        public static void Main(string[] args) => WebApplication.Run<Startup>(args);
     }
 }

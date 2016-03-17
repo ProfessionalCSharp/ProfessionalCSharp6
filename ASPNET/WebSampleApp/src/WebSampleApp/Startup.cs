@@ -54,7 +54,7 @@ namespace WebSampleApp
             loggerFactory.AddDebug();
 
             // loggerFactory.AddConsole(Configuration.GetSection("Logging"));
-            //loggerFactory.AddConsole();
+            // loggerFactory.AddConsole();
             // loggerFactory.AddDebug();
 
 

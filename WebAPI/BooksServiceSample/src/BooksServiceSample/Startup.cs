@@ -1,11 +1,11 @@
 ﻿using BooksServiceSample.Models;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNet.Builder;
+using Microsoft.AspNet.Hosting;
+using Microsoft.AspNet.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Microsoft.AspNetCore.Mvc.Formatters;
+using Microsoft.AspNet.Mvc.Formatters;
 using Swashbuckle.SwaggerGen;
 using Swashbuckle.SwaggerGen.XmlComments;
 
@@ -32,27 +32,28 @@ namespace BooksServiceSample
 
             IBookChaptersRepository repos = new SampleBookChaptersRepository();
             repos.Init();
-            services.AddSingleton<IBookChaptersRepository>(repos);
+            // RC2 services.AddSingleton<IBookChaptersRepository>(repos);
+            services.AddInstance<IBookChaptersRepository>(repos);
 
-            // services.AddSwaggerGen();
+            services.AddSwaggerGen();
 
-            //services.AddSwaggerGen();
-            //services.ConfigureSwaggerDocument(options =>
-            //{
-            //    options.SingleApiVersion(new Info
-            //    {
-            //        Version = "v1",
-            //        Title = "Book Chapters",
-            //        Description = "A sample for Professional C# 6"
-            //    });
-            //    options.IgnoreObsoleteActions = true;
-            //});
+            services.AddSwaggerGen();
+            services.ConfigureSwaggerDocument(options =>
+            {
+                options.SingleApiVersion(new Info
+                {
+                    Version = "v1",
+                    Title = "Book Chapters",
+                    Description = "A sample for Professional C# 6"
+                });
+                options.IgnoreObsoleteActions = true;
+            });
 
-            //services.ConfigureSwaggerSchema(options =>
-            //{
-            //    options.DescribeAllEnumsAsStrings = true;
-            //    options.IgnoreObsoleteProperties = true;
-            //});
+            services.ConfigureSwaggerSchema(options =>
+            {
+                options.DescribeAllEnumsAsStrings = true;
+                options.IgnoreObsoleteProperties = true;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -67,19 +68,11 @@ namespace BooksServiceSample
 
             app.UseMvc();
 
-            //app.UseSwaggerGen();
-            //app.UseSwaggerUi();
+            app.UseSwaggerGen();
+            app.UseSwaggerUi();
         }
 
         // Entry point for the application.
-        public static void Main(string[] args)
-        {
-            var host = new WebHostBuilder()
-                .UseDefaultConfiguration(args)
-                .UseStartup<Startup>()
-                .Build();
-
-            host.Run();
-        }
+        public static void Main(string[] args) => WebApplication.Run<Startup>(args);
     }
 }

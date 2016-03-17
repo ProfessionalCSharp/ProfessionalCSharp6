@@ -1,5 +1,5 @@
 ﻿using BooksServiceSample.Models;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNet.Mvc;
 using System.Collections.Generic;
 
 // For more information on enabling Web API for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
@@ -27,7 +27,8 @@ namespace BooksServiceSample.Controllers
             BookChapter chapter = _repository.Find(id);
             if (chapter == null)
             {
-                return NotFound();
+                // RC2 return NotFound();
+                return HttpNotFound();
             }
             else
             {
@@ -41,7 +42,8 @@ namespace BooksServiceSample.Controllers
         {
             if (chapter == null)
             {
-                return BadRequest();
+                // RC2 return BadRequest();
+                return HttpBadRequest();
             }
             _repository.Add(chapter);
             // return a 201 response, Created
@@ -54,11 +56,11 @@ namespace BooksServiceSample.Controllers
         {
             if (chapter == null || id != chapter.Id)
             {
-                return BadRequest();
+                return HttpBadRequest();
             }
             if (_repository.Find(id) == null)
             {
-                return NotFound();
+                return HttpNotFound();
             }
 
             _repository.Update(chapter);

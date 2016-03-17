@@ -5,37 +5,31 @@
   },
 
   "dependencies": {
-    "Microsoft.AspNetCore.Diagnostics": "1.0.0-*",
-    "Microsoft.AspNetCore.IISPlatformHandler": "1.0.0-*",
-    "Microsoft.AspNetCore.Mvc": "1.0.0-*",
-    "Microsoft.AspNetCore.Mvc.Formatters.Xml": "1.0.0-*",
-    "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-*",
-    "Microsoft.AspNetCore.StaticFiles": "1.0.0-*",
-    "Microsoft.Extensions.Configuration.Json": "1.0.0-*",
-    "Microsoft.Extensions.Logging.Console": "1.0.0-*",
-    "Microsoft.Extensions.Logging.Debug": "1.0.0-*",
-    "Microsoft.NETCore.Platforms": "1.0.1-*",
-    "Microsoft.EntityFrameworkCore": "1.0.0-*",
-    "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0-*",
-    "Swashbuckle.SwaggerGen": "6.0.0-*",
-    "Swashbuckle.SwaggerUi": "6.0.0-*"
+    "EntityFramework.Core": "7.0.0-rc1-final",
+    "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final",
+    "EntityFramework.Commands": "7.0.0-rc1-final",
+    "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
+    "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
+    "Microsoft.AspNet.Mvc.Formatters.Xml": "6.0.0-rc1-final",
+    "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
+    "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-final",
+    "Microsoft.Extensions.Configuration.FileProviderExtensions": "1.0.0-rc1-final",
+    "Microsoft.Extensions.Configuration.Json": "1.0.0-rc1-final",
+    "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
+    "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
+    "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final",
+    "Swashbuckle.SwaggerGen": "6.0.0-rc1-final",
+    "Swashbuckle.SwaggerUi": "6.0.0-rc1-final"
   },
 
   "commands": {
-    "web": "BookServiceAsyncSample"
+    "web": "BookServiceAsyncSample",
+    "ef": "EntityFramework.Commands"
   },
 
-  "tools": {
-    "dotnet-razor-tooling": "1.0.0-*",
-    "dotnet-ef": "1.0.0-*"
-  },
 
   "frameworks": {
     "dnxcore50": {
-      "dependencies": {
-        "NETStandard.Library": "1.0.0-*"
-      },
-      "imports": [ "dotnet5.6", "portable-net45+win8" ]
     }
   },
 
@@ -48,9 +42,5 @@
   "publishExclude": [
     "**.user",
     "**.vspscc"
-  ],
-  "runtimes": {
-    "win7-x64": { },
-    "win10-x64": { }
-  }
+  ]
 }
