@@ -1,7 +1,7 @@
 # ProfessionalCSharp6
 Code samples for the Wrox book Professional C# 6
 
-Use the RC1 branch to open the samples with Visual Studio 2015 and ASP.NET 5 RC 1 tools. The master branch contains newer RC2 samples that has some issues using it from Visual Studio 2015 with the RC 1 tools.
+The CSharp7 branch is used to make code updates for C# 7 using Visual Studioo "15".
 
 Samples are updated to .NET 5 Core RC. To compile and run the samples you need:
 * Visual Studio 2015
