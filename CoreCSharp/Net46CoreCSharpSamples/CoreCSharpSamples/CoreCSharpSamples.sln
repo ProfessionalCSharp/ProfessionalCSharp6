@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25029.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgumentsSample", "ArgumentsSample\ArgumentsSample.csproj", "{64AFB825-E783-40FD-AFE9-C82FD77AB41C}"
 EndProject
@@ -28,6 +28,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VariableScopeSample3", "VariableScopeSample3\VariableScopeSample3.csproj", "{F8926172-3450-4D3E-8C74-A5B45B5A46A0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VariablesSample", "VariablesSample\VariablesSample.csproj", "{2E289A1A-312C-4C0D-8B54-5B754B8BD641}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitSeparatorSample", "DigitSeparatorSample\DigitSeparatorSample.csproj", "{C196A1B8-0F76-4BC7-965A-2AF75509AB8B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{2E289A1A-312C-4C0D-8B54-5B754B8BD641}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E289A1A-312C-4C0D-8B54-5B754B8BD641}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E289A1A-312C-4C0D-8B54-5B754B8BD641}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C196A1B8-0F76-4BC7-965A-2AF75509AB8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C196A1B8-0F76-4BC7-965A-2AF75509AB8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C196A1B8-0F76-4BC7-965A-2AF75509AB8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C196A1B8-0F76-4BC7-965A-2AF75509AB8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
