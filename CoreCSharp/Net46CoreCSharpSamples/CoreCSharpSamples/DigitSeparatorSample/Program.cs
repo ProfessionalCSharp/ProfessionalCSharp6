@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Console;
+﻿using static System.Console;
 
 namespace DigitSeparatorSample
 {
@@ -22,7 +17,6 @@ namespace DigitSeparatorSample
             WriteLine(b1);
             int b2 = 0b1111_1111_1111_1111;
             WriteLine(b2);
-
         }
     }
 }

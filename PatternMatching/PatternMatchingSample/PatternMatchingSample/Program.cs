@@ -14,6 +14,7 @@ namespace PatternMatchingSample
     {
         static void Main()
         {
+            Patterns1();
             IsOperatorExtension();
             SwitchStatement();
             TypePattern();
@@ -87,14 +88,14 @@ namespace PatternMatchingSample
         private static void RecursivePattern()
         {
             WriteLine(nameof(RecursivePattern));
-            object x1 = 3;
-            if (x1 is Bird(*))  // new local variable v that is definitely assigned after the is operator is true
-            {
-            }
-            else if (x1 is string v)
-            {
+            //object x1 = 3;
+            //if (x1 is Bird(*))  // new local variable v that is definitely assigned after the is operator is true
+            //{
+            //}
+            //else if (x1 is string v)
+            //{
 
-            }
+            //}
 
             WriteLine();
         }
@@ -129,11 +130,30 @@ namespace PatternMatchingSample
 
         static void TypePattern()
         {
+            WriteLine(nameof(TypePattern));
+            object[] numbers = { 42, 0b1010, new object[] { 1, 2, 3 }, 0x1234_5678 };
+            foreach (var n in numbers)
+            {
+                switch (n)
+                {
+                    case int i when i > 40:
+                        WriteLine($"n is an int with the value {i} that is larger than 40");
+                        break;
+                    case int i:
+                        WriteLine($"n is an int with the value {i}");
+                        break;
+                    case IEnumerable<object> list when list.Any():
+                        break;
+                    default:
+                        break;
+                }
+            }
             int x1 = 3;
             if (x1 is int v)
             {
                 WriteLine($"{nameof(x1)} is type int, this is the value: {v}");
             }
+            WriteLine();
         }
 
         static void ConstantPattern()
@@ -178,5 +198,34 @@ namespace PatternMatchingSample
         //        default: return e;
         //    }
         //}
+
+        static void Patterns1()
+        {
+            foreach (var book in GetBooks())
+            {
+                if (book is ProBook { Title is var t, Publisher is "Wrox Press" })
+                {
+                    WriteLine($"{t} is a book from Wrox Press");   
+                }
+                //switch (book)
+                //{
+                //    case book is ProBook { Title is var t, Publisher is "Wrox Press" }:
+                //        WriteLine($"{t} is a book from Wrox Press");                    
+                //        break;
+                //    default:
+                //        break;
+                //}
+            }
+        }
+
+
+        static IEnumerable<Book> GetBooks() =>
+            new List<Book>()
+            {
+                new ProBook("Professional C# 5.0 and .NET 4.5.1", "Wrox Press", "Christian Nagel", "Jay Glynn", "Morgan Skinner"),
+                new ProBook("Professional C# 6 and .NET Core 1.0", "Wrox Press", "Christian Nagel"),
+                new ProBook("Professional C# 7 and .NET Core 1.1", "Wrox Press", "Christian Nagel"),
+                new BeginningBook("Beginning C# 6.0 Programming with Visual Studio 2015", "Wrox Press", "Jacob Vibe Hammer", "Jon D. Reid")
+            };
     }
 }
