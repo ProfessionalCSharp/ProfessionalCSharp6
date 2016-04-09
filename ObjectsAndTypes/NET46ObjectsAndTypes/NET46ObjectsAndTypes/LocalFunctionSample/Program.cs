@@ -11,7 +11,7 @@ namespace LocalFunctionSample
     {
         static void Main(string[] args)
         {
-            // local function, requires compilation symbol or 
+            // local function, requires compilation symbol or compiler option
             int Foo(int x)
             {
                 return x + 42;
