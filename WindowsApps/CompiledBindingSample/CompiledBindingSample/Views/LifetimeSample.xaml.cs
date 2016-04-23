@@ -40,6 +40,7 @@ namespace CompiledBindingSample.Views
         private void OnUpdateBinding()
         {
             Bindings.Update();
+          
         }
 
         private void OnStopTracking()

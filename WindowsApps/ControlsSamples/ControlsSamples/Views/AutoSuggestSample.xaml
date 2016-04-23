@@ -9,6 +9,7 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel>
+            <TextBlock Text="Start writing a name of a Formula 1 champion, e.g. Sebastian, Rosberg, Vettel, Mario..." />
             <AutoSuggestBox TextChanged="{x:Bind OnTextChanged}" SuggestionChosen="{x:Bind OnSuggestionChosen}" QuerySubmitted="{x:Bind OnQuerySubmitted}" />
         </StackPanel>
 

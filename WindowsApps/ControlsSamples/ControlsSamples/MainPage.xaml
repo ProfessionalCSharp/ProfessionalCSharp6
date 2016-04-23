@@ -12,7 +12,6 @@
             <Button Content="Text" Click="{x:Bind OnText}" />
             <Button Content="Auto suggest" Click="{x:Bind OnAutoSuggest}" />
             <Button Content="Ink" Click="{x:Bind OnInk}" />
-            <Button Content="Drag And Drop" Click="{x:Bind OnDragAndDrop}" />
             <Button Content="Picker" Click="{x:Bind OnPicker}" />
         </StackPanel>
     </Grid>

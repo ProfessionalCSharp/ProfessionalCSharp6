@@ -106,9 +106,6 @@
     <Compile Include="Views\AutoSuggestSample.xaml.cs">
       <DependentUpon>AutoSuggestSample.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\DragAndDropSample.xaml.cs">
-      <DependentUpon>DragAndDropSample.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\InkSample.xaml.cs">
       <DependentUpon>InkSample.xaml</DependentUpon>
     </Compile>
@@ -144,10 +141,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\AutoSuggestSample.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\DragAndDropSample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

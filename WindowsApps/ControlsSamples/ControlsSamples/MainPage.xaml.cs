@@ -21,10 +21,6 @@ namespace ControlsSamples
             Frame.Navigate(typeof(InkSample));
         }
 
-        private void OnDragAndDrop(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(DragAndDropSample));
-        }
 
         private void OnPicker(object sender, RoutedEventArgs e)
         {
