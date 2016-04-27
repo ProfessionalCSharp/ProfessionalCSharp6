@@ -10,7 +10,7 @@
   },
 
   "dependencies": {
-    "NETStandard.Library": "1.0.0-*"
+    "NETStandard.Library": "1.5.0-*"
   },
 
   "commands": {
@@ -18,9 +18,13 @@
   },
 
   "frameworks": {
-    "net46": { },
-    "dnxcore50": {
+    "net452": { },
+    "netstandardapp1.5": {
       "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.0-*"
+        }
       }
     }
   }
