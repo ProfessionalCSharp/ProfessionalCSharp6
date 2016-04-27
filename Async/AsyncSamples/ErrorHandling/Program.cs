@@ -107,7 +107,7 @@ namespace ErrorHandling
 #pragma warning disable CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
                 ThrowAfter(200, "first");
 #pragma warning restore CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
-                              // exception is not caught because this method is finished before the exception is thrown
+                              // Exception is not caught because the exception is assigned to the task which is not awaited
             }
             catch (Exception ex)
             {
