@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "InheritanceWithConstructors", "InheritanceWithConstructors\InheritanceWithConstructors.xproj", "{9ECE18EA-254C-4612-A707-CADFDB72C7BE}"
 EndProject
@@ -10,11 +10,6 @@ EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "VirtualMethods", "VirtualMethods\VirtualMethods.xproj", "{4201F568-F58B-49B3-B184-B0E4F14F8724}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E19D0727-9B62-45F1-97DE-FEF79F867A0F}"
-	ProjectSection(SolutionItems) = preProject
-		InheritanceWithConstructors\global.json = InheritanceWithConstructors\global.json
-		UsingInterfaces\global.json = UsingInterfaces\global.json
-		VirtualMethods\global.json = VirtualMethods\global.json
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
