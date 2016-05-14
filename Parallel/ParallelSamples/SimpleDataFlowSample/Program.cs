@@ -66,7 +66,5 @@ namespace SimpleDataFlowSample
                 WriteLine($"user input: {data}");
             }
         }
-
-
     }
 }

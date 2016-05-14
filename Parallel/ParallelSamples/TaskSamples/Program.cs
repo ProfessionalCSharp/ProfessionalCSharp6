@@ -167,7 +167,7 @@ namespace TaskSamples
                 WriteLine(title);
                 WriteLine($"Task id: {Task.CurrentId?.ToString() ?? "no task"}, thread: {Thread.CurrentThread.ManagedThreadId}");
 
-#if (!DNXCORE50)
+#if (NET46)
                 WriteLine($"is pooled thread: {Thread.CurrentThread.IsThreadPoolThread}");
 #endif
                 WriteLine($"is background thread: {Thread.CurrentThread.IsBackground}");
