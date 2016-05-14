@@ -42,14 +42,10 @@ namespace StringFormats
             WriteLine($"{day:d}");
             WriteLine(Invariant($"{day:d}"));
 
-
             string a1 = "a";
             int a2 = 3;
             double a3 = 3.4;
             ShowDetails($"a1: {a1} a2: {a2} a3: {a3}");
-
-
-
         }
 
         public static void MoreFormattableString()
