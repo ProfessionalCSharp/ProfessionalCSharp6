@@ -1,34 +1,25 @@
 {
   "version": "1.0.0-*",
-  "description": "",
-  "authors": [ "Christian" ],
-  "tags": [ "" ],
-  "projectUrl": "",
-  "licenseUrl": "",
-  "compilationOptions": {
+  "buildOptions": {
     "emitEntryPoint": true
   },
 
   "dependencies": {
-    "NETStandard.Library": "1.0.0-*",
-    "System.Net.Http": "4.0.1-*"
-  },
-
-  "commands": {
-    "HttpClientSample": "HttpClientSample"
-
   },
 
   "frameworks": {
-    "net46": {
+    "netcoreapp1.0": {
+      "imports": "dnxcore50",
       "dependencies": {
-
-      },
-      "frameworkAssemblies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.0-rc2-3002702"
+        }
       }
     },
-    "dnxcore50": {
+    "net46": {
       "dependencies": {
+        "System.Net.Http": "4.0.0"
       }
     }
   }
