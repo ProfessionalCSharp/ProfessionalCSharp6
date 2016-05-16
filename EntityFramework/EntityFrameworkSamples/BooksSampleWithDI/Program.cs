@@ -22,8 +22,7 @@ namespace BooksSample
            
             var services = new ServiceCollection();
             services.AddTransient<BooksService>();
-            services.AddEntityFramework()
-                .AddSqlServer()
+            services.AddEntityFrameworkSqlServer()
                 .AddDbContext<BooksContext>(options =>
                     options.UseSqlServer(ConnectionString));
           
