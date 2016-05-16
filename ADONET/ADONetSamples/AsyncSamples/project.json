@@ -1,35 +1,26 @@
 ﻿{
   "version": "1.0.0-*",
-  "description": "AsyncSamples Console Application",
-  "authors": [ "Christian" ],
-  "tags": [ "" ],
-  "projectUrl": "",
-  "licenseUrl": "",
-  "compilationOptions": {
+  "buildOptions": {
     "emitEntryPoint": true
   },
 
-  "commands": {
-    "AsyncSamples": "AsyncSamples"
-  },
-
   "dependencies": {
-    "NETStandard.Library": "1.0.0-*",
-    "Microsoft.Extensions.Configuration": "1.0.0-*",
-    "Microsoft.Extensions.Configuration.Json": "1.0.0-*",
-    "System.Data.SqlClient": "4.0.0-*"
+    "Microsoft.Extensions.Configuration": "1.0.0-rc2-final",
+    "Microsoft.Extensions.Configuration.Json": "1.0.0-rc2-final",
+    "system.data.sqlclient": "4.1.0-rc2-24027"
   },
-
-
 
   "frameworks": {
-    "net46": {
-      "frameworkAssemblies": {
-      },
+    "netcoreapp1.0": {
+      "imports": "dnxcore50",
       "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.0-rc2-3002702"
+        }
       }
     },
-    "dnxcore50": {
+    "net46": {
       "dependencies": {
       }
     }
