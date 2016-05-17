@@ -6,12 +6,12 @@ using static System.Console;
 
 namespace Wrox.ProCSharp.Composition
 {
-    class Program
+    public class Program
     {
         [Import]
         public ICalculator Calculator { get; set; }
 
-        static void Main()
+        public static void Main()
         {
             var p = new Program();
             p.Bootstrapper();
@@ -71,5 +71,3 @@ namespace Wrox.ProCSharp.Composition
 
     }
 }
-
-

@@ -7,8 +7,8 @@
 
   <Import Project="$(VSToolsPath)\DotNet\Microsoft.DotNet.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
-    <ProjectGuid>62f2252c-cbc1-4ab2-814c-bca1d9653de4</ProjectGuid>
-    <RootNamespace>CalculatorContract</RootNamespace>
+    <ProjectGuid>a8d2c80f-8226-42f4-8dd6-f987d89c33df</ProjectGuid>
+    <RootNamespace>AdvancedCalculator</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">.\obj</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">.\bin\</OutputPath>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
