@@ -1,9 +1,7 @@
 {
   "version": "1.0.0-*",
   "buildOptions": {
-    "emitEntryPoint": true
-  },
-  "compilationOptions": {
+    "emitEntryPoint": true,
     "allowUnsafe": true
   },
 
