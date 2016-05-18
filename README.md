@@ -1,20 +1,19 @@
 # ProfessionalCSharp6
 Code samples for the Wrox book Professional C# 6
 
-Use the RC1 branch to open the samples with Visual Studio 2015 and ASP.NET 5 RC 1 tools. The master branch contains newer RC2 samples that has some issues using it from Visual Studio 2015 with the RC 1 tools.
+Use the RC1 branch to open the samples with Visual Studio 2015 and ASP.NET 5 RC 1 tools. I'm just in the progress to update all the samples of the master branch to the just released .NET Core RC2 version. Please give me some days before this is completed, and the updated files are uploaded to the Wrox site.
 
-Samples are updated to .NET 5 Core RC. To compile and run the samples you need:
-* Visual Studio 2015
-* ASP.NET 5 RC1 Tools (https://get.asp.net/ - click the ASP.NET 5 RC, install for Windows)
-* Upgrade to the runtime using >dnvm upgrade from the command line 
-* dotnet Tools (https://github.com/dotnet/cli, download and installe the latest MSI package)
+Samples are just in the progress for update to .NET Core 1.0 RC2. To compile and run the samples you need:
+* Visual Studio 2015 Update 2
+* Visual Studio official installer for .NET Core 1.0 RC2
+* latest NuGet Manager extensions for Visual Studio
 
-With some samples, additional NuGet feeds might be needed. Configure these with Visual Studio 2015:
+[.NET Core 1.0 RC2 Tools](http://www.microsoft.com/net/core#windows)
+
+With not yet updated code samples, additional NuGet feeds might be needed. Configure these with Visual Studio 2015:
 * .NET Core: https://dotnet.myget.org/F/dotnet-core/api/v3/index.json
 * ASP.NET Core: https://www.myget.org/F/aspnetmaster/api/v2
 * ASP.NET Core 1.0: https://www.myget.org/F/aspnetcidev/api/v3/index.json
-
-Samples that have been updated to netstandardapp1.5, currently you can't use Visual Studio for compilation. Use the dotnet tools (CLI) instead.
 
 Samples available for these chapters (sample folders):
 
