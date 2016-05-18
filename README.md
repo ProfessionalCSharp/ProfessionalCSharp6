@@ -1,7 +1,7 @@
 # ProfessionalCSharp6
 Code samples for the Wrox book Professional C# 6
 
-The CSharp7 branch is used to make code updates for C# 7 using Visual Studioo "15".
+The CSharp7 branch is used to make code updates for C# 7 using Visual Studio "15".
 
 Samples are updated to .NET 5 Core RC. To compile and run the samples you need:
 * Visual Studio 2015
