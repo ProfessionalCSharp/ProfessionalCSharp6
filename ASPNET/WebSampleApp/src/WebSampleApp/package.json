@@ -1,12 +1,12 @@
 {
-  "version": "1.0.0",
-  "name": "ASP.NET",
+  "name": "asp.net",
+  "version": "0.0.0",
   "private": true,
   "devDependencies": {
-    "gulp": "3.9.0",
-    "gulp-concat": "2.6.0",
+    "gulp": "3.8.11",
+    "gulp-concat": "2.5.2",
     "gulp-cssmin": "0.1.7",
     "gulp-uglify": "1.2.0",
-    "rimraf": "2.4.2"
+    "rimraf": "2.2.8"
   }
 }

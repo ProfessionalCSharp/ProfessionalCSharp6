@@ -9,7 +9,6 @@ using WebSampleApp.Controllers;
 using WebSampleApp.Middleware;
 using WebSampleApp.Services;
 using Microsoft.Extensions.Logging;
-using Microsoft.AspNetCore.Hosting.Internal;
 
 namespace WebSampleApp
 {
@@ -18,12 +17,13 @@ namespace WebSampleApp
         public Startup(IHostingEnvironment env)
         {
             var builder = new ConfigurationBuilder()
-              .AddJsonFile("appsettings.json")
-              .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
+                .SetBasePath(env.ContentRootPath)
+                .AddJsonFile("appsettings.json")
+                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
 
             if (env.IsDevelopment())
             {
-                builder.AddUserSecrets();
+                // builder.AddUserSecrets();
             }
             Configuration = builder.Build();
         }
@@ -39,7 +39,7 @@ namespace WebSampleApp
         {
             services.AddTransient<ISampleService, DefaultSampleService>();
             services.AddTransient<HomeController>();
-            services.AddCaching();
+            services.AddMemoryCache();
             services.AddSession(options =>
                 options.IdleTimeout = TimeSpan.FromMinutes(10));
 
@@ -48,7 +48,6 @@ namespace WebSampleApp
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory)
         {
-            app.UseIISPlatformHandler();
             app.UseStaticFiles();
             loggerFactory.AddConsole();
             loggerFactory.AddDebug();
@@ -61,9 +60,9 @@ namespace WebSampleApp
 
 
             app.UseSession();
-            //// uncomment these lines to use the Middleware sample
-            //app.UseHeaderMiddleware();
-            //app.UseHeading1Middleware();
+            // uncomment these lines to use the Middleware sample
+            app.UseHeaderMiddleware();
+            app.UseHeading1Middleware();
 
 
             app.Map("/home2", homeApp =>
@@ -115,64 +114,64 @@ namespace WebSampleApp
                 });
             });
 
-            //// uncomment this app.Run invocation to active the Hello, World!output
-            //app.Run(async (context) =>
-            //{
-            //    await context.Response.WriteAsync("Hello World!");
-            //});
+            // uncomment this app.Run invocation to active the Hello, World!output
+            app.Run(async (context) =>
+            {
+                await context.Response.WriteAsync("Hello World!");
+            });
 
-            //// uncomment this app.Run invocation for the first Request and Response sample
-            //app.Run(async (context) =>
-            //{
-            //    await context.Response.WriteAsync(RequestAndResponseSample.GetRequestInformation(context.Request));
-            //});
+            // uncomment this app.Run invocation for the first Request and Response sample
+            app.Run(async (context) =>
+            {
+                await context.Response.WriteAsync(RequestAndResponseSample.GetRequestInformation(context.Request));
+            });
 
 
-            //// uncomment this app.Run invocation for the custom routing
-            //app.Run(async (context) =>
-            //{
-            //    if (context.Request.Path.Value.ToLower() == "/home")
-            //    {
-            //        HomeController controller =
-            //          app.ApplicationServices.GetService<HomeController>();
-            //        int statusCode = await controller.Index(context);
-            //        context.Response.StatusCode = statusCode;
-            //        return;
-            //    }
+            // uncomment this app.Run invocation for the custom routing
+            app.Run(async (context) =>
+            {
+                if (context.Request.Path.Value.ToLower() == "/home")
+                {
+                    HomeController controller =
+                      app.ApplicationServices.GetService<HomeController>();
+                    int statusCode = await controller.Index(context);
+                    context.Response.StatusCode = statusCode;
+                    return;
+                }
 
-            //    string result = string.Empty;
-            //    switch (context.Request.Path.Value.ToLower())
-            //    {
-            //        case "/header":
-            //            result = RequestAndResponseSample.GetHeaderInformation(context.Request);
-            //            break;
-            //        case "/add":
-            //            result = RequestAndResponseSample.QueryString(context.Request);
-            //            break;
-            //        case "/content":
-            //            result = RequestAndResponseSample.Content(context.Request);
-            //            break;
-            //        case "/encoded":
-            //            result = RequestAndResponseSample.ContentEncoded(context.Request);
-            //            break;
-            //        case "/form":
-            //            result = RequestAndResponseSample.GetForm(context.Request);
-            //            break;
-            //        case "/writecookie":
-            //            result = RequestAndResponseSample.WriteCookie(context.Response);
-            //            break;
-            //        case "/readcookie":
-            //            result = RequestAndResponseSample.ReadCookie(context.Request);
-            //            break;
-            //        case "/json":
-            //            result = RequestAndResponseSample.GetJson(context.Response);
-            //            break;
-            //        default:
-            //            result = RequestAndResponseSample.GetRequestInformation(context.Request);
-            //            break;
-            //    }
-            //    await context.Response.WriteAsync(result);
-            //});
+                string result = string.Empty;
+                switch (context.Request.Path.Value.ToLower())
+                {
+                    case "/header":
+                        result = RequestAndResponseSample.GetHeaderInformation(context.Request);
+                        break;
+                    case "/add":
+                        result = RequestAndResponseSample.QueryString(context.Request);
+                        break;
+                    case "/content":
+                        result = RequestAndResponseSample.Content(context.Request);
+                        break;
+                    case "/encoded":
+                        result = RequestAndResponseSample.ContentEncoded(context.Request);
+                        break;
+                    case "/form":
+                        result = RequestAndResponseSample.GetForm(context.Request);
+                        break;
+                    case "/writecookie":
+                        result = RequestAndResponseSample.WriteCookie(context.Response);
+                        break;
+                    case "/readcookie":
+                        result = RequestAndResponseSample.ReadCookie(context.Request);
+                        break;
+                    case "/json":
+                        result = RequestAndResponseSample.GetJson(context.Response);
+                        break;
+                    default:
+                        result = RequestAndResponseSample.GetRequestInformation(context.Request);
+                        break;
+                }
+                await context.Response.WriteAsync(result);
+            });
 
             // uncomment to use the home controller
             app.Run(async (context) =>
@@ -187,17 +186,6 @@ namespace WebSampleApp
                 }
             });
 
-        }
-
-        // Entry point for the application.
-        public static void Main(string[] args)
-        {
-            var host = new WebHostBuilder()
-                .UseDefaultConfiguration(args)
-                .UseStartup<Startup>()
-                .Build();
-
-            host.Run();
         }
     }
 }
