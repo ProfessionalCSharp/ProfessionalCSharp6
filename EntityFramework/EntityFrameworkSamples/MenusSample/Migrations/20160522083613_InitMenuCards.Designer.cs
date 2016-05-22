@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
@@ -8,14 +8,14 @@ using MenusSample;
 namespace MenusSample.Migrations
 {
     [DbContext(typeof(MenusContext))]
-    [Migration("20151122055458_InitMenuCards")]
+    [Migration("20160522083613_InitMenuCards")]
     partial class InitMenuCards
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.0-rc1-16348")
-                .HasAnnotation("Relational:DefaultSchema", "mc")
+                .HasDefaultSchema("mc")
+                .HasAnnotation("ProductVersion", "1.0.0-rc2-20901")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("MenusSample.Menu", b =>
@@ -26,14 +26,16 @@ namespace MenusSample.Migrations
                     b.Property<int>("MenuCardId");
 
                     b.Property<decimal>("Price")
-                        .HasAnnotation("Relational:ColumnType", "Money");
+                        .HasColumnType("Money");
 
                     b.Property<string>("Text")
                         .HasAnnotation("MaxLength", 120);
 
                     b.HasKey("MenuId");
 
-                    b.HasAnnotation("Relational:TableName", "Menus");
+                    b.HasIndex("MenuCardId");
+
+                    b.ToTable("Menus");
                 });
 
             modelBuilder.Entity("MenusSample.MenuCard", b =>
@@ -46,14 +48,15 @@ namespace MenusSample.Migrations
 
                     b.HasKey("MenuCardId");
 
-                    b.HasAnnotation("Relational:TableName", "MenuCards");
+                    b.ToTable("MenuCards");
                 });
 
             modelBuilder.Entity("MenusSample.Menu", b =>
                 {
                     b.HasOne("MenusSample.MenuCard")
                         .WithMany()
-                        .HasForeignKey("MenuCardId");
+                        .HasForeignKey("MenuCardId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
         }
     }

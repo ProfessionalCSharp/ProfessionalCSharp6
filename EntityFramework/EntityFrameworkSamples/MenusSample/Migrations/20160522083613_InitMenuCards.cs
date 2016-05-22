@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Metadata;
@@ -9,7 +9,9 @@ namespace MenusSample.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.EnsureSchema("mc");
+            migrationBuilder.EnsureSchema(
+                name: "mc");
+
             migrationBuilder.CreateTable(
                 name: "MenuCards",
                 schema: "mc",
@@ -21,8 +23,9 @@ namespace MenusSample.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_MenuCard", x => x.MenuCardId);
+                    table.PrimaryKey("PK_MenuCards", x => x.MenuCardId);
                 });
+
             migrationBuilder.CreateTable(
                 name: "Menus",
                 schema: "mc",
@@ -36,21 +39,32 @@ namespace MenusSample.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Menu", x => x.MenuId);
+                    table.PrimaryKey("PK_Menus", x => x.MenuId);
                     table.ForeignKey(
-                        name: "FK_Menu_MenuCard_MenuCardId",
+                        name: "FK_Menus_MenuCards_MenuCardId",
                         column: x => x.MenuCardId,
                         principalSchema: "mc",
                         principalTable: "MenuCards",
                         principalColumn: "MenuCardId",
                         onDelete: ReferentialAction.Cascade);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Menus_MenuCardId",
+                schema: "mc",
+                table: "Menus",
+                column: "MenuCardId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(name: "Menus", schema: "mc");
-            migrationBuilder.DropTable(name: "MenuCards", schema: "mc");
+            migrationBuilder.DropTable(
+                name: "Menus",
+                schema: "mc");
+
+            migrationBuilder.DropTable(
+                name: "MenuCards",
+                schema: "mc");
         }
     }
 }
