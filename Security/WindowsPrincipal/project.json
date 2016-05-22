@@ -1,32 +1,24 @@
 ﻿{
   "version": "1.0.0-*",
-  "description": "",
-  "authors": [ "Christian" ],
-  "tags": [ "" ],
-  "projectUrl": "",
-  "licenseUrl": "",
-  "compilationOptions": {
+  "buildOptions": {
     "emitEntryPoint": true
   },
 
   "dependencies": {
-    "NETStandard.Library": "1.0.0-*",
-    "System.Security.Principal.Windows": "4.0.0-*"
-  },
+    "System.Security.Principal.Windows": "4.0.0-rc2-24027"
 
-  "commands": {
-    "WindowsPrincipal": "WindowsPrincipal"
   },
 
   "frameworks": {
-    "net46": {
+    "netcoreapp1.0": {
+      "imports": "dnxcore50",
       "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.0-rc2-3002702"
+        }
       }
     },
-    "dnxcore50": {
-      "dependencies": {
-
-      }
-    }
+    "net46": { }
   }
 }

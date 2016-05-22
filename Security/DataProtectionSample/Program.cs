@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.DataProtection;
 using System;
 using System.IO;
 using System.Linq;
@@ -40,21 +41,15 @@ namespace DataProtectionSample
 
         public static MySafe InitProtection()
         {
-            var serviceCollection = new ServiceCollection();
-            serviceCollection.AddOptions();
-            DataProtectionServices.GetDefaultServices();
-            serviceCollection.AddDataProtection(config =>
-            {
-                config.PersistKeysToFileSystem(new DirectoryInfo("."))
+            var serviceCollection = new ServiceCollection();   
+            serviceCollection.AddDataProtection()
+                .PersistKeysToFileSystem(new DirectoryInfo("."))
                 .SetDefaultKeyLifetime(TimeSpan.FromDays(20))
                 .ProtectKeysWithDpapi();
-
-            });
           
             IServiceProvider services = serviceCollection.BuildServiceProvider();
 
             return ActivatorUtilities.CreateInstance<MySafe>(services);
-
         }
 
         public static void Read(MySafe safe, string fileName)

@@ -1,29 +1,18 @@
 ﻿{
   "version": "1.0.0-*",
-  "description": "",
-  "authors": [ "Christian" ],
-  "tags": [ "" ],
-  "projectUrl": "",
-  "licenseUrl": "",
-  "compilationOptions": {
+  "buildOptions": {
     "emitEntryPoint": true
   },
 
   "dependencies": {
-    "NETStandard.Library": "1.0.0-*",
-    "System.Security.Cryptography.Algorithms": "4.0.0-*",
-    "System.Security.Cryptography.Cng": "4.0.0-*",
-    "System.Security.Cryptography.Primitives": "4.0.0-*"
-  },
+    "System.Security.Cryptography.Cng": "4.0.0-rc2-24027",
+    "System.Security.Cryptography.Algorithms": "4.1.0-rc2-24027",
+    "System.Security.Cryptography.Csp": "4.0.0-rc2-24027",
+    "System.Security.Cryptography.Primitives": "4.0.0-rc2-24027"
 
-  "commands": {
-    "SecureTransfer": "SecureTransfer"
   },
 
   "frameworks": {
-    "net46": {
-      "dependencies": {
-      }
-    }
+    "net46": { }
   }
 }

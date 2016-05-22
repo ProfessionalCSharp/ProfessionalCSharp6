@@ -1,32 +1,24 @@
 {
   "version": "1.0.0-*",
-  "description": "",
-  "authors": [ "Christian" ],
-  "tags": [ "" ],
-  "projectUrl": "",
-  "licenseUrl": "",
-  "compilationOptions": {
+  "buildOptions": {
     "emitEntryPoint": true
   },
 
   "dependencies": {
-    "NETStandard.Library": "1.0.0-*",
-    "Microsoft.AspNet.DataProtection": "1.0.0-*",
-    "Microsoft.AspNet.DataProtection.Abstractions": "1.0.0-*",
-    "Microsoft.Extensions.DependencyInjection": "1.0.0-*"
-  },
-
-  "commands": {
-    "DataProtectionSample": "DataProtectionSample"
+    "Microsoft.AspNetCore.DataProtection": "1.0.0-rc2-final",
+    "Microsoft.Extensions.DependencyInjection": "1.0.0-rc2-final"
   },
 
   "frameworks": {
-    "net46": {
+    "netcoreapp1.0": {
+      "imports": "dnxcore50",
       "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.0-rc2-3002702"
+        }
       }
     },
-    "dnxcore50": {
-      "dependencies": { }
-    }
+    "net461": { }
   }
 }
