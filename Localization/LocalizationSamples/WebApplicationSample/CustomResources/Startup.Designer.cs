@@ -22,7 +22,7 @@ namespace WebApplicationSample.CustomResources {
     // with the /str option, or rebuild your VS project.
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Startup {
+    public class Startup {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -35,10 +35,10 @@ namespace WebApplicationSample.CustomResources {
         ///    Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("WebApplicationSample.CustomResources.Startup", typeof(Startup).GetTypeInfo().Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("WebApplicationSample.Startup", typeof(Startup).GetTypeInfo().Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -50,7 +50,7 @@ namespace WebApplicationSample.CustomResources {
         ///    resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -62,7 +62,7 @@ namespace WebApplicationSample.CustomResources {
         /// <summary>
         ///    Looks up a localized string similar to Greeting all readers of Professional C#.
         /// </summary>
-        internal static string message1 {
+        public static string message1 {
             get {
                 return ResourceManager.GetString("message1", resourceCulture);
             }
@@ -71,7 +71,7 @@ namespace WebApplicationSample.CustomResources {
         /// <summary>
         ///    Looks up a localized string similar to Using culture {0} and UI culture {1}.
         /// </summary>
-        internal static string message2 {
+        public static string message2 {
             get {
                 return ResourceManager.GetString("message2", resourceCulture);
             }
