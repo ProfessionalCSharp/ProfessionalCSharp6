@@ -10,7 +10,6 @@ namespace BooksSample
         {
             base.OnConfiguring(optionsBuilder);
             optionsBuilder.UseSqlServer(ConnectionString);
-
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

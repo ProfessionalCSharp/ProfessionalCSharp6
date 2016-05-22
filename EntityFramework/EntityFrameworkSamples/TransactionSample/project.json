@@ -1,29 +1,24 @@
 {
   "version": "1.0.0-*",
-  "description": "TransactionSample Console Application",
-  "authors": [ "Christian" ],
-  "tags": [ "" ],
-  "projectUrl": "",
-  "licenseUrl": "",
-
-  "compilationOptions": {
+  "buildOptions": {
     "emitEntryPoint": true
   },
 
   "dependencies": {
-    "NETStandard.Library": "1.0.0-*",
-    "Microsoft.EntityFrameworkCore": "1.0.0-*",
-    "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0-*"
+    "Microsoft.EntityFrameworkCore": "1.0.0-rc2-final",
+    "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0-rc2-final"
   },
-
 
   "frameworks": {
-    "netstandardapp1.5": {
-      "imports": [ "dotnet5.6", "dnxcore50", "portable-net45+win8" ]
-    }
-  },
-  "runtimes": {
-    "win7-x64": { },
-    "win10-x64": { }
+    "netcoreapp1.0": {
+      "imports": [ "dnxcore50", "portable-net45+win81" ],
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.0-rc2-3002702"
+        }
+      }
+    },
+    "net46": { }
   }
 }
