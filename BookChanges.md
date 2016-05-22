@@ -16,6 +16,24 @@ Page 20 - The *compilationOptions* from project.json changed to *buildOptions
 Page 173 - Typo in the first note
 Within the method GetRectangles an underscore is missing accessing the variable _coll
 
+## Chapter 24 - Security
+
+Page 697, the InitProtection method changed because of API changes with data protection:
+```
+public static MySafe InitProtection()
+{
+  var serviceCollection = new ServiceCollection();   
+  serviceCollection.AddDataProtection()
+    .PersistKeysToFileSystem(new DirectoryInfo("."))
+    .SetDefaultKeyLifetime(TimeSpan.FromDays(20))
+    .ProtectKeysWithDpapi();
+          
+  IServiceProvider services = serviceCollection.BuildServiceProvider();
+
+  return ActivatorUtilities.CreateInstance<MySafe>(services);
+}
+```
+
 ## Chapter 38 - Entity Framework Core
 
 Page 1169, tools section:
