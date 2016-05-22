@@ -15,8 +15,12 @@
         <StackPanel>
             <TextBlock Text="{x:Bind Book.Title, Mode=OneWay}" />
             <TextBlock Text="{x:Bind Book.Publisher}" />
+            <TextBlock Text="Click the 1. Stop button to stop tracking," />
+            <TextBlock Text="2. The Edit Button to change the title from code behind, " />
+            <TextBlock Text="and 3. the Refresh button to update the binding" />
+
         </StackPanel>
-        <!--<ListBox ItemTemplate="{StaticResource BookTemplate}" ItemsSource="{x:Bind Books}" Margin="8" />-->
+       
         <CommandBar Grid.Row="1">
             <AppBarButton IsCompact="False" Icon="Stop" Label="Stop Tracking" Click="{x:Bind OnStopTracking}" />
             <AppBarButton IsCompact="False" Icon="Edit"  Label="Change Book" Click="{x:Bind OnChangeBook}" />

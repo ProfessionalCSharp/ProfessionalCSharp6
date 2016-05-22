@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PageNavigation", "PageNavigation\PageNavigation.csproj", "{29252B73-E157-49FD-8E29-A907907E7CB2}"
 EndProject
@@ -18,6 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{29252B73-E157-49FD-8E29-A907907E7CB2}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{29252B73-E157-49FD-8E29-A907907E7CB2}.Debug|Any CPU.Build.0 = Debug|x86
+		{29252B73-E157-49FD-8E29-A907907E7CB2}.Debug|Any CPU.Deploy.0 = Debug|x86
 		{29252B73-E157-49FD-8E29-A907907E7CB2}.Debug|ARM.ActiveCfg = Debug|ARM
 		{29252B73-E157-49FD-8E29-A907907E7CB2}.Debug|ARM.Build.0 = Debug|ARM
 		{29252B73-E157-49FD-8E29-A907907E7CB2}.Debug|ARM.Deploy.0 = Debug|ARM

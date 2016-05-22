@@ -34,7 +34,7 @@ namespace CompiledBindingSample.Views
 
         public void OnChangeBook()
         {
-            Book.Title = "Professional C# 6 and .NET Core 5";
+            Book.Title = "Professional C# 6 and .NET Core 1.0";
         }
 
         private void OnUpdateBinding()
