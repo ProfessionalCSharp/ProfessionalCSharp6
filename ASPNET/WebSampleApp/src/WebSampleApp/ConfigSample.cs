@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace WebSampleApp
@@ -20,8 +21,18 @@ namespace WebSampleApp
 
         public static async Task UserSecret(HttpContext context, IConfigurationRoot config)
         {
-            string secret = config["UserSecret1"];
-            await context.Response.WriteAsync(secret.Div());
+            string secret = config["secret1"];
+            if (string.IsNullOrEmpty(secret))
+            {
+                var sb = new StringBuilder();
+                sb.Append(@"Use ""Manage User Secrets"" from the context menu while selecting the project".Div());
+                sb.Append("And create the secret named 'secret1'".Div());
+                await context.Response.WriteAsync(sb.ToString());
+            }
+            else
+            {
+                await context.Response.WriteAsync(secret.Div());
+            }
         }
     }
 }

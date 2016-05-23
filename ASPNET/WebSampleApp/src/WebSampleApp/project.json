@@ -1,5 +1,4 @@
 ﻿{
-  "userSecretsId": "aspnet5-WebSampleApp-20151215011720",
 
   "buildOptions": {
     "emitEntryPoint": true,
@@ -57,5 +56,7 @@
 
   "scripts": {
     "postpublish": [ "dotnet publish-iis --publish-folder %publish:OutputPath% --framework %publish:FullTargetFramework%" ]
-  }
+  },
+
+  "userSecretsId": "aspnet-WebSampleApp-20160523063651"
 }

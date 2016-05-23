@@ -9,6 +9,7 @@ using WebSampleApp.Controllers;
 using WebSampleApp.Middleware;
 using WebSampleApp.Services;
 using Microsoft.Extensions.Logging;
+using System.Text;
 
 namespace WebSampleApp
 {
@@ -23,7 +24,7 @@ namespace WebSampleApp
 
             if (env.IsDevelopment())
             {
-                // builder.AddUserSecrets();
+                builder.AddUserSecrets();
             }
             Configuration = builder.Build();
         }
@@ -39,7 +40,7 @@ namespace WebSampleApp
         {
             services.AddTransient<ISampleService, DefaultSampleService>();
             services.AddTransient<HomeController>();
-            services.AddMemoryCache();
+            services.AddDistributedMemoryCache();
             services.AddSession(options =>
                 options.IdleTimeout = TimeSpan.FromMinutes(10));
 
@@ -61,8 +62,8 @@ namespace WebSampleApp
 
             app.UseSession();
             // uncomment these lines to use the Middleware sample
-            app.UseHeaderMiddleware();
-            app.UseHeading1Middleware();
+            // app.UseHeaderMiddleware();
+            // app.UseHeading1Middleware();
 
 
             app.Map("/home2", homeApp =>
@@ -114,76 +115,166 @@ namespace WebSampleApp
                 });
             });
 
-            // uncomment this app.Run invocation to active the Hello, World!output
-            app.Run(async (context) =>
+            //// uncomment this app.Run invocation to active the Hello, World! output
+            //app.Run(async (context) =>
+            //{
+            //    await context.Response.WriteAsync("Hello World!");
+            //});
+
+            //// uncomment this app.Run invocation for the first Request and Response sample
+            //app.Run(async (context) =>
+            //{
+            //    await context.Response.WriteAsync(RequestAndResponseSample.GetRequestInformation(context.Request));
+            //});
+
+
+            //// uncomment this app.Run invocation for the custom routing
+            //app.Run(async (context) =>
+            //{
+            //    if (context.Request.Path.Value.ToLower() == "/home")
+            //    {
+            //        HomeController controller =
+            //          app.ApplicationServices.GetService<HomeController>();
+            //        int statusCode = await controller.Index(context);
+            //        context.Response.StatusCode = statusCode;
+            //        return;
+            //    }
+            //}
+
+            //// uncomment this app.Run invocation for request/response samples
+            //app.Run(async (context) =>
+            //{
+            //    string result = string.Empty;
+            //    switch (context.Request.Path.Value.ToLower())
+            //    {
+            //        case "/header":
+            //            result = RequestAndResponseSample.GetHeaderInformation(context.Request);
+            //            break;
+            //        case "/add":
+            //            result = RequestAndResponseSample.QueryString(context.Request);
+            //            break;
+            //        case "/content":
+            //            result = RequestAndResponseSample.Content(context.Request);
+            //            break;
+            //        case "/encoded":
+            //            result = RequestAndResponseSample.ContentEncoded(context.Request);
+            //            break;
+            //        case "/form":
+            //            result = RequestAndResponseSample.GetForm(context.Request);
+            //            break;
+            //        case "/writecookie":
+            //            result = RequestAndResponseSample.WriteCookie(context.Response);
+            //            break;
+            //        case "/readcookie":
+            //            result = RequestAndResponseSample.ReadCookie(context.Request);
+            //            break;
+            //        case "/json":
+            //            result = RequestAndResponseSample.GetJson(context.Response);
+            //            break;
+            //        default:
+            //            result = RequestAndResponseSample.GetRequestInformation(context.Request);
+            //            break;
+            //    }
+            //    await context.Response.WriteAsync(result);
+            //});
+
+            //// uncomment to use the home controller
+            //app.Run(async (context) =>
+            //{
+            //    if (context.Request.Path.Value.ToLower() == "/home")
+            //    {
+            //        HomeController controller =
+            //          app.ApplicationServices.GetService<HomeController>();
+            //        int statusCode = await controller.Index(context);
+            //        context.Response.StatusCode = statusCode;
+            //        return;
+            //    }
+            //});
+
+            app.Map("/RequestAndResponse", app1 =>
             {
-                await context.Response.WriteAsync("Hello World!");
+                app1.Run(async (context) =>
+                {
+                    await context.Response.WriteAsync(
+                        RequestAndResponseSample.GetRequestInformation(context.Request));
+                });
             });
 
-            // uncomment this app.Run invocation for the first Request and Response sample
-            app.Run(async (context) =>
+            app.Map("/RequestAndResponse2", app1 =>
             {
-                await context.Response.WriteAsync(RequestAndResponseSample.GetRequestInformation(context.Request));
+                app1.Run(async (context) =>
+                {
+                    string result = string.Empty;
+                    switch (context.Request.Path.Value.ToLower())
+                    {
+                        case "/header":
+                            result = RequestAndResponseSample.GetHeaderInformation(context.Request);
+                            break;
+                        case "/add":
+                            result = RequestAndResponseSample.QueryString(context.Request);
+                            break;
+                        case "/content":
+                            result = RequestAndResponseSample.Content(context.Request);
+                            break;
+                        case "/encoded":
+                            result = RequestAndResponseSample.ContentEncoded(context.Request);
+                            break;
+                        case "/form":
+                            result = RequestAndResponseSample.GetForm(context.Request);
+                            break;
+                        case "/writecookie":
+                            result = RequestAndResponseSample.WriteCookie(context.Response);
+                            break;
+                        case "/readcookie":
+                            result = RequestAndResponseSample.ReadCookie(context.Request);
+                            break;
+                        case "/json":
+                            result = RequestAndResponseSample.GetJson(context.Response);
+                            break;
+                        default:
+                            result = RequestAndResponseSample.GetRequestInformation(context.Request);
+                            break;
+                    }
+                    await context.Response.WriteAsync(result);
+                });
             });
 
-
-            // uncomment this app.Run invocation for the custom routing
+            // contrary to the sample as it is written in the book I've made it now easier for you
+            // to start all the different parts by adding this list
+            // This required minor changes to the code samples. However, you can comment the following code block 
+            // and uncomment the specific parts as described in the book
             app.Run(async (context) =>
             {
-                if (context.Request.Path.Value.ToLower() == "/home")
-                {
-                    HomeController controller =
-                      app.ApplicationServices.GetService<HomeController>();
-                    int statusCode = await controller.Index(context);
-                    context.Response.StatusCode = statusCode;
-                    return;
-                }
-
-                string result = string.Empty;
-                switch (context.Request.Path.Value.ToLower())
-                {
-                    case "/header":
-                        result = RequestAndResponseSample.GetHeaderInformation(context.Request);
-                        break;
-                    case "/add":
-                        result = RequestAndResponseSample.QueryString(context.Request);
-                        break;
-                    case "/content":
-                        result = RequestAndResponseSample.Content(context.Request);
-                        break;
-                    case "/encoded":
-                        result = RequestAndResponseSample.ContentEncoded(context.Request);
-                        break;
-                    case "/form":
-                        result = RequestAndResponseSample.GetForm(context.Request);
-                        break;
-                    case "/writecookie":
-                        result = RequestAndResponseSample.WriteCookie(context.Response);
-                        break;
-                    case "/readcookie":
-                        result = RequestAndResponseSample.ReadCookie(context.Request);
-                        break;
-                    case "/json":
-                        result = RequestAndResponseSample.GetJson(context.Response);
-                        break;
-                    default:
-                        result = RequestAndResponseSample.GetRequestInformation(context.Request);
-                        break;
-                }
-                await context.Response.WriteAsync(result);
-            });
-
-            // uncomment to use the home controller
-            app.Run(async (context) =>
-            {
-                if (context.Request.Path.Value.ToLower() == "/home")
-                {
-                    HomeController controller =
-                      app.ApplicationServices.GetService<HomeController>();
-                    int statusCode = await controller.Index(context);
-                    context.Response.StatusCode = statusCode;
-                    return;
-                }
+                var sb = new StringBuilder();
+                sb.Append("<ul>");
+                sb.Append(@"<li><a href=""/hello.html"">Static Files</a> - requires UseStaticFiles</li>");
+                sb.Append(@"<li><a href=""/RequestAndResponse"">Request and Response</a>");
+                sb.Append("<li>Request and Response 2");
+                sb.Append("<ul>");
+                sb.Append(@"<li><a href=""/RequestAndResponse2/header"">Header</a></li>");
+                sb.Append(@"<li><a href=""/RequestAndResponse2/add?x=3&y=4"">Add</a></li>");
+                sb.Append(@"<li><a href=""/RequestAndResponse2/content?data=sample"">Content</a></li>");
+                sb.Append(@"<li><a href=""/RequestAndResponse2/content?data=<h1>sample</h1>"">HTML Content</a></li>");
+                sb.Append(@"<li><a href=""/RequestAndResponse2/content?data=<script>alert('hacker');</script>"">Bad Content</a></li>");
+                sb.Append(@"<li><a href=""/RequestAndResponse2/encoded?data=<h1>sample</h1>"">Encoded content</a></li>");
+                sb.Append(@"<li><a href=""/RequestAndResponse2/encoded?data=<script>alert('hacker');</script>"">Encoded bad Content</a></li>");
+                sb.Append(@"<li><a href=""/RequestAndResponse2/form"">Form</a></li>");
+                sb.Append(@"<li><a href=""/RequestAndResponse2/writecookie"">Write cookie</a></li>");
+                sb.Append(@"<li><a href=""/RequestAndResponse2/readcookie"">Read cookie</a></li>");
+                sb.Append(@"<li><a href=""/RequestAndResponse2/json"">JSON</a></li>");
+                sb.Append("</ul>");
+                sb.Append("</li>");
+                sb.Append(@"<li><a href=""/home2"">Home Controller with dependency injection</a></li>");
+                sb.Append(@"<li><a href=""/session"">Session</a></li>");
+                sb.Append("<li>Configuration");
+                sb.Append("<ul>");
+                sb.Append(@"<li><a href=""/configuration/appsettings"">Appsettings</a></li>");
+                sb.Append(@"<li><a href=""/configuration/database"">Database</a></li>");
+                sb.Append(@"<li><a href=""/configuration/secret"">Secrets  </a></li>");
+                sb.Append("</ul>");
+                sb.Append("</li>");
+                sb.Append("</ul>");
+                await context.Response.WriteAsync(sb.ToString());
             });
 
         }

@@ -110,7 +110,7 @@ namespace WebSampleApp
             response.Cookies.Append("color", "red",
               new CookieOptions
               {
-                  Path = "/cookies",
+                  Path = "/",
                   Expires = DateTime.Now.AddDays(1)
               });
             return "cookie written".Div();
