@@ -48,3 +48,20 @@ The Entity Framework Core tools need to be referenced using "Microsoft.EntityFra
 }
 ```
 
+## Chapter 40 - ASP.NET Core
+
+Page 1227, the Main method changed slightly with UseKestrel (the new Web host), UseIISIntegration (integration when used with IIS), and UseContentRoot (to define the static content for the Web site):
+
+```
+public static void Main(string[] args)
+{
+  var host = new WebHostBuilder()
+    .UseKestrel()
+    .UseIISIntegration()
+    .UseContentRoot(Directory.GetCurrentDirectory())
+    .UseStartup<Startup>()
+    .Build();
+
+  host.Run();
+}
+```
