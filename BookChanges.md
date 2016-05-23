@@ -65,3 +65,17 @@ public static void Main(string[] args)
   host.Run();
 }
 ```
+
+Page 1250, the directory for the configuration is now configured with SetBasePath
+
+```
+public Startup(IHostingEnvironment env)
+{
+  var builder = new ConfigurationBuilder()
+    .SetBasePath(env.ContentRootPath)
+    .AddJsonFile("appsettings.json")
+    .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
+
+  //...
+}
+```
