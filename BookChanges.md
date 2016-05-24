@@ -79,3 +79,11 @@ public Startup(IHostingEnvironment env)
   //...
 }
 ```
+
+## Chapter 41 - ASP.NET MVC
+
+Page 1272, ToString instead of ToShortDateString:
+
+```
+<td>@item.Day.ToString("d")</td>
+```
