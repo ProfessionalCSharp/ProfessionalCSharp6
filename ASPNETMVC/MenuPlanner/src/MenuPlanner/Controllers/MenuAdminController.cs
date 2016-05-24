@@ -1,13 +1,10 @@
-﻿using System;
+﻿using MenuPlanner.Models;
+using MenuPlanner.Services;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNet.Mvc;
-using MenuPlanner.Services;
-using MenuPlanner.Models;
-using Microsoft.AspNet.Mvc.Rendering;
-
-// For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace MenuPlanner.Controllers
 {
@@ -29,12 +26,12 @@ namespace MenuPlanner.Controllers
         {
             if (id == null)
             {
-                return HttpBadRequest();
+                return BadRequest();
             }
             Menu menu = await _service.GetMenuByIdAsync(id.Value);
             if (menu == null)
             {
-                return HttpNotFound();
+                return NotFound();
             }
             return View(menu);
         }
@@ -65,13 +62,13 @@ namespace MenuPlanner.Controllers
         {
             if (id == null)
             {
-                return HttpBadRequest();
+                return BadRequest();
             }
 
             Menu menu = await _service.GetMenuByIdAsync(id.Value);
             if (menu == null)
             {
-                return HttpNotFound();
+                return NotFound();
             }
 
             IEnumerable<MenuCard> cards = await _service.GetMenuCardsAsync();
@@ -98,12 +95,12 @@ namespace MenuPlanner.Controllers
         {
             if (id == null)
             {
-                return HttpBadRequest();
+                return BadRequest();
             }
             Menu menu = await _service.GetMenuByIdAsync(id.Value);
             if (menu == null)
             {
-                return HttpNotFound();
+                return NotFound();
             }
             return View(menu);
         }

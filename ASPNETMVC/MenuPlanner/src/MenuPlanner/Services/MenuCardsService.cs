@@ -1,5 +1,5 @@
 ﻿using MenuPlanner.Models;
-using Microsoft.Data.Entity;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,7 +8,7 @@ namespace MenuPlanner.Services
 {
     public class MenuCardsService : IMenuCardsService
     {
-        private MenuCardsContext _menuCardsContext;
+        private readonly MenuCardsContext _menuCardsContext;
         public MenuCardsService(MenuCardsContext menuCardsContext)
         {
             _menuCardsContext = menuCardsContext;

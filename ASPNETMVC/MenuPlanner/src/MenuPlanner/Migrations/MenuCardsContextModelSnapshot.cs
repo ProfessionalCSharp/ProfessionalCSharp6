@@ -1,8 +1,8 @@
-using System;
-using Microsoft.Data.Entity;
-using Microsoft.Data.Entity.Infrastructure;
-using Microsoft.Data.Entity.Metadata;
-using Microsoft.Data.Entity.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using MenuPlanner.Models;
 
 namespace MenuPlanner.Migrations
@@ -13,13 +13,11 @@ namespace MenuPlanner.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.0-rc2-16649")
+                .HasAnnotation("ProductVersion", "1.0.0-rc2-20901")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("MenuPlanner.Models.Menu", b =>
                 {
-                    b.ToTable("Menu");
-
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
@@ -42,12 +40,14 @@ namespace MenuPlanner.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("MenuCardId");
+
+                    b.ToTable("Menus");
+
+                    b.HasAnnotation("SqlServer:TableName", "Menus");
                 });
 
             modelBuilder.Entity("MenuPlanner.Models.MenuCard", b =>
                 {
-                    b.ToTable("MenuCard");
-
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
@@ -59,6 +59,10 @@ namespace MenuPlanner.Migrations
                     b.Property<int>("Order");
 
                     b.HasKey("Id");
+
+                    b.ToTable("MenuCards");
+
+                    b.HasAnnotation("SqlServer:TableName", "MenuCards");
                 });
 
             modelBuilder.Entity("MenuPlanner.Models.Menu", b =>

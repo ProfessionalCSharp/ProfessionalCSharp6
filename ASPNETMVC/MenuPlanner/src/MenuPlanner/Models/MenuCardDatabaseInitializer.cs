@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.Data.Entity;
+﻿using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -26,12 +24,16 @@ namespace MenuPlanner.Models
 
                 if (_context.MenuCards.Count() == 0)
                 {
-                    _context.MenuCards.Add(
-                      new MenuCard { Name = "Breakfast", Active = true, Order = 1 });
-                    _context.MenuCards.Add(
-                      new MenuCard { Name = "Vegetarian", Active = true, Order = 2 });
-                    _context.MenuCards.Add(
-                      new MenuCard { Name = "Steaks", Active = true, Order = 3 });
+                    var breakfast = new MenuCard { Name = "Breakfast", Active = true, Order = 1 };
+                    var vegetarian = new MenuCard { Name = "Vegetarian", Active = true, Order = 2 };
+                    var steaks = new MenuCard { Name = "Steaks", Active = true, Order = 3 };
+                    _context.MenuCards.AddRange(breakfast, vegetarian, steaks);
+
+                    var b1 = new Menu { Text = "One", MenuCard = breakfast, Active = true, Order = 1 };
+                    var b2 = new Menu { Text = "Two", MenuCard = breakfast, Active = true, Order = 2 };
+                    var b3 = new Menu { Text = "Two", MenuCard = breakfast, Active = true, Order = 3 };
+
+                    _context.Menus.AddRange(b1, b2, b3);
                 }
 
                 await _context.SaveChangesAsync();
