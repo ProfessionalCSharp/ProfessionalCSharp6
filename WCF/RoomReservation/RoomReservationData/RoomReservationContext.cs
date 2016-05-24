@@ -1,4 +1,4 @@
-﻿using Microsoft.Data.Entity;
+﻿using Microsoft.EntityFrameworkCore;
 using Wrox.ProCSharp.WCF.Contracts;
 
 namespace Wrox.ProCSharp.WCF.Data
