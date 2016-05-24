@@ -87,3 +87,8 @@ Page 1272, ToString instead of ToShortDateString:
 ```
 <td>@item.Day.ToString("d")</td>
 ```
+
+Page 1299, 1300
+Action result names have been changed, the Http prefix removed: HttpBadRequest, HttpNotFound... renamed to BadRequest, NotFound.
+[Action result naming changes](https://github.com/aspnet/Announcements/issues/153)
+
