@@ -7,7 +7,7 @@
     @foreach (var item in Model)
     {
         <tr>
-            <td>@item.Day.ToShortDateString()</td>
+            <td>@item.Day.ToString("d")</td>
             <td>@item.Text</td>
         </tr>
     }

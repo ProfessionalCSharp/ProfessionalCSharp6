@@ -3,13 +3,10 @@ using MVCSampleApp.Models;
 using System;
 using System.Collections.Generic;
 
-// For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace MVCSampleApp.Controllers
 {
     public class TagHelpersController : Controller
     {
-        // GET: /<controller>/
         public IActionResult Index() => View();
 
         public IActionResult LabelHelper() => View(GetSampleMenu());
@@ -27,12 +24,12 @@ namespace MVCSampleApp.Controllers
                 return View();
             }
             ViewBag.Status = "Success";
-            return View("ValidationHelperResult", m);            
+            return View("ValidationHelperResult", m);
         }
 
         public IActionResult CustomHelper() => View(GetSampleMenus());
 
-       
+
 
         private Menu GetSampleMenu() =>
             new Menu

@@ -8,7 +8,6 @@ namespace MVCSampleApp.Controllers
 {
     public class ResultController : Controller
     {
-        // GET: /<controller>/
         public IActionResult Index()
         {
             return View();

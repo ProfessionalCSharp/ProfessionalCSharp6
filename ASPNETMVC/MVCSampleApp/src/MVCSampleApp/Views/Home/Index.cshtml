@@ -1,15 +1,75 @@
-﻿@{
-    Layout = null;
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
 }
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-    <div>
-        
-    </div>
-</body>
-</html>
+
+<h2>Home Controller</h2>
+<a href="/Home/Index">Index</a>
+<br />
+<a href="/Home/Hello">Retruning a String</a>
+<br />
+<a href="/Home/Greeting?name=Stephanie">Use a URL parameter, encoded</a>
+<br />
+<a href="/Home/Greeting2/Matthias">Use a Route paramter</a>
+<br />
+<a href="/Home/Add/3/4">Multiple Parameters</a>
+<br />
+
+<h2>Returning Data</h2>
+
+<a href="/Result/ContentDemo">Plain Text</a>
+<br />
+<a href="/Result/JsonDemo">JSON</a>
+<br />
+<a href="/Result/RedirectDemo">Redirect</a>
+<br />
+<a href="/Result/RedirectRouteDemo">Redirect Route</a>
+<br />
+<a href="/Result/FileDemo">File</a>
+
+<h2>POCO Controller</h2>
+
+<a href="/POCO/Index">Simple text</a>
+<br />
+<a href="/POCO/UserAgentInfo">User Agent Info - using Context</a>
+<br />
+
+<h2>Views</h2>
+
+<a href="/ViewsDemo/Index">Index</a>
+<br />
+<a href="/ViewsDemo/PassingData">Passing Data to the View</a>
+<br />
+<a href="/ViewsDemo/PassingAModel">Passing a Model to the View</a>
+<br />
+<a href="/ViewsDemo/LayoutSample">Using a Layout</a>
+<br />
+<a href="/ViewsDemo/UseAPartialView1">Using a Partial View Using Server Side Code</a>
+<br />
+<a href="/ViewsDemo/UseAPartialView2">Using a Partial View Using JavaScript</a>
+<br />
+<a href="/ViewsDemo/UseViewComponent">Using a View Component</a>
+<br />
+
+<h2>Submit Data</h2>
+
+<a href="/SubmitData/CreateMenu">Receive multiple parameters</a>
+<br />
+<a href="/SubmitData/CreateMenu2">Receive Menu parameter</a>
+<br />
+<a href="/SubmitData/CreateMenu3">Update model using TryUpdateModelAsync</a>
+<br />
+
+<h2>HTML Helpers</h2>
+
+<a href="/HtmlHelpers/SimpleHelper">Simple Helper</a>
+<br />
+<a href="/HtmlHelpers/HelperWithMenu">Menu</a>
+<br />
+<a href="/HtmlHelpers/HelperList">List</a>
+<br />
+<a href="/HtmlHelpers/StronglyTypedMenu">Strongly typed menu</a>
+<br />
+<a href="/HtmlHelpers/MenuEditor">Menu Editor</a>
+<br />

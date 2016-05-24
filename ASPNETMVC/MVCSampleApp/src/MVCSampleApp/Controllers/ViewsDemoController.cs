@@ -14,7 +14,6 @@ namespace MVCSampleApp.Controllers
             _context = context;
         }
 
-        // GET: /<controller>/
         public IActionResult Index() => View();
 
 
