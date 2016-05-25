@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows;
-using Wrox.ProCSharp.WCF.RoomReservationService;
+using RoomReservationClient.RoomReservationService;
 
 namespace Wrox.ProCSharp.WCF
 {
@@ -19,13 +19,20 @@ namespace Wrox.ProCSharp.WCF
 
         private async void OnReserveRoom(object sender, RoutedEventArgs e)
         {
-            var client = new RoomServiceClient();
-            bool reserved = await client.ReserveRoomAsync(_reservation);
-            client.Close();
-
-            if (reserved)
+            try
             {
-                MessageBox.Show("reservation ok");
+                var client = new RoomServiceClient();
+                bool reserved = await client.ReserveRoomAsync(_reservation);
+                client.Close();
+
+                if (reserved)
+                {
+                    MessageBox.Show("reservation ok");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 

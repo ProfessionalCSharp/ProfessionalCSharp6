@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Wrox.ProCSharp.WCF.RoomReservationService {
+namespace RoomReservationClient.RoomReservationService {
     using System.Runtime.Serialization;
     using System;
     
@@ -189,34 +189,34 @@ namespace Wrox.ProCSharp.WCF.RoomReservationService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.cninnovation.com/RoomReservation/2016/IRoomService/ReserveRoom", ReplyAction="http://www.cninnovation.com/RoomReservation/2016/IRoomService/ReserveRoomResponse" +
             "")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Wrox.ProCSharp.WCF.RoomReservationService.RoomReservationFault), Action="http://www.cninnovation.com/RoomReservation/2016/IRoomService/ReserveRoomRoomRese" +
+        [System.ServiceModel.FaultContractAttribute(typeof(RoomReservationClient.RoomReservationService.RoomReservationFault), Action="http://www.cninnovation.com/RoomReservation/2016/IRoomService/ReserveRoomRoomRese" +
             "rvationFaultFault", Name="RoomReservationFault", Namespace="http://schemas.datacontract.org/2004/07/Wrox.ProCSharp.WCF.Contracts")]
-        bool ReserveRoom(Wrox.ProCSharp.WCF.RoomReservationService.RoomReservation roomReservation);
+        bool ReserveRoom(RoomReservationClient.RoomReservationService.RoomReservation roomReservation);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.cninnovation.com/RoomReservation/2016/IRoomService/ReserveRoom", ReplyAction="http://www.cninnovation.com/RoomReservation/2016/IRoomService/ReserveRoomResponse" +
             "")]
-        System.Threading.Tasks.Task<bool> ReserveRoomAsync(Wrox.ProCSharp.WCF.RoomReservationService.RoomReservation roomReservation);
+        System.Threading.Tasks.Task<bool> ReserveRoomAsync(RoomReservationClient.RoomReservationService.RoomReservation roomReservation);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.cninnovation.com/RoomReservation/2016/IRoomService/GetRoomReservations" +
             "", ReplyAction="http://www.cninnovation.com/RoomReservation/2016/IRoomService/GetRoomReservations" +
             "Response")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Wrox.ProCSharp.WCF.RoomReservationService.RoomReservationFault), Action="http://www.cninnovation.com/RoomReservation/2016/IRoomService/GetRoomReservations" +
+        [System.ServiceModel.FaultContractAttribute(typeof(RoomReservationClient.RoomReservationService.RoomReservationFault), Action="http://www.cninnovation.com/RoomReservation/2016/IRoomService/GetRoomReservations" +
             "RoomReservationFaultFault", Name="RoomReservationFault", Namespace="http://schemas.datacontract.org/2004/07/Wrox.ProCSharp.WCF.Contracts")]
-        Wrox.ProCSharp.WCF.RoomReservationService.RoomReservation[] GetRoomReservations(System.DateTime fromDate, System.DateTime toDate);
+        RoomReservationClient.RoomReservationService.RoomReservation[] GetRoomReservations(System.DateTime fromDate, System.DateTime toDate);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.cninnovation.com/RoomReservation/2016/IRoomService/GetRoomReservations" +
             "", ReplyAction="http://www.cninnovation.com/RoomReservation/2016/IRoomService/GetRoomReservations" +
             "Response")]
-        System.Threading.Tasks.Task<Wrox.ProCSharp.WCF.RoomReservationService.RoomReservation[]> GetRoomReservationsAsync(System.DateTime fromDate, System.DateTime toDate);
+        System.Threading.Tasks.Task<RoomReservationClient.RoomReservationService.RoomReservation[]> GetRoomReservationsAsync(System.DateTime fromDate, System.DateTime toDate);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IRoomServiceChannel : Wrox.ProCSharp.WCF.RoomReservationService.IRoomService, System.ServiceModel.IClientChannel {
+    public interface IRoomServiceChannel : RoomReservationClient.RoomReservationService.IRoomService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class RoomServiceClient : System.ServiceModel.ClientBase<Wrox.ProCSharp.WCF.RoomReservationService.IRoomService>, Wrox.ProCSharp.WCF.RoomReservationService.IRoomService {
+    public partial class RoomServiceClient : System.ServiceModel.ClientBase<RoomReservationClient.RoomReservationService.IRoomService>, RoomReservationClient.RoomReservationService.IRoomService {
         
         public RoomServiceClient() {
         }
@@ -237,19 +237,19 @@ namespace Wrox.ProCSharp.WCF.RoomReservationService {
                 base(binding, remoteAddress) {
         }
         
-        public bool ReserveRoom(Wrox.ProCSharp.WCF.RoomReservationService.RoomReservation roomReservation) {
+        public bool ReserveRoom(RoomReservationClient.RoomReservationService.RoomReservation roomReservation) {
             return base.Channel.ReserveRoom(roomReservation);
         }
         
-        public System.Threading.Tasks.Task<bool> ReserveRoomAsync(Wrox.ProCSharp.WCF.RoomReservationService.RoomReservation roomReservation) {
+        public System.Threading.Tasks.Task<bool> ReserveRoomAsync(RoomReservationClient.RoomReservationService.RoomReservation roomReservation) {
             return base.Channel.ReserveRoomAsync(roomReservation);
         }
         
-        public Wrox.ProCSharp.WCF.RoomReservationService.RoomReservation[] GetRoomReservations(System.DateTime fromDate, System.DateTime toDate) {
+        public RoomReservationClient.RoomReservationService.RoomReservation[] GetRoomReservations(System.DateTime fromDate, System.DateTime toDate) {
             return base.Channel.GetRoomReservations(fromDate, toDate);
         }
         
-        public System.Threading.Tasks.Task<Wrox.ProCSharp.WCF.RoomReservationService.RoomReservation[]> GetRoomReservationsAsync(System.DateTime fromDate, System.DateTime toDate) {
+        public System.Threading.Tasks.Task<RoomReservationClient.RoomReservationService.RoomReservation[]> GetRoomReservationsAsync(System.DateTime fromDate, System.DateTime toDate) {
             return base.Channel.GetRoomReservationsAsync(fromDate, toDate);
         }
     }
