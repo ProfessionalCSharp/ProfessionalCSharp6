@@ -29,9 +29,9 @@ namespace MenuPlanner.Models
                     var steaks = new MenuCard { Name = "Steaks", Active = true, Order = 3 };
                     _context.MenuCards.AddRange(breakfast, vegetarian, steaks);
 
-                    var b1 = new Menu { Text = "One", MenuCard = breakfast, Active = true, Order = 1 };
-                    var b2 = new Menu { Text = "Two", MenuCard = breakfast, Active = true, Order = 2 };
-                    var b3 = new Menu { Text = "Two", MenuCard = breakfast, Active = true, Order = 3 };
+                    var b1 = new Menu { Text = "Wiener Frühstück", MenuCard = breakfast, Active = true, Order = 1 };
+                    var b2 = new Menu { Text = "Kantine's Frühstück", MenuCard = breakfast, Active = true, Order = 2 };
+                    var b3 = new Menu { Text = "Frühstück für 2", MenuCard = breakfast, Active = true, Order = 3 };
 
                     _context.Menus.AddRange(b1, b2, b3);
                 }
