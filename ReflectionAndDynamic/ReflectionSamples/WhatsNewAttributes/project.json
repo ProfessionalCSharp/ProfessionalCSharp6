@@ -1,20 +1,15 @@
 ﻿{
   "version": "1.0.0-*",
-  "description": "",
-  "authors": [ "" ],
-  "tags": [ "" ],
-  "projectUrl": "",
-  "licenseUrl": "",
 
   "dependencies": {
-    "NETStandard.Library": "1.0.0-*"
+
   },
 
   "frameworks": {
-    "net46": { },
-    "dnxcore50": {
+    "netstandard1.5": {
+      "imports": "dnxcore50",
       "dependencies": {
-
+        "NETStandard.Library": "1.5.0-rc2-24027"
       }
     }
   }

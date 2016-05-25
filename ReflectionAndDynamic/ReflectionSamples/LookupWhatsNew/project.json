@@ -1,33 +1,22 @@
 {
   "version": "1.0.0-*",
-  "description": "",
-  "authors": [ "" ],
-  "tags": [ "" ],
-  "projectUrl": "",
-  "licenseUrl": "",
-  "compilationOptions": {
+  "buildOptions": {
     "emitEntryPoint": true
-  },  
+  },
 
   "dependencies": {
-    "NETStandard.Library": "1.0.0-*",
     "VectorClass": "1.0.0-*",
     "WhatsNewAttributes": "1.0.0-*"
   },
 
-
-  "commands": {
-    "LookupWhatsNew": "LookupWhatsNew"
-  },
-
   "frameworks": {
-    "net46": {
+    "netcoreapp1.0": {
+      "imports": "dnxcore50",
       "dependencies": {
-
-      }
-    },
-    "dnxcore50": {
-      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.0-rc2-3002702"
+        }
       }
     }
   }
