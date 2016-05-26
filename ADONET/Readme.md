@@ -9,3 +9,5 @@ This chapter contains these samples:
 
 The database that is used with these samples is AdventureWorks. Download AdventureWorks from [CodePlex](https://msftdbprodsamples.codeplex.com).
 
+The current version of this sample is built with .NET Core RC2. When RTM is available, the sample code will be updated.
+
