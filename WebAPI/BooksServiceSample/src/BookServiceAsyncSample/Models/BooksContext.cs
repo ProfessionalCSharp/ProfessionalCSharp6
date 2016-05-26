@@ -6,6 +6,11 @@ namespace BooksServiceSample.Models
 {
     public class BooksContext : DbContext
     {
+        public BooksContext(DbContextOptions<BooksContext> options)
+            : base(options)
+        {
+        }
+
         public DbSet<BookChapter> Chapters { get; set; }
 
 

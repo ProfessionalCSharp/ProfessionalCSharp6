@@ -16,8 +16,10 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "web": {
+    "BookServiceAsyncSample": {
       "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "http://localhost:5000/api/BookChapters",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
