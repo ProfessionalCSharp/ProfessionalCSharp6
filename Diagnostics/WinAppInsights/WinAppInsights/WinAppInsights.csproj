@@ -19,6 +19,7 @@
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <PackageCertificateKeyFile>WinAppInsights_TemporaryKey.pfx</PackageCertificateKeyFile>
     <ApplicationInsightsResourceId />
+    <PackageCertificateThumbprint>E6979E1583B5AD7C8DC1C5C367CC70EF0F77F382</PackageCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
     <DebugSymbols>true</DebugSymbols>
