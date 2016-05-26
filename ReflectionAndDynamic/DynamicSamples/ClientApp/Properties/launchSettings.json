@@ -1,8 +1,10 @@
 {
   "profiles": {
     "ClientApp": {
-      "commandName": "ClientApp",
-      "sdkVersion": "dnx-coreclr-win-x64.1.0.0-rc2-16357"
+      "commandName": "Project"
+    },
+    "ClientApp - .NET 4.6.1": {
+      "executablePath": "C:\\Source\\ProfessionalCSharp6\\ReflectionAndDynamic\\DynamicSamples\\ClientApp\\bin\\Debug\\net461\\ClientApp.exe"
     }
   }
 }

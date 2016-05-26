@@ -7,9 +7,9 @@ namespace DecompileSample
         static void Main()
         {
             StaticClass staticObject = new StaticClass();
-         //   DynamicClass dynamicObject = new DynamicClass();
+            DynamicClass dynamicObject = new DynamicClass();
             WriteLine(staticObject.IntValue);
-         //   WriteLine(dynamicObject.DynValue);
+            WriteLine(dynamicObject.DynValue);
             ReadLine();
         }
     }
