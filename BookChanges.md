@@ -51,6 +51,19 @@ public static MySafe InitProtection()
 
 ## Chapter 38 - Entity Framework Core
 
+Page 1166, the EF context with depdendency injection now needs a constructor with DbContextOptions<TContext>:
+
+```
+public class BooksContext : DbContext
+{
+  public BooksContext(DbContextOptions<BooksContext> options)
+    : base(options)
+  {          
+  }
+  public DbSet<Book> Books { get; set; }
+}
+```
+
 Page 1169, tools section:
 The Entity Framework Core tools need to be referenced using "Microsoft.EntityFrameworkCore.Tools" instead of "dotnet-ef":
 
