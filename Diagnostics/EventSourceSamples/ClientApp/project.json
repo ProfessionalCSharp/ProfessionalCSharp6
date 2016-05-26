@@ -1,36 +1,26 @@
 ﻿{
   "version": "1.0.0-*",
-  "description": "ClientApp Console Application",
-  "authors": [ "Christian" ],
-  "tags": [ "" ],
-  "projectUrl": "",
-  "licenseUrl": "",
-
-  "compilationOptions": {
+  "buildOptions": {
     "emitEntryPoint": true
   },
 
-
-  "commands": {
-    "ClientApp": "ClientApp"
-  },
-
   "dependencies": {
-    "NETStandard.Library": "1.0.0-*",
-    "System.Diagnostics.Tracing": "4.0.21-*",
-    "System.Threading.Tasks.Parallel": "4.0.1-*",
-    "System.Net.Http": "4.0.1-*",
     "MyApplicationEvents": "1.0.0-*"
   },
 
   "frameworks": {
-    "net46": {
+    "netcoreapp1.0": {
+      "imports": "dnxcore50",
       "dependencies": {
-
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.0-rc2-3002702"
+        }
       }
     },
-    "dnxcore50": {
+    "net461": {
       "dependencies": {
+        "System.Net.Http": "4.0.0"
       }
     }
   }

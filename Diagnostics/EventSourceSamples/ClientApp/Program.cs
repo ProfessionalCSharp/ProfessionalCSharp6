@@ -10,12 +10,10 @@ namespace ClientApp
 {
     class Program
     {
-
         static void Main(string[] args)
         {
             IEnumerable<EventSource> eventSources = EventSource.GetSources();
             InitListener(eventSources);
-
 
             WriteLine($"Log Guid: {SampleEventSource.Log.Guid}");
             WriteLine($"Name: {SampleEventSource.Log.Name}");
@@ -31,7 +29,6 @@ namespace ClientApp
                 listener.EnableEvents(source, EventLevel.LogAlways);
             }
         }
-
 
         private static void ParallelRequestSample()
         {
