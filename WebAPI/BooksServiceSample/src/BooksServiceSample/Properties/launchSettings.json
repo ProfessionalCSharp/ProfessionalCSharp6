@@ -13,13 +13,13 @@
       "launchBrowser": true,
       "launchUrl": "api/BookChapters",
       "environmentVariables": {
-        "Hosting:Environment": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
     "web": {
-      "commandName": "web",
+      "commandName": "Project",
       "environmentVariables": {
-        "Hosting:Environment": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development"
       }
     }
   }

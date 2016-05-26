@@ -8,9 +8,9 @@ using static System.Console;
 
 namespace BookServiceClientApp
 {
-    public class Program
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
             WriteLine("Client app, wait for service");
             try

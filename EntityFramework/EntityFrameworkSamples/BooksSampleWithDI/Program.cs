@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
+using static System.Console;
 
 namespace BooksSample
 {
@@ -8,12 +9,19 @@ namespace BooksSample
     {
         static void Main()
         {
-            var p = new Program();
-            p.InitializeServices();
+            try
+            {
+                var p = new Program();
+                p.InitializeServices();
 
-            var service = p.Container.GetService<BooksService>();
-            service.AddBooksAsync().Wait();
-            service.ReadBooks();
+                var service = p.Container.GetService<BooksService>();
+                service.AddBooksAsync().Wait();
+                service.ReadBooks();
+            }
+            catch (Exception ex)
+            {
+                WriteLine(ex.Message);
+            }
         }
 
         private void InitializeServices()
@@ -22,9 +30,9 @@ namespace BooksSample
            
             var services = new ServiceCollection();
             services.AddTransient<BooksService>();
-            services.AddEntityFrameworkSqlServer()
-                .AddDbContext<BooksContext>(options =>
-                    options.UseSqlServer(ConnectionString));
+           
+            services.AddDbContext<BooksContext>(options =>
+                options.UseSqlServer(ConnectionString));
           
 
             Container = services.BuildServiceProvider();

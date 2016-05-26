@@ -1,42 +1,20 @@
 ﻿{
   "version": "1.0.0-*",
-  "description": "BookServiceClientApp Console Application",
-  "authors": [ "Christian" ],
-  "tags": [ "" ],
-  "projectUrl": "",
-  "licenseUrl": "",
-
-  "compilationOptions": {
+  "buildOptions": {
     "emitEntryPoint": true
   },
 
   "dependencies": {
-    "NETStandard.Library": "1.0.0-*",
-    "Newtonsoft.Json": "8.0.2-*"
-  },
-
-  "commands": {
-    "BookServiceClientApp": "BookServiceClientApp"
+    "Microsoft.NETCore.App": {
+      "type": "platform",
+      "version": "1.0.0-rc2-3002702"
+    },
+    "Newtonsoft.Json": "8.0.3"
   },
 
   "frameworks": {
-    "net46": {
-      "dependencies": {
-      },
-      "frameworkAssemblies": {
-        "System.Xml.Linq": "4.0.0.0",
-        "System.Net.Http": "4.0.0.0"
-      }
-    },
-    "netstandardapp1.5": {
-      "dependencies": {
-        "System.Xml.XDocument": "4.0.11-*",
-        "System.Net.Http": "4.0.1-*"
-      },
-      "imports": [ "dnxcore50" ]
+    "netcoreapp1.0": {
+      "imports": "dnxcore50"
     }
-  },
-  "runtimes": {
-    "win7-x64": { }
   }
 }

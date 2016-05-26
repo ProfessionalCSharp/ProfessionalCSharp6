@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using BooksServiceSample.Models;
 using Microsoft.AspNetCore.Mvc;
-using BooksServiceSample.Models;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
-// For more information on enabling Web API for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace BookServiceSample.Controllers
+namespace BookServiceAsyncSample.Controllers
 {
     [Produces("application/json", "application/xml")]
     [Route("api/[controller]")]
@@ -30,7 +28,7 @@ namespace BookServiceSample.Controllers
             BookChapter chapter = await _repository.FindAsync(id);
             if (chapter == null)
             {
-                return HttpNotFound();
+                return NotFound();
             }
             else
             {
@@ -44,7 +42,7 @@ namespace BookServiceSample.Controllers
         {
             if (chapter == null)
             {
-                return HttpBadRequest();
+                return BadRequest();
             }
             await _repository.AddAsync(chapter);
             // return a 201 response, Created
@@ -57,11 +55,11 @@ namespace BookServiceSample.Controllers
         {
             if (chapter == null || id != chapter.Id)
             {
-                return HttpBadRequest();
+                return BadRequest();
             }
             if (await _repository.FindAsync(id) == null)
             {
-                return HttpNotFound();
+                return NotFound();
             }
 
             await _repository.UpdateAsync(chapter);

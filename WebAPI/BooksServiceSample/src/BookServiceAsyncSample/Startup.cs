@@ -1,24 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using BooksServiceSample.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using BooksServiceSample.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace BookServiceAsyncSample
+namespace BooksServiceAsyncSample
 {
     public class Startup
     {
         public Startup(IHostingEnvironment env)
         {
-            // Set up configuration sources.
             var builder = new ConfigurationBuilder()
-                .AddJsonFile("appsettings.json")
+                .SetBasePath(env.ContentRootPath)
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
         }
@@ -26,23 +24,15 @@ namespace BookServiceAsyncSample
         public IConfigurationRoot Configuration { get; set; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public async void ConfigureServices(IServiceCollection services)
+        public void ConfigureServices(IServiceCollection services)
         {
+            // Add framework services.     
             services.AddMvc().AddXmlSerializerFormatters();
-            // uncomment the following three lines to use the SampleBookChaptersRepository
-            IBookChaptersRepository repos = new SampleBookChaptersRepository();
-            services.AddSingleton<IBookChaptersRepository>(repos);
-            await repos.InitAsync();
 
-            services.AddEntityFramework()
-                .AddSqlServer()
-                .AddDbContext<BooksContext>(options =>
-                    options.UseSqlServer(Configuration["Data:BookConnection:ConnectionString"])
-            );
+            services.AddDbContext<BooksContext>(options =>
+                options.UseSqlServer(Configuration["Data:BookCoonection:ConnectionString"]));
 
             services.AddSingleton<IBookChaptersRepository, BookChaptersRepository>();
-
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,22 +41,26 @@ namespace BookServiceAsyncSample
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
-            app.UseIISPlatformHandler();
-
             app.UseStaticFiles();
 
             app.UseMvc();
+
+            EnsureDatabaseCreated();
+
         }
 
-        // Entry point for the application.
-        public static void Main(string[] args)
-        {
-            var host = new WebHostBuilder()
-                .UseDefaultConfiguration(args)
-                .UseStartup<Startup>()
-                .Build();
+        private static bool s_created;
 
-            host.Run();
+        private void EnsureDatabaseCreated()
+        {
+            if (!s_created)
+            {
+                using (var context = new BooksContext())
+                {
+                    context.Database.EnsureCreated();
+                }
+                s_created = true;
+            }
         }
     }
 }

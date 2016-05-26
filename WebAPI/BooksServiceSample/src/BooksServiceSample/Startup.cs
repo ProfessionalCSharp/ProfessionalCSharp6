@@ -5,9 +5,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Microsoft.AspNetCore.Mvc.Formatters;
-using Swashbuckle.SwaggerGen;
-using Swashbuckle.SwaggerGen.XmlComments;
 
 namespace BooksServiceSample
 {
@@ -15,9 +12,10 @@ namespace BooksServiceSample
     {
         public Startup(IHostingEnvironment env)
         {
-            // Set up configuration sources.
             var builder = new ConfigurationBuilder()
-                .AddJsonFile("appsettings.json")
+                .SetBasePath(env.ContentRootPath)
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
         }
@@ -27,12 +25,12 @@ namespace BooksServiceSample
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // Add framework services.        
+            // Add framework services.     
             services.AddMvc().AddXmlSerializerFormatters();
 
             IBookChaptersRepository repos = new SampleBookChaptersRepository();
             repos.Init();
-            services.AddSingleton<IBookChaptersRepository>(repos);
+            services.AddSingleton(repos);
 
             // services.AddSwaggerGen();
 
@@ -61,25 +59,12 @@ namespace BooksServiceSample
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
-            app.UseIISPlatformHandler();
-
             app.UseStaticFiles();
 
             app.UseMvc();
 
             //app.UseSwaggerGen();
             //app.UseSwaggerUi();
-        }
-
-        // Entry point for the application.
-        public static void Main(string[] args)
-        {
-            var host = new WebHostBuilder()
-                .UseDefaultConfiguration(args)
-                .UseStartup<Startup>()
-                .Build();
-
-            host.Run();
         }
     }
 }
