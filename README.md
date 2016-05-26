@@ -1,19 +1,12 @@
 # ProfessionalCSharp6
-Code samples for the Wrox book Professional C# 6
+Code samples for the Wrox book Professional C# 6 and .NET Core 1.0
 
-Use the RC1 branch to open the samples with Visual Studio 2015 and ASP.NET 5 RC 1 tools. I'm just in the progress to update all the samples of the master branch to the just released .NET Core RC2 version. Please give me some days before this is completed, and the updated files are uploaded to the Wrox site.
-
-Samples are just in the progress for update to .NET Core 1.0 RC2. To compile and run the samples you need:
+Samples updated for .NET Core 1.0 RC2. As .NET Core RTM is available, another update of the code samples will be done. To compile and run the samples you need:
 * Visual Studio 2015 Update 2
 * Visual Studio official installer for .NET Core 1.0 RC2
 * latest NuGet Manager extensions for Visual Studio
 
-[.NET Core 1.0 RC2 Tools](http://www.microsoft.com/net/core#windows)
-
-With not yet updated code samples, additional NuGet feeds might be needed. Configure these with Visual Studio 2015:
-* .NET Core: https://dotnet.myget.org/F/dotnet-core/api/v3/index.json
-* ASP.NET Core: https://www.myget.org/F/aspnetmaster/api/v2
-* ASP.NET Core 1.0: https://www.myget.org/F/aspnetcidev/api/v3/index.json
+[Download the .NET Core 1.0 RC2 Tools](http://www.microsoft.com/net/core#windows)
 
 Samples available for these chapters (sample folders):
 
@@ -62,3 +55,7 @@ Samples available for these chapters (sample folders):
 * Chapter 43 - WebHooks and SignalR (SignalRAndWebHooks)
 * Chapter 44 - Windows Communication Foundation (WCF)
 * Chapter 45 - Deploying Websites and Services (DeploymentWeb)
+
+You can find additional samples in the [More Samples repository](https://github.com/ProfessionalCSharp/MoreSamples).
+
+If you have issues or comments, please submit an Issue in [GitHub](https://github.com/ProfessionalCSharp/ProfessionalCSharp6).
