@@ -18,7 +18,9 @@ Within the method GetRectangles an underscore is missing accessing the variable 
 
 ## Chapter 16 - Reflection, Metadata, and Dynamic Programming
 
-Page 437/438 - Loading an assembly dynamically has become easier, the DirectoryLoader is no longer needed
+Page 437 - CompilationOptions has been changed to BuildOptions
+
+Page 437/438 - Loading an assembly dynamically has become easier, the DirectoryLoader is no longer needed, use AssemblyLoadContext instead of PlatformServices
 
 ```
 private static object GetCalculator()
