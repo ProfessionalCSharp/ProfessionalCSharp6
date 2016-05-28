@@ -11,6 +11,8 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "EnumerableSample", "Enumera
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ExpressionTreeSample", "ExpressionTreeSample\ExpressionTreeSample.xproj", "{8EB5A2E7-1A97-44B1-A6BA-8D7A5028B75A}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ParallelLinqSample", "ParallelLinqSample\ParallelLinqSample.xproj", "{1CEFFCD4-7E77-479E-970B-47D76F71794D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{8EB5A2E7-1A97-44B1-A6BA-8D7A5028B75A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EB5A2E7-1A97-44B1-A6BA-8D7A5028B75A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EB5A2E7-1A97-44B1-A6BA-8D7A5028B75A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CEFFCD4-7E77-479E-970B-47D76F71794D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CEFFCD4-7E77-479E-970B-47D76F71794D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CEFFCD4-7E77-479E-970B-47D76F71794D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CEFFCD4-7E77-479E-970B-47D76F71794D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
