@@ -11,6 +11,14 @@ Preview 2 offers the --template option to select any template. Installed templat
 
 Page 20 - The *compilationOptions* from project.json changed to *buildOptions*
 
+Page 22 - Note, inside the note *dotnet compile* is mentioned. This should be *dotnet build*
+
+## Chapter 3 - Objects and Types
+
+Page 76 - typo: *_* missing with _firstName variable within get accessor
+
+Page 84 - typo: new MySingleton(42) should by new Singleton(42)
+
 ## Chapter 6 - Generics
 
 Page 173 - Typo in the first note
