@@ -1,12 +1,16 @@
 # ProfessionalCSharp6
+
 Code samples for the Wrox book Professional C# 6 and .NET Core 1.0
 
 Samples updated for .NET Core 1.0 RC2. As .NET Core RTM is available, another update of the code samples will be done. To compile and run the samples you need:
+
 * Visual Studio 2015 Update 2
 * Visual Studio official installer for .NET Core 1.0 RC2
 * latest NuGet Manager extensions for Visual Studio
 
-[Download the .NET Core 1.0 RC2 Tools](http://www.microsoft.com/net/core#windows)
+[Download the .NET Core 1.0 RC2 Tools](http://www.microsoft.com/net/core#windows "RC2 Tools")
+
+Check the [book updates and errata](https://github.com/ProfessionalCSharp/ProfessionalCSharp6/blob/master/BookUpdates.md "Book Updates")
 
 Samples available for these chapters (sample folders):
 
