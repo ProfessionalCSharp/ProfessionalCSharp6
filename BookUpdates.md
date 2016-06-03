@@ -9,7 +9,78 @@ Page 19 - Note
 The option --type will not be available using *dotnet new*. Instead, a much more flexible option will be available with preview 2 of the tools. 
 Preview 2 offers the --template option to select any template. Installed templates will be shown wiht dotnet new --list. See [Reimagine dotnet-new](https://github.com/dotnet/cli/issues/2052)
 
-Page 20 - The *compilationOptions* from project.json changed to *buildOptions*
+Page 20 - The *compilationOptions* from project.json changed to *buildOptions
+
+Page 20 - The framework *netstandardapp1.5* has been changed to "netcoreapp1.0"
+
+Page 20: - using preview 1 of the dotnet tools, *dotnet new* produces this *project.json*:
+
+```
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "emitEntryPoint": true
+  },
+  "dependencies": {
+    "Microsoft.NETCore.App": {
+      "type": "platform",
+      "version": "1.0.0-rc2-3002702"
+    }
+  },
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": "dnxcore50"
+    }
+  }
+}
+```
+
+The dependency to *Microsoft.NETCore.App* also includes a configuration for the runtimes. With this configuration, *dotnet publish* doesn't work correctly to produce an executable, and you also cannot use this dependency to also create .NET 4.6 builds. You can change *project.json* to this to correctly produce an executable with *dotnet publish* (change to *NETStandard.Library*, and add the *runtimes* section as also shown in the book:
+
+```
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "emitEntryPoint": true
+  },
+  "dependencies": {
+	  "NETStandard.Library": "1.5.0-*"
+  },
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": "dnxcore50"
+    }
+  },
+  "runtimes": {
+    "win7-x64": { }
+  }
+}
+
+```
+
+This also allows adding direct support to build a .NET 4.6 binary:
+
+```
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "emitEntryPoint": true
+  },
+  "dependencies": {
+	  "NETStandard.Library": "1.5.0-*"
+  },
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": "dnxcore50"
+    },
+    "net46": {
+    }
+  },
+  "runtimes": {
+    "win7-x64": { }
+  }
+}
+```
 
 Page 20 - Version 1.4 of NetStandard.Library now includes support for the Universal Windows Platform (UAP). See the [.NET Platform Standard](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md ".NET Platform Standard").
 New is version 1.6 which includes support for .NET 4.6.3 and .NET Core 1.0.
