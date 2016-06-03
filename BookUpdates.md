@@ -15,7 +15,7 @@ Page 20 - The framework *netstandardapp1.5* has been changed to "netcoreapp1.0"
 
 Page 20: - using preview 1 of the dotnet tools, *dotnet new* produces this *project.json*:
 
-```
+```js
 {
   "version": "1.0.0-*",
   "buildOptions": {
@@ -37,7 +37,7 @@ Page 20: - using preview 1 of the dotnet tools, *dotnet new* produces this *proj
 
 The dependency to *Microsoft.NETCore.App* also includes a configuration for the runtimes. With this configuration, *dotnet publish* doesn't work correctly to produce an executable, and you also cannot use this dependency to also create .NET 4.6 builds. You can change *project.json* to this to correctly produce an executable with *dotnet publish* (change to *NETStandard.Library*, and add the *runtimes* section as also shown in the book:
 
-```
+```js
 {
   "version": "1.0.0-*",
   "buildOptions": {
@@ -60,7 +60,7 @@ The dependency to *Microsoft.NETCore.App* also includes a configuration for the 
 
 This also allows adding direct support to build a .NET 4.6 binary:
 
-```
+```js
 {
   "version": "1.0.0-*",
   "buildOptions": {
@@ -89,6 +89,13 @@ Page 22 - Note, inside the note *dotnet compile* is mentioned. This should be *d
 
 Page 23 - the table lists *7.0* for Entity Framework. It should be *Core 1.0* instead
 
+## Chapter 2 - Core C<span>#</span>
+
+Page 34 - *project.json* change:
+*netstandardapp1.5* should be *netcoreapp1.0*
+
+*tags*, *projectUrl*, *licenseUrl* should not be within the root of project.json, but instead within *packOptions*. Form the Visual Studio template, these options are no longer added to project.json. I removed them from the RC2 sample files.
+
 ## Chapter 3 - Objects and Types
 
 Page 76 - typo: *_* missing with _firstName variable within get accessor
@@ -106,7 +113,7 @@ Page 437 - CompilationOptions has been changed to BuildOptions
 
 Page 437/438 - Loading an assembly dynamically has become easier, the DirectoryLoader is no longer needed, use AssemblyLoadContext instead of PlatformServices
 
-```
+```csharp
 private static object GetCalculator()
 {
   Assembly assembly = AssemblyLoadContext.Default.LoadFromAssemblyPath(CalculatorLibPath);
@@ -118,7 +125,8 @@ private static object GetCalculator()
 ## Chapter 24 - Security
 
 Page 697, the InitProtection method changed because of API changes with data protection:
-```
+
+```csharp
 public static MySafe InitProtection()
 {
   var serviceCollection = new ServiceCollection();   
@@ -137,7 +145,7 @@ public static MySafe InitProtection()
 
 Page 1166, the EF context with depdendency injection now needs a constructor with DbContextOptions<TContext>:
 
-```
+```csharp
 public class BooksContext : DbContext
 {
   public BooksContext(DbContextOptions<BooksContext> options)
@@ -151,7 +159,7 @@ public class BooksContext : DbContext
 Page 1169, tools section:
 The Entity Framework Core tools need to be referenced using "Microsoft.EntityFrameworkCore.Tools" instead of "dotnet-ef":
 
-```
+```js
 "tools": {
   "Microsoft.EntityFrameworkCore.Tools": {
     "version": "1.0.0-*",
@@ -164,7 +172,7 @@ The Entity Framework Core tools need to be referenced using "Microsoft.EntityFra
 
 Page 1227, the Main method changed slightly with UseKestrel (the new Web host), UseIISIntegration (integration when used with IIS), and UseContentRoot (to define the static content for the Web site):
 
-```
+```csharp
 public static void Main(string[] args)
 {
   var host = new WebHostBuilder()
@@ -180,7 +188,7 @@ public static void Main(string[] args)
 
 Page 1250, the directory for the configuration is now configured with SetBasePath
 
-```
+```csharp
 public Startup(IHostingEnvironment env)
 {
   var builder = new ConfigurationBuilder()
@@ -196,7 +204,7 @@ public Startup(IHostingEnvironment env)
 
 Page 1272, ToString instead of ToShortDateString:
 
-```
+```html
 <td>@item.Day.ToString("d")</td>
 ```
 
