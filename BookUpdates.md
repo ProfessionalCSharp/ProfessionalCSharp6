@@ -124,7 +124,7 @@ private static object GetCalculator()
 
 ## Chapter 24 - Security
 
-Page 697, the InitProtection method changed because of API changes with data protection:
+Page 697, the InitProtection method changed because of API changes with data protection. Configuration with the AddDataProtection method instead of the ConfigureDataProtection method:
 
 ```csharp
 public static MySafe InitProtection()
