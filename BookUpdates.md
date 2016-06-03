@@ -87,7 +87,7 @@ New is version 1.6 which includes support for .NET 4.6.3 and .NET Core 1.0.
 
 Page 22 - Note, inside the note *dotnet compile* is mentioned. This should be *dotnet build
 
-Page 23 - the table lists *7.0" for Entity Framework. It should be *Core 1.0* instead
+Page 23 - the table lists *7.0* for Entity Framework. It should be *Core 1.0* instead
 
 ## Chapter 3 - Objects and Types
 
