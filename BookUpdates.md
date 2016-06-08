@@ -210,6 +210,12 @@ Page 1272, ToString instead of ToShortDateString:
 
 Page 1289, the attribute *TargetElement* is now *HtmlTargetElement*
 
+Page 1291, the quotes need to be removed from *@addTagHelper* (source file TagHelpers/CustomHelper.cshtml):
+
+```
+@addTagHelper *, MVCSampleApp
+```
+
 Page 1299, 1300
 Action result names have been changed, the Http prefix removed: HttpBadRequest, HttpNotFound... renamed to BadRequest, NotFound.
 [Action result naming changes](https://github.com/aspnet/Announcements/issues/153)
