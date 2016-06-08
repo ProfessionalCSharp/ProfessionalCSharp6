@@ -63,3 +63,5 @@ Samples available for these chapters (sample folders):
 You can find additional samples in the [More Samples repository](https://github.com/ProfessionalCSharp/MoreSamples).
 
 If you have issues or comments, please submit an Issue in [GitHub](https://github.com/ProfessionalCSharp/ProfessionalCSharp6).
+
+You can find more information about topics of the book in my [Blog](https://csharp.christiannagel.com "Professional C#")
