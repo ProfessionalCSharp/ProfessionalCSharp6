@@ -208,6 +208,8 @@ Page 1272, ToString instead of ToShortDateString:
 <td>@item.Day.ToString("d")</td>
 ```
 
+Page 1284 (bottom of the page), the correct namespace for the tag helper is *Microsoft.AspNetCore.Mvc.TagHelpers*
+
 Page 1289, the attribute *TargetElement* is now *HtmlTargetElement*
 
 Page 1291, the quotes need to be removed from *@addTagHelper* (source file TagHelpers/CustomHelper.cshtml):
