@@ -168,6 +168,10 @@ The Entity Framework Core tools need to be referenced using "Microsoft.EntityFra
 }
 ```
 
+Page 1175, scaffold a model
+
+dotnet instead of dnx: *dotnet ef dbcontext scaffold* instead of *dnx ef dbcontext scaffold*
+
 ## Chapter 40 - ASP.NET Core
 
 Page 1227, the Main method changed slightly with UseKestrel (the new Web host), UseIISIntegration (integration when used with IIS), and UseContentRoot (to define the static content for the Web site):
