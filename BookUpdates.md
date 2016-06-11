@@ -107,6 +107,17 @@ Page 84 - typo: new MySingleton(42) should by new Singleton(42)
 Page 173 - Typo in the first note
 Within the method GetRectangles an underscore is missing accessing the variable _coll
 
+## Chapter 9 - Delegates, Lambdas, and Events
+
+Page 264 - Wrong code in NewCarIsHere, the code should be like this:
+
+```csharp
+public void NewCarIsHere(object sender, CarInfoEventArgs e)
+{
+  WriteLine($"{_name}: car {_e.Car} is new");
+}
+```
+
 ## Chapter 16 - Reflection, Metadata, and Dynamic Programming
 
 Page 437 - CompilationOptions has been changed to BuildOptions
