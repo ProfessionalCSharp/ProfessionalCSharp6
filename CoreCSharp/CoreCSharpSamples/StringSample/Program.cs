@@ -13,6 +13,9 @@ namespace StringSample
             s1 = "another string";
             WriteLine("s1 is now " + s1);
             WriteLine("s2 is now " + s2);
+
+            WriteLine($"s1 is {s1}");
+            WriteLine($"s2 is {s2}");
         }
     }
 }
