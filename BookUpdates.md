@@ -91,6 +91,8 @@ Page 23 - the table lists *7.0* for Entity Framework. It should be *Core 1.0* in
 
 ## Chapter 2 - Core C<span>#</span>
 
+Page 33 - Console Application (Package) changed to Console Application (.NET Core). You can find this template within Installed -> Templates -> Visual C# -> .NET Core
+
 Page 34 - *project.json* change:
 *netstandardapp1.5* should be *netcoreapp1.0*
 
