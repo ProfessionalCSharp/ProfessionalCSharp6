@@ -9,9 +9,9 @@ Page 19 - Note
 The option --type will not be available using *dotnet new*. Instead, a much more flexible option will be available with preview 2 of the tools. 
 Preview 2 offers the --template option to select any template. Installed templates will be shown wiht dotnet new --list. See [Reimagine dotnet-new](https://github.com/dotnet/cli/issues/2052)
 
-Page 20 - The *compilationOptions* from project.json changed to *buildOptions
+Page 20 - The *compilationOptions* from project.json changed to *buildOptions*
 
-Page 20 - The framework *netstandardapp1.5* has been changed to "netcoreapp1.0"
+Page 20 - The framework *netstandardapp1.5* has been changed to *netcoreapp1.0*
 
 Page 20: - using preview 1 of the dotnet tools, *dotnet new* produces this *project.json*:
 
@@ -44,7 +44,7 @@ The dependency to *Microsoft.NETCore.App* also includes a configuration for the 
     "emitEntryPoint": true
   },
   "dependencies": {
-	  "NETStandard.Library": "1.5.0-*"
+    "NETStandard.Library": "1.5.0-*"
   },
   "frameworks": {
     "netcoreapp1.0": {
@@ -137,7 +137,7 @@ private static object GetCalculator()
 
 ## Chapter 24 - Security
 
-Page 697, the InitProtection method changed because of API changes with data protection. Configuration with the AddDataProtection method instead of the ConfigureDataProtection method:
+Page 697, the `InitProtection` method changed because of API changes with data protection. Configuration with the `AddDataProtection` method instead of the `ConfigureDataProtection` method:
 
 ```csharp
 public static MySafe InitProtection()
@@ -156,7 +156,7 @@ public static MySafe InitProtection()
 
 ## Chapter 38 - Entity Framework Core
 
-Page 1166, the EF context with depdendency injection now needs a constructor with DbContextOptions<TContext>:
+Page 1166, the EF context with depdendency injection now needs a constructor with `DbContextOptions<TContext>`:
 
 ```csharp
 public class BooksContext : DbContext
@@ -170,7 +170,7 @@ public class BooksContext : DbContext
 ```
 
 Page 1169, tools section:
-The Entity Framework Core tools need to be referenced using "Microsoft.EntityFrameworkCore.Tools" instead of "dotnet-ef":
+The Entity Framework Core tools need to be referenced using *Microsoft.EntityFrameworkCore.Tools* instead of *dotnet-ef*:
 
 ```js
 "tools": {
@@ -203,7 +203,7 @@ public static void Main(string[] args)
 }
 ```
 
-Page 1250, the directory for the configuration is now configured with SetBasePath
+Page 1250, the directory for the configuration is now configured with `SetBasePath`
 
 ```csharp
 public Startup(IHostingEnvironment env)
@@ -219,7 +219,7 @@ public Startup(IHostingEnvironment env)
 
 ## Chapter 41 - ASP.NET MVC
 
-Page 1272, ToString instead of ToShortDateString:
+Page 1272, `ToString` instead of `ToShortDateString`:
 
 ```html
 <td>@item.Day.ToString("d")</td>
@@ -227,9 +227,9 @@ Page 1272, ToString instead of ToShortDateString:
 
 Page 1284 (bottom of the page), the correct namespace for the tag helper is *Microsoft.AspNetCore.Mvc.TagHelpers*
 
-Page 1289, the attribute *TargetElement* is now *HtmlTargetElement*
+Page 1289, the attribute `TargetElement` is now `HtmlTargetElement`
 
-Page 1291, the quotes need to be removed from *@addTagHelper* (source file TagHelpers/CustomHelper.cshtml):
+Page 1291, the quotes need to be removed from `@addTagHelper` (source file TagHelpers/CustomHelper.cshtml):
 
 ```
 @addTagHelper *, MVCSampleApp
