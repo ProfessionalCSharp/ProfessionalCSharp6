@@ -9,6 +9,7 @@ namespace VariableScopeSample3
         {
             int j = 30;
             WriteLine(j);
+            WriteLine(Program.j);
             return 0;
         }
     }

@@ -14,6 +14,9 @@ namespace EnumerationSample
         static void Main()
         {
             WriteGreeting(TimeOfDay.Morning);
+            //#warning abc
+            //#error def
+#line 111
         }
 
         static void WriteGreeting(TimeOfDay timeOfDay)
