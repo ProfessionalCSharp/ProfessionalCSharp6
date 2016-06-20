@@ -19,7 +19,8 @@ namespace Wrox.ProCSharp.Generics
 
       amount = Algorithms.Accumulate(accounts);
 
-      amount = Algorithms.Accumulate<Account, decimal>(accounts, (item, sum) => sum += item.Balance);
+      amount = Algorithms.Accumulate<Account, decimal>(accounts, 
+                                                       (item, sum) => sum += item.Balance);
 
       WriteLine("OK");
     }

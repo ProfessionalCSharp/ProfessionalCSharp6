@@ -29,7 +29,10 @@ namespace Wrox.ProCSharp.Generics
             Foo(obj);
         }
 
-
+        public void BarInt(int obj)
+        {
+            Foo(obj);
+        }
     }
 
     class Program
@@ -42,6 +45,7 @@ namespace Wrox.ProCSharp.Generics
             test.Foo("abc", 42);
             test.Foo(33, "abc");
             test.Bar(44);
+            test.BarInt(55);
         }
     }
 }
