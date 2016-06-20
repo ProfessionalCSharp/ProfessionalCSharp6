@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using static System.Console;
 
 namespace Wrox.ProCSharp.Generics
 {
@@ -19,6 +20,8 @@ namespace Wrox.ProCSharp.Generics
       amount = Algorithms.Accumulate(accounts);
 
       amount = Algorithms.Accumulate<Account, decimal>(accounts, (item, sum) => sum += item.Balance);
+
+      WriteLine("OK");
     }
   }
 }

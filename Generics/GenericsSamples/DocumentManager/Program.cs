@@ -18,6 +18,19 @@ namespace Wrox.ProCSharp.Generics
         WriteLine(d.Content);
       }
 
+      if (dm.IsDocumentAvailable)
+      {
+        Document d = dm.GetDocument();
+        WriteLine(d.Content);
+      }
+
+      dm.AddDocument(new Document("Title C", "Sample C"));
+	    if (dm.IsDocumentAvailable)
+      {
+        Document d = dm.GetDocument();
+        WriteLine($"{d.Title} {d.Content}");
+      }
+
     }
   }
 }
