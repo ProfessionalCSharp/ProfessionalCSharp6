@@ -22,7 +22,7 @@ namespace Wrox.ProCSharp.Arrays
             Person[] beatles = {
                      new Person { FirstName="John", LastName="Lennon" },
                      new Person { FirstName="Paul", LastName="McCartney" }
-                   };
+	                };
 
             Person[] beatlesClone = (Person[])beatles.Clone();
 
