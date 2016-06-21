@@ -24,6 +24,8 @@ namespace Wrox.ProCSharp.Arrays
             var janet = new Person { FirstName = "Janet", LastName = "Jackson" };
             Person[] persons1 = { new Person { FirstName = "Michael", LastName = "Jackson" }, janet };
             Person[] persons2 = { new Person { FirstName = "Michael", LastName = "Jackson" }, janet };
+            WriteLine($"{persons1[0]} | {persons1[1]}");
+            WriteLine($"{persons2[0]} | {persons2[1]}");
             if (persons1 != persons2)
             {
                 WriteLine("not the same reference");
@@ -59,6 +61,10 @@ namespace Wrox.ProCSharp.Arrays
                 WriteLine("yes, using TupleComparer");
             }
 
+            if ((t1 as IStructuralEquatable).Equals(t2, new TupleComparer()))
+            {
+                WriteLine("equals using TupleComparer");
+            }
         }
     }
 }

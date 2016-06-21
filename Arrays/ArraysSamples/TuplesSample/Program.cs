@@ -21,6 +21,8 @@ namespace TuplesSample
             var tuple = Tuple.Create<string, string, string, int, int, int, double, Tuple<int, int>>(
                 "Stephanie", "Alina", "Nagel", 2009, 6, 2, 1.37, Tuple.Create<int, int>(52, 3490));
             WriteLine(tuple.Item1);
+            WriteLine(tuple.ToString());
+            WriteLine(tuple);
         }
 
         public static Tuple<int, int> Divide(int dividend, int divisor)

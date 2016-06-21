@@ -30,6 +30,7 @@ namespace PointerPlayground2
             CurrencyStruct* pTempCurrency = (CurrencyStruct*)pCents;
             pCents = (byte*)(--pTempCurrency);
             WriteLine("Address of pCents is now 0x{0:X}", (ulong)&pCents);
+            WriteLine($"Address of pCents is now 0x{(ulong)&pCents:X}");
 
             WriteLine("\nNow with classes");
             // now try it out with classes
