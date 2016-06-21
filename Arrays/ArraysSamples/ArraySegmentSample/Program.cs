@@ -15,7 +15,7 @@ namespace ArraySegmentSample
                 new ArraySegment<int>(ar2, 3, 3)
             };
 
-
+            ar1[0] = 2;//测试ArraySegment是否是引用的ar1中的值。[p195]
             var sum = SumOfSegments(segments);
             WriteLine($"sum of all segments: {sum}");
 
