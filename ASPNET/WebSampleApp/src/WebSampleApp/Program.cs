@@ -9,8 +9,8 @@ namespace WebSampleApp
         {
             var host = new WebHostBuilder()
                 .UseKestrel()
-                .UseIISIntegration()
                 .UseContentRoot(Directory.GetCurrentDirectory())
+                .UseIISIntegration()
                 .UseStartup<Startup>()
                 .Build();
 
