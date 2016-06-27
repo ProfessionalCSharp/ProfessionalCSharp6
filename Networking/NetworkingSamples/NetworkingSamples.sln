@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "HttpClientSample", "HttpClientSample\HttpClientSample.xproj", "{BFB1969A-4996-40D3-9C62-2C246551325A}"
 EndProject
@@ -36,8 +36,6 @@ EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "HttpClientUsingTcp", "HttpClientUsingTcp\HttpClientUsingTcp.xproj", "{0891BD03-3159-4791-BE8E-8E619B58AFB9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFAppTcpClient", "WPFAppTcpClient\WPFAppTcpClient.csproj", "{108D5D89-61F8-461D-8841-800CC5BC52EA}"
-EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingProject1", "ModelingProject1\ModelingProject1.modelproj", "{B17DB282-37CA-4747-B250-BC7549AABA5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -212,6 +210,8 @@ Global
 		{E16A29C3-161D-4C69-B560-B927FA4AD99B}.Release|x86.ActiveCfg = Release|Any CPU
 		{E16A29C3-161D-4C69-B560-B927FA4AD99B}.Release|x86.Build.0 = Release|Any CPU
 		{ABF31C7A-A848-4D8C-BE81-2DC6DB959D27}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{ABF31C7A-A848-4D8C-BE81-2DC6DB959D27}.Debug|Any CPU.Build.0 = Debug|x86
+		{ABF31C7A-A848-4D8C-BE81-2DC6DB959D27}.Debug|Any CPU.Deploy.0 = Debug|x86
 		{ABF31C7A-A848-4D8C-BE81-2DC6DB959D27}.Debug|ARM.ActiveCfg = Debug|ARM
 		{ABF31C7A-A848-4D8C-BE81-2DC6DB959D27}.Debug|ARM.Build.0 = Debug|ARM
 		{ABF31C7A-A848-4D8C-BE81-2DC6DB959D27}.Debug|ARM.Deploy.0 = Debug|ARM
@@ -263,22 +263,6 @@ Global
 		{108D5D89-61F8-461D-8841-800CC5BC52EA}.Release|x64.Build.0 = Release|Any CPU
 		{108D5D89-61F8-461D-8841-800CC5BC52EA}.Release|x86.ActiveCfg = Release|Any CPU
 		{108D5D89-61F8-461D-8841-800CC5BC52EA}.Release|x86.Build.0 = Release|Any CPU
-		{B17DB282-37CA-4747-B250-BC7549AABA5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B17DB282-37CA-4747-B250-BC7549AABA5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B17DB282-37CA-4747-B250-BC7549AABA5D}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{B17DB282-37CA-4747-B250-BC7549AABA5D}.Debug|ARM.Build.0 = Debug|Any CPU
-		{B17DB282-37CA-4747-B250-BC7549AABA5D}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{B17DB282-37CA-4747-B250-BC7549AABA5D}.Debug|x64.Build.0 = Debug|Any CPU
-		{B17DB282-37CA-4747-B250-BC7549AABA5D}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{B17DB282-37CA-4747-B250-BC7549AABA5D}.Debug|x86.Build.0 = Debug|Any CPU
-		{B17DB282-37CA-4747-B250-BC7549AABA5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B17DB282-37CA-4747-B250-BC7549AABA5D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B17DB282-37CA-4747-B250-BC7549AABA5D}.Release|ARM.ActiveCfg = Release|Any CPU
-		{B17DB282-37CA-4747-B250-BC7549AABA5D}.Release|ARM.Build.0 = Release|Any CPU
-		{B17DB282-37CA-4747-B250-BC7549AABA5D}.Release|x64.ActiveCfg = Release|Any CPU
-		{B17DB282-37CA-4747-B250-BC7549AABA5D}.Release|x64.Build.0 = Release|Any CPU
-		{B17DB282-37CA-4747-B250-BC7549AABA5D}.Release|x86.ActiveCfg = Release|Any CPU
-		{B17DB282-37CA-4747-B250-BC7549AABA5D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
