@@ -1,6 +1,7 @@
 ﻿using System;
 using Windows.Devices.Sensors;
 using Windows.UI.Core;
+using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -24,9 +25,16 @@ namespace RollingMarbleSample
         {
             this.InitializeComponent();
             _accelerometer = Accelerometer.GetDefault();
-           
-            _accelerometer.ReportInterval = _accelerometer.MinimumReportInterval;
-            _accelerometer.ReadingChanged += OnAccelerometerReading;
+
+            if (_accelerometer != null)
+            {
+                _accelerometer.ReportInterval = _accelerometer.MinimumReportInterval;
+                _accelerometer.ReadingChanged += OnAccelerometerReading;
+            }
+            else
+            {
+                textMissing.Visibility = Visibility.Visible;
+            }
 
             LayoutUpdated += (sender, e) =>
             {
