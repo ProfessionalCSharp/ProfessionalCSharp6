@@ -19,71 +19,42 @@ Page 20: - using preview 1 of the dotnet tools, *dotnet new* produces this *proj
 {
   "version": "1.0.0-*",
   "buildOptions": {
+    "debugType": "portable",
     "emitEntryPoint": true
   },
-  "dependencies": {
-    "Microsoft.NETCore.App": {
-      "type": "platform",
-      "version": "1.0.0-rc2-3002702"
-    }
-  },
+  "dependencies": { },
   "frameworks": {
     "netcoreapp1.0": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.0"
+        }
+      },
       "imports": "dnxcore50"
     }
-  }
-}
-```
-
-The dependency to *Microsoft.NETCore.App* also includes a configuration for the runtimes. With this configuration, *dotnet publish* doesn't work correctly to produce an executable, and you also cannot use this dependency to also create .NET 4.6 builds. You can change *project.json* to this to correctly produce an executable with *dotnet publish* (change to *NETStandard.Library*, and add the *runtimes* section as also shown in the book:
-
-```js
-{
-  "version": "1.0.0-*",
-  "buildOptions": {
-    "emitEntryPoint": true
-  },
-  "dependencies": {
-    "NETStandard.Library": "1.5.0-*"
-  },
-  "frameworks": {
-    "netcoreapp1.0": {
-      "imports": "dnxcore50"
-    }
-  },
-  "runtimes": {
-    "win7-x64": { }
-  }
-}
-
-```
-
-This also allows adding direct support to build a .NET 4.6 binary:
-
-```js
-{
-  "version": "1.0.0-*",
-  "buildOptions": {
-    "emitEntryPoint": true
-  },
-  "dependencies": {
-	  "NETStandard.Library": "1.5.0-*"
-  },
-  "frameworks": {
-    "netcoreapp1.0": {
-      "imports": "dnxcore50"
-    },
-    "net46": {
-    }
-  },
-  "runtimes": {
-    "win7-x64": { }
   }
 }
 ```
 
 Page 20 - Version 1.4 of NetStandard.Library now includes support for the Universal Windows Platform (UAP). See the [.NET Platform Standard](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md ".NET Platform Standard").
 New is version 1.6 which includes support for .NET 4.6.3 and .NET Core 1.0.
+
+Page 21 - on top: netstandardapp1.5 should be netcoreapp1.0:
+```javascript
+  "frameworks": {
+    "netcoreapp1.0": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.0"
+        }
+      },
+      "imports": "dnxcore50"
+    },
+    "net46": {}
+  }
+```
 
 Page 22 - Note, inside the note *dotnet compile* is mentioned. This should be *dotnet build
 

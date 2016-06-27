@@ -5,7 +5,7 @@
   },
 
   "dependencies": {
-    "System.Reflection.TypeExtensions": "4.1.0-rc2-24027"
+    "System.Reflection.TypeExtensions": "4.1.0"
 
   },
 
@@ -18,9 +18,9 @@
       "dependencies": {
         "Microsoft.NETCore.App": {
           "type": "platform",
-          "version": "1.0.0-rc2-3002702"
+          "version": "1.0.0"
         },
-        "System.Runtime.Loader": "4.0.0-rc2-24027"
+        "System.Runtime.Loader": "4.0.0"
       }
     },
     "net461": { }

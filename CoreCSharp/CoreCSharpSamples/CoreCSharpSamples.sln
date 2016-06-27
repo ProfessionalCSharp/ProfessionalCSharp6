@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ArgumentsSample", "ArgumentsSample\ArgumentsSample.xproj", "{26FC9885-1A46-49D6-9951-C993D29B48BB}"
 EndProject
@@ -14,8 +14,6 @@ EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "IfStatement", "IfStatement\IfStatement.xproj", "{577DC8FA-FD57-4CE3-B3B0-2981ACFAC4AE}"
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MathClient", "MathClient\MathClient.xproj", "{426C6F03-E8A1-46F2-8127-775B21BF9B25}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MathLib", "MathLib\MathLib.xproj", "{A72053AB-5738-4D67-84EA-B128E15A0BBE}"
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "NamespaceSample", "NamespaceSample\NamespaceSample.xproj", "{6616BCDA-448E-41A1-B605-7E8DE3BAB833}"
 EndProject
@@ -30,6 +28,8 @@ EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "VariableScopeSample2", "VariableScopeSample2\VariableScopeSample2.xproj", "{1DA18881-24AB-4B55-A76C-7A2FCD9C40D6}"
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "VariableScopeSample3", "VariableScopeSample3\VariableScopeSample3.xproj", "{7DDACFFA-57E4-4994-B3F4-AA2AB8BFB4D8}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MathLib", "MathLib\MathLib.xproj", "{995AD981-04DF-41A5-8959-480BBDE4A424}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,10 +61,6 @@ Global
 		{426C6F03-E8A1-46F2-8127-775B21BF9B25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{426C6F03-E8A1-46F2-8127-775B21BF9B25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{426C6F03-E8A1-46F2-8127-775B21BF9B25}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A72053AB-5738-4D67-84EA-B128E15A0BBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A72053AB-5738-4D67-84EA-B128E15A0BBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A72053AB-5738-4D67-84EA-B128E15A0BBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A72053AB-5738-4D67-84EA-B128E15A0BBE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6616BCDA-448E-41A1-B605-7E8DE3BAB833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6616BCDA-448E-41A1-B605-7E8DE3BAB833}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6616BCDA-448E-41A1-B605-7E8DE3BAB833}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -89,6 +85,10 @@ Global
 		{7DDACFFA-57E4-4994-B3F4-AA2AB8BFB4D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DDACFFA-57E4-4994-B3F4-AA2AB8BFB4D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DDACFFA-57E4-4994-B3F4-AA2AB8BFB4D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{995AD981-04DF-41A5-8959-480BBDE4A424}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{995AD981-04DF-41A5-8959-480BBDE4A424}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{995AD981-04DF-41A5-8959-480BBDE4A424}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{995AD981-04DF-41A5-8959-480BBDE4A424}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

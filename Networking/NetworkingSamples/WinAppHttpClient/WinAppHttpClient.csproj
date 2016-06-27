@@ -18,7 +18,7 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <PackageCertificateKeyFile>WinAppHttpClient_TemporaryKey.pfx</PackageCertificateKeyFile>
-    <PackageCertificateThumbprint>B4B5170B1B00638BC6E916147A766A78F3C0E645</PackageCertificateThumbprint>
+    <PackageCertificateThumbprint>5D02BD94ECF66AD5F00ABAD89A1755E2783E9DD4</PackageCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
     <DebugSymbols>true</DebugSymbols>

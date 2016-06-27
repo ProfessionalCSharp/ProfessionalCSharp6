@@ -29,8 +29,6 @@ namespace WebSampleApp
             Configuration = builder.Build();
         }
 
-
-
         public IConfigurationRoot Configuration { get; }
 
 
