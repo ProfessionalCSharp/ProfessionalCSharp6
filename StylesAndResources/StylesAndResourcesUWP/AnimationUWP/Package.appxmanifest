@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="68e2a6e9-2415-4ab5-b4c8-b0a4121c684c" Publisher="CN=Sample" Version="1.0.0.0" />
+  <Identity Name="68e2a6e9-2415-4ab5-b4c8-b0a4121c684c" Publisher="CN=sample" Version="1.0.0.0" />
   <mp:PhoneIdentity PhoneProductId="68e2a6e9-2415-4ab5-b4c8-b0a4121c684c" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>AnimationUWP</DisplayName>
