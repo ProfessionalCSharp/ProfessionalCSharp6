@@ -5,25 +5,24 @@
   },
 
   "dependencies": {
-    "Microsoft.EntityFrameworkCore": "1.0.0-rc2-final",
-    "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0-rc2-final",
-    "Microsoft.EntityFrameworkCore.Tools": "1.0.0-preview1-final"
+    "Microsoft.EntityFrameworkCore": "1.0.0",
+    "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0",
+    "Microsoft.EntityFrameworkCore.Tools": "1.0.0-preview2-final"
   },
 
   "tools": {
     "Microsoft.EntityFrameworkCore.Tools": {
-      "version": "1.0.0-preview1-final",
-      "imports": "portable-net452+win81"
+      "version": "1.0.0-preview2-final"
     }
   },
 
   "frameworks": {
     "netcoreapp1.0": {
-      "imports": [ "dnxcore50", "portable-net45+win81" ],
+      "imports": [ "dnxcore50" ],
       "dependencies": {
         "Microsoft.NETCore.App": {
           "type": "platform",
-          "version": "1.0.0-rc2-3002702"
+          "version": "1.0.0"
         }
       }
     }
