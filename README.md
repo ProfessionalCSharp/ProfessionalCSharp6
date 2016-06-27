@@ -6,7 +6,7 @@ Samples are in the progress to be updated for RTM of .NET Core 1.0. To compile a
 
 * Visual Studio 2015
 * Visual Studio 2015 Update 3
-* Visual Studio official installer for .NET Core 1.0 RC2
+* .NET Core 1.0 Tools for Visual Studio
 
 [Download Visual Studio 2015 Update 3](http://go.microsoft.com/fwlink/?LinkId=691129 "Visual Studio Update 3")
 
