@@ -18,6 +18,7 @@ namespace AsyncPatternsWPF
         private SearchInfo _searchInfo = new SearchInfo();
         private object _lockList = new object();
         private CancellationTokenSource _cts = new CancellationTokenSource();
+        private const string errorMessage = "Register with Bing and Flickr and enter your app-ids to the BingRequest and FlickRequest classes";
 
         public MainWindow()
         {
@@ -39,17 +40,24 @@ namespace AsyncPatternsWPF
 
         private void OnSearchSync(object sender, RoutedEventArgs e)
         {
-            foreach (var req in GetSearchRequests())
+            try
             {
-                var client = new WebClient();
-                client.Credentials = req.Credentials;
-                string resp = client.DownloadString(req.Url);
-                IEnumerable<SearchItemResult> images = req.Parse(resp);
-                foreach (var image in images)
+                foreach (var req in GetSearchRequests())
                 {
-                    _searchInfo.List.Add(image);
-                }
+                    var client = new WebClient();
+                    client.Credentials = req.Credentials;
+                    string resp = client.DownloadString(req.Url);
+                    IEnumerable<SearchItemResult> images = req.Parse(resp);
+                    foreach (var image in images)
+                    {
+                        _searchInfo.List.Add(image);
+                    }
 
+                }
+            }
+            catch (WebException ex) when (ex.Message.Contains("401"))
+            {
+                MessageBox.Show(errorMessage, "Registration Needed");
             }
         }
 
@@ -68,11 +76,18 @@ namespace AsyncPatternsWPF
             {
                 downloadString.BeginInvoke(req.Url, req.Credentials, ar =>
                 {
-                    string resp = downloadString.EndInvoke(ar);
-                    var images = req.Parse(resp);
-                    foreach (var image in images)
+                    try
                     {
-                        this.Dispatcher.Invoke(addItem, image);
+                        string resp = downloadString.EndInvoke(ar);
+                        var images = req.Parse(resp);
+                        foreach (var image in images)
+                        {
+                            this.Dispatcher.Invoke(addItem, image);
+                        }
+                    }
+                    catch (WebException ex) when (ex.Message.Contains("401"))
+                    {
+                        MessageBox.Show(errorMessage, "Registration Needed");
                     }
                 }, null);
             }
@@ -86,11 +101,18 @@ namespace AsyncPatternsWPF
                 client.Credentials = req.Credentials;
                 client.DownloadStringCompleted += (sender1, e1) =>
                 {
-                    string resp = e1.Result;
-                    var images = req.Parse(resp);
-                    foreach (var image in images)
+                    try
                     {
-                        _searchInfo.List.Add(image);
+                        string resp = e1.Result;
+                        var images = req.Parse(resp);
+                        foreach (var image in images)
+                        {
+                            _searchInfo.List.Add(image);
+                        }
+                    }
+                    catch (Exception ex) when (ex.InnerException?.Message.Contains("401") ?? false)
+                    {
+                        MessageBox.Show(errorMessage, "Registration Needed");
                     }
                 };
                 client.DownloadStringAsync(new Uri(req.Url));
@@ -111,8 +133,14 @@ namespace AsyncPatternsWPF
                     var client = new HttpClient(clientHandler);
 
                     var response = await client.GetAsync(req.Url, _cts.Token);
+                    response.EnsureSuccessStatusCode();
+                    // the following code can be used instead of EnsureSuccessStatusCode
+                    //if (response.StatusCode == HttpStatusCode.Unauthorized)
+                    //{
+                    //    MessageBox.Show(errorMessage, "Registration Needed");
+                    //    return;
+                    //}
                     string resp = await response.Content.ReadAsStringAsync();
-
                     await Task.Run(() =>
                     {
                         var images = req.Parse(resp);
@@ -123,6 +151,10 @@ namespace AsyncPatternsWPF
                         }
                     }, _cts.Token);
                 }
+            }
+            catch (HttpRequestException ex) when (ex.Message.Contains("401"))
+            {
+                MessageBox.Show(errorMessage, "Registration Needed");
             }
             catch (OperationCanceledException ex)
             {
