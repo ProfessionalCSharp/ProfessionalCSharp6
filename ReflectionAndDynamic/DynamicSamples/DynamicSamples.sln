@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CalculatorLib", "CalculatorLib\CalculatorLib.xproj", "{DEE69E19-2853-476B-8514-BD1909F739AE}"
 EndProject
@@ -14,9 +14,6 @@ EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DynamicFileReader", "DynamicFileReader\DynamicFileReader.xproj", "{1DACF52A-1AE3-41CE-AF5C-278B400BFC6E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0DF1E104-5351-4AAF-949C-B3D2B6B6E617}"
-	ProjectSection(SolutionItems) = preProject
-		ClientApp\global.json = ClientApp\global.json
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DLRHostSample", "DLRHostSample\DLRHostSample.csproj", "{9BCF3168-6352-4D73-AC51-BD6EAEE91205}"
 EndProject
