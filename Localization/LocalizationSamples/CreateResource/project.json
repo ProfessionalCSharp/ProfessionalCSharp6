@@ -14,10 +14,10 @@
       "dependencies": {
         "Microsoft.NETCore.App": {
           "type": "platform",
-          "version": "1.0.0-rc2-3002702"
+          "version": "1.0.0"
         },
-        "System.Resources.Reader": "4.0.0-rc2-24027",
-        "System.Resources.Writer": "4.0.0-rc2-24027"
+        "System.Resources.Reader": "4.0.0",
+        "System.Resources.Writer": "4.0.0"
       }
     },
     "net46": { }
