@@ -5,15 +5,14 @@ This document contains changes with .NET Core that have been changed after the b
 Page 15 - .NET Native
 .NET Native didn't make it to the first release of .NET Core. Building native applications on Linux and Windows will be possible with a later release. Currently it's just possible to compile UWP applications to native code.
 
-Page 19 - Note
-The option --type will not be available using *dotnet new*. Instead, a much more flexible option will be available with preview 2 of the tools. 
-Preview 2 offers the --template option to select any template. Installed templates will be shown wiht dotnet new --list. See [Reimagine dotnet-new](https://github.com/dotnet/cli/issues/2052)
+Page 19 - Note - check for future implementations for dotnet --template at [Reimagine dotnet-new](https://github.com/dotnet/cli/issues/2052). 
+Preview 2 of the dotnet tools offers the --type option as described in the book. You can use the values Console, Web, Lib, and xunittest.
 
 Page 20 - The *compilationOptions* from project.json changed to *buildOptions*
 
 Page 20 - The framework *netstandardapp1.5* has been changed to *netcoreapp1.0*
 
-Page 20: - using preview 1 of the dotnet tools, *dotnet new* produces this *project.json*:
+Page 20: - using preview 2 of the dotnet tools, *dotnet new* produces this *project.json*:
 
 ```js
 {
