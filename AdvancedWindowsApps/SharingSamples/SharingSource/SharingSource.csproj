@@ -18,7 +18,7 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <PackageCertificateKeyFile>SharingSource_TemporaryKey.pfx</PackageCertificateKeyFile>
-    <PackageCertificateThumbprint>6548309E18F853B0D79F7DB2DC021FDC9531C458</PackageCertificateThumbprint>
+    <PackageCertificateThumbprint>8B4CBE6A9E1736D3A71F83054D6F98A7F7D75EB1</PackageCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
     <DebugSymbols>true</DebugSymbols>
