@@ -17,7 +17,7 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <PackageCertificateKeyFile>MapSample_TemporaryKey.pfx</PackageCertificateKeyFile>
-    <PackageCertificateThumbprint>77C88829D111E258D0B6A1E4387D294EDD447D86</PackageCertificateThumbprint>
+    <PackageCertificateThumbprint>4C330E46437786B5DC6135D45D30E6A13C513C1F</PackageCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>

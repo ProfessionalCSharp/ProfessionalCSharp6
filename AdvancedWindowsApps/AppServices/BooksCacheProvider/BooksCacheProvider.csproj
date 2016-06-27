@@ -17,7 +17,7 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <PackageCertificateKeyFile>BooksCacheProvider_TemporaryKey.pfx</PackageCertificateKeyFile>
-    <PackageCertificateThumbprint>D24DA4F25C671A9FDADA043158C261E3E9C6A07A</PackageCertificateThumbprint>
+    <PackageCertificateThumbprint>AD6BA725EB2FAE9ADB9428F16EF8A3AC604B1D18</PackageCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
