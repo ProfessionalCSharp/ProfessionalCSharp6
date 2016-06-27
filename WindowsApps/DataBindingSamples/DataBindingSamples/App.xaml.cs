@@ -2,7 +2,7 @@
 using DataBindingSamples.Repositories;
 using DataBindingSamples.Services;
 using DataBindingSamples.ViewModels;
-using Microsoft.Framework.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;

@@ -18,7 +18,7 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <PackageCertificateKeyFile>ControlsSamples_TemporaryKey.pfx</PackageCertificateKeyFile>
-    <PackageCertificateThumbprint>2133C52BC5B6A8B366AC38EE8F878C29EAD7F6CD</PackageCertificateThumbprint>
+    <PackageCertificateThumbprint>4A666D27E6DF3048D462C9F788DA67BCC83EDBAC</PackageCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
     <DebugSymbols>true</DebugSymbols>

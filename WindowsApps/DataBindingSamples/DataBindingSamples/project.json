@@ -1,7 +1,7 @@
 ﻿{
   "dependencies": {
-    "Microsoft.Framework.DependencyInjection": "1.0.0-beta8",
-    "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
+    "Microsoft.Extensions.DependencyInjection": "1.0.0",
+    "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.0"
   },
   "frameworks": {
     "uap10.0": {}

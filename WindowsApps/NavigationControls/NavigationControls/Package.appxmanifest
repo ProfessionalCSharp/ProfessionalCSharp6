@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="1235a5b2-54a7-4a5a-9dad-af1025acc51d" Publisher="CN=Sample" Version="1.0.0.0" />
+  <Identity Name="1235a5b2-54a7-4a5a-9dad-af1025acc51d" Publisher="CN=sample" Version="1.0.0.0" />
   <mp:PhoneIdentity PhoneProductId="1235a5b2-54a7-4a5a-9dad-af1025acc51d" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>NavigationControls</DisplayName>

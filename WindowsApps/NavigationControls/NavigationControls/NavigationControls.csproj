@@ -18,7 +18,7 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <PackageCertificateKeyFile>NavigationControls_TemporaryKey.pfx</PackageCertificateKeyFile>
-    <PackageCertificateThumbprint>21152421AC0B5C41538D62D0D2555004F05DE233</PackageCertificateThumbprint>
+    <PackageCertificateThumbprint>4E2BB6486103B9E9F10429A077E2FCB1A2E07F1C</PackageCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
     <DebugSymbols>true</DebugSymbols>
