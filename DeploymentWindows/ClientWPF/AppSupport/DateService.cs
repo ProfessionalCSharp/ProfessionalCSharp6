@@ -6,8 +6,6 @@ namespace AppSupport
     {
         public string GetLongDateInfoString() => $"Today's date is {DateTime.Today:D}";
 
-
         public string GetShortDateInfoString() => $"Today's date is {DateTime.Today:d}";
-
     }
 }
