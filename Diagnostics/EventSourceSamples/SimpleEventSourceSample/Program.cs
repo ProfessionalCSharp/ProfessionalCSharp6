@@ -9,7 +9,7 @@ namespace SimpleEventSourceSample
     class Program
     {
         private static EventSource sampleEventSource = new EventSource("Wrox-SimpleEventSourceSample");
-        static void Main(string[] args)
+        static void Main()
         {
             WriteLine($"Log Guid: {sampleEventSource.Guid}");
             WriteLine($"Name: {sampleEventSource.Name}");
