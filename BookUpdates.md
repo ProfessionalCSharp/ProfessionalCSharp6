@@ -90,6 +90,11 @@ public void NewCarIsHere(object sender, CarInfoEventArgs e)
 }
 ```
 
+## Chapter 13 - Language Integrated Query
+
+Page 370, the text before the summary:
+`Expression<Func<TSource, bool>gt;` should be `Expression<Func<TSource, bool>>`
+
 ## Chapter 16 - Reflection, Metadata, and Dynamic Programming
 
 Page 437 - CompilationOptions has been changed to BuildOptions
