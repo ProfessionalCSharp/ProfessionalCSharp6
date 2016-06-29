@@ -35,17 +35,17 @@ namespace BooksServiceSample
 
             services.AddSwaggerGen();
 
-            services.ConfigureSwaggerGen(options =>
-            {
-                options.SingleApiVersion(new Info
-                {
-                    Version = "v1",
-                    Title = "Book Chapters",
-                    Description = "A sample for Professional C# 6"
-                });
-                options.IgnoreObsoleteActions();
-                options.DescribeAllEnumsAsStrings();
-            });
+            //services.ConfigureSwaggerGen(options =>
+            //{
+            //    options.SingleApiVersion(new Info
+            //    {
+            //        Version = "v1",
+            //        Title = "Book Chapters",
+            //        Description = "A sample for Professional C# 6"
+            //    });
+            //    options.IgnoreObsoleteActions();
+            //    options.DescribeAllEnumsAsStrings();
+            //});
 
          
 
@@ -61,8 +61,8 @@ namespace BooksServiceSample
 
             app.UseMvc();
 
-            app.UseSwaggerGen();
-            app.UseSwaggerUi();
+            //app.UseSwaggerGen();
+            //app.UseSwaggerUi();
         }
     }
 }
