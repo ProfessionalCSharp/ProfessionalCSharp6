@@ -214,3 +214,31 @@ Page 1299, 1300
 Action result names have been changed, the Http prefix removed: HttpBadRequest, HttpNotFound... renamed to BadRequest, NotFound.
 [Action result naming changes](https://github.com/aspnet/Announcements/issues/153)
 
+## Chapter 42 - ASP.NET Web API
+
+Page 1332, the Swagger part of the implementation of ConfigureServices changed:
+
+```csharp
+services.AddSwaggerGen();           
+
+services.ConfigureSwaggerGen(options =>
+{
+  options.SingleApiVersion(new Info
+  {
+    Version = "v1",
+    Title = "Book Chapters",
+    Description = "A sample for Professional C# 6"
+  });
+  options.IgnoreObsoleteActions();
+  options.IgnoreObsoleteProperties();
+  options.DescribeAllEnumsAsStrings();
+});
+```
+
+Page 1332, the Swagger part of the implementation of Configure changed:
+
+```csharp
+app.UseSwagger();
+app.UseSwaggerUi();
+```
+
