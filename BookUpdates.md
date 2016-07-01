@@ -90,6 +90,11 @@ public void NewCarIsHere(object sender, CarInfoEventArgs e)
 }
 ```
 
+## Chapter 13 - Language Integrated Query
+
+Page 370, the text before the summary:
+`Expression<Func<TSource, bool>gt;` should be `Expression<Func<TSource, bool>>`
+
 ## Chapter 16 - Reflection, Metadata, and Dynamic Programming
 
 Page 437 - CompilationOptions has been changed to BuildOptions
@@ -208,4 +213,32 @@ Page 1291, the quotes need to be removed from `@addTagHelper` (source file TagHe
 Page 1299, 1300
 Action result names have been changed, the Http prefix removed: HttpBadRequest, HttpNotFound... renamed to BadRequest, NotFound.
 [Action result naming changes](https://github.com/aspnet/Announcements/issues/153)
+
+## Chapter 42 - ASP.NET Web API
+
+Page 1332, the Swagger part of the implementation of ConfigureServices changed:
+
+```csharp
+services.AddSwaggerGen();           
+
+services.ConfigureSwaggerGen(options =>
+{
+  options.SingleApiVersion(new Info
+  {
+    Version = "v1",
+    Title = "Book Chapters",
+    Description = "A sample for Professional C# 6"
+  });
+  options.IgnoreObsoleteActions();
+  options.IgnoreObsoleteProperties();
+  options.DescribeAllEnumsAsStrings();
+});
+```
+
+Page 1332, the Swagger part of the implementation of Configure changed:
+
+```csharp
+app.UseSwagger();
+app.UseSwaggerUi();
+```
 
