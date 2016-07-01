@@ -16,7 +16,7 @@
       "version": "1.0.0",
       "type": "platform"
     },
-    "Swashbuckle": "6.0.0-beta9"
+    "Swashbuckle": "6.0.0-beta901"
   },
 
   "tools": {

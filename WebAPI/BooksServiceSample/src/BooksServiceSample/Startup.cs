@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Swashbuckle.Swagger.Model;
 using Swashbuckle.SwaggerGen.Generator;
 
 namespace BooksServiceSample
@@ -33,22 +34,20 @@ namespace BooksServiceSample
             repos.Init();
             services.AddSingleton(repos);
 
-            services.AddSwaggerGen();
+            services.AddSwaggerGen();           
 
-            //services.ConfigureSwaggerGen(options =>
-            //{
-            //    options.SingleApiVersion(new Info
-            //    {
-            //        Version = "v1",
-            //        Title = "Book Chapters",
-            //        Description = "A sample for Professional C# 6"
-            //    });
-            //    options.IgnoreObsoleteActions();
-            //    options.DescribeAllEnumsAsStrings();
-            //});
-
-         
-
+            services.ConfigureSwaggerGen(options =>
+            {
+                options.SingleApiVersion(new Info
+                {
+                    Version = "v1",
+                    Title = "Book Chapters",
+                    Description = "A sample for Professional C# 6"
+                });
+                options.IgnoreObsoleteActions();
+                options.IgnoreObsoleteProperties();
+                options.DescribeAllEnumsAsStrings();
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -59,10 +58,10 @@ namespace BooksServiceSample
 
             app.UseStaticFiles();
 
-            app.UseMvc();
+            app.UseMvc();     
 
-            //app.UseSwaggerGen();
-            //app.UseSwaggerUi();
+            app.UseSwagger();
+            app.UseSwaggerUi();
         }
     }
 }
