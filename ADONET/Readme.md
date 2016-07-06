@@ -9,5 +9,6 @@ This chapter contains these samples:
 
 The database that is used with these samples is AdventureWorks. Download AdventureWorks from [CodePlex](https://msftdbprodsamples.codeplex.com).
 
-The current version of this sample is built with .NET Core RC2. When RTM is available, the sample code will be updated.
+The current version of this sample is built with .NET Core RTM and Preview 2 Tools. 
+When RTM of the Tools is available, the project files will be updated.
 
