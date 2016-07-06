@@ -1,5 +1,5 @@
-﻿using Microsoft.Data.Entity;
-using Microsoft.Data.Entity.Metadata.Builders;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace BooksODataService.Models
 {
@@ -7,6 +7,10 @@ namespace BooksODataService.Models
     {
         public DbSet<Book> Books { get; set; }
         public DbSet<Chapter> Chapters { get; set; }
+
+        public BooksContext(DbContextOptions<BooksContext> options)
+            : base(options)
+        { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
