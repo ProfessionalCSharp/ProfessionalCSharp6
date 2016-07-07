@@ -1,0 +1,35 @@
+﻿{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "xunit": "2.1.0",
+    "Moq": "4.5.10",
+    "NETStandard.Library": "1.6.0",
+    "dotnet-test-xunit": "1.0.0-rc2-192208-24",
+    "Services": "1.0.0",
+    "Contracts": "1.0.0",
+    "Models": "1.0.0",
+    "Framework": "1.0.0"
+  },
+  "testRunner": "xunit",
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": [ "dnxcore50", "portable-net45+win8", "dotnet5.4", "net45" ],
+      "dependencies": {
+        "Contracts": {
+          "target": "project"
+        },
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.0"
+        },
+        "Models": {
+          "target": "project"
+        },
+        "Services": {
+          "target": "project"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "version": 2,
+  "exports": {
+    "Contracts/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.6",
+      "compile": {
+        "bin/Debug/Contracts.dll": {}
+      },
+      "runtime": {
+        "bin/Debug/Contracts.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/Contracts.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    },
+    "Models/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.6",
+      "compile": {
+        "bin/Debug/Models.dll": {}
+      },
+      "runtime": {
+        "bin/Debug/Models.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/Models.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    },
+    "Services/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.6",
+      "compile": {
+        "bin/Debug/Services.dll": {}
+      },
+      "runtime": {
+        "bin/Debug/Services.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/Services.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    }
+  }
+}
