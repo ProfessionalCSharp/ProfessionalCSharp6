@@ -1,13 +1,12 @@
-# Readme - Code Samples for Chapter 14, Errors and Exceptions
+# Readme - Code Samples for Chapter 21, Tasks and Parallel Programming
 
 This chapter contains the following code samples:
 
-* SimpleExceptions (`try`, `catch`, and `throw`)
-* ExceptionFilters (new C# 6 feature, filtering with  `when`)
-* RethrowExceptions (rethrowing exceptions)
-* SolicitColdCall (user-defined exceptions)
-* CallerInformation (using `CallerLineNumber`, `CallerFilePath`, `CallerMemberName`)
-
+* Parallel Samples (using the `Parallel` class)
+* Task Samples (using the `Task` class with custom tasks, thread pools, long running tasks, parent & child, continuation tasks...)
+* Cancellation Samples (cancelling a task, and cancelling a Parallel.For loop)
+* Simple Data Flow (producers and consumers using *System.Threading.Tasks.Dataflow*)
+* Data Flow Sample (a more complex data flow)
 
 To build and run the .NET Core samples, please install
 * Visual Studio 2015 Update 3

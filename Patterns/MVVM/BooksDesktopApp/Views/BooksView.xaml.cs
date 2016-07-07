@@ -12,7 +12,7 @@ namespace BooksDesktopApp.Views
             InitializeComponent();
         }
 
-        public BooksViewModel ViewModel { get; } = new BooksViewModel((App.Current as App).BooksService);
-        // public BooksViewModel ViewModel { get; } = (App.Current as App).Container.GetService<BooksViewModel>();
+       // public BooksViewModel ViewModel { get; } = new BooksViewModel((App.Current as App).BooksService);
+         public BooksViewModel ViewModel { get; } = (App.Current as App).Container.GetService<BooksViewModel>();
     }
 }
