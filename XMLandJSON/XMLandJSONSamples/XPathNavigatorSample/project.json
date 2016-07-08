@@ -11,6 +11,9 @@
 
   "frameworks": {
     "netcoreapp1.0": {
+      "buildOptions": {
+        "define": [ "NETCORE" ]
+      },
       "imports": "dnxcore50",
       "dependencies": {
         "Microsoft.NETCore.App": {
@@ -20,7 +23,8 @@
       }
     },
     "net46": {
-      "dependencies": {
+      "buildOptions": {
+        "define": [ "NET46" ]
       }
     }
   }

@@ -88,7 +88,7 @@ namespace XPathNavigatorSample
 
         public static void Insert()
         {
-#if DNX46
+#if NET46
             var doc = new XmlDocument();
             doc.Load(BooksFileName);
 #else
@@ -99,6 +99,7 @@ namespace XPathNavigatorSample
 
             if (navigator.CanEdit)
             {
+                WriteLine($"edit {NewBooksFileName} and add <disc>");
                 XPathNodeIterator iter = navigator.Select("/bookstore/book/price");
 
                 while (iter.MoveNext())
