@@ -177,6 +177,7 @@ public static void Main(string[] args)
   host.Run();
 }
 ```
+Page 1229, after *Adding Static Content*, the text should be: ASP.NET Core 1.0 reduces the overhead as much as possible.
 
 Page 1250, the directory for the configuration is now configured with `SetBasePath`
 
