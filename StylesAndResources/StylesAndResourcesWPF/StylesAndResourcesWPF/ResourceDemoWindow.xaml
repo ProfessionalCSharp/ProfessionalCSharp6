@@ -16,19 +16,17 @@
                 </LinearGradientBrush>
             </StackPanel.Resources>
             <Button Width="200" Height="50" Foreground="White" Margin="5" 
-      Background="{StaticResource MyGradientBrush}" Content="Click Me!" />
+                Background="{StaticResource MyGradientBrush}" Content="Click Me!" />
 
             <Button Name="button1" Width="220" Height="50" Margin="5" 
                  Click="OnApplyResources" Content="Apply Resource Programmatically" />
 
             <Button Name="button2" Width="200" Height="50" Foreground="White" Margin="5" 
-    Background="{DynamicResource MyGradientBrush}" Content="Change Resource" 
-    Click="OnChangeDynamicResource" />
+                Background="{DynamicResource MyGradientBrush}" Content="Change Resource" 
+                Click="OnChangeDynamicResource" />
 
             <Button Width="300" Height="50" Style="{StaticResource PinkButtonStyle}" 
-        Content="Referenced Resource" />
-
-
+                Content="Referenced Resource" />
         </StackPanel>
 
     </Grid>
