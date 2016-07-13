@@ -62,7 +62,7 @@ namespace CreateXps
 
         private void OnRemoveDay(object sender, RoutedEventArgs e)
         {
-            this._menus.Remove(this.gridMenus.SelectedItem as MenuEntry);
+            _menus.Remove(this.gridMenus.SelectedItem as MenuEntry);
         }
 
         private void OnAddDay(object sender, RoutedEventArgs e)
