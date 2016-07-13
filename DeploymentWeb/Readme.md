@@ -1,13 +1,11 @@
-# Readme - Code Samples for Chapter 41, ASP.NET MVC
+# Readme - Code Samples for Chapter 45, Deploying Websites and Services
 
 This chapter contains these samples:
 
-* MVCSampleApp
-* MenuPlanner
+* WebDotnetCore
+* WebDotnetFramework
 
-The MVCSampleApp was created with an empty ASP.NET Core Web project template. Many features for ASP.NET MVC have been added.
-
-The MenuPlanner application was created with the ASP.NET MVC Web project template. Sample code shows how to read and write from a database.
+This chapter just contains two projects as they are created from the Visual Studio templates for deployment: a Web application with .NET Core, and a Web application with the .NET Framework
 
 To build and run the .NET Core samples, please install
 * Visual Studio 2015 Update 3

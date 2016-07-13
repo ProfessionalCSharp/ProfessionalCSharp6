@@ -10,5 +10,14 @@ This chapter contains these samples:
 The Book Service Sample makes use of Swagger (Swashbuckle 6.0.0-beta901) that is compatible with .NET Core 1.0 RTM and available on NuGet.
 The OData Library for .NET Core 1.0 RTM is not yet available. Code will be updated when the library is available on NuGet. [See](https://github.com/OData/WebApi/tree/vNext/vNext "OData WebAPI")
 
-The current version of this sample is built with .NET Core RTM and Preview 2 of the tools. 
-When the tools are released, and updated version of the samples will be made available.
+To build and run the .NET Core samples, please install
+* Visual Studio 2015 Update 3
+* .NET Core 1.0 for Visual Studio
+
+Please download and install the tools from [.NET Core downloads](https://www.microsoft.com/net/core#windows).
+ 
+For code comments and issues please check [Professional C#'s GitHub Repository](https://github.com/ProfessionalCSharp/ProfessionalCSharp6)
+
+Please check my blog [csharp.christiannagel.com](https://csharp.christiannagel.com "csharp.christiannagel.com") for additional information for topics covered in the book.
+
+Thank you!

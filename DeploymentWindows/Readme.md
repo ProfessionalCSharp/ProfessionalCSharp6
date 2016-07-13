@@ -1,13 +1,11 @@
-# Readme - Code Samples for Chapter 41, ASP.NET MVC
+# Readme - Code Samples for Chapter 36, Deploying Windows Apps
 
-This chapter contains these samples:
+This chapter contains the following UWP and WPF code samples:
 
-* MVCSampleApp
-* MenuPlanner
-
-The MVCSampleApp was created with an empty ASP.NET Core Web project template. Many features for ASP.NET MVC have been added.
-
-The MenuPlanner application was created with the ASP.NET MVC Web project template. Sample code shows how to read and write from a database.
+* ClientWPF
+    * AppSupport (Library to be installed with ClickOnce)
+    * ClientWPF (Simple app using AppSupport)
+* UniversalWindowsApp (an app thats created from the Visual Studio template to run the Windows App Certification Kit)
 
 To build and run the .NET Core samples, please install
 * Visual Studio 2015 Update 3

@@ -1,13 +1,15 @@
-# Readme - Code Samples for Chapter 41, ASP.NET MVC
+# Readme - Code Samples for Chapter 43, WebHooks and SignalR
 
 This chapter contains these samples:
 
-* MVCSampleApp
-* MenuPlanner
+* SignalRSample
+    * ChatServer (contains SignalR and the HTML file ChatWindow for a HTML/JavaScript client)
+    * MvvmLib (Library used by WPFChatClient)
+    * WPFChatClient (WPF Client)
+* WebHooksSample
 
-The MVCSampleApp was created with an empty ASP.NET Core Web project template. Many features for ASP.NET MVC have been added.
+The sample code of this chapter is using the .NET Framework because SignalR and WebHooks was not available for .NET Core at the time writing this book. However, the WPF application makes use of a .NET Core library for dependency injection. This is currently based on .NET Core RC1. 
 
-The MenuPlanner application was created with the ASP.NET MVC Web project template. Sample code shows how to read and write from a database.
 
 To build and run the .NET Core samples, please install
 * Visual Studio 2015 Update 3
