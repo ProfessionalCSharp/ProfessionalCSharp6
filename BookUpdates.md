@@ -135,6 +135,18 @@ Page 370, the text before the summary:
 
 ## Chapter 16 - Reflection, Metadata, and Dynamic Programming
 
+Page 435 - You don't need to configure the project properties to produce outputs on build. Outputs on build are done with .NET Core projects.
+
+Page 435, Figure Update, Figure 16-1
+
+![Figure 16-1](https://github.com/ProfessionalCSharp/ProfessionalCSharp6/blob/master/FigureUpdates/Fig16_01.png "Fig 16-1")
+
+Page 435 (end of the page), to select whether to use .NET Core or the .NET Framework version, select the *Profile* in the *Debug* settings
+
+Page 436, Figure Update, Figure 16-2
+
+![Figure 16-2](https://github.com/ProfessionalCSharp/ProfessionalCSharp6/blob/master/FigureUpdates/Fig16_02.png "Fig 16-2")
+
 Page 437 - CompilationOptions has been changed to BuildOptions
 
 Page 437/438 - Loading an assembly dynamically has become easier, the DirectoryLoader is no longer needed, use AssemblyLoadContext instead of PlatformServices
