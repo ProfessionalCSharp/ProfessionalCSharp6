@@ -63,10 +63,40 @@ Page 23 - the table lists *7.0* for Entity Framework. It should be *Core 1.0* in
 
 Page 33 - Console Application (Package) changed to Console Application (.NET Core). You can find this template within Installed -> Templates -> Visual C# -> .NET Core
 
+Page 33, Figure Update, Figure 2-3
+
+![Figure 2-3](https://github.com/ProfessionalCSharp/ProfessionalCSharp6/blob/master/FigureUpdates/Fig02_03.png "Fig 2-03")
+
+Page 33, Figure Update, Figure 2-4
+
+![Figure 2-4](https://github.com/ProfessionalCSharp/ProfessionalCSharp6/blob/master/FigureUpdates/Fig02_04.png "Fig 2-04")
+
 Page 34 - *project.json* change:
 *netstandardapp1.5* should be *netcoreapp1.0*
 
 *tags*, *projectUrl*, *licenseUrl* should not be within the root of project.json, but instead within *packOptions*. Form the Visual Studio template, these options are no longer added to project.json. I removed them from the RC2 sample files.
+
+Page 35, the version of the build tools is no longer available with the application properties, but you can change it within *global.json* directly.
+
+Page 35, Figure Update, Figure 2-5
+
+![Figure 2-5](https://github.com/ProfessionalCSharp/ProfessionalCSharp6/blob/master/FigureUpdates/Fig02_05.png "Fig 2-05")
+
+Page 35, persistent files are created by default, this option is no longer available with the Build settings
+
+Page 35, Figure Update, Figure 2-6
+
+![Figure 2-6](https://github.com/ProfessionalCSharp/ProfessionalCSharp6/blob/master/FigureUpdates/Fig02_06.png "Fig 2-06")
+
+Page 36, the runtime version cannot be configured in the Debug tab
+
+Page 36, Figure Update, Figure 2-8
+
+![Figure 2-8](https://github.com/ProfessionalCSharp/ProfessionalCSharp6/blob/master/FigureUpdates/Fig02_08.png "Fig 2-08")
+
+Page 61, Figure Update, Figure 2-9
+
+![Figure 2-9](https://github.com/ProfessionalCSharp/ProfessionalCSharp6/blob/master/FigureUpdates/Fig02_09.png "Fig 2-09")
 
 ## Chapter 3 - Objects and Types
 
@@ -162,10 +192,12 @@ dotnet instead of dnx: *dotnet ef dbcontext scaffold* instead of *dnx ef dbconte
 
 ## Chapter 40 - ASP.NET Core
 
-Page 1222, Figure Update
+Page 1222, Figure Update, Figure 40-1
+
 ![Figure 40-1](https://github.com/ProfessionalCSharp/ProfessionalCSharp6/blob/master/FigureUpdates/Fig40_01.png "Fig 40-01")
 
-Page 1224, Figure Update
+Page 1224, Figure Update, Figure 40-3
+
 ![Figure 40-3](https://github.com/ProfessionalCSharp/ProfessionalCSharp6/blob/master/FigureUpdates/Fig40_03.png "Fig 40-03")
 
 Page 1227, the Main method changed slightly with UseKestrel (the new Web host), UseIISIntegration (integration when used with IIS), and UseContentRoot (to define the static content for the Web site):
@@ -184,7 +216,7 @@ public static void Main(string[] args)
 }
 ```
 
-Page 1228 Figure Update
+Page 1228 Figure Update, Figure 40-5
 ![Figure 40-5](https://github.com/ProfessionalCSharp/ProfessionalCSharp6/blob/master/FigureUpdates/Fig40_05.png "Fig 40-05")
 
 Page 1229, after *Adding Static Content*, the text should be: ASP.NET Core 1.0 reduces the overhead as much as possible.
@@ -203,7 +235,8 @@ public Startup(IHostingEnvironment env)
 }
 ```
 
-Page 1252 Figure Update
+Page 1252 Figure Update, Figure 40-18
+
 ![Figure 40-18](https://github.com/ProfessionalCSharp/ProfessionalCSharp6/blob/master/FigureUpdates/Fig40_18.png "Fig 40-18")
 
 ## Chapter 41 - ASP.NET MVC
