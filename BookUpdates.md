@@ -217,6 +217,8 @@ Action result names have been changed, the Http prefix removed: HttpBadRequest, 
 
 ## Chapter 42 - ASP.NET Web API
 
+Page 1313, template name changed: you need to start with an ASP.NET Core Web Application (.NET Core) and select the ASP.NET Core Template "Web API".
+
 Page 1332, the Swagger part of the implementation of ConfigureServices changed:
 
 ```csharp
