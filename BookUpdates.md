@@ -162,6 +162,12 @@ dotnet instead of dnx: *dotnet ef dbcontext scaffold* instead of *dnx ef dbconte
 
 ## Chapter 40 - ASP.NET Core
 
+Page 1222, Figure Update
+![Figure 40-1](https://github.com/ProfessionalCSharp/ProfessionalCSharp6/blob/master/FigureUpdates/Fig40_01.png "Fig 40-01")
+
+Page 1224, Figure Update
+![Figure 40-3](https://github.com/ProfessionalCSharp/ProfessionalCSharp6/blob/master/FigureUpdates/Fig40_03.png "Fig 40-03")
+
 Page 1227, the Main method changed slightly with UseKestrel (the new Web host), UseIISIntegration (integration when used with IIS), and UseContentRoot (to define the static content for the Web site):
 
 ```csharp
@@ -177,6 +183,10 @@ public static void Main(string[] args)
   host.Run();
 }
 ```
+
+Page 1228 Figure Update
+![Figure 40-5](https://github.com/ProfessionalCSharp/ProfessionalCSharp6/blob/master/FigureUpdates/Fig40_05.png "Fig 40-05")
+
 Page 1229, after *Adding Static Content*, the text should be: ASP.NET Core 1.0 reduces the overhead as much as possible.
 
 Page 1250, the directory for the configuration is now configured with `SetBasePath`
@@ -192,6 +202,9 @@ public Startup(IHostingEnvironment env)
   //...
 }
 ```
+
+Page 1252 Figure Update
+![Figure 40-18](https://github.com/ProfessionalCSharp/ProfessionalCSharp6/blob/master/FigureUpdates/Fig40_18.png "Fig 40-18")
 
 ## Chapter 41 - ASP.NET MVC
 
