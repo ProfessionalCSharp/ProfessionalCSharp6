@@ -8,7 +8,7 @@
         public static string Span(this string value) =>
             $"<span>{value}</span>";
 
-        public static string Il(this string value, string url) =>
-            $@"<il><a href=""{url}"">{value}</a></il>";
+        public static string ListItem(this string value, string url) =>
+            $@"<li><a href=""{url}"">{value}</a></li>";
     }
 }
