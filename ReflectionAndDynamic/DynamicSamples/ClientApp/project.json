@@ -6,7 +6,6 @@
 
   "dependencies": {
     "System.Reflection.TypeExtensions": "4.1.0"
-
   },
 
   "frameworks": {
@@ -18,11 +17,10 @@
       "dependencies": {
         "Microsoft.NETCore.App": {
           "type": "platform",
-          "version": "1.0.0"
+          "version": "1.0.1"
         },
         "System.Runtime.Loader": "4.0.0"
       }
-    },
-    "net461": { }
+    }
   }
 }
