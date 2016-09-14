@@ -10,7 +10,7 @@ Samples are in the progress to be updated for the release of .NET Core 1.0. To c
 
 [Download Visual Studio 2015 Update 3](http://go.microsoft.com/fwlink/?LinkId=691129 "Visual Studio Update 3")
 
-[Download .NET Core 1.0 Tools for Visual Studio](https://go.microsoft.com/fwlink/?LinkId=817245 ".NET Core Tools")
+[Download .NET Core 1.0.1 Tools for Visual Studio](https://go.microsoft.com/fwlink/?LinkID=827546 ".NET Core Tools")
 
 To run the code samples on Ubuntu, check this installation procedure: [.NET Core on Ubuntu](https://www.microsoft.com/net/core#ubuntu "Ubuntu Installation")
 
