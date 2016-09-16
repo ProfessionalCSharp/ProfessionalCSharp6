@@ -18,13 +18,9 @@
       "dependencies": {
         "Microsoft.NETCore.App": {
           "type": "platform",
-          "version": "1.0.0"
-        }
-      }
-    },
-    "net46": {
-      "buildOptions": {
-        "define": [ "NET46" ]
+          "version": "1.0.1"
+        },
+        "System.Xml.XmlSerializer": "4.0.11"
       }
     }
   }
