@@ -5,12 +5,12 @@
   },
 
   "dependencies": {
-    "CalculatorContract": "1.0.0-*",
-    "Microsoft.Composition": "1.0.30",
     "Microsoft.NETCore.App": {
       "type": "platform",
-      "version": "1.0.0"
+      "version": "1.0.1"
     },
+    "CalculatorContract": "1.0.0-*",
+    "Microsoft.Composition": "1.0.30",
     "SimpleCalculator": "1.0.0-*"
   },
 
