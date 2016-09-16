@@ -10,22 +10,27 @@ namespace AsyncDelegate
     {
         static void Main()
         {
-            TakesAWhileDelegate d1 = TakesAWhile;
-
-
-            IAsyncResult ar = d1.BeginInvoke(1, 3000, null, null);
-            while (true)
+            try
             {
-                Write(".");
-                if (ar.AsyncWaitHandle.WaitOne(50))
-                {
-                    WriteLine("Can get the result now");
-                    break;
-                }
-            }
-            int result = d1.EndInvoke(ar);
-            WriteLine($"result: {result}");
+                TakesAWhileDelegate d1 = TakesAWhile;
 
+                IAsyncResult ar = d1.BeginInvoke(1, 3000, null, null);
+                while (true)
+                {
+                    Write(".");
+                    if (ar.AsyncWaitHandle.WaitOne(50))
+                    {
+                        WriteLine("Can get the result now");
+                        break;
+                    }
+                }
+                int result = d1.EndInvoke(ar);
+                WriteLine($"result: {result}");
+            }
+            catch (PlatformNotSupportedException)
+            {
+                WriteLine("PlatformNotSupported exception - with async delegates please use the full .NET Framework");
+            }
         }
 
         public static int TakesAWhile(int x, int ms)

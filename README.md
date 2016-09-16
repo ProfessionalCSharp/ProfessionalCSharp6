@@ -2,7 +2,7 @@
 
 Code samples for the Wrox book Professional C# 6 and .NET Core 1.0
 
-Samples are in the progress to be updated for RTM of .NET Core 1.0. To compile and run the samples you need:
+Samples are in the progress to be updated for the release of .NET Core 1.0. To compile and run the samples you need:
 
 * Visual Studio 2015
 * Visual Studio 2015 Update 3
@@ -10,15 +10,17 @@ Samples are in the progress to be updated for RTM of .NET Core 1.0. To compile a
 
 [Download Visual Studio 2015 Update 3](http://go.microsoft.com/fwlink/?LinkId=691129 "Visual Studio Update 3")
 
-[Download .NET Core 1.0 Tools for Visual Studio](https://go.microsoft.com/fwlink/?LinkId=817245 ".NET Core Tools")
+[Download .NET Core 1.0.1 Tools for Visual Studio](https://go.microsoft.com/fwlink/?LinkID=827546 ".NET Core Tools")
+
+To run the code samples on Ubuntu, check this installation procedure: [.NET Core on Ubuntu](https://www.microsoft.com/net/core#ubuntu "Ubuntu Installation")
 
 Check the [book updates and errata](https://github.com/ProfessionalCSharp/ProfessionalCSharp6/blob/master/BookUpdates.md "Book Updates")
 
 Samples available for these chapters (sample folders):
 
-* Chapter 1 - .NET Application Architectures (HelloWorld)
-* Chapter 2 - Core C# (CoreCSharp)
-* Chapter 3 - Objects and Types (ObjectsAndTypes)
+* Chapter 1 - .NET Application Architectures (HelloWorld) [Windows, Linux]
+* Chapter 2 - Core C# (CoreCSharp) [Windows, Linux]
+* Chapter 3 - Objects and Types (ObjectsAndTypes) [Windows, Linux]
 * Chapter 4 - Inheritance (Inheritance)
 * Chapter 5 - Managed and Unmanaged Resources (Resources)
 * Chapter 6 - Generics (Generics)

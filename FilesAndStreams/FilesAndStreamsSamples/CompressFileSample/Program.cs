@@ -10,7 +10,7 @@ namespace CompressFileSample
     {
         static void Main()
         {
-            CompressFile("./test.txt", "./test.compressed");
+            CompressFile("./test.txt", "./test.txt.gzip");
             DecompressFile("./test.txt.gzip");
 
             CreateZipFile("c:/test", "c:/test2/test.zip");
@@ -18,7 +18,13 @@ namespace CompressFileSample
 
         public static void CreateZipFile(string directory, string zipFile)
         {
-            FileStream zipStream = File.OpenWrite(zipFile);
+            InitSampleFilesForZip(directory);
+            string destDirectory = Path.GetDirectoryName(zipFile);
+            if (!Directory.Exists(destDirectory))
+            {
+                Directory.CreateDirectory(destDirectory);
+            }
+            FileStream zipStream = File.Create(zipFile);
             using (var archive = new ZipArchive(zipStream, ZipArchiveMode.Create))
             {
                 IEnumerable<string> files = Directory.EnumerateFiles(directory, "*", SearchOption.TopDirectoryOnly);
@@ -32,6 +38,22 @@ namespace CompressFileSample
                     }
                 }
             }
+        }
+
+        private static void InitSampleFilesForZip(string directory)
+        {
+            if (!Directory.Exists(directory))
+            {
+                Directory.CreateDirectory(directory);
+
+                for (int i = 0; i < 10; i++)
+                {
+                    string destFileName = Path.Combine(directory, $"test{i}.txt");
+
+                    File.Copy("Test.txt", destFileName);
+                }
+
+            } // else nothing to do, using existing files from the directory
         }
 
         public static void DecompressFile(string fileName)
@@ -60,7 +82,6 @@ namespace CompressFileSample
                     inputStream.CopyTo(compressStream);
                 }
             }
-
         }
     }
 }

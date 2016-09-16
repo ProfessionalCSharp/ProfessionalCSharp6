@@ -8,6 +8,9 @@ Page 15 - .NET Native
 Page 19 - Note - check for future implementations for dotnet --template at [Reimagine dotnet-new](https://github.com/dotnet/cli/issues/2052). 
 Preview 2 of the dotnet tools offers the --type option as described in the book. You can use the values Console, Web, Lib, and xunittest.
 
+Page 19 - dotnet repl
+With preview 2 of the dotnet tools, *dotnet repl* is not available. It will be available at a later time (probably via tools). See [No executable found matching command "dotnet-repl"](https://github.com/dotnet/cli/issues/1289 "dotnet-repl")
+
 Page 20 - The *compilationOptions* from project.json changed to *buildOptions*
 
 Page 20 - The framework *netstandardapp1.5* has been changed to *netcoreapp1.0*

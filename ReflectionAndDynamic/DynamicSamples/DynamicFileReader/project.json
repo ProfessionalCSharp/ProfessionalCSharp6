@@ -5,7 +5,6 @@
   },
 
   "dependencies": {
-
   },
 
   "frameworks": {
@@ -14,14 +13,9 @@
       "dependencies": {
         "Microsoft.NETCore.App": {
           "type": "platform",
-          "version": "1.0.0"
+          "version": "1.0.1"
         },
         "System.Dynamic.Runtime": "4.0.11"
-      }
-    },
-    "net461": {
-      "dependencies": {
-        "System.Dynamic.Runtime": "4.0.10"
       }
     }
   }

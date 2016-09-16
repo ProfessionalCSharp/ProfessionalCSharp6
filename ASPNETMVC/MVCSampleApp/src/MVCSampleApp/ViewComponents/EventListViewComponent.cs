@@ -21,6 +21,8 @@ namespace MVCSampleApp.ViewComponents
         //    return View(_context.Events);
         //}
 
+           
+
         public Task<IViewComponentResult> InvokeAsync(DateTime from, DateTime to) =>
             Task.FromResult<IViewComponentResult>(View(EventsByDateRange(from, to)));
 
