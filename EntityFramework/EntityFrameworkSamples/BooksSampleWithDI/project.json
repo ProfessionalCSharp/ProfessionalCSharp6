@@ -5,8 +5,8 @@
   },
 
   "dependencies": {
-    "Microsoft.EntityFrameworkCore": "1.0.0",
-    "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0",
+    "Microsoft.EntityFrameworkCore": "1.0.1",
+    "Microsoft.EntityFrameworkCore.SqlServer": "1.0.1",
     "Microsoft.Extensions.DependencyInjection": "1.0.0"
   },
 
@@ -16,10 +16,9 @@
       "dependencies": {
         "Microsoft.NETCore.App": {
           "type": "platform",
-          "version": "1.0.0"
+          "version": "1.0.1"
         }
       }
-    },
-    "net46": { }
+    }
   }
 }
