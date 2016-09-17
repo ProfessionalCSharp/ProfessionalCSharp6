@@ -2,13 +2,10 @@
   "version": "1.0.0-*",
 
   "dependencies": {
-    "xunit": "2.1.0",
-    "Moq": "4.5.10",
+    "xunit": "2.2.0-beta2-build3300",
+    "Moq": "4.5.21",
     "NETStandard.Library": "1.6.0",
-    "dotnet-test-xunit": "1.0.0-rc2-192208-24",
-    "Services": "1.0.0",
-    "Contracts": "1.0.0",
-    "Models": "1.0.0",
+    "dotnet-test-xunit": "2.2.0-preview2-build1029",
     "Framework": "1.0.0"
   },
   "testRunner": "xunit",
@@ -21,9 +18,12 @@
         },
         "Microsoft.NETCore.App": {
           "type": "platform",
-          "version": "1.0.0"
+          "version": "1.0.1"
         },
         "Models": {
+          "target": "project"
+        },
+        "Repositories": {
           "target": "project"
         },
         "Services": {

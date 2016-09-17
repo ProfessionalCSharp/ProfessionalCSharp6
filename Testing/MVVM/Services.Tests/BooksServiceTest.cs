@@ -36,9 +36,9 @@ namespace Services.Tests
             var service = new BooksService(mock.Object);
 
             // act
-            Book actualAdded = await service.AddOrUpateBookAsync(book);
+            Book actualAdded = await service.AddOrUpdateBookAsync(book);
             Book actualRetrieved = service.GetBook(actualAdded.BookId);
-            book notExisting = service.GetBook(2);
+            Book notExisting = service.GetBook(2);
 
             // assert
             Assert.Equal(expectedBook, actualAdded);
@@ -86,14 +86,14 @@ namespace Services.Tests
             await service.AddOrUpdateBookAsync(origBook);
 
             // act
-            Book actualUpdated = await service.AddOrUpateBookAsync(updateBook);
+            Book actualUpdated = await service.AddOrUpdateBookAsync(updateBook);
             Book actualRetrieved = service.GetBook(1);
 
             // assert
             Assert.Equal(updateBook, actualUpdated);
             Assert.Equal(updateBook, actualRetrieved);
             await Assert.ThrowsAsync<InvalidOperationException>(async () => 
-                await service.AddOrUpodateBookAsync(notExisting));
+                await service.AddOrUpdateBookAsync(notExisting));
             await Assert.ThrowsAsync<ArgumentNullException>(async () =>
                 await service.AddOrUpdateBookAsync(null));
         }
