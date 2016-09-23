@@ -182,6 +182,38 @@ public static MySafe InitProtection()
 }
 ```
 
+## Chapter 29 - Core XAML
+
+Page 852, the minimum UWP application needs a change to use a custom class derived from the *Application* class. The *Main* method is now changed to this:
+
+```csharp
+public static void Main()
+{
+  Application.Start(p => new App());
+}
+```
+
+The new *App* class contains part of the implementation of the previous Main method:
+
+```csharp
+public class App : Application
+{
+  protected override void OnLaunched(LaunchActivatedEventArgs args)
+  {
+    var b = new Button
+    {
+      Content = "Click Me!"
+    };
+    b.Click += (sender, e) =>
+    {
+      b.Content = "clicked";
+    };
+    Window.Current.Content = b;
+    Window.Current.Activate();
+  }
+}
+```
+
 ## Chapter 38 - Entity Framework Core
 
 Page 1166, the EF context with depdendency injection now needs a constructor with `DbContextOptions<TContext>`:
