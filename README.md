@@ -21,11 +21,11 @@ Samples available for these chapters (sample folders):
 * Chapter 1 - .NET Application Architectures (HelloWorld) [Windows, Linux]
 * Chapter 2 - Core C# (CoreCSharp) [Windows, Linux]
 * Chapter 3 - Objects and Types (ObjectsAndTypes) [Windows, Linux]
-* Chapter 4 - Inheritance (Inheritance)
-* Chapter 5 - Managed and Unmanaged Resources (Resources)
-* Chapter 6 - Generics (Generics)
-* Chapter 7 - Arrays and Tuples (Arrays)
-* Chapter 8 - Operators and Casts (OperatorsAndCasts)
+* Chapter 4 - Inheritance (Inheritance) [Windows, Linux]
+* Chapter 5 - Managed and Unmanaged Resources (Resources) [PInvokeSample is Windows only, all others Windows, Linux]
+* Chapter 6 - Generics (Generics) [Windows, Linux]
+* Chapter 7 - Arrays and Tuples (Arrays) [Windows, Linux]
+* Chapter 8 - Operators and Casts (OperatorsAndCasts) [Windows, Linux]
 * Chapter 9 - Delegates, Lambdas, and Events (Delegates)
 * Chapter 10 - Strings and Regular Expressions (StringsAndRegularExpressions)
 * Chapter 11 - Collections (Collections)
