@@ -20,7 +20,7 @@ namespace PipelineSample
             var words = new ConcurrentDictionary<string, int>();
             var items = new BlockingCollection<Info>();
             var coloredItems = new BlockingCollection<Info>();
-            Task t1 = PipelineStages.ReadFilenamesAsync(@"..\..", fileNames);
+            Task t1 = PipelineStages.ReadFilenamesAsync(@"../..", fileNames);
             ColoredConsole.WriteLine("started stage 1");
             Task t2 = PipelineStages.LoadContentAsync(fileNames, lines);
             ColoredConsole.WriteLine("started stage 2");
