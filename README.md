@@ -26,11 +26,11 @@ Samples available for these chapters (sample folders):
 * Chapter 6 - Generics (Generics) [Windows, Linux]
 * Chapter 7 - Arrays and Tuples (Arrays) [Windows, Linux]
 * Chapter 8 - Operators and Casts (OperatorsAndCasts) [Windows, Linux]
-* Chapter 9 - Delegates, Lambdas, and Events (Delegates)
-* Chapter 10 - Strings and Regular Expressions (StringsAndRegularExpressions)
-* Chapter 11 - Collections (Collections)
-* Chapter 12 - Special Collections (SpecialCollections)
-* Chapter 13 - Language Integrated Query (LINQ)
+* Chapter 9 - Delegates, Lambdas, and Events (Delegates) [WeakEvents sample requires .NET Framework, other samples Windows, Linux]
+* Chapter 10 - Strings and Regular Expressions (StringsAndRegularExpressions) [Windows, Linux]
+* Chapter 11 - Collections (Collections) [Windows, Linux]
+* Chapter 12 - Special Collections (SpecialCollections) [Windows, Linux]
+* Chapter 13 - Language Integrated Query (LINQ) [Windows, Linux]
 * Chapter 14 - Errors and Exceptions (ErrorsAndExceptions)
 * Chapter 15 - Asynchronous Programming (Async)
 * Chapter 16 - Reflection, Metadata, and Dynamic Programming (ReflectionAndDynamic)
