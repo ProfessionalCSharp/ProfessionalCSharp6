@@ -136,6 +136,10 @@ public void NewCarIsHere(object sender, CarInfoEventArgs e)
 Page 370, the text before the summary:
 `Expression<Func<TSource, bool>gt;` should be `Expression<Func<TSource, bool>>`
 
+## Chapter 15 - Asynchronous Programming
+
+Page 400, the API for Bing Search is only available until Dec-2016. Source code is updated for Bing API v5. See [Issue #25](https://github.com/ProfessionalCSharp/ProfessionalCSharp6/issues/25 "Issue 25")
+
 ## Chapter 16 - Reflection, Metadata, and Dynamic Programming
 
 Page 435 - You don't need to configure the project properties to produce outputs on build. Outputs on build are done with .NET Core projects.
