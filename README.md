@@ -31,7 +31,7 @@ Samples available for these chapters (sample folders):
 * Chapter 11 - Collections (Collections) [Windows, Linux]
 * Chapter 12 - Special Collections (SpecialCollections) [Windows, Linux]
 * Chapter 13 - Language Integrated Query (LINQ) [Windows, Linux]
-* Chapter 14 - Errors and Exceptions (ErrorsAndExceptions)
+* Chapter 14 - Errors and Exceptions (ErrorsAndExceptions) [Windows, Linux]
 * Chapter 15 - Asynchronous Programming (Async)
 * Chapter 16 - Reflection, Metadata, and Dynamic Programming (ReflectionAndDynamic)
 * Chapter 17 - Visual Studio 2015 (no code)
