@@ -45,6 +45,11 @@ namespace AsyncPatternsWPF
                 foreach (var req in GetSearchRequests())
                 {
                     var client = new WebClient();
+                    foreach (var header in req.Headers)
+                    {
+                        client.Headers.Add(header.Key, header.Value);
+                    }
+
                     client.Credentials = req.Credentials;
                     string resp = client.DownloadString(req.Url);
                     IEnumerable<SearchItemResult> images = req.Parse(resp);
@@ -63,10 +68,14 @@ namespace AsyncPatternsWPF
 
         private void OnSearchAsyncPattern(object sender, RoutedEventArgs e)
         {
-            Func<string, ICredentials, string> downloadString = (address, cred) =>
+            Func<string, IImageRequest, string> downloadString = (address, req) =>
             {
                 var client = new WebClient();
-                client.Credentials = cred;
+                foreach (var header in req.Headers)
+                {
+                    client.Headers.Add(header.Key, header.Value);
+                }
+                client.Credentials = req.Credentials;
                 return client.DownloadString(address);
             };
 
@@ -74,7 +83,7 @@ namespace AsyncPatternsWPF
 
             foreach (var req in GetSearchRequests())
             {
-                downloadString.BeginInvoke(req.Url, req.Credentials, ar =>
+                downloadString.BeginInvoke(req.Url, req, ar =>
                 {
                     try
                     {
@@ -98,6 +107,10 @@ namespace AsyncPatternsWPF
             foreach (var req in GetSearchRequests())
             {
                 var client = new WebClient();
+                foreach (var header in req.Headers)
+                {
+                    client.Headers.Add(header.Key, header.Value);
+                }
                 client.Credentials = req.Credentials;
                 client.DownloadStringCompleted += (sender1, e1) =>
                 {
@@ -131,6 +144,10 @@ namespace AsyncPatternsWPF
                         Credentials = req.Credentials
                     };
                     var client = new HttpClient(clientHandler);
+                    foreach (var header in req.Headers)
+                    {
+                        client.DefaultRequestHeaders.Add(header.Key, header.Value);
+                    }
 
                     var response = await client.GetAsync(req.Url, _cts.Token);
                     response.EnsureSuccessStatusCode();
@@ -167,6 +184,10 @@ namespace AsyncPatternsWPF
             foreach (var req in GetSearchRequests())
             {
                 var client = new WebClient();
+                foreach (var header in req.Headers)
+                {
+                    client.Headers.Add(header.Key, header.Value);
+                }
                 client.Credentials = req.Credentials;
                 string resp = await client.DownloadStringTaskAsync(req.Url);
 

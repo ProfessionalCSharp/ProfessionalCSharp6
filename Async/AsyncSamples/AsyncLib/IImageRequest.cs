@@ -4,13 +4,15 @@ using System.Net;
 
 namespace Wrox.ProCSharp.Async
 {
-  public interface IImageRequest
-  {
-    string SearchTerm { get; set; }
-    string Url { get; }
+    public interface IImageRequest
+    {
+        string SearchTerm { get; set; }
+        string Url { get; }
 
-    IEnumerable<SearchItemResult> Parse(string xml);
+        KeyValuePair<string, string>[] Headers { get; }
 
-    ICredentials Credentials { get; }
-  }
+        IEnumerable<SearchItemResult> Parse(string xml);
+
+        ICredentials Credentials { get; }
+    }
 }

@@ -24,6 +24,7 @@ namespace Wrox.ProCSharp.Async
 
         public string Url => $"https://api.flickr.com/services/rest?api_key={AppId}&method=flickr.photos.search&content_type=1&text={SearchTerm}&per_page={Count}&page={Page}";
 
+        public KeyValuePair<string, string>[] Headers => new KeyValuePair<string, string>[0];
 
         public int Count { get; set; }
         public int Page { get; set; }
