@@ -11,7 +11,7 @@ This chapter contains the following code samples:
 * EventsSample (subscribing and publishing events, *event* keyword)
 * WeakEvents (using IWeakEventListener)
 
-The sample WeakEvents needs the assembly WindowsBase, and thus need the full .NET Framework.
+> The sample WeakEvents needs the assembly WindowsBase, and thus need the full .NET Framework and only runs on Windows. All other samples run on Windows and Linux.
 
 To build and run the .NET Core samples, please install
 * Visual Studio 2015 Update 3
