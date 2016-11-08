@@ -43,15 +43,16 @@ namespace Foundations
                 case "-comb2":
                     MultipleAsyncMethodsWithCombinators2();
                     break;
-                case "casync":
+#if NET46
+                case "-casync":
                     ConvertingAsyncPattern();
                     break;
+#endif
                 default:
                     Usage();
                     break;
             }
 
-            ConvertingAsyncPattern();
             ReadLine();
         }
 
@@ -66,7 +67,9 @@ namespace Foundations
             WriteLine("\t-masync\t\tmultiple async methods");
             WriteLine("\t-comb\t\tmultiple async methods with combinators");
             WriteLine("\t-comb2\t\tmultiple async methods with combinators2");
+#if NET46
             WriteLine("\t-casync\t\tconvert async pattern");
+#endif
             WriteLine("\t");
             return;
         }
@@ -182,4 +185,3 @@ namespace Foundations
 
     }
 }
-
