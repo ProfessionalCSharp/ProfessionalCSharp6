@@ -33,7 +33,7 @@ namespace Wrox.ProCSharp.Async
             set { _searchTerm = value; }
         }
 
-        public string Url => $"https://api.cognitive.microsoft.com/bing/v5.0/images/search?q={SearchTerm}&$top={Count}&$skip={Offset}";
+        public string Url => $"https://api.cognitive.microsoft.com/bing/v5.0/images/search?q={SearchTerm}&count={Count}&offset={Offset}";
 
         public KeyValuePair<string, string>[] Headers =>
             new KeyValuePair<string, string>[]
