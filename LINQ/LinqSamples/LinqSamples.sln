@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DataLib", "DataLib\DataLib.xproj", "{D971C177-C1C3-4F2D-A88A-FBA0252F9D6C}"
 EndProject
@@ -12,6 +12,11 @@ EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ExpressionTreeSample", "ExpressionTreeSample\ExpressionTreeSample.xproj", "{8EB5A2E7-1A97-44B1-A6BA-8D7A5028B75A}"
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ParallelLinqSample", "ParallelLinqSample\ParallelLinqSample.xproj", "{1CEFFCD4-7E77-479E-970B-47D76F71794D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5C166071-5E03-4B0A-9FCB-505F0FD22C24}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
