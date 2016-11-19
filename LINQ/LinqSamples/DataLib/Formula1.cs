@@ -71,7 +71,7 @@ namespace DataLib
                     new Team("Renault", 2005, 2006 ),
                     new Team("Brawn GP", 2009),
                     new Team("Red Bull Racing", 2010, 2011, 2012, 2013),
-                    new Team("Mercedes", 2014, 2015)
+                    new Team("Mercedes", 2014, 2015, 2016)
                 };
             }
             return _teams;
