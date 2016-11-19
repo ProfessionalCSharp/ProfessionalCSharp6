@@ -14,6 +14,8 @@ Samples are in the progress to be updated for the release of .NET Core 1.0. To c
 
 To run the code samples on Ubuntu, check this installation procedure: [.NET Core on Ubuntu](https://www.microsoft.com/net/core#ubuntu "Ubuntu Installation")
 
+To use the samples with [Visual Studio 2017 RC](https://www.visualstudio.com/vs/visual-studio-2017-rc/ "Visual Studio 2017"), use the *MSBuild* branch. The MSBuild branch is updated to the MSBuild (.csproj) project files instead of project.json.
+
 Check the [book updates and errata](https://github.com/ProfessionalCSharp/ProfessionalCSharp6/blob/master/BookUpdates.md "Book Updates")
 
 Samples available for these chapters (sample folders):
