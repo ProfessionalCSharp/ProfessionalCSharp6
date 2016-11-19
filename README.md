@@ -1,6 +1,6 @@
-# ProfessionalCSharp6
+# Professional C# 6 and .NET Core 1.0
 
-Code samples for the Wrox book Professional C# 6 and .NET Core 1.0
+Code samples for the Wrox book *Professional C# 6 and .NET Core 1.0*
 
 Samples are in the progress to be updated for the release of .NET Core 1.0. To compile and run the samples you need:
 
@@ -48,22 +48,22 @@ Samples available for these chapters (sample folders):
 * Chapter 26 - Composition (Composition)
 * Chapter 27 - XML and JSON (XMLAndJSON)
 * Chapter 28 - Localization (Localization)
-* Chapter 29 - Core XAML (XAML)
-* Chapter 30 - Styling XAML Apps (StylesAndResources)
-* Chapter 31 - Patterns with XAML Apps (Patterns) 
-* Chapter 32 - Windows Apps: User Interface (WindowsApps)
-* Chapter 33 - Advanced Windows Apps (AdvancedWindowsApps)
-* Chapter 34 - Windows Desktop Applications with WPF (WPF)
-* Chapter 35 - Creating Documents with WPF (WPFDocuments)
-* Chapter 36 - Deploying Windows Apps (DeploymentWindows)
+* Chapter 29 - Core XAML (XAML) [Windows]
+* Chapter 30 - Styling XAML Apps (StylesAndResources) [Windows]
+* Chapter 31 - Patterns with XAML Apps (Patterns) [Windows]
+* Chapter 32 - Windows Apps: User Interface (WindowsApps) [Windows 10]
+* Chapter 33 - Advanced Windows Apps (AdvancedWindowsApps) [Windows 10]
+* Chapter 34 - Windows Desktop Applications with WPF (WPF) [Windows]
+* Chapter 35 - Creating Documents with WPF (WPFDocuments) [Windows]
+* Chapter 36 - Deploying Windows Apps (DeploymentWindows) [Windows]
 * Chapter 37 - ADO.NET (ADONET)
 * Chapter 38 - Entity Framework Core (EntityFramework)
-* Chapter 39 - Windows Services (Services)
+* Chapter 39 - Windows Services (Services) [Windows only]
 * Chapter 40 - ASP.NET Core (ASPNET)
 * Chapter 41 - ASP.NET MVC (ASPNETMVC)
 * Chapter 42 - ASP.NET Web API (WebAPI)
-* Chapter 43 - WebHooks and SignalR (SignalRAndWebHooks)
-* Chapter 44 - Windows Communication Foundation (WCF)
+* Chapter 43 - WebHooks and SignalR (SignalRAndWebHooks) [Windows]
+* Chapter 44 - Windows Communication Foundation (WCF) [Windows]
 * Chapter 45 - Deploying Websites and Services (DeploymentWeb)
 
 You can find additional samples in the [More Samples repository](https://github.com/ProfessionalCSharp/MoreSamples).
