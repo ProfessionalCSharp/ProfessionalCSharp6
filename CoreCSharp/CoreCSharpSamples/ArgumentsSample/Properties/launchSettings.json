@@ -1,7 +1,7 @@
 {
   "profiles": {
     "ArgumentsSample": {
-      "commandName": "ArgumentsSample",
+      "commandName": "Project",
       "commandLineArgs": "/a /b /c"
     }
   }
