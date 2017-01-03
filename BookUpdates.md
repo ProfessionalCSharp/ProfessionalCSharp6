@@ -255,6 +255,12 @@ Page 1222, Figure Update, Figure 40-1
 
 ![Figure 40-1](https://github.com/ProfessionalCSharp/ProfessionalCSharp6/blob/master/FigureUpdates/Fig40_01.png "Fig 40-1")
 
+Page 1223, *global.json*
+
+The book shows *global.json* with an SDK version number *1.0.0.0* on page 1223. While .NET Core is already released, the .NET Core tools are not released yet. Currently we have **preview 2** using Visual Studio 2015 and **preview 3** using Visual Studio 2017 RC. See [dot.net](https://www.microsoft.com/net/download/core) for actual downloads of the tools.
+
+> Be aware that using the preview of Visual Studio 2017 (Visual Studio 2017 RC) migrates the .NET Core project files to the new csproj format and you cannot open the projects with Visual Studio 2015 afterwards. Backup files are created, so you can go back to the previous state.
+
 Page 1224, Figure Update, Figure 40-3
 
 ![Figure 40-3](https://github.com/ProfessionalCSharp/ProfessionalCSharp6/blob/master/FigureUpdates/Fig40_03.png "Fig 40-3")
@@ -279,6 +285,20 @@ Page 1228 Figure Update, Figure 40-5
 ![Figure 40-5](https://github.com/ProfessionalCSharp/ProfessionalCSharp6/blob/master/FigureUpdates/Fig40_05.png "Fig 40-5")
 
 Page 1229, after *Adding Static Content*, the text should be: ASP.NET Core 1.0 reduces the overhead as much as possible.
+
+Page 1248, Session State:
+
+Instead of using Microsoft.AspNet.Session, the package Microsoft.AspNetCore.Session needs to be added. Also, the package Microsoft.Extensions.Caching.Memory is needed. With ConfigureServices, you need to invoke the method AddDistributedMemoryCache instead of AddCaching:
+
+```csharp
+public void ConfigureServices(IServiceCollection services)
+{
+  services.AddTransient<ISampleService, DefaultSampleService>();
+  services.AddTransient<HomeController>();
+  services.AddDistributedMemoryCache();
+  services.AddSession(options => options.IdleTimeout = TimeSpan.FromMinutes(10));
+}
+```
 
 Page 1250, the directory for the configuration is now configured with `SetBasePath`
 
