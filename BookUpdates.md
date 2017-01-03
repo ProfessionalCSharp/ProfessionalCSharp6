@@ -286,6 +286,20 @@ Page 1228 Figure Update, Figure 40-5
 
 Page 1229, after *Adding Static Content*, the text should be: ASP.NET Core 1.0 reduces the overhead as much as possible.
 
+Page 1248, Session State:
+
+Instead of using Microsoft.AspNet.Session, the package Microsoft.AspNetCore.Session needs to be added. Also, the package Microsoft.Extensions.Caching.Memory is needed. With ConfigureServices, you need to invoke the method AddDistributedMemoryCache instead of AddCaching:
+
+```csharp
+public void ConfigureServices(IServiceCollection services)
+{
+  services.AddTransient<ISampleService, DefaultSampleService>();
+  services.AddTransient<HomeController>();
+  services.AddDistributedMemoryCache();
+  services.AddSession(options => options.IdleTimeout = TimeSpan.FromMinutes(10));
+}
+```
+
 Page 1250, the directory for the configuration is now configured with `SetBasePath`
 
 ```csharp
