@@ -39,11 +39,12 @@ namespace DataLib
                 _racers.Add(new Racer("Jacques", "Villeneuve", "Canada", 165, 11, new int[] { 1997 }, new string[] { "Williams" }));
                 _racers.Add(new Racer("Mika", "Hakkinen", "Finland", 160, 20, new int[] { 1998, 1999 }, new string[] { "McLaren" }));
                 _racers.Add(new Racer("Michael", "Schumacher", "Germany", 287, 91, new int[] { 1994, 1995, 2000, 2001, 2002, 2003, 2004 }, new string[] { "Benetton", "Ferrari" }));
-                _racers.Add(new Racer("Fernando", "Alonso", "Spain", 252, 32, new int[] { 2005, 2006 }, new string[] { "Renault" }));
-                _racers.Add(new Racer("Kimi", "Räikkönen", "Finland", 230, 20, new int[] { 2007 }, new string[] { "Ferrari" }));
-                _racers.Add(new Racer("Lewis", "Hamilton", "UK", 166, 43, new int[] { 2008, 2014, 2015 }, new string[] { "McLaren", "Mercedes" }));
-                _racers.Add(new Racer("Jenson", "Button", "UK", 283, 15, new int[] { 2009 }, new string[] { "Brawn GP" }));
-                _racers.Add(new Racer("Sebastian", "Vettel", "Germany", 156, 42, new int[] { 2010, 2011, 2012, 2013 }, new string[] { "Red Bull Racing" }));
+                _racers.Add(new Racer("Fernando", "Alonso", "Spain", 273, 33, new int[] { 2005, 2006 }, new string[] { "Renault" }));
+                _racers.Add(new Racer("Kimi", "Räikkönen", "Finland", 253, 20, new int[] { 2007 }, new string[] { "Ferrari" }));
+                _racers.Add(new Racer("Lewis", "Hamilton", "UK", 189, 53, new int[] { 2008, 2014, 2015 }, new string[] { "McLaren", "Mercedes" }));
+                _racers.Add(new Racer("Jenson", "Button", "UK", 306, 16, new int[] { 2009 }, new string[] { "Brawn GP" }));
+                _racers.Add(new Racer("Sebastian", "Vettel", "Germany", 179, 42, new int[] { 2010, 2011, 2012, 2013 }, new string[] { "Red Bull Racing" }));
+                _racers.Add(new Racer("Nico", "Rosberg", "Germany", 207, 24, new int[] { 2016 }, new string[] { "Mercedes" }));
             }
 
             return _racers;
@@ -545,6 +546,13 @@ namespace DataLib
                     Second = "Nico Rosberg",
                     Third = "Sebastian Vettel"
                 });
+                _championships.Add(new Championship
+                {
+                    Year = 2016,
+                    First = "Nico Rosberg",
+                    Second = "Lewis Hamilton",
+                    Third = "Daniel Ricciardo"
+                });
 
             }
             return _championships;
@@ -586,10 +594,9 @@ namespace DataLib
                 _moreRacers.Add(new Racer("Eddie", "Irvine", "UK", starts: 147, wins: 4));
                 _moreRacers.Add(new Racer("Rubens", "Barrichello", "Brazil", starts: 322, wins: 11));
                 _moreRacers.Add(new Racer("Juan Pablo", "Montoya", "Columbia", starts: 94, wins: 7));
-                _moreRacers.Add(new Racer("Felipe", "Massa", "Brazil", starts: 228, wins: 11));
+                _moreRacers.Add(new Racer("Felipe", "Massa", "Brazil", starts: 251, wins: 11));
                 _moreRacers.Add(new Racer("Mark", "Webber", "Australia", starts: 215, wins: 9));
-                _moreRacers.Add(new Racer("Nico", "Rosberg", "Germany", starts: 184, wins: 13));
-                _moreRacers.Add(new Racer("Daniel", "Ricciardo", "Australia", starts: 87, wins: 3));
+                _moreRacers.Add(new Racer("Daniel", "Ricciardo", "Australia", starts: 109, wins: 4));
             }
             return _moreRacers;
         }
