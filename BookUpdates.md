@@ -107,6 +107,8 @@ Page 76 - typo: *_* missing with _firstName variable within get accessor
 
 Page 84 - typo: new MySingleton(42) should by new Singleton(42)
 
+Page 92 - Constructors for Structs: you cannot define default constructors for structs. This didn't make it into C# 6.
+
 ## Chapter 5 - Managed and Unmanaged Resources
 
 Page 124, Note at the end of the page: selecting a 32- or 64-bit build cannot be done by the Debug settings of the project properties. Instead, configure the *runtimes* section within *project.json*.
