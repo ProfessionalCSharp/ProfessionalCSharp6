@@ -8,9 +8,9 @@ Building this sample starts with an empty ASP.NET Core Web project, and adds man
 
 To build and run the .NET Core samples, please install
 * Visual Studio 2015 Update 3
-* .NET Core 1.0 for Visual Studio
+* .NET Core 1.1
 
-Please download and install the tools from [.NET Core downloads](https://www.microsoft.com/net/core#windows).
+Please download and install the tools from [.NET Core downloads](https://dot.net).
  
 For code comments and issues please check [Professional C#'s GitHub Repository](https://github.com/ProfessionalCSharp/ProfessionalCSharp6)
 

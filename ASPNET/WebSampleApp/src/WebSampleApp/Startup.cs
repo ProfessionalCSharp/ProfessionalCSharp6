@@ -10,6 +10,7 @@ using WebSampleApp.Middleware;
 using WebSampleApp.Services;
 using Microsoft.Extensions.Logging;
 using System.Text;
+using WebSampleApp.Helpers;
 
 namespace WebSampleApp
 {
@@ -233,7 +234,9 @@ namespace WebSampleApp
                             result = RequestAndResponseSample.GetRequestInformation(context.Request);
                             break;
                     }
+                    await context.Response.WriteAsync(HtmlHelper.DocType() + HtmlHelper.HtmlStart() + HtmlHelper.Head() + HtmlHelper.BodyStart());
                     await context.Response.WriteAsync(result);
+                    await context.Response.WriteAsync(HtmlHelper.BodyEnd() + HtmlHelper.HtmlEnd());
                 });
             });
 
@@ -244,6 +247,7 @@ namespace WebSampleApp
             app.Run(async (context) =>
             {
                 var sb = new StringBuilder();
+                sb.Append(HtmlHelper.DocType() + HtmlHelper.HtmlStart() + HtmlHelper.Head() + HtmlHelper.BodyStart());
                 sb.Append("<ul>");
                 sb.Append(@"<li><a href=""/hello.html"">Static Files</a> - requires UseStaticFiles</li>");
                 sb.Append(@"<li><a href=""/RequestAndResponse"">Request and Response</a>");
@@ -272,6 +276,7 @@ namespace WebSampleApp
                 sb.Append("</ul>");
                 sb.Append("</li>");
                 sb.Append("</ul>");
+                sb.Append(HtmlHelper.BodyEnd() + HtmlHelper.HtmlEnd());
                 await context.Response.WriteAsync(sb.ToString());
             });
 
