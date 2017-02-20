@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Xml.Linq;
 using static System.Console;
 
@@ -66,6 +68,9 @@ namespace LinqToXmlSample
                     ShowUsage();
                     break;
             }
+
+            WriteLine("Press return to exit");
+            ReadLine();
         }
 
         private static void ShowUsage()
@@ -192,34 +197,45 @@ namespace LinqToXmlSample
             }
         }
 
-        public static void QueryFeed()
+        public static async void QueryFeed()
         {
-            XNamespace ns = "http://www.w3.org/2005/Atom";
-            XDocument doc = XDocument.Load(@"http://blog.cninnovation.com/feed/atom/");
-
-            WriteLine($"Title: {doc.Root.Element(ns + "title").Value}");
-            WriteLine($"Subtitle: {doc.Root.Element(ns + "subtitle").Value}");
-            string url = doc.Root.Elements(ns + "link").Where(e => e.Attribute("rel").Value == "alternate").FirstOrDefault()?.Attribute("href")?.Value;
-            WriteLine($"Link: {url}");
-            WriteLine();
-
-            var queryPosts = from myPosts in doc.Descendants(ns + "entry")
-                             select new
-                             {
-                                 Title = myPosts.Element(ns + "title")?.Value,
-                                 Published =
-                                   DateTime.Parse(myPosts.Element(ns + "published")?.Value),
-                                 Summary = myPosts.Element(ns + "summary")?.Value,
-                                 Url = myPosts.Element(ns + "link")?.Value,
-                                 Comments = myPosts.Element(ns + "comments")?.Value
-                             };
-
-            foreach (var item in queryPosts)
+            try
             {
-                string shortTitle = item.Title.Length > 50 ? item.Title.Substring(0, 50) + "..." : item.Title;
-                WriteLine(shortTitle);
-            }
+                var httpClient = new HttpClient();
+                using (Stream stream = await httpClient.GetStreamAsync("http://csharp.christiannagel.com/feed/atom/"))
+                {
 
+                    XNamespace ns = "http://www.w3.org/2005/Atom";
+                    XDocument doc = XDocument.Load(stream);
+
+                    WriteLine($"Title: {doc.Root.Element(ns + "title").Value}");
+                    WriteLine($"Subtitle: {doc.Root.Element(ns + "subtitle").Value}");
+                    string url = doc.Root.Elements(ns + "link").Where(e => e.Attribute("rel").Value == "alternate").FirstOrDefault()?.Attribute("href")?.Value;
+                    WriteLine($"Link: {url}");
+                    WriteLine();
+
+                    var queryPosts = from myPosts in doc.Descendants(ns + "entry")
+                                     select new
+                                     {
+                                         Title = myPosts.Element(ns + "title")?.Value,
+                                         Published =
+                                           DateTime.Parse(myPosts.Element(ns + "published")?.Value),
+                                         Summary = myPosts.Element(ns + "summary")?.Value,
+                                         Url = myPosts.Element(ns + "link")?.Value,
+                                         Comments = myPosts.Element(ns + "comments")?.Value
+                                     };
+
+                    foreach (var item in queryPosts)
+                    {
+                        string shortTitle = item.Title.Length > 50 ? item.Title.Substring(0, 50) + "..." : item.Title;
+                        WriteLine(shortTitle);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                WriteLine(ex.Message);
+            }
         }
 
         public static void TransformingToObjects()

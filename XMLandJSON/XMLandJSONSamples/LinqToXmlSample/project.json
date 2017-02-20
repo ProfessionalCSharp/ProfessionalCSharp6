@@ -1,10 +1,12 @@
 {
   "version": "1.0.0-*",
   "buildOptions": {
+    "debugType": "portable",
     "emitEntryPoint": true
   },
 
   "dependencies": {
+    "System.Net.Http": "4.3.0"
   },
 
   "frameworks": {
