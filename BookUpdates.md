@@ -188,6 +188,24 @@ public static MySafe InitProtection()
 }
 ```
 
+## Chapter 27 - XML and JSON
+
+Page 812, the Load method of the XDocument class supports only loading of local files (the .NET Framework version of this method supports loading files from HTTP servers as well). The sample code for the `QueryFeed` method needs to be changed. The HttpClient class is used to make a HTTP GET requests to return a stream. The stream is passed to the XDocument.Load method:
+
+```csharp
+public static async void QueryFeed()
+{
+    try
+    {
+        var httpClient = new HttpClient();
+        using (Stream stream = await httpClient.GetStreamAsync("http://csharp.christiannagel.com/feed/atom/"))
+        {
+            XNamespace ns = "http://www.w3.org/2005/Atom";
+            XDocument doc = XDocument.Load(stream);
+
+            WriteLine($"Title: {doc.Root.Element(ns + "title").Value}");
+```
+
 ## Chapter 29 - Core XAML
 
 Page 852, the minimum UWP application needs a change to use a custom class derived from the *Application* class. The *Main* method is now changed to this:
