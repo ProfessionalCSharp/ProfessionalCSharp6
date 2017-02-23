@@ -1,7 +1,7 @@
 {
   "profiles": {
     "ObjectToXmlSerializationWOAttributes": {
-      "commandName": "ObjectToXmlSerializationWOAttributes",
+      "commandName": "Project",
       "commandLineArgs": "-d"
     }
   }

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "XmlDocumentSample", "XmlDocumentSample\XmlDocumentSample.xproj", "{9E4D60F9-286C-4971-BECB-C75315AE60CB}"
 EndProject
@@ -16,6 +16,11 @@ EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "XmlReaderAndWriterSample", "XmlReaderAndWriterSample\XmlReaderAndWriterSample.xproj", "{B746A64F-FDE5-4AC6-9336-81EA2CB24229}"
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "JsonSample", "JsonSample\JsonSample.xproj", "{40BB40F6-EA0F-42FC-8BD1-A94B43932A66}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7E01E6BF-6098-4BB2-84A6-DB61ED4C7A3F}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
