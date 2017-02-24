@@ -2,11 +2,7 @@
 using System;
 using System.Reflection;
 using static System.Console;
-
-
-#if DOTNETCORE
 using System.Runtime.Loader;
-#endif
 
 namespace ClientApp
 {
@@ -70,9 +66,7 @@ namespace ClientApp
             Assembly assembly = Assembly.LoadFile(addinPath);
             return assembly.CreateInstance(CalculatorTypeName);
         }
-#endif
-
-#if DOTNETCORE
+#else
         private static object GetCalculator(string addinPath)
         {
             Assembly assembly = AssemblyLoadContext.Default.LoadFromAssemblyPath(addinPath);
