@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.0</TargetFramework>
+    <AssemblyName>LookupWhatsNew</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>LookupWhatsNew</PackageId>
+    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
+    <RuntimeFrameworkVersion>1.0.3</RuntimeFrameworkVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VectorClass\VectorClass.csproj" />
+    <ProjectReference Include="..\WhatsNewAttributes\WhatsNewAttributes.csproj" />
+  </ItemGroup>
+
+</Project>
