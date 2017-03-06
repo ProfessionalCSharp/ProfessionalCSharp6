@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net46</TargetFramework>
+    <RuntimeIdentifier>win7-x86</RuntimeIdentifier>
+    <AssemblyName>AsyncDelegate</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>AsyncDelegate</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net46' ">
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+</Project>
