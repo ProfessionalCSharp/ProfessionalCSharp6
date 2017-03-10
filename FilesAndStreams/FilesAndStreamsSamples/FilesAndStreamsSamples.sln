@@ -1,31 +1,31 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DriveInformation", "DriveInformation\DriveInformation.xproj", "{3E7F44A0-2826-47AE-ACB9-0FE4469D9539}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DriveInformation", "DriveInformation\DriveInformation.csproj", "{3E7F44A0-2826-47AE-ACB9-0FE4469D9539}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WorkingWithFilesAndFolders", "WorkingWithFilesAndFolders\WorkingWithFilesAndFolders.xproj", "{2FFFBF24-B525-42F3-BC6E-E1627D111424}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithFilesAndFolders", "WorkingWithFilesAndFolders\WorkingWithFilesAndFolders.csproj", "{2FFFBF24-B525-42F3-BC6E-E1627D111424}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFEditor", "WPFEditor\WPFEditor.csproj", "{B2B172E6-E250-4B58-B8B5-B60617792261}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StreamSamples", "StreamSamples\StreamSamples.csproj", "{27C174CC-9904-41F3-A539-C2BD548CE71B}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "StreamSamples", "StreamSamples\StreamSamples.xproj", "{27C174CC-9904-41F3-A539-C2BD548CE71B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReaderWriterSamples", "ReaderWriterSamples\ReaderWriterSamples.csproj", "{581E5A0D-CA64-4D61-98FE-7808C1AE62CC}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ReaderWriterSamples", "ReaderWriterSamples\ReaderWriterSamples.xproj", "{581E5A0D-CA64-4D61-98FE-7808C1AE62CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompressFileSample", "CompressFileSample\CompressFileSample.csproj", "{34216666-13CA-4913-A988-7860A50666BD}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CompressFileSample", "CompressFileSample\CompressFileSample.xproj", "{34216666-13CA-4913-A988-7860A50666BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileMonitor", "FileMonitor\FileMonitor.csproj", "{6C498506-4137-4D56-BAF4-9AB6D226B26F}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "FileMonitor", "FileMonitor\FileMonitor.xproj", "{6C498506-4137-4D56-BAF4-9AB6D226B26F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MemoryMappedFilesSample", "MemoryMappedFilesSample\MemoryMappedFilesSample.csproj", "{685C9095-690A-48BA-B499-AE6922051D5B}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MemoryMappedFilesSample", "MemoryMappedFilesSample\MemoryMappedFilesSample.xproj", "{685C9095-690A-48BA-B499-AE6922051D5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PipesReader", "PipesReader\PipesReader.csproj", "{37B9F3EB-B205-47EF-B704-3311669A866A}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PipesReader", "PipesReader\PipesReader.xproj", "{37B9F3EB-B205-47EF-B704-3311669A866A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PipesWriter", "PipesWriter\PipesWriter.csproj", "{E200CDF7-84F6-4A78-A832-12695D391E3E}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PipesWriter", "PipesWriter\PipesWriter.xproj", "{E200CDF7-84F6-4A78-A832-12695D391E3E}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "AnonymousPipes", "AnonymousPipes\AnonymousPipes.xproj", "{1C4AF3C3-B50E-4929-8AB4-7862FDE181AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnonymousPipes", "AnonymousPipes\AnonymousPipes.csproj", "{1C4AF3C3-B50E-4929-8AB4-7862FDE181AD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsAppEditor", "WindowsAppEditor\WindowsAppEditor.csproj", "{DEDF55AC-95A1-47CE-B4DF-7891E5BCBA76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFEditor", "WPFEditor\WPFEditor.csproj", "{B2B172E6-E250-4B58-B8B5-B60617792261}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,22 +71,6 @@ Global
 		{2FFFBF24-B525-42F3-BC6E-E1627D111424}.Release|x64.Build.0 = Release|Any CPU
 		{2FFFBF24-B525-42F3-BC6E-E1627D111424}.Release|x86.ActiveCfg = Release|Any CPU
 		{2FFFBF24-B525-42F3-BC6E-E1627D111424}.Release|x86.Build.0 = Release|Any CPU
-		{B2B172E6-E250-4B58-B8B5-B60617792261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B2B172E6-E250-4B58-B8B5-B60617792261}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B2B172E6-E250-4B58-B8B5-B60617792261}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{B2B172E6-E250-4B58-B8B5-B60617792261}.Debug|ARM.Build.0 = Debug|Any CPU
-		{B2B172E6-E250-4B58-B8B5-B60617792261}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{B2B172E6-E250-4B58-B8B5-B60617792261}.Debug|x64.Build.0 = Debug|Any CPU
-		{B2B172E6-E250-4B58-B8B5-B60617792261}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{B2B172E6-E250-4B58-B8B5-B60617792261}.Debug|x86.Build.0 = Debug|Any CPU
-		{B2B172E6-E250-4B58-B8B5-B60617792261}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B2B172E6-E250-4B58-B8B5-B60617792261}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B2B172E6-E250-4B58-B8B5-B60617792261}.Release|ARM.ActiveCfg = Release|Any CPU
-		{B2B172E6-E250-4B58-B8B5-B60617792261}.Release|ARM.Build.0 = Release|Any CPU
-		{B2B172E6-E250-4B58-B8B5-B60617792261}.Release|x64.ActiveCfg = Release|Any CPU
-		{B2B172E6-E250-4B58-B8B5-B60617792261}.Release|x64.Build.0 = Release|Any CPU
-		{B2B172E6-E250-4B58-B8B5-B60617792261}.Release|x86.ActiveCfg = Release|Any CPU
-		{B2B172E6-E250-4B58-B8B5-B60617792261}.Release|x86.Build.0 = Release|Any CPU
 		{27C174CC-9904-41F3-A539-C2BD548CE71B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{27C174CC-9904-41F3-A539-C2BD548CE71B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27C174CC-9904-41F3-A539-C2BD548CE71B}.Debug|ARM.ActiveCfg = Debug|Any CPU
@@ -237,6 +221,22 @@ Global
 		{DEDF55AC-95A1-47CE-B4DF-7891E5BCBA76}.Release|x86.ActiveCfg = Release|x86
 		{DEDF55AC-95A1-47CE-B4DF-7891E5BCBA76}.Release|x86.Build.0 = Release|x86
 		{DEDF55AC-95A1-47CE-B4DF-7891E5BCBA76}.Release|x86.Deploy.0 = Release|x86
+		{B2B172E6-E250-4B58-B8B5-B60617792261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2B172E6-E250-4B58-B8B5-B60617792261}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2B172E6-E250-4B58-B8B5-B60617792261}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{B2B172E6-E250-4B58-B8B5-B60617792261}.Debug|ARM.Build.0 = Debug|Any CPU
+		{B2B172E6-E250-4B58-B8B5-B60617792261}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B2B172E6-E250-4B58-B8B5-B60617792261}.Debug|x64.Build.0 = Debug|Any CPU
+		{B2B172E6-E250-4B58-B8B5-B60617792261}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B2B172E6-E250-4B58-B8B5-B60617792261}.Debug|x86.Build.0 = Debug|Any CPU
+		{B2B172E6-E250-4B58-B8B5-B60617792261}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2B172E6-E250-4B58-B8B5-B60617792261}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2B172E6-E250-4B58-B8B5-B60617792261}.Release|ARM.ActiveCfg = Release|Any CPU
+		{B2B172E6-E250-4B58-B8B5-B60617792261}.Release|ARM.Build.0 = Release|Any CPU
+		{B2B172E6-E250-4B58-B8B5-B60617792261}.Release|x64.ActiveCfg = Release|Any CPU
+		{B2B172E6-E250-4B58-B8B5-B60617792261}.Release|x64.Build.0 = Release|Any CPU
+		{B2B172E6-E250-4B58-B8B5-B60617792261}.Release|x86.ActiveCfg = Release|Any CPU
+		{B2B172E6-E250-4B58-B8B5-B60617792261}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

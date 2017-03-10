@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <AssemblyName>DriveInformation</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>DriveInformation</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IO.FileSystem.DriveInfo" Version="4.3.0" />
+  </ItemGroup>
+</Project>

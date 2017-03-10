@@ -94,8 +94,7 @@ namespace StreamSamples
                             string line = ReadLine();
                             if (line.ToUpper().CompareTo("BYE") == 0) break;
 
-                            int record;
-                            if (int.TryParse(line, out record))
+                            if (int.TryParse(line, out int record))
                             {
                                 stream.Seek((record - 1) * RECORDSIZE, SeekOrigin.Begin);
                                 stream.Read(buffer, 0, RECORDSIZE);
@@ -146,7 +145,6 @@ namespace StreamSamples
                 }
             }
         }
-
 
         public static void CopyUsingStreams(string inputFile, string outputFile)
         {
