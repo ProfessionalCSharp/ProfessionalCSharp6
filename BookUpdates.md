@@ -188,6 +188,26 @@ public static MySafe InitProtection()
 }
 ```
 
+## Chapter 25 - Networking
+
+Page 714, the WebLister changed
+
+The UrlPrefixes need to be added using the Settings property:
+
+```csharp
+foreach (var prefix in prefixes)
+{
+  listener.Settings.UrlPrefixes.Add(prefix);
+  WriteLine($"\t{prefix}");
+}
+```
+
+Instead of invoking GetContextAsync, invoke AcceptAsync:
+
+```csharp
+RequestContext context = await listener.AcceptAsync()
+```
+
 ## Chapter 27 - XML and JSON
 
 Page 812, the Load method of the XDocument class supports only loading of local files (the .NET Framework version of this method supports loading files from HTTP servers as well). The sample code for the `QueryFeed` method needs to be changed. The HttpClient class is used to make a HTTP GET requests to return a stream. The stream is passed to the XDocument.Load method:
