@@ -42,10 +42,8 @@ namespace TcpClientSample
                     } while (line != "bye");
 
                     WriteLine("so long, and thanks for all the fish");
-
                 }
-            }
-            
+            }            
         }
     }
 }

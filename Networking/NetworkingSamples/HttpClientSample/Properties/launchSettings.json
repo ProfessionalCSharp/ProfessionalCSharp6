@@ -1,7 +1,7 @@
 {
   "profiles": {
     "HttpClientSample": {
-      "commandName": "HttpClientSample",
+      "commandName": "Project",
       "commandLineArgs": "-mh"
     }
   }

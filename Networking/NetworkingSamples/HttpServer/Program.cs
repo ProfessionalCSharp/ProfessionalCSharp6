@@ -39,19 +39,18 @@ namespace HttpServer
              
                 WriteLine($"server starting at");
                 var listener = new WebListener();
+              
                 foreach (var prefix in prefixes)
                 {
-                    listener.UrlPrefixes.Add(prefix);
+                    listener.Settings.UrlPrefixes.Add(prefix);
                     WriteLine($"\t{prefix}");
                 }
 
                 listener.Start();
 
-
                 do
                 {
-
-                    using (RequestContext context = await listener.GetContextAsync())
+                    using (RequestContext context = await listener.AcceptAsync())
                     {
                         context.Response.Headers.Add("content-type", new string[] { "text/html" });
                         context.Response.StatusCode = (int)HttpStatusCode.OK;

@@ -1,7 +1,7 @@
 {
   "profiles": {
     "HttpServer": {
-      "commandName": "HttpServer",
+      "commandName": "Project",
       "commandLineArgs": "http://+:8082/samples"
     }
   }

@@ -37,8 +37,7 @@ namespace Utilities
         }
 
         public static void IPAddressSample(string ipAddressString)
-        {
-            
+        {           
             IPAddress address;
             if (!IPAddress.TryParse(ipAddressString, out address))
             {
@@ -86,6 +85,4 @@ namespace Utilities
             WriteLine(uri);
         }
     }
-
-
 }

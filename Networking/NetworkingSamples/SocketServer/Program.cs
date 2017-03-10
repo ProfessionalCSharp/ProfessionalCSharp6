@@ -78,7 +78,6 @@ namespace SocketServer
             WriteLine("Press return to exit");
             ReadLine();
             cts.Cancel();
-
         }
 
         private static Task CommunicateWithClientUsingSocketAsync(Socket socket)
@@ -89,7 +88,6 @@ namespace SocketServer
                 {
                     using (socket)
                     {
-
                         bool completed = false;
                         do
                         {
@@ -185,8 +183,6 @@ namespace SocketServer
             {
                 WriteLine(ex.Message);
             }
-
         }
-
     }
 }
