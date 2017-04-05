@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ConnectionSamples", "ConnectionSamples\ConnectionSamples.xproj", "{34B7F9FF-2AC7-45AC-AB9F-A909122435CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConnectionSamples", "ConnectionSamples\ConnectionSamples.csproj", "{34B7F9FF-2AC7-45AC-AB9F-A909122435CE}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CommandSamples", "CommandSamples\CommandSamples.xproj", "{761B0AB6-A017-46F1-8DEE-71B979920584}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandSamples", "CommandSamples\CommandSamples.csproj", "{761B0AB6-A017-46F1-8DEE-71B979920584}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "AsyncSamples", "AsyncSamples\AsyncSamples.xproj", "{022F04F8-A133-4F13-8CCC-331A61573B70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncSamples", "AsyncSamples\AsyncSamples.csproj", "{022F04F8-A133-4F13-8CCC-331A61573B70}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TransactionSamples", "TransactionSamples\TransactionSamples.xproj", "{2FF75228-D5F4-495D-B787-74EC71D9CD33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransactionSamples", "TransactionSamples\TransactionSamples.csproj", "{2FF75228-D5F4-495D-B787-74EC71D9CD33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
