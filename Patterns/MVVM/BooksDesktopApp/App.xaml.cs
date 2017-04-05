@@ -25,7 +25,7 @@ namespace BooksDesktopApp
             serviceCollection.AddTransient<BooksViewModel>();
             serviceCollection.AddTransient<BookViewModel>();
             serviceCollection.AddSingleton<IBooksService, BooksService>();
-       //     serviceCollection.AddSingleton<IBooksRepository, BooksSampleRepository>();
+            serviceCollection.AddSingleton<IBooksRepository, BooksSampleRepository>();
             return serviceCollection.BuildServiceProvider();
         }
 
