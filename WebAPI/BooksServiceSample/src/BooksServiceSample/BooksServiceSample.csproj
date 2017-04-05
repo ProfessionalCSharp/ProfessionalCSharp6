@@ -6,8 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\">
-    </None>
+    <Folder Include="wwwroot\" />
   </ItemGroup>
 
   <ItemGroup>
