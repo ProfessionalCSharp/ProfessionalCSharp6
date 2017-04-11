@@ -25,7 +25,7 @@ namespace WebSampleApp
 
             if (env.IsDevelopment())
             {
-                builder.AddUserSecrets();
+                builder.AddUserSecrets<Startup>();
             }
             Configuration = builder.Build();
         }
@@ -71,8 +71,7 @@ namespace WebSampleApp
                 {
                     HomeController controller =
                       app.ApplicationServices.GetService<HomeController>();
-                    int statusCode = await controller.Index(context);
-                    context.Response.StatusCode = statusCode;
+                    await controller.Index(context);
                 });
             });
 
