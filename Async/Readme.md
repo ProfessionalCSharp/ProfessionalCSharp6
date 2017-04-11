@@ -11,10 +11,9 @@ The Foundations and ErrorHandling samples show core features of using the async/
 The AsyncPatternsWPF demonstrates the advantages of the async/await keywords and shows different async patterns that are used with .NET. To run the application, you need to request a BING key and add it to the BingRequest.cs file in the AsyncLib project, and a Flickr app-id to the file FlickrRequest. You can also request just one of these keys, and just enable the corresponding functionality in the application.
 
 To build and run the .NET Core samples, please install
-* Visual Studio 2015 Update 3
-* .NET Core 1.0 for Visual Studio
+* Visual Studio 2017 with the .NET Core workload
 
-Please download and install the tools from [.NET Core downloads](https://www.microsoft.com/net/core#windows).
+Please download and install the tools from [.NET Core downloads](https://www.microsoft.com/net/core).
  
 For code comments and issues please check [Professional C#'s GitHub Repository](https://github.com/ProfessionalCSharp/ProfessionalCSharp6)
 
