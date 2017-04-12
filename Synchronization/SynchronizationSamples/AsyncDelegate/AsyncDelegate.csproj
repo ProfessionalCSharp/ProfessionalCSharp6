@@ -2,10 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net46</TargetFramework>
-    <RuntimeIdentifier>win7-x86</RuntimeIdentifier>
-    <AssemblyName>AsyncDelegate</AssemblyName>
     <OutputType>Exe</OutputType>
-    <PackageId>AsyncDelegate</PackageId>
   </PropertyGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net46' ">

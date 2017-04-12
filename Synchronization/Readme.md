@@ -5,19 +5,19 @@ This chapter contains the following code samples:
 * Threading Issues (a sample that shows race conditions and deadlocks)
 * Synchronization Samples (synchronization using the `lock` keyword)
 * Semaphore Sample (using `SemaporeSlim`)
-* Singleton WPF (using `Mutex`)
+* Singleton WPF (using `Mutex`, WPF Application)
 * Event Sample (using `ManualResetEventSlim`)
 * Event Sample with Countdown Event (using `CountdownEvent`)
 * Barrier Sample (using `Barrier`)
 * Reader Writer Lock Sample (using `ReaderWriterLockSlim`)
 * Timers Sample (using `Timer`)
-* WinApp Timer (using `DispatcherTimer`)
+* WinApp Timer (using `DispatcherTimer`, Universal Windows App)
+* AsyncDelegate (using a *delegate* for asynchronous invocation, this requires the .NET Framework)
 
 To build and run the .NET Core samples, please install
-* Visual Studio 2015 Update 3
-* .NET Core 1.0 for Visual Studio
+* Visual Studio 2017 with the .NET Core workload
 
-Please download and install the tools from [.NET Core downloads](https://www.microsoft.com/net/core#windows).
+Please download and install the tools from [.NET Core downloads](https://www.microsoft.com/net/core).
  
 For code comments and issues please check [Professional C#'s GitHub Repository](https://github.com/ProfessionalCSharp/ProfessionalCSharp6)
 
