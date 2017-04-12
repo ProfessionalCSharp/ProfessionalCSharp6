@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework", "Framework\Framework.csproj", "{04E9F31E-FFFF-40A8-8B62-6B231F1504CA}"
 EndProject
@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksUniversalApp", "BooksU
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{959902FA-299C-452B-8646-448834C1E5E9}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Services.Tests", "Services.Tests\Services.Tests.xproj", "{4D7875AC-7BFC-4C2B-AFCE-65F79107999C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.Tests", "Services.Tests\Services.Tests.csproj", "{4D7875AC-7BFC-4C2B-AFCE-65F79107999C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
