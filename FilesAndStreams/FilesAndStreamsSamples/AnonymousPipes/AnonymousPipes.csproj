@@ -2,9 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
-    <AssemblyName>AnonymousPipes</AssemblyName>
     <OutputType>Exe</OutputType>
-    <PackageId>AnonymousPipes</PackageId>
   </PropertyGroup>
 
   <ItemGroup>

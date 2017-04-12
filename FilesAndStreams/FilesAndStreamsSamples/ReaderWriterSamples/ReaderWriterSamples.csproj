@@ -2,9 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
-    <AssemblyName>ReaderWriterSamples</AssemblyName>
     <OutputType>Exe</OutputType>
-    <PackageId>ReaderWriterSamples</PackageId>
   </PropertyGroup>
 
   <ItemGroup>

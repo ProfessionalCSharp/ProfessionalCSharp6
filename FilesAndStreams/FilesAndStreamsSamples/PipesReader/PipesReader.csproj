@@ -2,9 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
-    <AssemblyName>PipesReader</AssemblyName>
     <OutputType>Exe</OutputType>
-    <PackageId>PipesReader</PackageId>
   </PropertyGroup>
 
   <ItemGroup>

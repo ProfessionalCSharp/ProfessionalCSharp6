@@ -2,9 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
-    <AssemblyName>FileMonitor</AssemblyName>
     <OutputType>Exe</OutputType>
-    <PackageId>FileMonitor</PackageId>
   </PropertyGroup>
 
   <ItemGroup>

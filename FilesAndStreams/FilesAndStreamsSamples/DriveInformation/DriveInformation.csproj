@@ -2,9 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
-    <AssemblyName>DriveInformation</AssemblyName>
     <OutputType>Exe</OutputType>
-    <PackageId>DriveInformation</PackageId>
   </PropertyGroup>
 
   <ItemGroup>

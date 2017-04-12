@@ -2,9 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
-    <AssemblyName>MemoryMappedFilesSample</AssemblyName>
     <OutputType>Exe</OutputType>
-    <PackageId>MemoryMappedFilesSample</PackageId>
   </PropertyGroup>
 
   <ItemGroup>

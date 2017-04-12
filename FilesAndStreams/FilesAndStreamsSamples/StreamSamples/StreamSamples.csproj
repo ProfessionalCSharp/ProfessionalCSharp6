@@ -2,9 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
-    <AssemblyName>StreamSamples</AssemblyName>
     <OutputType>Exe</OutputType>
-    <PackageId>StreamSamples</PackageId>
   </PropertyGroup>
 
   <ItemGroup>

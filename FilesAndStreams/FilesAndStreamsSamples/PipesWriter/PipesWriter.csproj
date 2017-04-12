@@ -2,9 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
-    <AssemblyName>PipesWriter</AssemblyName>
     <OutputType>Exe</OutputType>
-    <PackageId>PipesWriter</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
