@@ -7,10 +7,9 @@ This chapter contains this sample:
 Building this sample starts with an empty ASP.NET Core Web project, and adds many features of ASP.NET Core.
 
 To build and run the .NET Core samples, please install
-* Visual Studio 2015 Update 3
-* .NET Core 1.1
+* Visual Studio 2017 with the .NET Core workload
 
-Please download and install the tools from [.NET Core downloads](https://dot.net).
+Please download and install the tools from [.NET Core downloads](https://www.microsoft.com/net/core).
  
 For code comments and issues please check [Professional C#'s GitHub Repository](https://github.com/ProfessionalCSharp/ProfessionalCSharp6)
 
