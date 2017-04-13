@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksCacheService", "BooksCacheService\BooksCacheService.csproj", "{BBF80CE7-0A1F-4B33-A745-44F5BC95931D}"
 EndProject
@@ -10,9 +10,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksCacheClient", "BooksCacheClient\BooksCacheClient.csproj", "{9F35439D-D412-4C4F-9B0B-525CE54A09D6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CB24887B-CD3E-4255-ABB8-F554CB01A26B}"
-	ProjectSection(SolutionItems) = preProject
-		BooksModel\global.json = BooksModel\global.json
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksCacheModel", "BooksCacheModel\BooksCacheModel.csproj", "{72FA6BF9-F2B1-4C69-B59E-180A4E04DF10}"
 EndProject
