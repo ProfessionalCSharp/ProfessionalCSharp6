@@ -2,19 +2,13 @@
 
 Code samples for the Wrox book *Professional C# 6 and .NET Core 1.0*
 
-Samples are in the progress to be updated for the release of .NET Core 1.0. To compile and run the samples you need:
+To compile and run the samples you need:
 
-* Visual Studio 2015
-* Visual Studio 2015 Update 3
-* .NET Core 1.0 Tools for Visual Studio
+* Visual Studio 2017 with the .NET Core workload
 
-[Download Visual Studio 2015 Update 3](http://go.microsoft.com/fwlink/?LinkId=691129 "Visual Studio Update 3")
+For the Visual Studio 2015 version of the code samples, please check the vs2015 branch of this repository.
 
-[Download .NET Core 1.0.1 Tools for Visual Studio](https://go.microsoft.com/fwlink/?LinkID=827546 ".NET Core Tools")
-
-To run the code samples on Ubuntu, check this installation procedure: [.NET Core on Ubuntu](https://www.microsoft.com/net/core#ubuntu "Ubuntu Installation")
-
-To use the samples with [Visual Studio 2017 RC](https://www.visualstudio.com/vs/visual-studio-2017-rc/ "Visual Studio 2017"), use the *MSBuild* branch. The MSBuild branch is updated to the MSBuild (.csproj) project files instead of project.json.
+To run many of the code samples on Linux (RHEL, Ubuntu, Mint, Debian, Fedora, CentOS, Oracle, openSUSE) check this installation procedure: [.NET Core on Linux](https://www.microsoft.com/net/core#linuxredhat ".NET Core on Linux").
 
 Check the [book updates and errata](https://github.com/ProfessionalCSharp/ProfessionalCSharp6/blob/master/BookUpdates.md "Book Updates")
 
