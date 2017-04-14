@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Resources.Reader" Version="4.3.0" />
+    <PackageReference Include="System.Resources.Writer" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>

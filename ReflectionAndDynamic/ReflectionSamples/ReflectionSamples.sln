@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.22823.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WhatsNewAttributes", "WhatsNewAttributes\WhatsNewAttributes.xproj", "{F854B2F5-386F-4E19-9148-B09958D5194A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhatsNewAttributes", "WhatsNewAttributes\WhatsNewAttributes.csproj", "{F854B2F5-386F-4E19-9148-B09958D5194A}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "VectorClass", "VectorClass\VectorClass.xproj", "{1D140290-34AD-4CC3-B1C1-EA1216A83D8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VectorClass", "VectorClass\VectorClass.csproj", "{1D140290-34AD-4CC3-B1C1-EA1216A83D8E}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "LookupWhatsNew", "LookupWhatsNew\LookupWhatsNew.xproj", "{A26330AC-3F3B-4F03-A831-D0F25CA93F2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LookupWhatsNew", "LookupWhatsNew\LookupWhatsNew.csproj", "{A26330AC-3F3B-4F03-A831-D0F25CA93F2E}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TypeView", "TypeView\TypeView.xproj", "{62413E7E-C7F8-4F16-9D98-49282FF2BDAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TypeView", "TypeView\TypeView.csproj", "{62413E7E-C7F8-4F16-9D98-49282FF2BDAA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

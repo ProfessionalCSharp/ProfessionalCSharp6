@@ -1,19 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0AB42830-B712-4E9F-A31D-288793F8D09F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6F5D34D5-FD8C-41FE-AC85-068EECEE6C86}"
 	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
 		Local.testsettings = Local.testsettings
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAndLoadTestProject", "WebAndLoadTestProject\WebAndLoadTestProject.csproj", "{357EAECE-5589-4BEF-A5D1-400EE82644FE}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WebApplicationSample", "src\WebApplicationSample\WebApplicationSample.xproj", "{35B35BD2-C003-4854-A2F5-61FE43E3470A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationSample", "src\WebApplicationSample\WebApplicationSample.csproj", "{35B35BD2-C003-4854-A2F5-61FE43E3470A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

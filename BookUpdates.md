@@ -358,6 +358,10 @@ Page 1252 Figure Update, Figure 40-18
 
 ![Figure 40-18](https://github.com/ProfessionalCSharp/ProfessionalCSharp6/blob/master/FigureUpdates/Fig40_18.png "Fig 40-18")
 
+Page 1253 - API Change AddUserSecrets
+
+AddUserSecrets() API changed from `AddUserSecrets()` to `AddUserSecrets<Startup>()`. The generic version is already available with .NET Core 1.0, the non-generic version is now obsolete. See [UserSecrets: Obsolete APIs](https://github.com/aspnet/Announcements/issues/223 "UserSecrets changes")
+
 ## Chapter 41 - ASP.NET MVC
 
 Page 1272, `ToString` instead of `ToShortDateString`:

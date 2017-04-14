@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+ 
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+    <PackageTargetFallback>portable-net45+win8+wp8+wpa81</PackageTargetFallback>
+  </PropertyGroup>
+
+ 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Composition" Version="1.0.30" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CalculatorContract\CalculatorContract.csproj" />
+  </ItemGroup>
+
+</Project>

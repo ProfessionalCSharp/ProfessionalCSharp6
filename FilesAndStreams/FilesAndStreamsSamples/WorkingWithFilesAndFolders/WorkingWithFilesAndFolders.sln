@@ -1,9 +1,9 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26114.2
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WorkingWithFilesAndFolders", "WorkingWithFilesAndFolders.xproj", "{2FFFBF24-B525-42F3-BC6E-E1627D111424}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithFilesAndFolders", "WorkingWithFilesAndFolders.csproj", "{2FFFBF24-B525-42F3-BC6E-E1627D111424}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -19,5 +19,13 @@ Most of the projects of this solution are .NET Core projects. The only project u
 The database that is used with many of these samples is the Books database. Look for the backup file Books.bak. You can use this file to restore the Books database using SQL Server Management Studio.
 The Menus database that is also used in some samples is created using the Migrations feature of Entity Framework.
 
-The current version of the samples are built with .NET Core 1.0 and Preview 2 of the tools. 
-When RTM of the tools is available, the project files will be updated.
+To build and run the .NET Core samples, please install
+* Visual Studio 2017 with the .NET Core workload
+
+Please download and install the tools from [.NET Core downloads](https://www.microsoft.com/net/core).
+ 
+For code comments and issues please check [Professional C#'s GitHub Repository](https://github.com/ProfessionalCSharp/ProfessionalCSharp6)
+
+Please check my blog [csharp.christiannagel.com](https://csharp.christiannagel.com "csharp.christiannagel.com") for additional information for topics covered in the book.
+
+Thank you!

@@ -15,8 +15,7 @@ This chapter contains the following code samples:
 * MarkupExtensionsUWP (Markup extensions with UWP)
 
 To build and run the .NET Core samples, please install
-* Visual Studio 2015 Update 3
-* .NET Core 1.0 for Visual Studio
+* Visual Studio 2017 with the .NET Core workload
 
 Please download and install the tools from [.NET Core downloads](https://www.microsoft.com/net/core#windows).
  

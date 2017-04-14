@@ -52,10 +52,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>656A4CEE01D1BE50369EC38AFFE2BEEC87A78B4D</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>33F351DF9FA71E2A860A08962F74719D1DC72EF4</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>ClientWPF_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>ClientWPF_1_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -116,6 +116,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="ClientWPF_1_TemporaryKey.pfx" />
     <None Include="ClientWPF_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

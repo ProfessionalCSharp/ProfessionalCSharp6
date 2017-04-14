@@ -1,9 +1,9 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26114.2
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DriveInformation", "DriveInformation.xproj", "{3E7F44A0-2826-47AE-ACB9-0FE4469D9539}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DriveInformation", "DriveInformation.csproj", "{3E7F44A0-2826-47AE-ACB9-0FE4469D9539}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

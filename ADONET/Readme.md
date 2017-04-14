@@ -9,5 +9,13 @@ This chapter contains these samples:
 
 The database that is used with these samples is AdventureWorks. Download AdventureWorks from [CodePlex](https://msftdbprodsamples.codeplex.com).
 
-The current version of this sample is built with .NET Core 1.0 and Preview 2 Tools. 
-When RTM of the Tools is available, the project files will be updated.
+To build and run the .NET Core samples, please install
+* Visual Studio 2017 with the .NET Core workload
+
+Please download and install the tools from [.NET Core downloads](https://www.microsoft.com/net/core).
+ 
+For code comments and issues please check [Professional C#'s GitHub Repository](https://github.com/ProfessionalCSharp/ProfessionalCSharp6)
+
+Please check my blog [csharp.christiannagel.com](https://csharp.christiannagel.com "csharp.christiannagel.com") for additional information for topics covered in the book.
+
+Thank you!

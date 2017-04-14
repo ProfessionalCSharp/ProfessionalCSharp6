@@ -6,18 +6,16 @@ This chapter contains the following code samples:
     * UnitTestingSampleCore (.NET Core Library)
     * UnitTestingSamplesCoreTests (Unit Tests using xunit to test the .NET Core Library)
     * UnitTestingSamples (.NET Framework Library)
-    * UnitTestingSamplesTests (Unit Tests using MSTest to test the .NET Framework Library, here Fakes is used)
+    * UnitTestingSamplesTests (Unit Tests using MSTest to test the .NET Framework Library. Here, the Fakes Framework is used)
 * MVVM (Unit Testing sample for a local service class using XUnit and Moq - this project is from Chapter 39, and has the Services.Tests project added)
 * Web Testing
 
-
 To build and run the .NET Core samples, please install
-* Visual Studio 2015 Update 3
-* .NET Core 1.0 for Visual Studio
+* Visual Studio 2017 with the .NET Core workload
 
-For using the Fakes Framework or Web Tests, Visual Studio 2015 Enterprise edition is required
+For using the Fakes Framework or Web Tests, Visual Studio 2017 Enterprise edition is required
 
-Please download and install the tools from [.NET Core downloads](https://www.microsoft.com/net/core#windows).
+Please download and install the tools from [.NET Core downloads](https://www.microsoft.com/net/core).
  
 For code comments and issues please check [Professional C#'s GitHub Repository](https://github.com/ProfessionalCSharp/ProfessionalCSharp6)
 

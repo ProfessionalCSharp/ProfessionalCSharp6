@@ -1,17 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SimpleEventSourceSample", "SimpleEventSourceSample\SimpleEventSourceSample.xproj", "{9D5027EF-03DA-4E08-9D52-D590A12ADFAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleEventSourceSample", "SimpleEventSourceSample\SimpleEventSourceSample.csproj", "{9D5027EF-03DA-4E08-9D52-D590A12ADFAF}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "EventSourceSampleInheritance", "EventSourceSampleInheritance\EventSourceSampleInheritance.xproj", "{F66F6D93-43B2-42E5-81EB-5462BEA7D798}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventSourceSampleInheritance", "EventSourceSampleInheritance\EventSourceSampleInheritance.csproj", "{F66F6D93-43B2-42E5-81EB-5462BEA7D798}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "EventSourceSampleAnnotations", "EventSourceSampleAnnotations\EventSourceSampleAnnotations.xproj", "{A5F74DDB-608D-43A2-8FFC-3F99C63DAE4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventSourceSampleAnnotations", "EventSourceSampleAnnotations\EventSourceSampleAnnotations.csproj", "{A5F74DDB-608D-43A2-8FFC-3F99C63DAE4B}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ClientApp", "ClientApp\ClientApp.xproj", "{A4DD2CCD-5A66-42A6-80ED-FC80B7D60DAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientApp", "ClientApp\ClientApp.csproj", "{A4DD2CCD-5A66-42A6-80ED-FC80B7D60DAF}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MyApplicationEvents", "MyApplicationEvents\MyApplicationEvents.xproj", "{03B8EEEB-2EAF-431B-8D96-673F22840B89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyApplicationEvents", "MyApplicationEvents\MyApplicationEvents.csproj", "{03B8EEEB-2EAF-431B-8D96-673F22840B89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -144,8 +144,6 @@ namespace HttpClientSample
             }
         }
 
-
-
         public static void ShowHeaders(string title, HttpHeaders headers)
         {
             WriteLine(title);
@@ -184,7 +182,5 @@ namespace HttpClientSample
                 WriteLine($"{ex.Message}");
             }
         }
-    }
-
-   
+    }  
 }

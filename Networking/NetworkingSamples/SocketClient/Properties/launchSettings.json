@@ -1,7 +1,7 @@
 {
   "profiles": {
     "SocketClient": {
-      "commandName": "SocketClient",
+      "commandName": "Project",
       "commandLineArgs": "localhost 9200"
     }
   }

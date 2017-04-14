@@ -1,7 +1,7 @@
 {
   "profiles": {
     "HttpClientUsingTcp": {
-      "commandName": "HttpClientUsingTcp",
+      "commandName": "Project",
       "commandLineArgs": "www.cninnovation.com"
     }
   }
