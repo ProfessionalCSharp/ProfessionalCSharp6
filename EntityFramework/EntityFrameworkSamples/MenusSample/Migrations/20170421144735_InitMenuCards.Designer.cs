@@ -8,14 +8,14 @@ using MenusSample;
 namespace MenusSample.Migrations
 {
     [DbContext(typeof(MenusContext))]
-    [Migration("20160522083613_InitMenuCards")]
+    [Migration("20170421144735_InitMenuCards")]
     partial class InitMenuCards
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasDefaultSchema("mc")
-                .HasAnnotation("ProductVersion", "1.0.0-rc2-20901")
+                .HasAnnotation("ProductVersion", "1.1.1")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("MenusSample.Menu", b =>
@@ -29,7 +29,7 @@ namespace MenusSample.Migrations
                         .HasColumnType("Money");
 
                     b.Property<string>("Text")
-                        .HasAnnotation("MaxLength", 120);
+                        .HasMaxLength(120);
 
                     b.HasKey("MenuId");
 
@@ -44,7 +44,7 @@ namespace MenusSample.Migrations
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("Title")
-                        .HasAnnotation("MaxLength", 50);
+                        .HasMaxLength(50);
 
                     b.HasKey("MenuCardId");
 
@@ -53,8 +53,8 @@ namespace MenusSample.Migrations
 
             modelBuilder.Entity("MenusSample.Menu", b =>
                 {
-                    b.HasOne("MenusSample.MenuCard")
-                        .WithMany()
+                    b.HasOne("MenusSample.MenuCard", "MenuCard")
+                        .WithMany("Menus")
                         .HasForeignKey("MenuCardId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
