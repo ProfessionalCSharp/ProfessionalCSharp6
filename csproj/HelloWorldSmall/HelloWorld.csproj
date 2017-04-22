@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>netstandard1.6</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+   <PackageReference Include="Microsoft.NETCore.Runtime.CoreCLR" Version="1.1.1" />
+   <PackageReference Include="Microsoft.NETCore.DotNetHostPolicy" Version="1.1.0" />
+  </ItemGroup>  
+
+  <PropertyGroup>
+    <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
+  </PropertyGroup>
+
+</Project>

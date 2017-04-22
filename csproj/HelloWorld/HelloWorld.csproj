@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>netcoreapp1.1;net462</TargetFrameworks>
+    <Authors>Christian Nagel</Authors>
+    <Company>CN innovation</Company>
+    <Product>Sample App</Product>
+    <Description>Sample app for Professional C# 6 and .NET Core 1.0</Description>
+    <Copyright />
+    <RepositoryUrl>https://www.github.com/ProfessionalCSharp/ProfessionalCSharp6</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>.NET Core, CLI</PackageTags>
+    <PackageProjectUrl>https://www.github.com/ProfessionalCSharp/ProfessionalCSharp6</PackageProjectUrl>
+  </PropertyGroup>
+
+</Project>
