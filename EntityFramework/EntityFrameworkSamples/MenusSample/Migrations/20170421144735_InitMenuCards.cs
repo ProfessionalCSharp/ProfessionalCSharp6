@@ -19,7 +19,7 @@ namespace MenusSample.Migrations
                 {
                     MenuCardId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Title = table.Column<string>(nullable: true)
+                    Title = table.Column<string>(maxLength: 50, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -35,7 +35,7 @@ namespace MenusSample.Migrations
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     MenuCardId = table.Column<int>(nullable: false),
                     Price = table.Column<decimal>(type: "Money", nullable: false),
-                    Text = table.Column<string>(nullable: true)
+                    Text = table.Column<string>(maxLength: 120, nullable: true)
                 },
                 constraints: table =>
                 {
