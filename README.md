@@ -62,7 +62,7 @@ Samples available for these chapters (sample folders):
 * Chapter 46 - .NET Core with csproj - only for download (csproj)
 * Chapter 47 - C# 7.0 - What's New? - only for download (CSharp7)
 
-Download the extra Chapters for [C# 7.0](https://csharp.christiannagel.com/2017/04/03/csharp7/) and .NET Core with csproj - coming soon! 
+Download the extra Chapters for [C# 7.0](https://csharp.christiannagel.com/2017/04/03/csharp7/) and [.NET Core with csproj](https://csharp.christiannagel.com/2017/05/05/dotnetcore/)! 
 
 You can find additional samples in the [More Samples repository](https://github.com/ProfessionalCSharp/MoreSamples).
 
