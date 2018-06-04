@@ -190,7 +190,7 @@ public static MySafe InitProtection()
 
 ## Chapter 25 - Networking
 
-Page 714, the WebLister changed
+Page 714, the WebListener changed
 
 The UrlPrefixes need to be added using the Settings property:
 
