@@ -124,6 +124,9 @@ Within the method GetRectangles an underscore is missing accessing the variable 
 
 ## Chapter 9 - Delegates, Lambdas, and Events
 
+Page 260 - Text error in the last paragraph. The text should be:
+...the event is fired by invoking the method **NewCar**.
+
 Page 264 - Wrong code in NewCarIsHere, the code should be like this:
 
 ```csharp
