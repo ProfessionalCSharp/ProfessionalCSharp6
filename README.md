@@ -2,6 +2,14 @@
 
 Code samples for the Wrox book *Professional C# 6 and .NET Core 1.0*
 
+This repo is archived. Newer vesions of this book are available.
+
+Check: 
+
+* [Code samples for Professional C# 7 and .NET Core 2.0](https://github.com/ProfessionalCSharp/ProfessionalCSharp7)
+
+* [Addional code samples](https://github.com/ProfessionalCSharp/MoreSamples)
+
 To compile and run the samples you need:
 
 * Visual Studio 2017 with the .NET Core workload
